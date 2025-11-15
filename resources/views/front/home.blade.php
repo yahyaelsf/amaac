@@ -299,7 +299,7 @@
 							<a href="portfolio-single-wide-slider.html" aria-label="">
 								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 									<span class="thumb-info-wrapper">
-										<img src="{{ asset('front/img/projects/project.jpg') }}" class="img-fluid" alt="">
+										<img src="{{ asset('front/img/home/project1.jpg') }}" class="img-fluid project-img" alt="">
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Project Title</span>
 											<span class="thumb-info-type">Project Type</span>
@@ -317,7 +317,7 @@
 							<a href="portfolio-single-wide-slider.html" aria-label="">
 								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 									<span class="thumb-info-wrapper">
-										<img src="{{ asset('front/img/projects/project-2.jpg') }}" class="img-fluid" alt="">
+										<img src="{{ asset('front/img/home/project2.png') }}" class="img-fluid project-img"  alt="">
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Project Title</span>
 											<span class="thumb-info-type">Project Type</span>
@@ -335,7 +335,7 @@
 							<a href="portfolio-single-wide-slider.html" aria-label="">
 								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 									<span class="thumb-info-wrapper">
-										<img src="{{ asset('front/img/projects/project-4.jpg') }}" class="img-fluid" alt="">
+										<img src="{{ asset('front/img/home/project2.jpg') }}" class="img-fluid project-img" alt="">
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Project Title</span>
 											<span class="thumb-info-type">Project Type</span>
@@ -353,7 +353,7 @@
 							<a href="portfolio-single-wide-slider.html" aria-label="">
 								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 									<span class="thumb-info-wrapper">
-										<img src="{{ asset('front/img/projects/project-5.jpg') }}" class="img-fluid" alt="">
+										<img src="{{ asset('front/img/home/project4.webp') }}" class="img-fluid project-img" alt="">
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Project Title</span>
 											<span class="thumb-info-type">Project Type</span>
@@ -371,7 +371,7 @@
 							<a href="portfolio-single-wide-slider.html" aria-label="">
 								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 									<span class="thumb-info-wrapper">
-										<img src="{{ asset('front/img/projects/project-6.jpg') }}" class="img-fluid" alt="">
+										<img src="{{ asset('front/img/home/project5.webp') }}" class="img-fluid project-img" alt="">
 										<span class="thumb-info-title">
 											<span class="thumb-info-inner">Project Title</span>
 											<span class="thumb-info-type">Project Type</span>
