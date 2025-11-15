@@ -1,0 +1,19 @@
+.strong-shadow.rounded:before {
+    border-radius: 5px;
+}
+.strong-shadow.strong-shadow-top-right:before  {
+    top: -25px;
+    left: 50px;
+    right: -25px;
+    bottom: 25px;
+}
+.strong-shadow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #072447;
+    z-index: -1;
+}
