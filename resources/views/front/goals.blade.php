@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-9 font-weight-bold">Goals AMAAC</h1>
+                    <h1 class="text-9 font-weight-bold text-color-secondary">Goals AMAAC</h1>
                     <span class="sub-title">Building Bridges of Understanding and Cooperation</span>
                 </div>
                 <div class="col-md-12 align-self-center order-1">
@@ -31,8 +31,8 @@
                 <div class="row text-center pb-5">
                     <div class="col-md-9 mx-md-auto">
                         <div class="overflow-hidden mb-3">
-                            <h1 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
-                                We are <span class="text-primary">AMAAC</span>, Committed to Building a Future of Peace and
+                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary" data-appear-animation="maskUp">
+                                We are <span class="text-color-secondary ">AMAAC</span>, Committed to Building a Future of Peace and
                                 Understanding
                             </h1>
                         </div>
@@ -67,7 +67,7 @@
         <div class="row pb-3" bis_skin_checked="1">
 
 
-            <h2 class="font-weight-normal text-6">To achieve our ambitious vision, we have set a Strategic Goals </h2>
+            <h2 class="font-weight-normal text-6 text-color-secondary">To achieve our ambitious vision, we have set a Strategic Goals : </h2>
 
             <div class="accordion accordion-modern" id="accordion" bis_skin_checked="1">
                 <div class="card card-default" bis_skin_checked="1">

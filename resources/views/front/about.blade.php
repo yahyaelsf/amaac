@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-9 font-weight-bold">About AMAAC</h1>
+                    <h1 class="text-9 font-weight-bold text-color-secondary ">About AMAAC</h1>
                     <span class="sub-title">Building Bridges of Understanding and Cooperation</span>
                 </div>
                 <div class="col-md-12 align-self-center order-1">
@@ -32,8 +32,8 @@
                 <div class="row text-center pb-5">
                     <div class="col-md-9 mx-md-auto">
                         <div class="overflow-hidden mb-3">
-                            <h1 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
-                                We are <span class="text-primary">AMAAC</span>, Committed to Building a Future of Peace and
+                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary " data-appear-animation="maskUp">
+                                We are <span class="text-color-secondary">AMAAC</span>, Committed to Building a Future of Peace and
                                 Understanding
                             </h1>
                         </div>
@@ -59,8 +59,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="font-weight-normal text-center text-6 pb-3">Our
-                        <strong class="font-weight-extra-bold">Core </strong>Values
+                    <h2 class="font-weight-normal text-center text-6 pb-3 text-color-primary ">Our
+                        <strong class="font-weight-extra-bold text-color-secondary ">Core </strong>Values
                     </h2>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                             <i class="icons icon-support text-color-primary"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">Justice</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary ">Justice</h4>
                             <p>Upholding fairness, equity, and human rights for all.</p>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                             <i class="icons icon-layers text-color-primary"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">Integrity</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary ">Integrity</h4>
                             <p>Operating with transparency, honesty, and
                                 accountability. .</p>
                         </div>
@@ -96,7 +96,7 @@
                             <i class="icons icon-menu text-color-primary"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">
+                            <h4 class="font-weight-bold mb-2 text-color-primary ">
                                 Compassion</h4>
                             <p> Embodying empathy and care for all people. </p>
                         </div>
@@ -111,7 +111,7 @@
                             <i class="icons icon-support text-color-primary"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">Inclusivity</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary ">Inclusivity</h4>
                             <p>Celebrating diversity and ensuring all voices are
                                 heard. </p>
                         </div>
@@ -123,7 +123,7 @@
                             <i class="icons icon-layers text-color-primary"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">Empowerment</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary ">Empowerment</h4>
                             <p>Equipping individuals and communities with the
                                 tools for self-determination, impact and progress. </p>
                         </div>
@@ -136,7 +136,7 @@
                             <i class="icons icon-menu text-color-primary"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">
+                            <h4 class="font-weight-bold mb-2 text-color-primary ">
                                 Respect and equality for all.</h4>
                             <p>we believe that every individual deserves dignity, respect, and equal opportunity. </p>
                         </div>
@@ -150,7 +150,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
-                    <h2 class="text-color-dark font-weight-normal text-6 mb-2">Our <strong class="font-weight-extra-bold">
+                    <h2 class="text-color-dark font-weight-normal text-6 mb-2 text-color-primary ">Our <strong class="font-weight-extra-bold text-color-secondary">
                             Mission</strong></h2>
                     <p class="lead">
                         The mission of the American Muslim dnd Arab Affairs Council
@@ -237,7 +237,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="font-weight-normal text-6 mb-5">Upcoming <strong class="font-weight-extra-bold">
+                    <h2 class="font-weight-normal text-6 mb-5 text-color-primary ">Upcoming <strong class="font-weight-extra-bold text-color-secondary">
                             Events</strong>
                     </h2>
                 </div>
@@ -247,14 +247,14 @@
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet, consectetur</a></h4>
                             <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
                                 <span><i class="fa-regular fa-calendar-alt"></i> January 10, 2025 </span>
 
                                 <span class="d-block mt-2"><a href="blog-post.html"
-                                        class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+                                        class="btn btn-xs btn-primary text-1 text-uppercase">Read More</a></span>
                             </div>
                         </div>
                     </article>
@@ -263,7 +263,7 @@
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet, consectetur</a></h4>
                             <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
@@ -271,7 +271,7 @@
 
 
                                 <span class="d-block mt-2"><a href="blog-post.html"
-                                        class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+                                        class="btn btn-xs btn-primary text-1 text-uppercase">Read More</a></span>
                             </div>
                         </div>
                     </article>
@@ -280,14 +280,14 @@
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet, consectetur</a></h4>
                             <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
                                 <span><i class="fa-regular fa-calendar-alt"></i> January 10, 2025 </span>
 
                                 <span class="d-block mt-2"><a href="blog-post.html"
-                                        class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+                                        class="btn btn-xs btn-primary text-1 text-uppercase">Read More</a></span>
                             </div>
                         </div>
                     </article>
@@ -297,7 +297,7 @@
             <div class="row mb-5">
                 <div class="col-lg-12 text-center">
                     <a href="#"
-                        class="btn btn-dark btn-px-5 btn-py-2 font-weight-bold text-color-light rounded-0 text-2">View All
+                        class="btn btn-secondary btn-px-5 btn-py-2 font-weight-bold rounded-0 text-2 view-all">View All
                         Events
                     </a>
                 </div>
@@ -312,8 +312,8 @@
                 <div class="row text-center pb-5">
                     <div class="col-md-9 mx-md-auto">
                         <div class="overflow-hidden mb-3">
-                            <h1 class="font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
-                                Our <span class="text-primary">Vision</span>
+                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary " data-appear-animation="maskUp">
+                                Our <span class="text-color-secondary">Vision</span>
                             </h1>
                         </div>
                         <div class="overflow-hidden mb-3">
@@ -345,7 +345,7 @@
                     <div class="feature-box feature-box-style-2">
 
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">Supporting Sustainable Development</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary">Supporting Sustainable Development</h4>
                             <p>We will work tirelessly to combat
                                 negative stereotypes and misconceptions about Arabs and Muslims
                                 in the West, presenting a true image that reflects the cultural
@@ -362,7 +362,7 @@
                     <div class="feature-box feature-box-style-2">
 
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">Correct misconceptions</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary">Correct misconceptions</h4>
                             <p>We will launch dialogue initiatives
                                 that bring together individuals and communities from diverse
                                 backgrounds. These platforms will provide safe spaces for
@@ -380,7 +380,7 @@
                     <div class="feature-box feature-box-style-2">
 
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2"> Promote intercultural dialogue</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary"> Promote intercultural dialogue</h4>
                             <p>We will encourage Arab and
                                 Muslim communities to actively participate in the political and civic
                                 processes in their countries of residence, with a focus on building
@@ -394,7 +394,7 @@
                     <div class="feature-box feature-box-style-2">
 
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2">Promoting Civic Engagement</h4>
+                            <h4 class="font-weight-bold mb-2 text-color-primary">Promoting Civic Engagement</h4>
                             <p>We will collaborate with
                                 local and international organizations to support sustainable
                                 development projects in Arab and Muslim countries, with a focus on

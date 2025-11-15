@@ -75,7 +75,7 @@
 											<nav class="collapse ">
 												<ul class="nav nav-pills " id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle  {{ $home ? 'active' : '' }}"
+														<a class="dropdown-item dropdown-toggle   {{ $home ? 'active' : '' }}"
 															href="{{ route('front.home') }}">
 															Home
 														</a>

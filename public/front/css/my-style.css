@@ -17,3 +17,10 @@
     background: #072447;
     z-index: -1;
 }
+#header .header-nav.header-nav-line nav>ul li >a {
+    color: var(--primary);
+}
+.view-all:hover {
+    color: var(--primary);
+    border: 1px solid --primary;
+}

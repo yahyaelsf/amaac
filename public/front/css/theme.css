@@ -2246,7 +2246,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
-		color: #444;
+		color: #061F3D;
 	}
 
 	#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
@@ -5012,19 +5012,19 @@ html[dir="rtl"] #header .tip-light:before {
 	}
 
 	#header .header-nav.header-nav-line nav > ul li:hover > a {
-		color: var(--primary);
+		color: var(--secondary);
 	}
 
 	#header .header-nav.header-nav-line nav > ul li:hover > a:before {
-		background: var(--primary);
+		background: var(--secondary);
 	}
 
 	#header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active {
-		color: var(--primary);
+		color: var(--secondary);
 	}
 
 	#header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active:before {
-		background: var(--primary);
+		background: var(--secondary);
 	}
 
 	#header .header-nav-main.header-nav-main-slide nav > ul > li.open > span > a, #header .header-nav-main.header-nav-main-slide nav > ul > li:hover > span > a {
@@ -6051,8 +6051,8 @@ section.page-header.custom-product {
 	padding-right: 10px;
 }
 
-/* 
- * Order (Extending to 10) 
+/*
+ * Order (Extending to 10)
  * Bootstrap 5 has until 5 order class
 */
 .order-6 {
