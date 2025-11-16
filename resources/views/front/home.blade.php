@@ -1,4 +1,4 @@
-@extends('front.layout',['home' => true , 'about' => false , 'goals' => false , 'team' => false , 'work' => false])
+@extends('front.layout',['home' => true , 'about' => false , 'goals' => false , 'team' => false , 'work' => false , 'involved' => false , 'contact' => false])
 @section('content')
 				<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
 					data-plugin-options="{'autoplayTimeout': 10000}"

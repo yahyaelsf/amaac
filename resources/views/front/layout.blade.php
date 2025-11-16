@@ -106,13 +106,13 @@
 
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
+														<a class="dropdown-item dropdown-toggle {{ $involved ? 'active' : '' }}" href="{{ route('front.involved') }}">
 															Get Involved
 														</a>
 
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
+														<a class="dropdown-item dropdown-toggle {{ $contact ? 'active' : '' }}" href="{{ route('front.contact') }}">
 															Contact Us
 														</a>
 

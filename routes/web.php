@@ -24,6 +24,8 @@ Route::get('/goals' ,[HomeController::class ,'goals'])->name('front.goals');
 Route::get('/team' ,[HomeController::class ,'team'])->name('front.team');
 Route::get('/about-me' ,[HomeController::class ,'teamPage'])->name('front.teamPage');
 Route::get('/our-works' ,[HomeController::class ,'works'])->name('front.works');
+Route::get('/get-involved' ,[HomeController::class ,'involved'])->name('front.involved');
+Route::get('/contact-us' ,[HomeController::class ,'contact'])->name('front.contact');
 
 
 

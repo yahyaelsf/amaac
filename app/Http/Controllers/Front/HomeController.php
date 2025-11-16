@@ -44,4 +44,10 @@ class HomeController extends Controller
     public function works(){
         return view('front.works');
     }
+    public function involved(){
+        return view('front.involved');
+    }
+    public function contact(){
+         return view('front.contact-us');
+    }
 }

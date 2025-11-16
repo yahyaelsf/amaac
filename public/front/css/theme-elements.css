@@ -15635,13 +15635,13 @@ html.boxed .nav-secondary.sticky-active {
 /* Scroll to Top */
 html .scroll-to-top {
 	transition: opacity 0.3s;
-	background: #404040;
-	border-radius: var(--border-radius) var(--border-radius) 0 0;
+	background: var(--secondary);
+	border-radius: var(--secondary) ;
 	bottom: 0;
 	color: var(--light);
 	display: block;
 	height: 9px;
-	opacity: 0;
+	
 	padding: 10px 10px 35px;
 	position: fixed;
 	right: 10px;
@@ -15654,6 +15654,9 @@ html .scroll-to-top {
 
 html .scroll-to-top:hover {
 	opacity: 1;
+    background: white;
+    border: 2px solid var(--primary);
+    color: var(--primary);
 }
 
 html .scroll-to-top.visible {
