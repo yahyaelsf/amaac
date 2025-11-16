@@ -197,7 +197,7 @@
 									everyone
 									lives with dignity and mutual respect.
 								</p>
-								<a href="https://themeforest.net/item/porto-admin-responsive-html5-template/8539472"
+								<a href="https://elements.envato.com/"
 									class="btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible"
 									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
 									data-appear-animation-duration="750" target="_blank"
@@ -465,4 +465,10 @@
 						</div>
 					</div>
 				</section>
+                {{--
+                Daily report 15-11-2025 from 9:37am to 5:37pm
+                * change color theme to the required colors
+                * make configuration for server to setup laravel pjoject
+                * upload laravel project to server
+                 --}}
 @endsection
