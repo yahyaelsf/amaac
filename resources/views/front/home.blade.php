@@ -198,7 +198,7 @@
 									lives with dignity and mutual respect.
 								</p>
 								<a href="https://elements.envato.com/"
-									class="btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible"
+									class="btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible view-all"
 									data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
 									data-appear-animation-duration="750" target="_blank"
 									style="animation-delay: 1000ms;">
