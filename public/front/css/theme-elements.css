@@ -2687,7 +2687,7 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 }
 
 .btn-gradient:not(.btn-outline):hover, .btn-gradient:not(.btn-outline).hover {
-	border: 0;
+	border: 1px solid --secondary;
 }
 
 .btn-gradient:not(.btn-outline):focus, .btn-gradient:not(.btn-outline).focus {
@@ -3528,8 +3528,9 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 }
 
 .btn-gradient:not(.btn-outline):hover, .btn-gradient:not(.btn-outline).hover {
-	background: linear-gradient(135deg, var(--primary--200) 0%, var(--secondary--200) 80%) !important;
-	color: var(--primary-inverse);
+	background: white !important;
+    border: 1px solid var(--secondary)  !important;
+	color: var(--secondary);
 }
 
 .btn-gradient:not(.btn-outline):focus, .btn-gradient:not(.btn-outline).focus {

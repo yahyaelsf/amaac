@@ -33,3 +33,7 @@
     border-radius: 8px;
     /* اختياري */
 }
+.btn-gradient:not(.btn-outline):hover{
+    color : --secondary !important;
+    border: 1px solid --secondary !important;
+}
