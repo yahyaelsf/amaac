@@ -94,13 +94,13 @@
 
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
+														<a class="dropdown-item dropdown-toggle {{ $team ? 'active' : '' }}" href="{{ route('front.team') }}">
 															Our Team
 														</a>
 
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
+														<a class="dropdown-item dropdown-toggle {{ $work ? 'active' : '' }}" href="{{ route('front.works') }}">
 															Our Work
 														</a>
 

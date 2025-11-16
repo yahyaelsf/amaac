@@ -35,4 +35,13 @@ class HomeController extends Controller
     public function goals(){
         return view('front.goals');
     }
+    public function team(){
+        return view('front.team');
+    }
+    public function teamPage(){
+        return view('front.about-me');
+    }
+    public function works(){
+        return view('front.works');
+    }
 }

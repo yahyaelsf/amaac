@@ -1,4 +1,4 @@
-@extends('front.layout', ['home' => false, 'about' => false, 'goals' => true])
+@extends('front.layout', ['home' => false, 'about' => false, 'goals' => true , 'team' => false , 'work' => false])
 @section('css')
     <style>
 

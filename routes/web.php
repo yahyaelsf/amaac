@@ -21,6 +21,9 @@ Route::get('/dashboard', function () {
 Route::get('/' ,[HomeController::class ,'home'])->name('front.home');
 Route::get('/about-us' ,[HomeController::class ,'about'])->name('front.about');
 Route::get('/goals' ,[HomeController::class ,'goals'])->name('front.goals');
+Route::get('/team' ,[HomeController::class ,'team'])->name('front.team');
+Route::get('/about-me' ,[HomeController::class ,'teamPage'])->name('front.teamPage');
+Route::get('/our-works' ,[HomeController::class ,'works'])->name('front.works');
 
 
 
