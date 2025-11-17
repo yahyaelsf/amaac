@@ -162,24 +162,26 @@
 									style="max-width: 210px;"></a>
 						</div>
 						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-primary mb-4">Pages</h5>
+							<h5 class="text-5 text-transform-none font-weight-semibold text-secondary mb-4">Pages</h5>
 							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="page-services.html" class="link-hover-style-1"> Our
-										Services</a></li>
-								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1"> About Us</a></li>
-								<li class="mb-1"><a href="contact-us.html" class="link-hover-style-1"> Contact Us</a>
-								</li>
+								<li class="mb-1"><a href="page-services.html" class="link-hover-style-1 text-primary">
+										About us</a></li>
+								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Our Goals</a></li>
+                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Our Team</a></li>
+
 							</ul>
 						</div>
 						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-primary mb-4">Links</h5>
+							<h5 class="text-5 text-transform-none font-weight-semibold text-secondary mb-4">Links</h5>
 							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="page-faq.html" class="link-hover-style-1"> FAQ's</a></li>
-								<li class="mb-1"><a href="sitemap.html" class="link-hover-style-1"> Sitemap</a></li>
+								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Our Work</a></li>
+                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Get Invloved</a></li>
+								<li class="mb-1"><a href="contact-us.html" class="link-hover-style-1 text-primary"> Contact Us</a>
+								</li>
 							</ul>
 						</div>
 						<div class="col-md-6 col-lg-5 text-center text-lg-start">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-primary mb-4">Newsletter
+							<h5 class="text-5 text-transform-none font-weight-semibold text-secondary mb-4">Newsletter
 							</h5>
 							<div class="alert alert-success d-none" id="newsletterSuccess">
 								<strong>Success!</strong> You've been added to our email list.
@@ -195,10 +197,10 @@
 								</div>
 							</form>
 							<p class="mt-3 mb-0 text-center text-lg-start">
-								<i class="fab fa-whatsapp text-color-primary"></i><span class=" opacity-7 ps-2">(800)
+								<i class="fab fa-whatsapp text-color-secondary"></i><span class=" opacity-7 ps-2 text-primary">(800)
 									123-4567</span>
-								<i class="far fa-envelope text-color-primary ms-4"></i><a href="mailto:mail@example.com"
-									class="opacity-7 ps-2">mail@example.com</a>
+								<i class="far fa-envelope text-color-secondary ms-4"></i><a href="mailto:mail@example.com"
+									class="opacity-7 ps-2 text-primary">mail@example.com</a>
 							</p>
 						</div>
 					</div>
@@ -206,8 +208,8 @@
 				<div class="footer-copyright footer-copyright-style-2 bg-transparent footer-top-light-border">
 					<div class="container py-2">
 						<div class="row py-4">
-							<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
-								<p>© Copyright 2025. All Rights Reserved.</p>
+							<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0 ">
+								<p class="text-secondary">© Copyright 2025. All Rights Reserved.</p>
 							</div>
 						</div>
 					</div>
