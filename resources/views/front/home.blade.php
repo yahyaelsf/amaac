@@ -6,8 +6,9 @@
         <div class="owl-stage-outer">
             <div class="owl-stage">
                 <!-- Carousel Slide 1 -->
+                {{-- front/img/home/IMG-20251119-WA0028.jpg --}}
                 <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-                    style="background-image: url('{{ asset('front/img/home/pexels-august-de-richelieu-4427500.jpg') }}'); background-size: cover; background-position: center;">
+                    style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}'); background-size: cover; background-position: center;">
                     <div class="container position-relative z-index-3 h-100">
                         <div class="row justify-content-center align-items-center h-100">
                             <div class="col-lg-7">
@@ -52,7 +53,7 @@
                 </div>
                 <!-- Carousel Slide 2 -->
                 <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-                    style="background-image: url('{{ asset('front/img/home/premium_photo-1723773650963-de7f36b9ed3d.avif') }}'); background-size: cover; background-position: center;">
+                    style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}'); background-size: cover; background-position: center;">
                     <div class="container position-relative z-index-3 h-100">
                         <div class="row justify-content-center align-items-center h-100">
                             <div class="col-lg-6">
@@ -93,7 +94,7 @@
 
                 <!-- Carousel Slide 3 -->
                 <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-                    style="background-image: url('{{ asset('front/img/home/pexels-timmossholder-1709929.jpg') }}'); background-size: cover; background-position: center;">
+                    style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}'); background-size: cover; background-position: center;">
                     <div class="container position-relative z-index-3 h-100">
                         <div class="row justify-content-center align-items-center h-100">
                             <div class="col-lg-7">
@@ -208,11 +209,67 @@
                         data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0"
                         data-appear-animation-duration="750" style="animation-delay: 0ms;">
                         <div class="strong-shadow rounded strong-shadow-top-right">
-                            <img loading="lazy" src="{{ asset('front/img/home/istockphoto-2094337676-612x612.webp') }}"
+                            <img loading="lazy"
+                                src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}"
                                 class="img-fluid border border-width-10 border-color-light rounded box-shadow-3"
-                                alt="Porto Admin">
+                                alt="Porto Admin" style="height : 550px ; width: 100%">
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row align-items-center text-center my-5">
+
+                <div class="col-md-6 position-relative ">
+                    <div class="appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn"
+                        data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                        <img loading="lazy" src="{{ asset('front/img/landing/porto_dots2.png') }}" alt=""
+                            width="149" height="142" style="position: absolute; top: -60px; right: -8%;">
+                    </div>
+                    <div class="appear-animation animated fadeInLeftShorter appear-animation-visible"
+                        data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0"
+                        data-appear-animation-duration="750" style="animation-delay: 0ms;">
+                        <div class="strong-shadow rounded strong-shadow-top-left">
+                            <img loading="lazy"
+                                src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.05.32_54795eeb.jpg') }}"
+                                class="img-fluid border border-width-10 border-color-light rounded box-shadow-3"
+                                alt="Porto Admin" style="height : 550px ; width: 100%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 py-5">
+                    <h2 class="font-weight-bold text-9 mb-0 appear-animation text-secondary animated fadeInUpShorter appear-animation-visible"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
+                        data-appear-animation-duration="750" style="animation-delay: 200ms;">CEO statement
+                    </h2>
+                    <p class="font-weight-semibold text-light text-4 fonts-weight-semibold positive-ls-2 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"
+                        data-appear-animation-duration="750" style="animation-delay: 600ms;">
+                        American Muslim dnd Arab Affairs Council</p>
+                    <p class="pb-2 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible"
+                        style="color: #d5d0d0;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
+                        data-appear-animation-duration="750" style="animation-delay: 800ms;">
+                        We are a leading organization committed to promoting mutual understanding between
+                        the
+                        United States and the Arab and Islamic world. We work to defend rights, support
+                        sustainable
+                        development and advance progress, growth and prosperity globally.
+                        We are committed to Empowering Muslim and Arab communities in the United States and
+                        around the world, and supporting their political, social, and cultural renaissance,
+                        through
+                        conscious, influential leadership and balanced international relations.
+                        AMAAC is a platform for hope, a bridge for understanding, and a voice for justice.
+                        We aspire to
+                        be an integral part of global efforts to build a more peaceful and just world, where
+                        everyone
+                        lives with dignity and mutual respect.
+                    </p>
+                    <a href="https://elements.envato.com/"
+                        class="btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible donate"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
+                        data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">
+                        Donate</a>
+
                 </div>
             </div>
         </div>
@@ -227,7 +284,7 @@
                             class="font-weight-extra-bold text-color-primary">Mission </strong>at a Glance</h2>
                 </div>
             </div>
-            
+
             <div class="row mb-5 pb-3" bis_skin_checked="1">
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation animated fadeInUpShorter appear-animation-visible"
@@ -246,7 +303,7 @@
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
-                            style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;"
+                            style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
                             {{-- <div class="flip-content my-4" bis_skin_checked="1">
                                 <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
@@ -276,7 +333,7 @@
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
-                            style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;"
+                            style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0029.jpg') }}); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
                             {{-- <div class="flip-content my-4" bis_skin_checked="1">
                                 <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
@@ -299,14 +356,15 @@
                                     <i class="icons icon-menu text-color-primary"></i>
                                 </div>
                                 <h4 class="font-weight-bold text-color-primary text-4">Influencing
-                                Policy</h4>
-                                <p class="text-color-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                rutrum
-                                pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+                                    Policy</h4>
+                                <p class="text-color-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Quisque
+                                    rutrum
+                                    pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
-                            style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center;"
+                            style="background-image: url('{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}'); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
                             {{-- <div class="flip-content my-4" bis_skin_checked="1">
                                 <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
@@ -342,7 +400,7 @@
                 <a href="portfolio-single-wide-slider.html" aria-label="">
                     <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset('front/img/home/project1.jpg') }}" class="img-fluid project-img"
+                            <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}" class="img-fluid project-img"
                                 alt="">
                             <span class="thumb-info-title">
                                 <span class="thumb-info-inner">Project Title</span>
@@ -361,7 +419,7 @@
                 <a href="portfolio-single-wide-slider.html" aria-label="">
                     <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset('front/img/home/project2.png') }}" class="img-fluid project-img"
+                            <img src="{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}" class="img-fluid project-img"
                                 alt="">
                             <span class="thumb-info-title">
                                 <span class="thumb-info-inner">Project Title</span>
@@ -380,7 +438,7 @@
                 <a href="portfolio-single-wide-slider.html" aria-label="">
                     <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset('front/img/home/project2.jpg') }}" class="img-fluid project-img"
+                            <img src="{{ asset('front/img/home/IMG-20251119-WA0027.jpg') }}" class="img-fluid project-img"
                                 alt="">
                             <span class="thumb-info-title">
                                 <span class="thumb-info-inner">Project Title</span>
@@ -399,7 +457,7 @@
                 <a href="portfolio-single-wide-slider.html" aria-label="">
                     <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset('front/img/home/project4.webp') }}" class="img-fluid project-img"
+                            <img src="{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}" class="img-fluid project-img"
                                 alt="">
                             <span class="thumb-info-title">
                                 <span class="thumb-info-inner">Project Title</span>
@@ -418,7 +476,7 @@
                 <a href="portfolio-single-wide-slider.html" aria-label="">
                     <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset('front/img/home/project5.webp') }}" class="img-fluid project-img"
+                            <img src="{{ asset('front/img/home/IMG-20251119-WA0020.jpg') }}" class="img-fluid project-img"
                                 alt="">
                             <span class="thumb-info-title">
                                 <span class="thumb-info-inner">Project Title</span>

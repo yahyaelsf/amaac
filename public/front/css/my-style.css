@@ -8,6 +8,12 @@
     right: -25px;
     bottom: 25px;
 }
+.strong-shadow.strong-shadow-top-left:before {
+    top: -25px;
+    right: 50px;
+    left: -25px;
+    bottom: 25px;
+}
 
 .strong-shadow:before {
     content: '';
