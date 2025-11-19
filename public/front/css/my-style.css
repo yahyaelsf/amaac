@@ -80,3 +80,8 @@ section.section{
     object-fit: contain;
     /* يحافظ على الأبعاد بدون اقتطاع */
 }
+.accordion.accordion-modern .card:first-of-type,
+.accordion.accordion-modern .card:not(:first-of-type):not(:last-of-type),
+.accordion.accordion-modern .card:last-of-type{
+    border : none;
+}
