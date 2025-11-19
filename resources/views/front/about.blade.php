@@ -7,7 +7,8 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/slider1.png') }}');">
+        style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}'); background-position: center center;
+        background-size: cover;">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
@@ -23,45 +24,50 @@
             </div>
         </div>
     </section>
+    <section class="bg-primary">
+        <div class="container  ">
+            <div class="row pt-5">
+                <div class="col">
 
-    <div class="container">
-        <div class="row pt-5">
-            <div class="col">
-
-                {{-- Intro Section --}}
-                <div class="row text-center pb-5">
-                    <div class="col-md-9 mx-md-auto">
-                        <div class="overflow-hidden mb-3">
-                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary "
-                                data-appear-animation="maskUp">
-                                We are <span class="text-color-secondary">AMAAC</span>, Committed to Building a Future of
-                                Peace and
-                                Understanding
-                            </h1>
-                        </div>
-                        <div class="overflow-hidden mb-3">
-                            <p class="lead mb-0 appear-animation" data-appear-animation="maskUp"
-                                data-appear-animation-delay="200">
-                                Emerging from the heart of the United States, the American Muslim and Arab Affairs Council
-                                (AMAAC)
-                                is dedicated to building bridges of cooperation and understanding between the Arab and
-                                Muslim
-                                world and America. Our mission is rooted in promoting justice, equality, and mutual respect
-                                among communities.
-                            </p>
+                    {{-- Intro Section --}}
+                    <div class="row text-center pb-5 ">
+                        <div class="col-md-9 mx-md-auto">
+                            <div class="overflow-hidden mb-3">
+                                <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-light "
+                                    data-appear-animation="maskUp">
+                                    We are <span class="text-color-secondary">AMAAC</span>, Committed to Building a Future
+                                    of
+                                    Peace and
+                                    Understanding
+                                </h1>
+                            </div>
+                            <div class="overflow-hidden mb-3">
+                                <p class="lead mb-0 appear-animation text-color-light-200" data-appear-animation="maskUp"
+                                    data-appear-animation-delay="200">
+                                    Emerging from the heart of the United States, the American Muslim and Arab Affairs
+                                    Council
+                                    (AMAAC)
+                                    is dedicated to building bridges of cooperation and understanding between the Arab and
+                                    Muslim
+                                    world and America. Our mission is rooted in promoting justice, equality, and mutual
+                                    respect
+                                    among communities.
+                                </p>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
-
-
             </div>
         </div>
-    </div>
-    <section class="section bg-color-grey section-height-3 border-0 m-0">
+    </section>
+
+    <section class="section bg-color-primary section-height-3 border-0 m-0">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="font-weight-normal text-center text-6 pb-3 text-color-primary ">Our
+                    <h2 class="font-weight-normal text-center text-6 pb-3 text-color-light ">Our
                         <strong class="font-weight-extra-bold text-color-secondary ">Core </strong>Values
                     </h2>
                 </div>
@@ -71,22 +77,22 @@
                     data-appear-animation-delay="300">
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-icon">
-                            <i class="icons icon-support text-color-primary"></i>
+                            <i class="icons icon-support text-color-light"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary ">Justice</h4>
-                            <p>Upholding fairness, equity, and human rights for all.</p>
+                            <h4 class="font-weight-bold mb-2 text-color-light ">Justice</h4>
+                            <p class="text-color-light-200">Upholding fairness, equity, and human rights for all.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-icon">
-                            <i class="icons icon-layers text-color-primary"></i>
+                            <i class="icons icon-layers text-color-light"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary ">Integrity</h4>
-                            <p>Operating with transparency, honesty, and
+                            <h4 class="font-weight-bold mb-2 text-color-light ">Integrity</h4>
+                            <p class="text-color-light-200">Operating with transparency, honesty, and
                                 accountability. .</p>
                         </div>
                     </div>
@@ -95,12 +101,12 @@
                     data-appear-animation-delay="300">
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-icon">
-                            <i class="icons icon-menu text-color-primary"></i>
+                            <i class="icons icon-menu text-color-light"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary ">
+                            <h4 class="font-weight-bold mb-2 text-color-light ">
                                 Compassion</h4>
-                            <p> Embodying empathy and care for all people. </p>
+                            <p class="text-color-light-200"> Embodying empathy and care for all people. </p>
                         </div>
                     </div>
                 </div>
@@ -110,11 +116,11 @@
                     data-appear-animation-delay="300">
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-icon">
-                            <i class="icons icon-support text-color-primary"></i>
+                            <i class="icons icon-support text-color-light"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary ">Inclusivity</h4>
-                            <p>Celebrating diversity and ensuring all voices are
+                            <h4 class="font-weight-bold mb-2 text-color-light ">Inclusivity</h4>
+                            <p class="text-color-light-200">Celebrating diversity and ensuring all voices are
                                 heard. </p>
                         </div>
                     </div>
@@ -122,11 +128,11 @@
                 <div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-icon">
-                            <i class="icons icon-layers text-color-primary"></i>
+                            <i class="icons icon-layers text-color-light"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary ">Empowerment</h4>
-                            <p>Equipping individuals and communities with the
+                            <h4 class="font-weight-bold mb-2 text-color-light ">Empowerment</h4>
+                            <p class="text-color-light-200">Equipping individuals and communities with the
                                 tools for self-determination, impact and progress. </p>
                         </div>
                     </div>
@@ -135,12 +141,13 @@
                     data-appear-animation-delay="300">
                     <div class="feature-box feature-box-style-2">
                         <div class="feature-box-icon">
-                            <i class="icons icon-menu text-color-primary"></i>
+                            <i class="icons icon-menu text-color-light"></i>
                         </div>
                         <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary ">
+                            <h4 class="font-weight-bold mb-2 text-color-light ">
                                 Respect and equality for all.</h4>
-                            <p>we believe that every individual deserves dignity, respect, and equal opportunity. </p>
+                            <p class="text-color-light-200">we believe that every individual deserves dignity, respect, and
+                                equal opportunity. </p>
                         </div>
                     </div>
                 </div>
@@ -148,14 +155,14 @@
 
         </div>
     </section>
-    <section class="section section-height-3 bg-color-white m-0 border-0">
+    <section class="section section-height-3 bg-color-secondary m-0 border-0">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
-                    <h2 class="text-color-dark font-weight-normal text-6 mb-2 text-color-primary ">Our <strong
-                            class="font-weight-extra-bold text-color-secondary">
+                    <h2 class="text-color-dark font-weight-normal text-6 mb-2 text-color-light ">Our <strong
+                            class="font-weight-extra-bold text-color-primary">
                             Mission</strong></h2>
-                    <p class="lead">
+                    <p class="lead text-color-light">
                         The mission of the American Muslim dnd Arab Affairs Council
                         for is to promote mutual understanding, build bridges of dialogue,
                         and advocate for the rights of Arab and Muslim communities in
@@ -163,22 +170,22 @@
                         influence policy, support sustainable development, and combat
                         negative stereotypes to achieve a more just and peaceful world.
                     </p>
-                    <p class="pe-5 me-5">
+                    <p class="pe-5 me-5 text-color-light">
                         AMAAC is a platform for hope, a bridge for understanding, and a voice for justice. We aspire to
                         be an integral part of global efforts to build a more peaceful and just world, where everyone
                         lives with dignity and mutual respect.
                     </p>
                 </div>
-                <div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 position-relative mt-sm-5"
+                <div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 position-relative mt-sm-5 image-stack"
                     style="top: 1.7rem;">
-                    <img src="{{ asset('front/img/home/pexels-august-de-richelieu-4427500.jpg') }}"
+                    <img src="{{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}"
                         class="img-fluid position-absolute d-none d-sm-block appear-animation"
                         data-appear-animation="expandIn" data-appear-animation-delay="300" style="top: 10%; left: -50%;"
                         alt="" />
-                    <img src="{{ asset('front/img/home/premium_photo-1723773650963-de7f36b9ed3d.avif') }}"
+                    <img src="{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}"
                         class="img-fluid position-absolute d-none d-sm-block appear-animation"
                         data-appear-animation="expandIn" style="top: -33%; left: -29%;" alt="" />
-                    <img src="{{ asset('front/img/home/pexels-timmossholder-1709929.jpg') }}"
+                    <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.05.32_54795eeb.jpg') }}"
                         class="img-fluid position-relative appear-animation mb-2" data-appear-animation="expandIn"
                         data-appear-animation-delay="600" alt="" />
                 </div>
@@ -236,30 +243,47 @@
 
     </section>
 
-    <section class="section section-height-3 bg-color-grey section-no-border m-0">
+    <section class="section section-height-3 bg-color-primary section-no-border m-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="font-weight-normal text-6 mb-5 text-color-primary ">Upcoming <strong
+                    <h2 class="font-weight-normal text-6 mb-5 text-color-light ">Upcoming <strong
                             class="font-weight-extra-bold text-color-secondary">
                             Events</strong>
                     </h2>
                 </div>
             </div>
             <div class="row recent-posts pb-4 mb-5">
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet,
+                                    class="text-decoration-none text-color-light ">Lorem ipsum dolor sit amet,
                                     consectetur</a></h4>
-                            <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
+                            <p class="text-color-light-200">Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
-                                <span><i class="fa-regular fa-calendar-alt"></i> January 10, 2025 </span>
+                                <span class="text-color-light-200"><i class="fa-regular fa-calendar-alt text-color-light-200"></i> January 10, 2025 </span>
 
                                 <span class="d-block mt-2"><a href="blog-post.html"
-                                        class="btn btn-xs btn-primary text-1 text-uppercase">Read More</a></span>
+                                        class="btn btn-xs btn-secondary text-1 text-uppercase">Read More</a></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                 <div class="col-lg-4 mb-4 mb-lg-0">
+                    <article class="post post-medium">
+                        <div class="post-content">
+                            <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
+                                    class="text-decoration-none text-color-light ">Lorem ipsum dolor sit amet,
+                                    consectetur</a></h4>
+                            <p class="text-color-light-200">Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
+                                per conubia nostra, per inceptos himenaeos.</p>
+                            <div class="post-meta">
+                                <span class="text-color-light-200"><i class="fa-regular fa-calendar-alt text-color-light-200"></i> January 10, 2025 </span>
+
+                                <span class="d-block mt-2"><a href="blog-post.html"
+                                        class="btn btn-xs btn-secondary text-1 text-uppercase">Read More</a></span>
                             </div>
                         </div>
                     </article>
@@ -268,33 +292,15 @@
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet,
+                                    class="text-decoration-none text-color-light ">Lorem ipsum dolor sit amet,
                                     consectetur</a></h4>
-                            <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
+                            <p class="text-color-light-200">Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
-                                <span><i class="fa-regular fa-calendar-alt"></i> January 10, 2025 </span>
-
-
-                                <span class="d-block mt-2"><a href="blog-post.html"
-                                        class="btn btn-xs btn-primary text-1 text-uppercase">Read More</a></span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <article class="post post-medium">
-                        <div class="post-content">
-                            <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet,
-                                    consectetur</a></h4>
-                            <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
-                                per conubia nostra, per inceptos himenaeos.</p>
-                            <div class="post-meta">
-                                <span><i class="fa-regular fa-calendar-alt"></i> January 10, 2025 </span>
+                                <span class="text-color-light-200"><i class="fa-regular fa-calendar-alt text-color-light-200"></i> January 10, 2025 </span>
 
                                 <span class="d-block mt-2"><a href="blog-post.html"
-                                        class="btn btn-xs btn-primary text-1 text-uppercase">Read More</a></span>
+                                        class="btn btn-xs btn-secondary text-1 text-uppercase">Read More</a></span>
                             </div>
                         </div>
                     </article>
@@ -311,7 +317,8 @@
             </div>
         </div>
     </section>
-    <div class="container">
+    <section class="bg-secondary">
+     <div class="container">
         <div class="row pt-5">
             <div class="col">
 
@@ -319,13 +326,13 @@
                 <div class="row text-center pb-5">
                     <div class="col-md-9 mx-md-auto">
                         <div class="overflow-hidden mb-3">
-                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary "
+                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-light "
                                 data-appear-animation="maskUp">
-                                Our <span class="text-color-secondary">Vision</span>
+                                Our <span class="text-color-primary">Vision</span>
                             </h1>
                         </div>
                         <div class="overflow-hidden mb-3">
-                            <p class="lead mb-0 appear-animation" data-appear-animation="maskUp"
+                            <p class="lead mb-0 appear-animation text-color-light" data-appear-animation="maskUp"
                                 data-appear-animation-delay="200">
                                 AMAAC’s
                                 vision
@@ -344,6 +351,8 @@
             </div>
         </div>
     </div>
+    </section>
+
     {{-- <section class="section bg-color-grey section-height-3 border-0 m-0">
         <div class="container">
 

@@ -71,3 +71,12 @@
 section.section{
     margin : 0px;
 }
+.page-header{
+    margin : 0 ;
+}
+.image-stack img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: contain;
+    /* يحافظ على الأبعاد بدون اقتطاع */
+}
