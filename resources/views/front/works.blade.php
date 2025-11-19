@@ -7,7 +7,7 @@
 @endsection
 @section('content')
     <section
-        class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7"
+        class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
         style="background-image: url('{{ asset('front/img/home/slider1.png') }}');">
         <div class="container">
             <div class="row mt-5">

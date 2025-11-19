@@ -1,4 +1,4 @@
-@extends('front.layout', ['home' => false, 'about' => true ,'goals' => false , 'team' => false , 'work' => false , 'involved' => false , 'contact' => false])
+@extends('front.layout', ['home' => false, 'about' => true, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => false])
 @section('css')
     <style>
 
@@ -6,7 +6,7 @@
 @endsection
 @section('content')
     <section
-        class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7"
+        class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
         style="background-image: url('{{ asset('front/img/home/slider1.png') }}');">
         <div class="container">
             <div class="row mt-5">
@@ -32,8 +32,10 @@
                 <div class="row text-center pb-5">
                     <div class="col-md-9 mx-md-auto">
                         <div class="overflow-hidden mb-3">
-                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary " data-appear-animation="maskUp">
-                                We are <span class="text-color-secondary">AMAAC</span>, Committed to Building a Future of Peace and
+                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary "
+                                data-appear-animation="maskUp">
+                                We are <span class="text-color-secondary">AMAAC</span>, Committed to Building a Future of
+                                Peace and
                                 Understanding
                             </h1>
                         </div>
@@ -150,7 +152,8 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
-                    <h2 class="text-color-dark font-weight-normal text-6 mb-2 text-color-primary ">Our <strong class="font-weight-extra-bold text-color-secondary">
+                    <h2 class="text-color-dark font-weight-normal text-6 mb-2 text-color-primary ">Our <strong
+                            class="font-weight-extra-bold text-color-secondary">
                             Mission</strong></h2>
                     <p class="lead">
                         The mission of the American Muslim dnd Arab Affairs Council
@@ -237,7 +240,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="font-weight-normal text-6 mb-5 text-color-primary ">Upcoming <strong class="font-weight-extra-bold text-color-secondary">
+                    <h2 class="font-weight-normal text-6 mb-5 text-color-primary ">Upcoming <strong
+                            class="font-weight-extra-bold text-color-secondary">
                             Events</strong>
                     </h2>
                 </div>
@@ -247,7 +251,8 @@
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet,
+                                    consectetur</a></h4>
                             <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
@@ -263,7 +268,8 @@
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet,
+                                    consectetur</a></h4>
                             <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
@@ -280,7 +286,8 @@
                     <article class="post post-medium">
                         <div class="post-content">
                             <h4 class="font-weight-semibold mb-1"><a href="blog-post.html"
-                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                    class="text-decoration-none text-color-primary ">Lorem ipsum dolor sit amet,
+                                    consectetur</a></h4>
                             <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent
                                 per conubia nostra, per inceptos himenaeos.</p>
                             <div class="post-meta">
@@ -312,7 +319,8 @@
                 <div class="row text-center pb-5">
                     <div class="col-md-9 mx-md-auto">
                         <div class="overflow-hidden mb-3">
-                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary " data-appear-animation="maskUp">
+                            <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-primary "
+                                data-appear-animation="maskUp">
                                 Our <span class="text-color-secondary">Vision</span>
                             </h1>
                         </div>
@@ -336,7 +344,7 @@
             </div>
         </div>
     </div>
-    <section class="section bg-color-grey section-height-3 border-0 m-0">
+    {{-- <section class="section bg-color-grey section-height-3 border-0 m-0">
         <div class="container">
 
             <div class="row mb-lg-4">
@@ -410,6 +418,92 @@
             </div>
 
 
+        </div>
+    </section> --}}
+    <section class="section section-height-4 mt-0  border-0 bg-primary">
+        <div class="container" bis_skin_checked="1">
+            <div class="row justify-content-center" bis_skin_checked="1">
+                <div class="col-lg-10" bis_skin_checked="1">
+
+                    <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-lg nav-transparent nav-borders rounded-nav mb-0 owl-loaded owl-drag owl-carousel-init"
+                        data-plugin-options="{'items': 1, 'margin': 100, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 100}"
+                        bis_skin_checked="1" style="height: auto;">
+
+
+
+                        <div class="owl-stage-outer " bis_skin_checked="1">
+                            <div class="owl-stage"
+                                style="transform: translate3d(-1652px, 0px, 0px); transition: 0.25s; width: 2678px; padding-left: 100px; padding-right: 100px;"
+                                bis_skin_checked="1">
+                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
+                                    <div class="text-center" bis_skin_checked="1">
+                                        <h2 class="font-weight-semibold text-10 text-color-secondary">Supporting
+                                            Sustainable
+                                            Development</h2>
+                                        <p class="lead lead-2 mb-0 text-color-light">We will work tirelessly to combat
+                                            negative stereotypes and misconceptions about Arabs and Muslims
+                                            in the West, presenting a true image that reflects the cultural
+                                            diversity, rich history, and civilizational contributions of these
+                                            peoples. We will organize public awareness campaigns, produce rich
+                                            media content, and collaborate with educational and media
+                                            institutions to ensure our message reaches the widest possible
+                                            audience.</p>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
+                                    <div class="text-center" bis_skin_checked="1">
+                                        <h2 class="font-weight-semibold text-10 text-color-secondary">Correct
+                                            misconceptions
+                                        </h2>
+                                        <p class="lead lead-2 mb-0 text-color-light">We will launch dialogue initiatives
+                                            that bring together individuals and communities from diverse
+                                            backgrounds. These platforms will provide safe spaces for
+                                            constructive discussion about common issues and challenges.
+                                            Advocating for Justice and Equality: We will serve as a strong voice
+                                            for Muslims and Arabs in the United States and around the world,
+                                            defending their civil and human rights. We will combat
+                                            discrimination and Islamophobia, and provide legal and moral
+                                            support to victims. </p>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
+                                    <div class="text-center" bis_skin_checked="1">
+                                        <h2 class="font-weight-semibold text-10 text-color-secondary"> Promote
+                                            intercultural dialogue
+                                        </h2>
+                                        <p class="lead lead-2 mb-0 text-color-light">We will encourage Arab and
+                                            Muslim communities to actively participate in the political and civic
+                                            processes in their countries of residence, with a focus on building
+                                            promising young leaders capable of effectively representing the
+                                            interests of their communities.</p>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
+                                    <div class="text-center" bis_skin_checked="1">
+                                        <h2 class="font-weight-semibold text-10 text-color-secondary">
+                                            Promoting Civic Engagement
+                                        </h2>
+                                        <p class="lead lead-2 mb-0 text-color-light">We will collaborate with
+                                            local and international organizations to support sustainable
+                                            development projects in Arab and Muslim countries, with a focus on
+                                            education, healthcare, and women and youth empowerment. Our
+                                            role will not simply be to provide assistance, but rather to build
+                                            capacity to enable these communities to achieve self-sufficiency and
+                                            prosperity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav" bis_skin_checked="1">
+                            <button type="button" role="presentation" class="owl-prev text-color-light"></button>
+                            <button type="button" role="presentation"
+                                class="owl-next disabled text-color-light"></button>
+                        </div>
+                        <div class="owl-dots disabled text-color-light" bis_skin_checked="1"></div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 @endsection
