@@ -85,3 +85,10 @@ section.section{
 .accordion.accordion-modern .card:last-of-type{
     border : none;
 }
+.thumb-info {
+    background : var(--primary);
+}
+.thumb-info-caption .thumb-info-caption-text,
+.thumb-info-caption p{
+    color : var(--light);
+}

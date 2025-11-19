@@ -7,7 +7,8 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/slider1.png') }}');">
+        style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}'); background-position: center center;
+        background-size: cover;">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
