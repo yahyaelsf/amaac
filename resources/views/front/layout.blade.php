@@ -61,7 +61,7 @@
 									<div class="header-logo">
 										<a href="{{ route('front.home') }}">
 											<img alt="Porto" width="250" height="80" data-sticky-width="200"
-												data-sticky-height="70" src="{{ asset('front/img/logos/amaac_logo.jpg') }}">
+												data-sticky-height="70" src="{{ asset('front/img/home/amaac_logo-removebg-preview.png') }}">
 										</a>
 									</div>
 								</div>
@@ -153,35 +153,35 @@
 
 			</div>
 
-			<footer id="footer" class="border-0" style="background : white">
+			<footer id="footer" class="border-0" style="background : var(--secondary)">
 				<div class="container py-4">
 					<div class="row justify-content-md-center py-5 mt-3">
 						<div
 							class="col-md-12 col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-							<a href="{{ route('front.home') }}"><img src="{{ asset('front/img/logos/amaac_logo.jpg') }}" alt="Logo" class="img-fluid"
+							<a href="{{ route('front.home') }}"><img src="{{ asset('front/img/home/amaac_logo-removebg-preview.png') }}" alt="Logo" class="img-fluid"
 									style="max-width: 210px;"></a>
 						</div>
 						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-secondary mb-4">Pages</h5>
+							<h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Pages</h5>
 							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="page-services.html" class="link-hover-style-1 text-primary">
+								<li class="mb-1"><a href="page-services.html" class="link-hover-style-1 text-light">
 										About us</a></li>
-								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Our Goals</a></li>
-                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Our Team</a></li>
+								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Our Goals</a></li>
+                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Our Team</a></li>
 
 							</ul>
 						</div>
 						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-secondary mb-4">Links</h5>
+							<h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Links</h5>
 							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Our Work</a></li>
-                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-primary"> Get Invloved</a></li>
-								<li class="mb-1"><a href="contact-us.html" class="link-hover-style-1 text-primary"> Contact Us</a>
+								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Our Work</a></li>
+                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Get Invloved</a></li>
+								<li class="mb-1"><a href="contact-us.html" class="link-hover-style-1 text-light"> Contact Us</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-md-6 col-lg-5 text-center text-lg-start">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-secondary mb-4">Newsletter
+							<h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Newsletter
 							</h5>
 							<div class="alert alert-success d-none" id="newsletterSuccess">
 								<strong>Success!</strong> You've been added to our email list.
@@ -190,17 +190,17 @@
 							<form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST"
 								class="mb-3 mb-md-0">
 								<div class="input-group input-group-rounded">
-									<input class="form-control form-control-sm bg-primary" placeholder="Email Address"
+									<input class="form-control form-control-sm bg-light" placeholder="Email Address"
 										name="newsletterEmail" id="newsletterEmail" type="email">
-									<button class="btn btn-primary text-color-light"
+									<button class="btn btn-light text-color-primary"
 										type="submit"><strong>GO!</strong></button>
 								</div>
 							</form>
 							<p class="mt-3 mb-0 text-center text-lg-start">
-								<i class="fab fa-whatsapp text-color-secondary"></i><span class=" opacity-7 ps-2 text-primary">(800)
+								<i class="fab fa-whatsapp text-color-light"></i><span class=" opacity-7 ps-2 text-light">(800)
 									123-4567</span>
-								<i class="far fa-envelope text-color-secondary ms-4"></i><a href="mailto:mail@example.com"
-									class="opacity-7 ps-2 text-primary">mail@example.com</a>
+								<i class="far fa-envelope text-color-light ms-4"></i><a href="mailto:mail@example.com"
+									class="opacity-7 ps-2 text-light">mail@example.com</a>
 							</p>
 						</div>
 					</div>
