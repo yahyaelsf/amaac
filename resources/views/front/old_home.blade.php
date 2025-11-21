@@ -1,144 +1,139 @@
 @extends('front.layout', ['home' => true, 'about' => false, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => false])
 @section('content')
-   <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
-					data-plugin-options="{'autoplayTimeout': 10000}"
-					data-dynamic-height="['670px','670px','670px','550px','500px']" style="height: 670px;">
-					<div class="owl-stage-outer">
-						<div class="owl-stage">
-							<!-- Carousel Slide 1 -->
-							<div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-7">
-											<div class="d-flex flex-column align-items-center">
-												<h2 class="text-color-secondary font-weight-bold text-13 mb-4 appear-animation"
-													data-appear-animation="blurIn"
-													data-plugin-options="{'minWindowWidth': 0}">
-													AMAAC
+    {{-- <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
+        data-plugin-options="{'autoplayTimeout': 10000}" data-dynamic-height="['670px','670px','670px','550px','500px']"
+        style="height: 670px;">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
+                <!-- Carousel Slide 1 -->
+                {{-- front/img/home/IMG-20251119-WA0028.jpg --}}
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}'); background-size: cover; background-position: center;">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-7">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h2 class="text-color-secondary font-weight-bold text-13 mb-4 appear-animation"
+                                        data-appear-animation="blurIn" data-plugin-options="{'minWindowWidth': 0}">
+                                        AMAAC
 
-												</h2>
-												<p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-4"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">
-													We are dedicated to fostering a vibrant, informed, and empowered
-													American Muslim and Arab community. In a rapidly changing
-													world, we work tirelessly to ensure our voices are heard, our rights
-													are protected, and our contributions to American society are
-													recognized and celebrated. Explore our site to learn more about our
-													mission, the issues we address, and how you can join us in building
-													{{-- a more just and inclusive world.
-													We are a dedicated non-profit organization advocating for the
-													rights,
-													promoting the welfare, through education, civic engagement, and
-													community building, we strive to foster a more inclusive and
-													equitable society for all --}}
-												</p>
-												<div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="5000">
-													<div class="d-flex align-items-center mt-2">
-														<a href="#"
-															class="btn btn-light btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">LEARN
-															MORE About Us</a>
-														<a href="#"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															Our Work <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </h2>
+                                    <p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-4"
+                                        data-plugin-animated-letters
+                                        data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">
+                                        We are dedicated to fostering a vibrant, informed, and empowered
+                                        American Muslim and Arab community. In a rapidly changing
+                                        world, we work tirelessly to ensure our voices are heard, our rights
+                                        are protected, and our contributions to American society are
+                                        recognized and celebrated. Explore our site to learn more about our
+                                        mission, the issues we address, and how you can join us in building
+                                        a more just and inclusive world.
+                                        We are a dedicated non-profit organization advocating for the
+                                        rights,
+                                        promoting the welfare, through education, civic engagement, and
+                                        community building, we strive to foster a more inclusive and
+                                        equitable society for all
+                                    </p>
+                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                        data-appear-animation-delay="5000">
+                                        <div class="d-flex align-items-center mt-2">
+                                            <a href="#"
+                                                class="btn btn-light btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">LEARN
+                                                MORE About Us</a>
+                                            <a href="#" {{-- btn btn-secondary btn-lg text-3 font-weight-semibold px-4 py-3 --}}
+                                                class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+                                                Our Work <i class="fas fa-arrow-right ms-2"></i></a>
 
-													</div>
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Carousel Slide 2 -->
-							<div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-6">
-											<div class="d-flex flex-column align-items-center">
-												<h3 class="position-relative text-color-secondary text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-													data-appear-animation="fadeInDownShorterPlus"
-													data-plugin-options="{'minWindowWidth': 0}">
-													<span
-														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInRightShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-													Building Bridges Between Cultures
-													<span
-														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInLeftShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-												</h3>
-												<h2 class="porto-big-title text-color-secondary font-weight-extra-bold mb-3"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 250, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}">
-													AMAAC</h2>
-												<p class="text-4 text-color-light font-weight-light text-center mb-0"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">
-													Empowering Arab and Muslim communities to engage, lead, and inspire
-													positive change in America
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Slide 2 -->
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}'); background-size: cover; background-position: center;">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h3 class="position-relative text-color-secondary text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+                                        data-appear-animation="fadeInDownShorterPlus"
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                        Building Bridges Between Cultures
+                                        <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                    </h3>
+                                    <h2 class="porto-big-title text-color-secondary font-weight-extra-bold mb-3"
+                                        data-plugin-animated-letters
+                                        data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 250, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}">
+                                        AMAAC</h2>
+                                    <p class="text-4 text-color-light font-weight-light text-center mb-0"
+                                        data-plugin-animated-letters
+                                        data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">
+                                        Empowering Arab and Muslim communities to engage, lead, and inspire
+                                        positive change in America
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-							<!-- Carousel Slide 3 -->
-							<div class="owl-item position-relative overlay overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-7">
-											<div class="d-flex flex-column align-items-center">
-												<h2 class="text-color-secondary font-weight-bold text-13 mb-4 appear-animation"
-													data-appear-animation="blurIn"
-													data-plugin-options="{'minWindowWidth': 0}"> Stronger Community
-												</h2>
-												<p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-4"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">
-													Uniting voices to promote equality, mutual respect, and social
-													harmony.
-												</p>
-												<div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="3300">
-													<div class="d-flex align-items-center mt-2">
-														<a href="#"
-															class="btn btn-light btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
-															Get Involved</a>
-														<a href="#"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															Our Work <i class="fas fa-arrow-right ms-2"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+                <!-- Carousel Slide 3 -->
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}'); background-size: cover; background-position: center;">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-7">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h2 class="text-color-secondary font-weight-bold text-13 mb-4 appear-animation"
+                                        data-appear-animation="blurIn" data-plugin-options="{'minWindowWidth': 0}"> Stronger
+                                        Community
+                                    </h2>
+                                    <p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-4"
+                                        data-plugin-animated-letters
+                                        data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">
+                                        Uniting voices to promote equality, mutual respect, and social
+                                        harmony.
+                                    </p>
+                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                        data-appear-animation-delay="3300">
+                                        <div class="d-flex align-items-center mt-2">
+                                            <a href="#"
+                                                class="btn btn-light btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
+                                                Get Involved</a>
+                                            <a href="#"
+                                                class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+                                                Our Work <i class="fas fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-						</div>
-					</div>
-					<div class="owl-dots mb-5">
-						<button role="button" class="owl-dot active"><span></span></button>
-						<button role="button" class="owl-dot"><span></span></button>
-						<button role="button" class="owl-dot"><span></span></button>
-					</div>
-				</div>
+            </div>
+        </div>
+        <div class="owl-dots mb-5">
+            <button role="button" class="owl-dot active"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
+        </div>
+    </div> --}}
 
     <div class="home-intro mb-0" id="home-intro" style="background-color: #072447;">
         <div class="container">
@@ -310,13 +305,7 @@
                         <div class="flip-back d-flex align-items-center p-5"
                             style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
-                            {{-- <div class="flip-content my-4" bis_skin_checked="1">
-                                <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
-                                <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">LEARN
-                                    MORE</a>
-                            </div> --}}
+
                         </div>
                     </div>
                 </div>
@@ -340,13 +329,7 @@
                         <div class="flip-back d-flex align-items-center p-5"
                             style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0029.jpg') }}); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
-                            {{-- <div class="flip-content my-4" bis_skin_checked="1">
-                                <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
-                                <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">LEARN
-                                    MORE</a>
-                            </div> --}}
+
                         </div>
                     </div>
                 </div>
@@ -371,13 +354,7 @@
                         <div class="flip-back d-flex align-items-center p-5"
                             style="background-image: url('{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}'); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
-                            {{-- <div class="flip-content my-4" bis_skin_checked="1">
-                                <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
-                                <p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
-                                <a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">LEARN
-                                    MORE</a>
-                            </div> --}}
+
                         </div>
                     </div>
                 </div>
@@ -500,7 +477,7 @@
     <section
         class="section section-height-3 section-background section-text-light section-center overlay overlay-show overlay-op-9 overlay-color-primary m-0 appear-animation"
         data-appear-animation="fadeIn"
-        style="background-image: url({{ asset('front/img/bg-corporate-1-1.jpg') }}); background-size: cover; background-position: center;">
+        style="background-image: url(img/bg-corporate-1-1.jpg); background-size: cover; background-position: center;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 appear-animation" data-appear-animation="fadeInUpShorter"
@@ -554,5 +531,4 @@
             </div>
         </div>
     </section>
-
 @endsection

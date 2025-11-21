@@ -83,7 +83,8 @@ li {
 #header .header-body {
 	display: flex;
 	flex-direction: column;
-	background: var(--light);
+	/* background: var(--secondary); */
+    background: #ffbf1f;
 	transition: min-height 0.3s ease;
 	width: 100%;
 	border-top: 3px solid #EDEDED;
@@ -2246,7 +2247,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav.header-nav-links:not(.header-nav-light-text) nav > ul > li > a, #header .header-nav.header-nav-line:not(.header-nav-light-text) nav > ul > li > a {
-		color: #444;
+		color: var(--light);
 	}
 
 	#header .header-nav.header-nav-links.header-nav-light-text nav > ul > li > a, #header .header-nav.header-nav-line.header-nav-light-text nav > ul > li > a {
@@ -4979,7 +4980,7 @@ html[dir="rtl"] #header .tip-light:before {
 	}
 
 	#header .header-nav-main nav > ul > li.dropdown-mega-signin .dropdown-menu li a {
-		color: var(--primary);
+		color: var(--light);
 	}
 
 	#header .header-nav-main nav > ul:not(:hover) > li > a.active {
@@ -5011,28 +5012,28 @@ html[dir="rtl"] #header .tip-light:before {
 		background: var(--primary) !important;
 	}
 
-	#header .header-nav.header-nav-line nav > ul li:hover > a {
-		color: var(--primary);
-	}
+	/* #header .header-nav.header-nav-line nav > ul li:hover > a {
+		color: var(--secondary);
+	} */
 
-	#header .header-nav.header-nav-line nav > ul li:hover > a:before {
-		background: var(--primary);
-	}
+	/* #header .header-nav.header-nav-line nav > ul li:hover > a:before {
+		background: var(--secondary);
+	} */
 
 	#header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active {
 		color: var(--primary);
 	}
 
-	#header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active:before {
-		background: var(--primary);
-	}
+	/* #header .header-nav.header-nav-line nav > ul:not(:hover) li > a.active:before {
+		background: var(--secondary);
+	} */
 
 	#header .header-nav-main.header-nav-main-slide nav > ul > li.open > span > a, #header .header-nav-main.header-nav-main-slide nav > ul > li:hover > span > a {
 		color: var(--primary);
 	}
 
 	#header .header-nav-main.header-nav-main-slide nav > ul:not(:hover) > li > span > a.active {
-		color: var(--primary);
+        color: var(--primary);
 	}
 
 	.side-header #header.side-header .header-nav-main nav > ul > li.dropdown.open > .dropdown-menu,
@@ -5121,7 +5122,9 @@ html[dir="rtl"] #header .tip-light:before {
 		color: var(--primary);
 	}
 
-	#header .header-nav-links .header-nav-main nav > ul:not(:hover) > li.dropdown-full-color.dropdown-primary > a.active {
+	#header .header-nav-links .header-nav-main nav > ul:not(:hover) > li.dropdown-full-color.dropdown-primary > a.active ,
+    #header .header-nav.header-nav-line nav > ul:not(:hover) li > a:hover
+    {
 		color: var(--primary);
 	}
 
@@ -6051,8 +6054,8 @@ section.page-header.custom-product {
 	padding-right: 10px;
 }
 
-/* 
- * Order (Extending to 10) 
+/*
+ * Order (Extending to 10)
  * Bootstrap 5 has until 5 order class
 */
 .order-6 {
@@ -15775,7 +15778,7 @@ html body .rounded-circle {
 	background: var(--dark);
 	border-top: 4px solid var(--dark);
 	font-size: 0.9em;
-	margin-top: 50px;
+	/* / */
 	padding: 0;
 	position: relative;
 	clear: both;

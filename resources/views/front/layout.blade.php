@@ -35,7 +35,8 @@
 		<link rel="stylesheet" href="{{ asset('front/vendor/magnific-popup/magnific-popup.min.css') }}">
 
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="{{ asset('front/css/theme.css') }}">
+		{{-- <link rel="stylesheet" href="{{ asset('front/css/theme.css') }}"> --}}
+        <link rel="stylesheet" href="{{ asset('front/css/theme_old.css') }}">
 		<link rel="stylesheet" href="{{ asset('front/css/theme-elements.css') }}">
 		<link rel="stylesheet" href="{{ asset('front/css/theme-blog.css') }}">
 		<link rel="stylesheet" href="{{ asset('front/css/theme-shop.css') }}">
@@ -161,22 +162,22 @@
 							<a href="{{ route('front.home') }}"><img src="{{ asset('front/img/home/amaac_logo-removebg-preview.png') }}" alt="Logo" class="img-fluid"
 									style="max-width: 210px;"></a>
 						</div>
-						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Pages</h5>
+						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0 mt-3">
+							{{-- <h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Pages</h5> --}}
 							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="page-services.html" class="link-hover-style-1 text-light">
+								<li class="mb-1"><a href="{{ route('front.about') }}" class="link-hover-style-1 text-light">
 										About us</a></li>
-								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Our Goals</a></li>
-                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Our Team</a></li>
+								<li class="mb-1"><a href="{{ route('front.goals') }}" class="link-hover-style-1 text-light"> Our Goals</a></li>
+                                <li class="mb-1"><a href="{{ route('front.team') }}" class="link-hover-style-1 text-light"> Our Team</a></li>
 
 							</ul>
 						</div>
-						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Links</h5>
+						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0 mt-3">
+							{{-- <h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Links</h5> --}}
 							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Our Work</a></li>
-                                <li class="mb-1"><a href="about-us.html" class="link-hover-style-1 text-light"> Get Invloved</a></li>
-								<li class="mb-1"><a href="contact-us.html" class="link-hover-style-1 text-light"> Contact Us</a>
+								<li class="mb-1"><a href="{{ route('front.works') }}" class="link-hover-style-1 text-light"> Our Work</a></li>
+                                <li class="mb-1"><a href="{{ route('front.involved') }}" class="link-hover-style-1 text-light"> Get Invloved</a></li>
+								<li class="mb-1"><a href="{{ route('front.contact') }}" class="link-hover-style-1 text-light"> Contact Us</a>
 								</li>
 							</ul>
 						</div>
