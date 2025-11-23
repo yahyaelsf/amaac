@@ -193,7 +193,7 @@ window.theme.fn = {
 				// Exec Callback Function
 				callback.call($(this));
 
-				// Add data name 
+				// Add data name
 				$(this).data(dataName, true);
 
 				// Unbind event
@@ -213,7 +213,7 @@ window.theme.fn = {
 				// Exec Callback Function
 				callback();
 
-				// Add data name 
+				// Add data name
 				$(this).data(dataName, true);
 
 				// Unbind event
@@ -389,7 +389,7 @@ window.theme.fn = {
 			// Change Active Class
 			$(this).parents('.nav-tabs').find('.active').removeClass('active');
 			$(this).addClass('active').parent().addClass('active');
-		});	
+		});
 
 		if( window.location.hash ) {
 			$(window).on('load', () => {
@@ -624,7 +624,7 @@ window.theme.fn = {
 	* Page Transition
 	*/
 	if( $('body[data-plugin-page-transition]').length ) {
-		
+
 		let link_click = false;
 
 		$(document).on('click', 'a', function(e){
@@ -646,7 +646,7 @@ window.theme.fn = {
 				if( $('html').hasClass('safari') ) {
 					window.location.reload();
 				}
-				
+
 				$('body').removeClass('page-transition-active');
 			}
 		});
@@ -714,7 +714,7 @@ window.theme.fn = {
 		if (typeof gsap !== 'undefined') {
 
 			$('.thumb-info-floating-element-wrapper').on('mouseenter', function({clientX, clientY}) {
-				
+
 				if(!$(this).data('offset')) {
 					$(this).data('offset', 0);
 				}
@@ -1065,7 +1065,7 @@ window.theme.fn = {
 			$( pluginElement ).data( pluginInstance ).destroy();
 
 			setTimeout(() => {
-				theme.fn.execPluginFunction(pluginFunction, $( pluginElement ), pluginOptions);	
+				theme.fn.execPluginFunction(pluginFunction, $( pluginElement ), pluginOptions);
 			}, 1000);
 
 		});
@@ -1091,7 +1091,7 @@ window.theme.fn = {
 				$btn.parent().append( $temp );
 
 				$temp.val( $this.text() );
-					
+
 				$temp[0].select();
 				$temp[0].setSelectionRange(0, 99999);
 
@@ -1172,7 +1172,7 @@ window.theme.fn = {
 			}
 
 			document.body.appendChild(script1);
-			document.body.appendChild(script2);	
+			document.body.appendChild(script2);
 
 		});
 
@@ -1253,7 +1253,7 @@ window.theme.fn = {
 			// - Less process and memory
 			if( self.options.flagClassOnly ) {
 				const delay = self.options.wrapper.attr('data-appear-animation-delay') ? self.options.wrapper.attr('data-appear-animation-delay') : self.options.delay;
-				
+
 				self.options.wrapper.css({
 					'animation-delay': delay + 'ms',
 					'transition-delay': delay + 'ms'
@@ -1282,7 +1282,7 @@ window.theme.fn = {
             const elTopDistance = $el.offset().top;
             const windowTopDistance = $(window).scrollTop();
 
-            // If has appear animation elements inside a SVG. 
+            // If has appear animation elements inside a SVG.
             // Intersection Observer API do not check elements inside SVG's, so we need initialize trough top parent SVG
             if( $el.data('appear-animation-svg') ) {
 				$el.find('[data-appear-animation]').each(function(){
@@ -1329,7 +1329,7 @@ window.theme.fn = {
 
 				$el.css('animation-delay', delay + 'ms');
 				$el.addClass($el.attr('data-appear-animation') + ' appear-animation-visible');
-				
+
 				$el.trigger('animation:show');
 
 			} else {
@@ -1460,7 +1460,7 @@ window.theme.fn = {
 						const timeout = () => {
 							const st = setTimeout(() => {
 								const letter = letters[index];
-								
+
 								self.$el.find('.letters-wrapper').append( '<span class="letter '+ ( self.options.letterClass ? self.options.letterClass + ' ' : '' ) +'">' + letter + '</span>' );
 
 								index++;
@@ -1480,9 +1480,9 @@ window.theme.fn = {
 					setTimeout(() => {
 						for( let i = 0; i < letters.length; i++ ) {
 							const letter = letters[i];
-							
+
 							self.$el.append( '<span class="animated-letters-wrapper ' + self.options.wrapperClass + '"><span class="animated-letters-item letter '+ ( self.options.letterClass ? self.options.letterClass + ' ' : '' ) + self.options.animationName +' animated" style="animation-delay: '+ ( i * self.options.animationSpeed ) +'ms;">' + ( letter == ' ' ? '&nbsp;' : letter ) + '</span></span>' );
-		
+
 						}
 					}, self.options.startDelay);
 				}
@@ -1864,7 +1864,7 @@ window.theme.fn = {
 			if( self.clickFlag ) {
 				self.clickFlag = false;
 				setTimeout(() => {
-					self.clickFlag = true; 
+					self.clickFlag = true;
 				}, 1000);
 			}
 
@@ -1897,7 +1897,7 @@ window.theme.fn = {
 							if( self.options.disableAutoPlayOnClick ) {
 								window.clearInterval(self.autoPlayInterval);
 							}
-							
+
 							self.changeSlide( self.$el.find('.owl-item').eq( parseInt(toIndex) - 1 ) );
 						});
 
@@ -1959,7 +1959,7 @@ window.theme.fn = {
 				    self.$el.find('.owl-item.cloned.active [data-plugin-video-background]').trigger('video.background.initialize');
 
 				}, 500);
-			    
+
 			});
 
 			if( self.options.swipeEvents ) {
@@ -1969,7 +1969,7 @@ window.theme.fn = {
 							case 'right':
 								self.owlPrev();
 							break;
-				
+
 							case 'left':
 								self.owlNext();
 							break;
@@ -2188,7 +2188,7 @@ window.theme.fn = {
 				$el.on('change.owl.carousel', ({namespace, property, relatedTarget}) => {
 					if (namespace && property.name === 'position') {
 					    const target = relatedTarget.relative(property.value, true);
-					    $( $el.data('sync') ).owlCarousel('to', target, 300, true);				        
+					    $( $el.data('sync') ).owlCarousel('to', target, 300, true);
 				  	}
 				});
 			}
@@ -2201,7 +2201,7 @@ window.theme.fn = {
 
 				$el.on('change.owl.carousel', event => {
 				  	$el.find('.owl-item').removeClass('current');
-					
+
 					setTimeout(() => {
 					  	const itemsActive    = $el.find('.owl-item.active'), indexCenter    = Math.floor( ($el.find('.owl-item.active').length - 1) / 2 ), itemCenter     = itemsActive.eq(indexCenter);
 
@@ -2254,7 +2254,7 @@ window.theme.fn = {
 					    $el.find('.owl-item.cloned.active [data-plugin-video-background]').trigger('video.background.initialize');
 
 					}, 10);
-				    
+
 				});
 			}
 
@@ -2702,7 +2702,7 @@ window.theme.fn = {
 
 			$.extend(self.options, {
 				onComplete() {
-					
+
 					if ($el.data('append')) {
 						if( self.options.appendWrapper ) {
 							const appendWrapper = $( self.options.appendWrapper );
@@ -2843,7 +2843,7 @@ window.theme.fn = {
 					case 'small':
 						self.$el.addClass( 'cursor-effect-size-small' );
 						break;
-					
+
 					case 'big':
 						self.$el.addClass( 'cursor-effect-size-big' );
 						break;
@@ -2926,7 +2926,7 @@ window.theme.fn = {
 			});
 
 			$('[data-cursor-effect-hover]').on('mouseleave', function(){
-				
+
 				// Identify Event With Hover Class
 				$cursorOuter.removeClass('cursor-outer-hover');
 				$cursorInner.removeClass('cursor-inner-hover');
@@ -2968,7 +2968,7 @@ window.theme.fn = {
         destroy() {
 			const self = this;
 
-			self.$el.removeClass('hide-mouse-cursor cursor-effect-size-small cursor-effect-size-big cursor-effect-style-square');		
+			self.$el.removeClass('hide-mouse-cursor cursor-effect-size-small cursor-effect-size-big cursor-effect-style-square');
 
 			cancelAnimationFrame( self.loop );
 			cancelAnimationFrame( self.loopInside );
@@ -3048,7 +3048,7 @@ window.theme.fn = {
             const $window = $(window);
             let minus;
 
-            // If has floating elements inside a SVG. 
+            // If has floating elements inside a SVG.
             // Intersection Observer API do not check elements inside SVG's, so we need initialize trough top parent SVG
             if( $el.data('plugin-float-element-svg') ) {
 				$el.find('[data-plugin-float-element]').each(function(){
@@ -3094,11 +3094,11 @@ window.theme.fn = {
 				}
 
 				// First Load
-				self.movement(minus);	
+				self.movement(minus);
 
 				// Scroll
 				$window.on('scroll', () => {
-					self.movement(minus);				   
+					self.movement(minus);
 				});
 
 			}
@@ -3126,7 +3126,7 @@ window.theme.fn = {
 			   		});
 
 		   		}
-		   		
+
 		   	}
 
 		}
@@ -3412,7 +3412,7 @@ window.theme.fn = {
 				.setData()
 				.setOptions(opts)
 				.build();
-				
+
 			return this;
 		}
 
@@ -3439,7 +3439,7 @@ window.theme.fn = {
 					url: self.options.ajaxURL,
 					cache: false,
 					complete({responseText}) {
-					
+
 						setTimeout(() => {
 
 							self.options.wrapper.html(responseText).addClass('show');
@@ -3546,7 +3546,7 @@ window.theme.fn = {
 			self.$el.mousemove(function({clientX, clientY}) {
 
 				const pos = this.getBoundingClientRect();
-				const mx = clientX - pos.left - pos.width/2; 
+				const mx = clientX - pos.left - pos.width/2;
 				const my = clientY - pos.top - pos.height/2;
 
 				this.style.transform = 'translate('+ mx * self.options.magneticMx +'px, '+ my * self.options.magneticMx +'px)';
@@ -3686,7 +3686,7 @@ window.theme.fn = {
 
 			if(fileName.split('.').pop() == 'svg') {
 				const SVGContent = $.get({
-					url: fileName, 
+					url: fileName,
 					success(data, status, {responseText}) {
 						const iconWrapper = self.options.fadeIn ? $('<div class="animated-icon animated fadeIn">'+ responseText +'</div>') : $('<div class="animated-icon animated">'+ responseText +'</div>'), uniqid = 'icon_' + Math.floor(Math.random() * 26) + Date.now();
 
@@ -3699,12 +3699,12 @@ window.theme.fn = {
 						if( $el.attr('width') ) {
 							iconWrapper.find('svg')
 								.attr('width', $el.attr('width'))
-								.attr('height', $el.attr('width'));						
+								.attr('height', $el.attr('width'));
 						}
 
 						if( $el.attr('height') ) {
 							iconWrapper.find('svg')
-								.attr('height', $el.attr('height'));	
+								.attr('height', $el.attr('height'));
 						}
 
 						if( self.options.svgViewBox ) {
@@ -3736,7 +3736,7 @@ window.theme.fn = {
 							// SVG Fill Based
 							if( self.options.animated && !self.options.strokeBased || !self.options.animated && color && !self.options.strokeBased ) {
 								animateStyle = 'stroke-width: 0.1px; fill-opacity: 0; transition: ease fill-opacity 300ms;';
-								
+
 								// Set Style on SVG inside object
 								styleElement.textContent = '#' + uniqid + ' path, #' + uniqid + ' line, #' + uniqid + ' rect, #' + uniqid + ' circle, #' + uniqid + ' polyline { fill: '+ color +'; stroke: '+ color +'; '+ animateStyle + (self.options.svgStyle ? self.options.svgStyle : "") + ' } .finished path { fill-opacity: 1; }';
 								el.appendChild(styleElement);
@@ -3763,7 +3763,7 @@ window.theme.fn = {
 
 						// Animated
 						if( self.options.animated && $(window).width() > 767 ) {
-							
+
 							// First Load
 							if( $el.visible( true ) ) {
 								self.startIconAnimation( icon, $el );
@@ -3779,17 +3779,17 @@ window.theme.fn = {
 							});
 
 						} else {
-							
+
 							$el.css({ opacity: 1 });
 							icon.finish();
-							
+
 							$(window).on('theme.plugin.icon.svg.ready', () => {
 								setTimeout(() => {
 									icon.el.setAttribute('class', 'finished');
 									icon.finish();
 								}, 300);
 							});
-							
+
 						}
 
 						$(window).trigger('icon.rendered');
@@ -3904,7 +3904,7 @@ window.theme.fn = {
 			        		.addClass(self.options.classOut)
 			        		.removeClass(self.options.classIn);
 			        }, {
-			        	viewport: self.options.viewport, 
+			        	viewport: self.options.viewport,
 			            threshold: self.options.threshold,
 						modTop: self.options.modTop,
 						modBottom: self.options.modBottom
@@ -3917,7 +3917,7 @@ window.theme.fn = {
     }
 
     PluginInViewportStyle.defaults = {
-		viewport: window, 
+		viewport: window,
 		threshold: [0],
 		modTop: '-200px',
 		modBottom: '-200px',
@@ -4152,7 +4152,7 @@ window.theme.fn = {
 			if ( !this.$overlay.get(0) ) {
 				this.matchProperties();
 			}
-			
+
 			if( noInheritOptions ) {
 				this.options     = $.extend( true, {}, this.options, options );
 			} else {
@@ -4219,7 +4219,7 @@ window.theme.fn = {
 							this.$overlay = $( loadingOverlayDefaultTemplate ).clone();
 							break;
 					}
-					
+
 					if ( this.options.css ) {
 						this.$overlay.css( this.options.css );
 						this.$overlay.find( '.loader' ).addClass( this.loaderClass );
@@ -4241,7 +4241,7 @@ window.theme.fn = {
 				if( _self.options.isDynamicHideShow ) {
 					setTimeout(() => {
 						_self.progress = 'complete';
-						
+
 						$('.page-loader-progress').text(100);
 
 						if( ['percentageProgress2'].includes(_self.options.effect) ) {
@@ -4316,7 +4316,7 @@ window.theme.fn = {
 		            }, _self.options.progressMinTimeout);
 				});
 			}
-		        
+
 			return this;
 		},
 
@@ -4337,7 +4337,7 @@ window.theme.fn = {
 
 			setTimeout(function() {
 				_self.$wrapper.removeClass( 'loading-overlay-showing' );
-				
+
 				if ( this.position != 'relative' || this.position != 'absolute' || this.position != 'fixed' ) {
 					_self.$wrapper.css({ position: '' });
 				}
@@ -4353,14 +4353,14 @@ window.theme.fn = {
 				if(_self.pageStatus == "complete"){
 		            $('.page-loader-progress').text(100);
 		            setTimeout(() => {
-		                $('.page-loader-progress').addClass('d-none');    
+		                $('.page-loader-progress').addClass('d-none');
 		            }, 700);
 		        }
-		        else{            
+		        else{
 		            if(_self.progress == null){
 		                _self.progress = 1;
 		            }
-		           
+
 		            _self.progress = _self.progress + 1;
 		            if(_self.progress >= 0 && _self.progress <= 30){
 		                _self.animationInterval += 1;
@@ -4395,7 +4395,7 @@ window.theme.fn = {
 		            		width: _self.progress + '%'
 		            	});
 		            }
-		              
+
 					self.loopInside = setTimeout(render, _self.animationInterval);
 		        }
 
@@ -4588,7 +4588,7 @@ window.theme.fn = {
 			});
 
 			self.options.wrapper.waitForImages(() => {
-				self.options.wrapper.isotope(self.options);	
+				self.options.wrapper.isotope(self.options);
 			});
 
 			$(window).on('resize', () => {
@@ -4828,7 +4828,7 @@ window.theme.fn = {
 							const $window = $(window), scrollTop = $window.scrollTop(), elementOffset = self.options.wrapper.offset().top, currentElementOffset = (elementOffset - scrollTop);
 
 						   	const scrollPercent = Math.abs( +( currentElementOffset - $window.height() ) / (self.options.startOffset ? self.options.startOffset : 7) );
-						 	
+
 						 	// Increment progress value according scroll position
 						 	if( scrollPercent <= self.options.cssValueEnd && progress <= self.options.cssValueEnd ) {
 						 		progress = self.options.cssValueStart + scrollPercent;
@@ -4895,7 +4895,7 @@ window.theme.fn = {
 					yPos    = -($window.scrollTop() - (offset.top - 100)) / ((self.options.speed + 2 ));
 					plxPos  = (yPos < 0) ? Math.abs(yPos) : -Math.abs(yPos);
 					rotateY = ( $('html[dir="rtl"]').get(0) ) ? ' rotateY(180deg)' : ''; // RTL
-					
+
 					offset  = self.options.wrapper.offset();
 					yPos    = -($window.scrollTop() - (offset.top - 100)) / ((self.options.speed + 2 ));
 					plxPos  = (yPos < 0) ? Math.abs(yPos) : -Math.abs(yPos);
@@ -5128,7 +5128,7 @@ window.theme.fn = {
 
         build() {
             const self = this;
-			
+
 			// Control the screens size we want to have the plugin working
 			if( $(window).width() < self.options.minWindowWidth  ) {
 				return false;
@@ -5136,7 +5136,7 @@ window.theme.fn = {
 
 			// Check if is single image or wrapper with images inside
             if( self.$el.is('img') ) {
-				
+
 				// Check it's inside a lightbox
 				self.isInsideLightbox = self.$el.closest('.lightbox').length ? true : false;
 
@@ -5144,7 +5144,7 @@ window.theme.fn = {
 				if( self.isInsideLightbox && self.options.lightboxImagesListURL ) {
 					self.options.lightboxImagesListURL.push( self.$el.closest('.lightbox').attr('href') );
 				}
-	
+
 				// Push the current image src to the array
 				self.options.imagesListURL.push( self.$el.attr('src') );
 
@@ -5162,19 +5162,19 @@ window.theme.fn = {
 
 				// Start the recursive timeout
 				setTimeout(() => {
-					self.recursiveTimeout( 
-						self.perImageTag, 
+					self.recursiveTimeout(
+						self.perImageTag,
 						self.options.delay == null ? 3000 : self.options.delay
 					);
 				}, self.options.delay == null ? 300 : self.options.delay / 3);
 
 			} else {
-				
+
 				// Start the recursive timeout
-				setTimeout( self.recursiveTimeout( 
-					self.perWrapper, 
-					self.options.delay ? self.options.delay : getPerWrapperHighDelay(), 
-					false 
+				setTimeout( self.recursiveTimeout(
+					self.perWrapper,
+					self.options.delay ? self.options.delay : getPerWrapperHighDelay(),
+					false
 				), 300);
 
 			}
@@ -5185,7 +5185,7 @@ window.theme.fn = {
 					clearTimeout(self.st);
 				}, self.options.stopAfterFewSeconds);
 			}
-			
+
 			return this;
 
 		}
@@ -5215,7 +5215,7 @@ window.theme.fn = {
 
 			// Remove the entrance animation class and add the out animation class
 			self.$el.removeClass( self.options.animateIn ).addClass( self.options.animateOut );
-			
+
 			// Change the image src and add the class for entrance animation
 			setTimeout( () => {
 				self.$el.attr('src', self.options.imagesListURL[index]).removeClass( self.options.animateOut ).addClass(self.options.animateIn);
@@ -5224,10 +5224,10 @@ window.theme.fn = {
 					self.$el.closest('.lightbox').attr('href', self.options.lightboxImagesListURL[index]);
 				}
 			}, 1000);
-			
+
 			// Save the last index for future checks
 			self.lastIndex = index;
-			
+
 			// Increment the times var
 			self.times++;
 
@@ -5245,7 +5245,7 @@ window.theme.fn = {
 
             $wrapper.find('img').each(function(){
 				const $image = $(this);
-				
+
 				if( $image.data('rimage-delay') && parseInt( $image.data('rimage-delay') ) > delay ) {
 					delay = parseInt( $image.data('rimage-delay') );
 				}
@@ -5263,7 +5263,7 @@ window.theme.fn = {
 			// Find all images inside the element wrapper and push their sources to image list array
 			$wrapper.find('img').each(function(){
 				const $image = $(this);
-				self.options.imagesListURL.push( $image.attr('src') ); 
+				self.options.imagesListURL.push( $image.attr('src') );
 			});
 
 			// Shuffle the images list array (random effect)
@@ -5284,7 +5284,7 @@ window.theme.fn = {
 				}, delay);
 
 			});
-			
+
 			// Increment the times variable
 			self.times++;
 
@@ -5350,7 +5350,7 @@ window.theme.fn = {
         delay: null,
         animateIn: 'fadeIn',
 		animateOut: 'fadeOut',
-		stopAtImageIndex: false, // The value shoudl be the index value of array with images as string. Eg: '2' 
+		stopAtImageIndex: false, // The value shoudl be the index value of array with images as string. Eg: '2'
 		stopAfterFewSeconds: false, // The value should be in mili-seconds. Eg: 10000 = 10 seconds
 		stopAfterXTimes: false,
 		accY: 0
@@ -5430,7 +5430,7 @@ window.theme.fn = {
 			if( $('html').hasClass('safari') ) {
 				backgroundCssValue = '-webkit-linear-gradient(top, rgba(2, 0, 36, 0) 0%, '+ self.options.overlayColor +' 100%)'
 			}
-			
+
 			self.options.wrapper.find('.readmore-overlay').css({
 				background: backgroundCssValue,
 				position: 'absolute',
@@ -5448,7 +5448,7 @@ window.theme.fn = {
 				left: 0,
 				width: '100%',
 				'z-index': 2
-			});	
+			});
 
 			// Button Label
 			self.options.wrapper.find('.readmore-button-wrapper > a').html( self.options.buttonOpenLabel );
@@ -5645,7 +5645,7 @@ window.theme.fn = {
 			if(this.options.sliderLayout == 'fullscreen') {
 				this.options.wrapper.closest('.slider-container').addClass('fullscreen-slider');
 			}
-			
+
 			// Initialize Revolution Slider
 			this.options.wrapper.revolution(this.options);
 
@@ -5820,8 +5820,8 @@ window.theme.fn = {
 	    	enable: false
 	    },
 	    particles: {
-			startSlide: "first", 
-			endSlide: "last", 
+			startSlide: "first",
+			endSlide: "last",
 			zIndex: "1",
 			particles: {
 				number: {value: 80}, color: {value: "#ffffff"},
@@ -5903,7 +5903,7 @@ window.theme.fn = {
 		addOnDistortion: {
 			enable: false
 		}
-		
+
 	};
 
     // expose to scope
@@ -5946,7 +5946,7 @@ window.theme.fn = {
 			this
 				.setData()
 				.setOptions(opts);
-			
+
 			this.build();
 
 			return this;
@@ -5982,7 +5982,7 @@ window.theme.fn = {
 
 				// Default Root Margin
 				let rootMargin = '-20% 0px -79.9% 0px';
-				
+
 				// Spy Offset
 				if( $( sectionIDs[i] ).data('spy-offset') ) {
 					const rootMarginOffset = $( sectionIDs[i] ).data('spy-offset'), isNegativeOffset = parseInt( rootMarginOffset ) < 0 ? true : false;
@@ -6009,7 +6009,7 @@ window.theme.fn = {
 										newValue = Math.abs(valueToInt) - rootMarginOffset;
 									}
 									break;
-							
+
 							}
 
                             if( isNegativeOffset ) {
@@ -6036,10 +6036,10 @@ window.theme.fn = {
                               $( target ).find('.nav > li a').removeClass('active');
                               $( target ).find('.nav > li a[href="#'+ $section[0].id +'"]').addClass('active');
                           }
-                          
+
                       };
 
-				this.scrollSpyIntObs( selector, callback, { 
+				this.scrollSpyIntObs( selector, callback, {
 					rootMargin,
 					threshold: 0
 				}, true, i, true);
@@ -6075,7 +6075,7 @@ window.theme.fn = {
 
 						// Unobserve
 						if( !alwaysObserve ) {
-							observer.unobserve(entry.target);   
+							observer.unobserve(entry.target);
 						}
 
 					} else {
@@ -6090,7 +6090,7 @@ window.theme.fn = {
 					}
                 }
             }, intersectionObserverOptions);
-			
+
 			$( $el ).each(function(){
 				observer.observe( $(this)[0] );
 			});
@@ -6414,7 +6414,7 @@ window.theme.fn = {
 
 	  		// Add active class to the first section on page load
 	  		$('.section-wrapper').first().addClass('active');
-			
+
 	        let flag = false, scrollableFlag = false, touchDirection = '', touchstartY = 0, touchendY = 0;
 
 	        $(window).on('touchstart', ({changedTouches}) => {
@@ -6446,7 +6446,7 @@ window.theme.fn = {
 
 		    			index++;
 		    		});
-		    		
+
 			    });
 
 			    $(window).on('section.scroll.mobile.change.header.color', ({currentSection}) => {
@@ -6455,7 +6455,7 @@ window.theme.fn = {
 			    	}
 
 			    	const $currentSection = currentSection, headerColor     = $currentSection.data('section-scroll-header-color');
-								    	
+
 			    	$('#header .header-nav').removeClass('header-nav-light-text header-nav-dark-text').addClass('header-nav-' + headerColor + '-text');
 			    	$('#header .header-nav-features').removeClass('header-nav-features-dark header-nav-features-light').addClass('header-nav-features-' + headerColor);
 			    	$('#header .header-social-icons').removeClass('social-icons-icon-dark social-icons-icon-light').addClass('social-icons-icon-' + headerColor);
@@ -6495,7 +6495,7 @@ window.theme.fn = {
                 const wheelDirection = originalEvent.wheelDelta == undefined ? originalEvent.deltaY > 0 : originalEvent.wheelDelta < 0;
                 if( $(window).width() < 992 && $('html').hasClass('touch') ) {
 		        	touchendY = event.changedTouches[0].screenY;
-	        		
+
 				    if( touchendY <= touchstartY ) {
 				    	touchDirection = 'up';
 				    }
@@ -6759,7 +6759,7 @@ window.theme.fn = {
 
 			$('.section-scroll').each(function(){
 				if( $(this).outerHeight() < ( $(window).height() + 3 ) ) {
-					$(this).css({ height: '100vh' });		
+					$(this).css({ height: '100vh' });
 				} else {
 					$(this).addClass('section-scroll-scrollable');
 				}
@@ -6909,7 +6909,7 @@ window.theme.fn = {
 
 			$(window).on('section.scroll.change.header.color', () => {
 		    	const headerColor = $('.section-wrapper').eq( self.getCurrentIndex() ).find('.section-scroll').data('section-scroll-header-color');
-		    	
+
 		    	$('#header .header-nav').removeClass('header-nav-light-text header-nav-dark-text').addClass('header-nav-' + headerColor + '-text');
 		    	$('#header .header-nav-features').removeClass('header-nav-features-dark header-nav-features-light').addClass('header-nav-features-' + headerColor);
 		    	$('#header .header-social-icons').removeClass('social-icons-icon-dark social-icons-icon-light').addClass('social-icons-icon-' + headerColor);
@@ -7129,13 +7129,13 @@ window.theme.fn = {
             self.$destination.attr('data-filter', filter).isotope({
 				filter: currentFilter
 			}).one('arrangeComplete', (event, filteredItems) => {
-				
+
 				if (self.options.useHash) {
 					if (window.location.hash != '' || self.options.filter.replace('.', '') != '*') {
 						window.location.hash = self.options.filter.replace('.', '');
 					}
 				}
-				
+
 				$(window).trigger('scroll');
 
 			}).trigger('filtered');
@@ -7386,7 +7386,7 @@ window.theme.fn = {
 			}
 
 			const self = this, $window = $(window);
-			
+
 			self.options.wrapper.pin(self.options);
 
 			if( self.options.wrapper.hasClass('sticky-wrapper-transparent') ) {
@@ -7411,7 +7411,7 @@ window.theme.fn = {
 					}
 				}
 			}
-			
+
 			return this;
 		}
 
@@ -7424,8 +7424,8 @@ window.theme.fn = {
             let stickyDeactivateFlag = false;
 
             $window.on('scroll sticky.effect.active', () => {
-				if( self.options.wrapper.hasClass( classToCheck ) ) {		
-					if( stickyActivateFlag ) {			
+				if( self.options.wrapper.hasClass( classToCheck ) ) {
+					if( stickyActivateFlag ) {
 						if( $logo.attr('data-change-src') ) {
 							self.changeLogoSrc(true);
 						}
@@ -7433,8 +7433,8 @@ window.theme.fn = {
 						stickyActivateFlag = false;
 						stickyDeactivateFlag = true;
 					}
-				} else {	
-					if( stickyDeactivateFlag ) {				
+				} else {
+					if( stickyDeactivateFlag ) {
 						if( $logo.attr('data-change-src') ) {
 							self.changeLogoSrc(false);
 						}
@@ -7456,12 +7456,12 @@ window.theme.fn = {
 				}
 
 				$window.on('scroll', () => {
-					if( self.options.stickyStartEffectAt < $window.scrollTop() ) {	
+					if( self.options.stickyStartEffectAt < $window.scrollTop() ) {
 						self.options.wrapper.addClass('sticky-effect-active');
 						isGoingUp = true;
 
 						$window.trigger('sticky.effect.active');
-					} else {	
+					} else {
 						if( isGoingUp ) {
 							self.options.wrapper.find('.sticky-body').addClass('position-fixed');
 							isGoingUp = false;
@@ -7520,7 +7520,7 @@ window.theme.fn = {
 			} else {
 				return new PluginSticky($this, opts);
 			}
-			
+
 		});
 	}
 })).apply(this, [ window.theme, jQuery ]);
@@ -8080,7 +8080,7 @@ window.theme.fn = {
 
                 // Side Header / Side Header Hamburguer Sidebar (Reverse Dropdown)
                 if($html.hasClass('side-header') || $html.hasClass('side-header-hamburguer-sidebar')) {
-					
+
 					// Side Header Right / Side Header Hamburguer Sidebar Right
 					if($html.hasClass('side-header-right') || $html.hasClass('side-header-hamburguer-sidebar-right')) {
 						if(!$html.hasClass('side-header-right-no-reverse')) {
@@ -8089,7 +8089,7 @@ window.theme.fn = {
 					}
 
 				} else {
-					
+
 					// Reverse
 					let checkReverseFlag = false;
 					self.checkReverse = () => {
@@ -8154,7 +8154,7 @@ window.theme.fn = {
 								divisor = $(document).height() / $(window).height();
 
 							    self.$menuFloating.find('.header-column > .header-row').css({
-							    	transform : 'translateY( calc('+ scrollPercent +'vh - '+ st / divisor +'px) )' 
+							    	transform : 'translateY( calc('+ scrollPercent +'vh - '+ st / divisor +'px) )'
 							    });
 							});
                         }
@@ -8188,7 +8188,7 @@ window.theme.fn = {
 										overflow: 'visible',
 										'overflow-y': 'visible'
 									});
-									
+
 									if( nextMenuHeightDiff > 0 ) {
 										nextMenu.css({
 											overflow: 'hidden',
@@ -8227,7 +8227,7 @@ window.theme.fn = {
 					};
 
 					$(window).trigger('resize');
-					
+
 					if( $(window).width() > 991 ) {
 						slideNavigation.build();
 					}
@@ -8250,12 +8250,12 @@ window.theme.fn = {
                 if( $(window).width() > 991 ) {
 					let focusFlag = false;
 					$header.find('.header-nav-main nav > ul > li > a').on('focus', function(){
-						
+
 						if( $(window).width() > 991 ) {
 							if( !focusFlag ) {
 								focusFlag = true;
 								$(this).trigger('blur');
-								
+
 								self.focusMenuWithChildren();
 							}
 						}
@@ -8326,7 +8326,7 @@ window.theme.fn = {
 						.append('<i class="fas fa-chevron-down fa-chevron-right"></i>');
 				} else {
 					$header.find('.dropdown-toggle, .dropdown-submenu > a')
-						.append('<i class="fas fa-chevron-down"></i>');
+						.append('');
 				}
 
                 $header.find('.dropdown-toggle[href="#"], .dropdown-submenu a[href="#"], .dropdown-toggle[href!="#"] .fa-chevron-down, .dropdown-submenu a[href!="#"] .fa-chevron-down').on('click', function(e) {
@@ -8498,7 +8498,7 @@ window.theme.fn = {
 					if( $window.width() < 992 && $header.hasClass('header-effect-shrink') ) {
 						if( $('.header-btn-collapse-nav').attr('aria-expanded') == 'true' ) {
 							$('.header-body').animate({
-						 		height: ( $('.header-nav-main nav').outerHeight(true) + theme.StickyHeader.options.stickyHeaderContainerHeight ) + ( ($('.header-nav-bar').length) ? $('.header-nav-bar').outerHeight() : 0 ) 
+						 		height: ( $('.header-nav-main nav').outerHeight(true) + theme.StickyHeader.options.stickyHeaderContainerHeight ) + ( ($('.header-nav-bar').length) ? $('.header-nav-bar').outerHeight() : 0 )
 						 	});
 						}
 					}
@@ -8514,12 +8514,12 @@ window.theme.fn = {
 					}
 				});
 
-                // Remove Open Class on Resize		
+                // Remove Open Class on Resize
                 $window.on('resize.removeOpen', ({from}) => {
 					if( from == 'header-nav-click-to-open' ) {
 						return;
 					}
-					
+
 					setTimeout(() => {
 						if( $window.width() > 991 ) {
 							$header.find('.dropdown.open').removeClass('open');
@@ -8531,7 +8531,7 @@ window.theme.fn = {
                 $(document).ready(() => {
 					if( $window.width() > 991 ) {
 						let flag = false;
-						
+
 						$window.on('resize', ({from}) => {
 							if( from == 'header-nav-click-to-open' ) {
 								return;
@@ -8630,7 +8630,7 @@ window.theme.fn = {
 											// Close Side Header
 											$hamburguerSideHeader.addClass('side-header-hide');
 											$html.addClass('side-header-hide');
-											
+
 											$window.trigger('resize');
 
 											self.scrollToTarget(target, offset);
@@ -8649,14 +8649,14 @@ window.theme.fn = {
 														} else {
 															$clickTarget.trigger('click');
 														}
-														
+
 													}, clickDelay);
 												}
 
 											}
 
 										}, delay);
-										
+
 									}
 
 									return;
@@ -8720,7 +8720,7 @@ window.theme.fn = {
 							$('html').toggleClass('side-panel-open');
 						}, delay);
 
-						$(this).data('is-active', true);						
+						$(this).data('is-active', true);
 					});
 
 					$(document).on('click', ({target}) => {
@@ -9010,7 +9010,7 @@ window.theme.fn = {
 			initialize($wrapper, opts) {
 				if (initialized) {
 					return this;
-				}				
+				}
 
 				initialized = true;
 				this.$wrapper = ($wrapper || this.defaults.wrapper);
@@ -9083,7 +9083,7 @@ window.theme.fn = {
 								}
 						    }, 0);
 						});
-					}					
+					}
 				}
 
                 // Set Start At
@@ -9116,7 +9116,7 @@ window.theme.fn = {
 					}
 
 					if( self.options.stickyEffect == 'shrink' ) {
-						
+
 						// Prevent wrong visualization of header when reload on middle of page
 						$(document).ready(() => {
 							if( $window.scrollTop() >= self.options.stickyStartAt ) {
@@ -9187,7 +9187,7 @@ window.theme.fn = {
 
 					// Scroll Up
 					if (self.options.stickyScrollUp) {
-						
+
 					    // Get the new Value
 					    self.options.stickyScrollNewValue = window.pageYOffset;
 
@@ -9312,7 +9312,7 @@ window.theme.fn = {
 
 							if( $window.scrollTop() > $('.body').offset().top ) {
 								// Set Header Body Position Fixed
-								self.options.headerBody.css('position','fixed');								
+								self.options.headerBody.css('position','fixed');
 							}
 
 						} else {
@@ -9381,7 +9381,7 @@ window.theme.fn = {
 
 					self.changeLogo = activate => {
 						if(activate) {
-							
+
 							$logo.css({
 								'top': logoSmallTop,
 								'width': logoSmallWidth,
@@ -9389,7 +9389,7 @@ window.theme.fn = {
 							});
 
 						} else {
-							
+
 							$logo.css({
 								'top': 0,
 								'width': logoWidth,
@@ -9490,7 +9490,7 @@ window.theme.fn = {
 							self.options.headerBody.css({
 								'position' : 'fixed',
 								'top' : 0
-							});								
+							});
 						} else {
 							self.options.headerBody.css({
 								'position' : 'absolute',

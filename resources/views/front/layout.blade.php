@@ -14,7 +14,7 @@
 		<meta name="description" content="AMAAC - American Muslim and Arab Affairs Council ">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="{{ asset('front/img/logos/amaac_logo.jpg') }}" type="image/x-icon" />
+		<link rel="shortcut icon" href="{{ asset('front/img/home/amaac_logo-removebg-preview_cut.png') }}" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="{{ asset('front/img/apple-touch-icon.png') }}">
 
 		<!-- Mobile Metas -->
@@ -53,7 +53,7 @@
 	<body data-plugin-page-transition>
 		<div class="body">
 			<header id="header" class="header-effect-shrink"
-				data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 90}">
 				<div class="header-body">
 					<div class="header-container container">
 						<div class="header-row">
@@ -75,7 +75,7 @@
 											class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse ">
 												<ul class="nav nav-pills " id="mainNav">
-													<li class="dropdown">
+													<li>
 														<a class="dropdown-item dropdown-toggle   {{ $home ? 'active' : '' }}"
 															href="{{ route('front.home') }}">
 															Home
@@ -88,31 +88,31 @@
 														</a>
 
 													</li>
-													<li class="dropdown">
+													<li>
 														<a class="dropdown-item dropdown-toggle {{ $goals ? 'active' : '' }}" href="{{ route('front.goals') }}">
 															Our goals
 														</a>
 
 													</li>
-													<li class="dropdown">
+													<li>
 														<a class="dropdown-item dropdown-toggle {{ $team ? 'active' : '' }}" href="{{ route('front.team') }}">
 															Our Team
 														</a>
 
 													</li>
-													<li class="dropdown">
+													<li>
 														<a class="dropdown-item dropdown-toggle {{ $work ? 'active' : '' }}" href="{{ route('front.works') }}">
 															Our Work
 														</a>
 
 													</li>
-													<li class="dropdown">
+													<li>
 														<a class="dropdown-item dropdown-toggle {{ $involved ? 'active' : '' }}" href="{{ route('front.involved') }}">
 															Get Involved
 														</a>
 
 													</li>
-													<li class="dropdown">
+													<li>
 														<a class="dropdown-item dropdown-toggle {{ $contact ? 'active' : '' }}" href="{{ route('front.contact') }}">
 															Contact Us
 														</a>
@@ -155,67 +155,55 @@
 			</div>
 
 			<footer id="footer" class="border-0" style="background : var(--secondary)">
-				<div class="container py-4">
-					<div class="row justify-content-md-center py-5 mt-3">
-						<div
-							class="col-md-12 col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-							<a href="{{ route('front.home') }}"><img src="{{ asset('front/img/home/amaac_logo-removebg-preview.png') }}" alt="Logo" class="img-fluid"
-									style="max-width: 210px;"></a>
-						</div>
-						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0 mt-3">
-							{{-- <h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Pages</h5> --}}
-							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="{{ route('front.about') }}" class="link-hover-style-1 text-light">
-										About us</a></li>
-								<li class="mb-1"><a href="{{ route('front.goals') }}" class="link-hover-style-1 text-light"> Our Goals</a></li>
-                                <li class="mb-1"><a href="{{ route('front.team') }}" class="link-hover-style-1 text-light"> Our Team</a></li>
+    <div class="container">
 
-							</ul>
-						</div>
-						<div class="col-md-6 col-lg-2 text-center text-lg-start mb-5 mb-lg-0 mt-3">
-							{{-- <h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Links</h5> --}}
-							<ul class="list list-unstyled">
-								<li class="mb-1"><a href="{{ route('front.works') }}" class="link-hover-style-1 text-light"> Our Work</a></li>
-                                <li class="mb-1"><a href="{{ route('front.involved') }}" class="link-hover-style-1 text-light"> Get Invloved</a></li>
-								<li class="mb-1"><a href="{{ route('front.contact') }}" class="link-hover-style-1 text-light"> Contact Us</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-6 col-lg-5 text-center text-lg-start">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-light mb-4">Newsletter
-							</h5>
-							<div class="alert alert-success d-none" id="newsletterSuccess">
-								<strong>Success!</strong> You've been added to our email list.
-							</div>
-							<div class="alert alert-danger d-none" id="newsletterError"></div>
-							<form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST"
-								class="mb-3 mb-md-0">
-								<div class="input-group input-group-rounded">
-									<input class="form-control form-control-sm bg-light" placeholder="Email Address"
-										name="newsletterEmail" id="newsletterEmail" type="email">
-									<button class="btn btn-light text-color-primary"
-										type="submit"><strong>GO!</strong></button>
-								</div>
-							</form>
-							<p class="mt-3 mb-0 text-center text-lg-start">
-								<i class="fab fa-whatsapp text-color-light"></i><span class=" opacity-7 ps-2 text-light">(800)
-									123-4567</span>
-								<i class="far fa-envelope text-color-light ms-4"></i><a href="mailto:mail@example.com"
-									class="opacity-7 ps-2 text-light">mail@example.com</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="footer-copyright footer-copyright-style-2 bg-transparent footer-top-light-border">
-					<div class="container py-2">
-						<div class="row py-4">
-							<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0 ">
-								<p class="text-secondary">© Copyright 2025. All Rights Reserved.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+        <div class="row py-5 ">
+            <div class="col-md-5 mb-4 mb-lg-0 text-center text-md-start">
+                <a href="index.html" class="logo pe-0 pe-lg-3">
+                    <img alt="Porto Website Template" src="{{ asset('front/img/home/amaac_logo-removebg-preview.png') }}" class="mb-4 mt-1" height="80">
+                </a>
+                <p class="mt-2 mb-2 text-color-primary">We are a leading organization committed to promoting mutual understanding between the United States and the Arab and Islamic world. We work to defend rights, support sustainable development and advance progress, growth and prosperity globally...</p>
+            </div>
+
+            <div class="col-sm-4 col-md-3 text-center text-md-start">
+                <h5 class="text-3 mb-3 mt-4 mt-sm-0 text-color-primary">USEFUL LINKS</h5>
+                <ul class="list list-icons list-icons-sm text-color-primary d-inline-block d-md-block">
+                    <li><i class="fas fa-angle-right"></i><a href="{{ route('front.about') }}" class="link-hover-style-1 ms-1 text-color-primary"> About Us</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="{{ route('front.goals') }}" class="link-hover-style-1 ms-1 text-color-primary"> Our Goals</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="{{ route('front.team') }}" class="link-hover-style-1 ms-1 text-color-primary"> Our Team</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="{{ route('front.works') }}" class="link-hover-style-1 ms-1 text-color-primary"> Our Work</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="{{ route('front.involved') }}" class="link-hover-style-1 ms-1 text-color-primary"> Get Involved</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="{{ route('front.contact') }}" class="link-hover-style-1 ms-1 text-color-primary"> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-8 col-md-4 mb-4 mb-lg-0 text-center text-md-start">
+                <h5 class="text-3 mb-3 text-color-primary">RECENT POSTS</h5>
+                <div class="row lightbox mt-2 mx-0 justify-content-center justify-content-md-start"
+                     data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
+
+                    <div class="col-4 col-md-6 pe-2 ps-0 mb-2">
+                        <div class="image-gallery-item">
+                            <a href="{{ asset('front/img/home/IMG-20251119-WA0022.jpg') }}" class="lightbox-portfolio image-zoom">
+                                <img src="{{ asset('front/img/home/IMG-20251119-WA0022.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-md-6 pe-2 ps-0 mb-2">
+                        <div class="image-gallery-item">
+                            <a href="{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}" class="lightbox-portfolio image-zoom">
+                                <img src="{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 		</div>
 
 		<!-- Vendor -->

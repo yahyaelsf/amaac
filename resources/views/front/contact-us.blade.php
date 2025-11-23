@@ -12,16 +12,17 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-9 font-weight-bold text-color-secondary "> Contact Us </h1>
-                    <span class="sub-title text-color-light">Connect with the American Muslim and Arab Affairs
-                        Council. </span>
+                    <h1 class="text-9 font-weight-bold text-color-secondary "> Connect with the American Muslim and Arab
+                        Affairs
+                        Council. </h1>
+                    <span class="sub-title text-color-light"> </span>
                 </div>
-                <div class="col-md-12 align-self-center order-1">
+                {{-- <div class="col-md-12 align-self-center order-1">
                     <ul class="breadcrumb breadcrumb-light d-block text-center">
                         <li><a href={{ url('/') }}">Home</a></li>
                         <li class="active">Contact Us </li>
                     </ul>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -61,7 +62,8 @@
                             <div class="form-group col" bis_skin_checked="1">
                                 <label class="form-label mb-1 text-2">Subject</label>
                                 <input type="text" value="" data-msg-required="Please enter the subject."
-                                    maxlength="100" class="form-control text-3 h-auto py-2 text-color-" name="subject" required="">
+                                    maxlength="100" class="form-control text-3 h-auto py-2 text-color-" name="subject"
+                                    required="">
                             </div>
                         </div>
                         <div class="row text-color-light" bis_skin_checked="1">
@@ -81,38 +83,68 @@
 
                 </div>
                 <div class="col-lg-6" bis_skin_checked="1">
+                    <div class="mt-5">
+                        <h4 class="font-weight-normal line-height-1 mb-5 text-color-secondary">Our <strong
+                                class="font-weight-extra-bold">Location</strong></h4>
 
-                    <div class="appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn"
-                        data-appear-animation-delay="800" bis_skin_checked="1" style="animation-delay: 800ms;">
+                        <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+                        <div id="googlemaps" class="google-map small" style="position: relative; overflow: hidden;">
+                            <div
+                                style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                <div class="gm-err-container">
+                                    <div class="gm-err-content">
+                                        <div class="gm-err-icon"><iframe
+                                                src="https://www.google.com/maps?q=New+York&output=embed" width="100%"
+                                                height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                                            </iframe></div>
+                                        <div class="gm-err-title">Oops! Something went wrong.</div>
+                                        <div class="gm-err-message">This page didn't load Google Maps correctly. See the
+                                            JavaScript console for technical details.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="appear-animation animated fadeIn appear-animation-visible mt-3"
+                        data-appear-animation="fadeIn" data-appear-animation-delay="800" bis_skin_checked="1"
+                        style="animation-delay: 800ms;">
                         <h4 class="mt-2 mb-1 text-color-light">Our <strong class="text-color-secondary">Office</strong>
                         </h4>
                         <ul class="list list-icons list-icons-style-2 mt-2">
-                            <li class="text-color-light-300"><i class="fas fa-map-marker-alt top-6 text-color-primary bg-color-light"></i> <strong
-                                    class="text-dark text-color-light">Address:</strong> Melbourne, 121 King St, Australia
+                            <li class="text-color-light-300"><i
+                                    class="fas fa-map-marker-alt top-6 text-color-primary bg-color-light"></i> <strong
+                                    class="text-dark text-color-light">Address:</strong> 1775 Eye Street NW STE 1150
+                                Washington, D.C.
                             </li>
-                            <li class="text-color-light-300" ><i class="fas fa-phone top-6 text-color-primary bg-color-light"></i> <strong class="text-light">Phone:</strong> (123) 456-789
+                            <li class="text-color-light-300"><i
+                                    class="fas fa-phone top-6 text-color-primary bg-color-light"></i> <strong
+                                    class="text-light">Phone:</strong> +1 312-622-6666
                             </li>
-                            <li><i class="fas fa-envelope top-6 text-color-primary bg-color-light"></i> <strong class="text-light">Email:</strong> <a class="text-color-light-300"
-                                    href="mailto:mail@example.com">mail@example.com</a></li>
+                            <li><i class="fas fa-envelope top-6 text-color-primary bg-color-light"></i> <strong
+                                    class="text-light">Email:</strong> <a class="text-color-light-300"
+                                    href="mailto:mail@example.com">info@ammac.com</a></li>
                         </ul>
                     </div>
-
+                    {{--
                     <div class="appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn"
                         data-appear-animation-delay="950" bis_skin_checked="1" style="animation-delay: 950ms;">
                         <h4 class="pt-5 text-color-light">Business <strong class="text-color-secondary">Hours</strong>
                         </h4>
                         <ul class="list list-icons list-dark mt-2">
-                            <li class="text-color-light-300"><i class="far fa-clock top-6 text-color-light"></i> Monday - Friday - 9am to 5pm</li>
-                            <li class="text-color-light-300"><i class="far fa-clock top-6 text-color-light"></i> Saturday - 9am to 2pm</li>
-                            <li class="text-color-light-300"><i class="far fa-clock top-6 text-color-light"></i> Sunday - Closed</li>
+                            <li class="text-color-light-300"><i class="far fa-clock top-6 text-color-light"></i> Monday -
+                                Friday - 9am to 5pm</li>
+                            <li class="text-color-light-300"><i class="far fa-clock top-6 text-color-light"></i> Saturday
+                                - 9am to 2pm</li>
+                            <li class="text-color-light-300"><i class="far fa-clock top-6 text-color-light"></i> Sunday -
+                                Closed</li>
                         </ul>
-                    </div>
+                    </div> --}}
 
                     <h4 class="pt-5 text-color-light">Get in <strong class="text-color-secondary">Touch</strong></h4>
-                    <p class="lead mb-0 text-4 text-color-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo
-                        at
-                        velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit
-                        amet, consectetur adipiscing elit.</p>
+                    <p class="lead mb-0 text-4 text-color-light">AMAAC is here to listen and respond. Whether you are a
+                        community member in need of support, a journalist seeking information, or an organization exploring
+                        partnership, we invite you to reach out. We do our best to respond to all messages in a timely
+                        manner.</p>
 
                 </div>
 
