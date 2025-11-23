@@ -19,6 +19,32 @@
                 line-height: 1.2 !important;
             }
         }
+
+        .carouser-last .owl-nav button.owl-prev,
+        .carouser-last .owl-nav button.owl-next,
+        .carouser-last.nav-lg.rounded-nav .owl-nav button.owl-next:before,
+        .carouser-last.nav-lg.rounded-nav .owl-nav button.owl-prev:before {
+            color: var(--secondary) !important;
+            /* غيّر الكود هنا إلى لونك السكندري إذا مختلف */
+            border-color: var(--secondary) !important;
+            /* إذا تريد إطار الزر */
+        }
+        .carouser-last.nav-borders .owl-nav button[class*="owl-"]{
+                border-color: var(--light) !important;
+        }
+        /* ألوان النقاط */
+        .carouser-last .owl-dots .owl-dot span {
+            background-color: var(--light) !important;
+            /* لون النقاط */
+        }
+
+        /* عند hover على النقاط أو الأزرار */
+        .carouser-last .owl-nav button.owl-prev:hover,
+        .carouser-last .owl-nav button.owl-next:hover,
+        .carouser-last .owl-dots .owl-dot.active span {
+            background-color: var(--secondary) !important;
+            /* اللون عند التفاعل */
+        }
     </style>
 @endsection
 @section('content')
@@ -314,8 +340,8 @@
             <div class="row justify-content-center" bis_skin_checked="1">
                 <div class="col-lg-10" bis_skin_checked="1">
 
-                    <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-lg nav-transparent nav-borders rounded-nav mb-0 owl-loaded owl-drag owl-carousel-init"
-                        data-plugin-options="{'items': 1, 'margin': 100, 'loop': false, 'nav': true, 'dots': true, 'stagePadding': 100}"
+                    <div class="owl-carousel owl-theme carouser-last stage-margin stage-margin-lg nav-lg nav-transparent nav-borders rounded-nav mb-0 owl-loaded owl-drag owl-carousel-init"
+                        data-plugin-options="{'items': 1, 'margin': 100, 'loop': false, 'nav': true, 'dots': true,  'autoplay': true, 'stagePadding': 100}"
                         bis_skin_checked="1" style="height: auto;">
 
 
@@ -383,12 +409,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-nav" bis_skin_checked="1">
-                            <button type="button" role="presentation" class="owl-prev text-color-light"></button>
-                            <button type="button" role="presentation"
-                                class="owl-next disabled text-color-light"></button>
-                        </div>
-                        <div class="owl-dots disabled text-color-light" bis_skin_checked="1"></div>
+
                     </div>
 
                 </div>
