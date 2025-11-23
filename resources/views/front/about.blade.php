@@ -8,12 +8,12 @@
         @media (max-width: 575px) {
 
             /* إخفاء كل الفقرات داخل الـ Owl Carousel */
-            .owl-carousel .text-center p {
+            .carouser-last .text-center p {
                 display: none !important;
             }
 
             /* تصغير حجم خط العناوين */
-            .owl-carousel .text-center h2 {
+            .carouser-last .text-center h2 {
                 font-size: 1.5rem !important;
                 /* يمكنك تغييره حسب الحاجة */
                 line-height: 1.2 !important;
@@ -29,13 +29,19 @@
             border-color: var(--secondary) !important;
             /* إذا تريد إطار الزر */
         }
-        .carouser-last.nav-borders .owl-nav button[class*="owl-"]{
-                border-color: var(--light) !important;
+
+        .carouser-last.nav-borders .owl-nav button[class*="owl-"] {
+            border-color: var(--light) !important;
         }
+
         /* ألوان النقاط */
         .carouser-last .owl-dots .owl-dot span {
             background-color: var(--light) !important;
             /* لون النقاط */
+        }
+
+        .carouser-last .text-center p {
+            color: var(--secondary) !important;
         }
 
         /* عند hover على النقاط أو الأزرار */
