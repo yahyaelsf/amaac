@@ -5,56 +5,18 @@
             height: 150px;
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 575px) {
 
-            .goal-carousel h2,
-            .owl-carousel h2 {
-                font-size: 22px !important;
-                line-height: 1.3 !important;
-                margin-bottom: 10px;
+            /* إخفاء كل الفقرات داخل الـ Owl Carousel */
+            .owl-carousel .text-center p {
+                display: none !important;
             }
 
-            .goal-carousel p,
-            .owl-carousel p {
-                font-size: 14px !important;
-                line-height: 1.6 !important;
-                padding: 0 10px;
-            }
-
-            /* تقليل المسافات داخل الكاروسيل */
-            .owl-carousel .owl-item {
-                margin-right: 20px !important;
-            }
-
-            /* إلغاء الـ stagePadding لأنه يخرب الموبايل */
-            .owl-carousel .owl-stage {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-            }
-
-            /* ضمان أن كل سلايد يناسب عرض الشاشة */
-            .owl-carousel .owl-item {
-                width: 100% !important;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .owl-carousel .text-center {
-                text-align: left !important;
-            }
-
-            .owl-carousel h2,
-            .owl-carousel p {
-                text-align: left !important;
-            }
-
-            .owl-carousel .owl-stage-outer {
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-            }
-
-            .owl-carousel .owl-item {
-                width: 100% !important;
+            /* تصغير حجم خط العناوين */
+            .owl-carousel .text-center h2 {
+                font-size: 1.5rem !important;
+                /* يمكنك تغييره حسب الحاجة */
+                line-height: 1.2 !important;
             }
         }
     </style>
@@ -347,32 +309,13 @@
     </section>
 
 
-
-
     <section class="section section-height-4 mt-0  border-0 bg-primary">
         <div class="container" bis_skin_checked="1">
             <div class="row justify-content-center" bis_skin_checked="1">
                 <div class="col-lg-10" bis_skin_checked="1">
 
                     <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-lg nav-transparent nav-borders rounded-nav mb-0 owl-loaded owl-drag owl-carousel-init"
-                        data-plugin-options="{'items': 1, 'margin': 100, 'autoplay': true,
-                    'autoplayTimeout': 3000, 'loop': false, 'nav': false, 'dots': true, 'stagePadding': 100 , 'responsive': {
-             '0': {
-                 'items': 1,
-                 'margin': 0,
-                 'stagePadding': 0
-             },
-             '768': {
-                 'items': 1,
-                 'margin': 50,
-                 'stagePadding': 50
-             },
-             '992': {
-                 'items': 1,
-                 'margin': 100,
-                 'stagePadding': 100
-             }
-         }}"
+                        data-plugin-options="{'items': 1, 'margin': 100, 'loop': false, 'nav': true, 'dots': true, 'stagePadding': 100}"
                         bis_skin_checked="1" style="height: auto;">
 
 
@@ -440,7 +383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-nav disabled" bis_skin_checked="1">
+                        <div class="owl-nav" bis_skin_checked="1">
                             <button type="button" role="presentation" class="owl-prev text-color-light"></button>
                             <button type="button" role="presentation"
                                 class="owl-next disabled text-color-light"></button>
@@ -452,45 +395,4 @@
             </div>
         </div>
     </section>
-@endsection
-@section('js')
-    <script>
-        $(document).ready(function() {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                items: 1,
-                margin: 100,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                loop: false,
-                nav: false,
-                dots: true,
-                stagePadding: 100,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 0,
-                        stagePadding: 0
-                    },
-                    768: {
-                        items: 1,
-                        margin: 50,
-                        stagePadding: 50
-                    },
-                    992: {
-                        items: 1,
-                        margin: 100,
-                        stagePadding: 100
-                    }
-                }
-            });
-
-            // إصلاح width على الموبايل بعد init
-            $(window).on('resize', function() {
-                if ($(window).width() < 576) {
-                    owl.trigger('refresh.owl.carousel');
-                }
-            });
-        });
-    </script>
 @endsection
