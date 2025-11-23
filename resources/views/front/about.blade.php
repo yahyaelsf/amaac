@@ -1,8 +1,52 @@
 @extends('front.layout', ['home' => false, 'about' => true, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => false])
 @section('css')
     <style>
-        .post-image img{
-            height:150px;
+        .post-image img {
+            height: 150px;
+        }
+
+        @media (max-width: 767px) {
+
+            .goal-carousel h2,
+            .owl-carousel h2 {
+                font-size: 22px !important;
+                line-height: 1.3 !important;
+                margin-bottom: 10px;
+            }
+
+            .goal-carousel p,
+            .owl-carousel p {
+                font-size: 14px !important;
+                line-height: 1.6 !important;
+                padding: 0 10px;
+            }
+
+            /* تقليل المسافات داخل الكاروسيل */
+            .owl-carousel .owl-item {
+                margin-right: 20px !important;
+            }
+
+            /* إلغاء الـ stagePadding لأنه يخرب الموبايل */
+            .owl-carousel .owl-stage {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            /* ضمان أن كل سلايد يناسب عرض الشاشة */
+            .owl-carousel .owl-item {
+                width: 100% !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .owl-carousel .text-center {
+                text-align: left !important;
+            }
+
+            .owl-carousel h2,
+            .owl-carousel p {
+                text-align: left !important;
+            }
         }
     </style>
 @endsection
@@ -296,90 +340,14 @@
 
 
 
-
-    {{-- <section class="section bg-color-grey section-height-3 border-0 m-0">
-        <div class="container">
-
-            <div class="row mb-lg-4">
-                <div class="col-lg-6 appear-animation" data-appear-animation="fadeInLeftShorter"
-                    data-appear-animation-delay="300">
-                    <div class="feature-box feature-box-style-2">
-
-                        <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary">Supporting Sustainable Development</h4>
-                            <p>We will work tirelessly to combat
-                                negative stereotypes and misconceptions about Arabs and Muslims
-                                in the West, presenting a true image that reflects the cultural
-                                diversity, rich history, and civilizational contributions of these
-                                peoples. We will organize public awareness campaigns, produce rich
-                                media content, and collaborate with educational and media
-                                institutions to ensure our message reaches the widest possible
-                                audience. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 appear-animation" data-appear-animation="fadeInLeftShorter"
-                    data-appear-animation-delay="300">
-                    <div class="feature-box feature-box-style-2">
-
-                        <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary">Correct misconceptions</h4>
-                            <p>We will launch dialogue initiatives
-                                that bring together individuals and communities from diverse
-                                backgrounds. These platforms will provide safe spaces for
-                                constructive discussion about common issues and challenges.
-                                Advocating for Justice and Equality: We will serve as a strong voice
-                                for Muslims and Arabs in the United States and around the world,
-                                defending their civil and human rights. We will combat
-                                discrimination and Islamophobia, and provide legal and moral
-                                support to victims. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 appear-animation" data-appear-animation="fadeInLeftShorter"
-                    data-appear-animation-delay="300">
-                    <div class="feature-box feature-box-style-2">
-
-                        <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary"> Promote intercultural dialogue</h4>
-                            <p>We will encourage Arab and
-                                Muslim communities to actively participate in the political and civic
-                                processes in their countries of residence, with a focus on building
-                                promising young leaders capable of effectively representing the
-                                interests of their communities. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 appear-animation" data-appear-animation="fadeInLeftShorter"
-                    data-appear-animation-delay="300">
-                    <div class="feature-box feature-box-style-2">
-
-                        <div class="feature-box-info">
-                            <h4 class="font-weight-bold mb-2 text-color-primary">Promoting Civic Engagement</h4>
-                            <p>We will collaborate with
-                                local and international organizations to support sustainable
-                                development projects in Arab and Muslim countries, with a focus on
-                                education, healthcare, and women and youth empowerment. Our
-                                role will not simply be to provide assistance, but rather to build
-                                capacity to enable these communities to achieve self-sufficiency and
-                                prosperity. </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-        </div>
-    </section> --}}
     <section class="section section-height-4 mt-0  border-0 bg-primary">
         <div class="container" bis_skin_checked="1">
             <div class="row justify-content-center" bis_skin_checked="1">
                 <div class="col-lg-10" bis_skin_checked="1">
 
                     <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-lg nav-transparent nav-borders rounded-nav mb-0 owl-loaded owl-drag owl-carousel-init"
-                        data-plugin-options="{'items': 1, 'margin': 100, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 100}"
+                        data-plugin-options="{'items': 1, 'margin': 100, 'autoplay': true,
+    'autoplayTimeout': 3000, 'loop': false, 'nav': false, 'dots': true, 'stagePadding': 100}"
                         bis_skin_checked="1" style="height: auto;">
 
 
@@ -447,7 +415,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="owl-nav" bis_skin_checked="1">
+                        <div class="owl-nav disabled" bis_skin_checked="1">
                             <button type="button" role="presentation" class="owl-prev text-color-light"></button>
                             <button type="button" role="presentation"
                                 class="owl-next disabled text-color-light"></button>
