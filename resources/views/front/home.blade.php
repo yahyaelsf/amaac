@@ -27,7 +27,7 @@
 													data-plugin-animated-letters
 													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 50}">
 													We are dedicated to fostering a vibrant, informed, and empowered
-													American Muslim and Arab community. In a rapidly changing 
+													American Muslim and Arab community. In a rapidly changing
 													world, we work tirelessly to ensure our voices are heard, our rights
 													are protected, and our contributions to American society are
 													recognized and celebrated. Explore our site to learn more about our
@@ -116,7 +116,7 @@
 												<p class="text-4-5 text-color-secondary font-weight-light opacity-7 text-center mb-4"
 													data-plugin-animated-letters
 													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">
-													Uniting voices to promote equality, mutual respect, and social
+													Uniting voices to promote equality, mutual respect, and social 
 													harmony.
 												</p>
 												<div class="appear-animation" data-appear-animation="fadeInUpShorter"
