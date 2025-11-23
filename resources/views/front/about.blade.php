@@ -47,6 +47,15 @@
             .owl-carousel p {
                 text-align: left !important;
             }
+
+            .owl-carousel .owl-stage-outer {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .owl-carousel .owl-item {
+                width: 100% !important;
+            }
         }
     </style>
 @endsection
@@ -347,7 +356,23 @@
 
                     <div class="owl-carousel owl-theme stage-margin stage-margin-lg nav-lg nav-transparent nav-borders rounded-nav mb-0 owl-loaded owl-drag owl-carousel-init"
                         data-plugin-options="{'items': 1, 'margin': 100, 'autoplay': true,
-    'autoplayTimeout': 3000, 'loop': false, 'nav': false, 'dots': true, 'stagePadding': 100}"
+                    'autoplayTimeout': 3000, 'loop': false, 'nav': false, 'dots': true, 'stagePadding': 100 , 'responsive': {
+             '0': {
+                 'items': 1,
+                 'margin': 0,
+                 'stagePadding': 0
+             },
+             '768': {
+                 'items': 1,
+                 'margin': 50,
+                 'stagePadding': 50
+             },
+             '992': {
+                 'items': 1,
+                 'margin': 100,
+                 'stagePadding': 100
+             }
+         }}"
                         bis_skin_checked="1" style="height: auto;">
 
 
@@ -427,4 +452,45 @@
             </div>
         </div>
     </section>
+@endsection
+@section('js')
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 1,
+                margin: 100,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                loop: false,
+                nav: false,
+                dots: true,
+                stagePadding: 100,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 0,
+                        stagePadding: 0
+                    },
+                    768: {
+                        items: 1,
+                        margin: 50,
+                        stagePadding: 50
+                    },
+                    992: {
+                        items: 1,
+                        margin: 100,
+                        stagePadding: 100
+                    }
+                }
+            });
+
+            // إصلاح width على الموبايل بعد init
+            $(window).on('resize', function() {
+                if ($(window).width() < 576) {
+                    owl.trigger('refresh.owl.carousel');
+                }
+            });
+        });
+    </script>
 @endsection
