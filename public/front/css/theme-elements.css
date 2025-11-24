@@ -1565,12 +1565,12 @@ Theme Version:	13.0.0
 }
 
 /* Animated Letters */
-[data-plugin-animated-letters] {
+[data-plugin-animated-words] {
 	opacity: 0;
 	visibility: hidden;
 }
 
-[data-plugin-animated-letters].initialized {
+[data-plugin-animated-words].initialized {
 	opacity: 1;
 	visibility: visible;
 }
@@ -15641,7 +15641,7 @@ html .scroll-to-top {
 	color: var(--light);
 	display: block;
 	height: 9px;
-	
+
 	padding: 10px 10px 35px;
 	position: fixed;
 	right: 10px;

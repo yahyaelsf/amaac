@@ -1,7 +1,18 @@
 @extends('front.layout', ['home' => true, 'about' => false, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => false])
 @section('css')
 <style>
+.animated-text .word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap; /* يمنع كسر الكلمات */
+}
 
+.animated-text .word.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 </style>
 @endsection
 @section('content')
@@ -23,22 +34,12 @@
 													AMAAC
 
 												</h2>
-												<p class="text-4-5 text-color-secondary font-weight-light opacity-7 text-center mb-4"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 50}">
-													We are dedicated to fostering a vibrant, informed, and empowered
-													American Muslim and Arab community. In a rapidly changing
-													world, we work tirelessly to ensure our voices are heard, our rights
-													are protected, and our contributions to American society are
-													recognized and celebrated. Explore our site to learn more about our
-													mission, the issues we address, and how you can join us in building
-													{{-- a more just and inclusive world.
-													We are a dedicated non-profit organization advocating for the
-													rights,
-													promoting the welfare, through education, civic engagement, and
-													community building, we strive to foster a more inclusive and
-													equitable society for all --}}
-												</p>
+												<div class=" animated-text text-4-5 text-color-secondary font-weight-light opacity-7 text-center mb-4"
+
+													>
+													We are dedicated to fostering a vibrant, informed, and empowered American Muslim and Arab community. In a rapidly changing world, we work tirelessly to ensure our voices are heard, our rights are protected, and our contributions to American society are recognized and celebrated. Explore our site to learn more about our mission, the issues we address, and how you can join us in building
+
+												</div>
 												<div class="appear-animation" data-appear-animation="fadeInUpShorter"
 													data-appear-animation-delay="5000">
 													<div class="d-flex align-items-center mt-2">
@@ -89,9 +90,8 @@
 													data-plugin-animated-letters
 													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 50, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}">
 													AMAAC</h2>
-												<p class="text-4 text-color-secondary font-weight-light text-center mb-0"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">
+												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
+													>
 													Empowering Arab and Muslim communities to engage, lead, and inspire
 													positive change in America
 												</p>
@@ -113,10 +113,9 @@
 													data-appear-animation="blurIn"
 													data-plugin-options="{'minWindowWidth': 0}"> Stronger Community
 												</h2>
-												<p class="text-4-5 text-color-secondary font-weight-light opacity-7 text-center mb-4"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">
-													Uniting voices to promote equality, mutual respect, and social 
+												<p class="animated-text text-4-5 text-color-secondary font-weight-light opacity-7 text-center mb-4"
+													>
+													Uniting voices to promote equality, mutual respect, and social
 													harmony.
 												</p>
 												<div class="appear-animation" data-appear-animation="fadeInUpShorter"
@@ -138,7 +137,7 @@
 
 						</div>
 					</div>
-					<div class="owl-dots mb-5">
+					<div class="owl-dots mb-3">
 						<button role="button" class="owl-dot active"><span></span></button>
 						<button role="button" class="owl-dot"><span></span></button>
 						<button role="button" class="owl-dot"><span></span></button>
@@ -692,6 +691,48 @@
 
     </div>
 </section>
+<script>
+function wrapWords(el) {
+    if (!el.dataset.wrapped) {
+        const text = el.textContent.trim();
+        const words = text.split(/\s+/);
+        el.innerHTML = words.map(w => `<span class="word">${w}</span>`).join(' ');
+        el.dataset.wrapped = "true";
+    }
+}
 
+function animateWords(el) {
+    const words = el.querySelectorAll('.word');
+    words.forEach((w, i) => {
+        setTimeout(() => w.classList.add('visible'), i * 250);
+    });
+}
+
+function resetWords(el) {
+    el.querySelectorAll('.word').forEach(w => w.classList.remove('visible'));
+}
+
+// كل مرة عنصر يصبح active نرسم الأنيميشن
+function handleActiveSlide(slide) {
+    const animatedTexts = slide.querySelectorAll('.animated-text');
+    animatedTexts.forEach(el => {
+        wrapWords(el);
+        resetWords(el);
+        setTimeout(() => animateWords(el), 50);
+    });
+}
+
+// أول تحميل
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('.owl-carousel');
+    carousel.querySelectorAll('.owl-item.active').forEach(handleActiveSlide);
+});
+
+// عند كل تغيير
+document.querySelector('.owl-carousel').addEventListener('changed.owl.carousel', e => {
+    const carousel = e.currentTarget;
+    carousel.querySelectorAll('.owl-item.active').forEach(handleActiveSlide);
+});
+</script>
 @endsection
 
