@@ -704,7 +704,7 @@ function wrapWords(el) {
 function animateWords(el) {
     const words = el.querySelectorAll('.word');
     words.forEach((w, i) => {
-        setTimeout(() => w.classList.add('visible'), i * 250);
+        setTimeout(() => w.classList.add('visible'), i * 350);
     });
 }
 
