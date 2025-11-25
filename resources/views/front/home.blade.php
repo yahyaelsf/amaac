@@ -13,59 +13,28 @@
     opacity: 1;
     transform: translateY(0);
 }
+.porto-big-title {
+    font-size : 3rem ;
+}
 </style>
 @endsection
 @section('content')
-   <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
-					data-plugin-options="{'autoplayTimeout': 25000}"
+                <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside
+                   dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
+					data-plugin-options="{'autoplayTimeout': 20000}"
 					data-dynamic-height="['670px','670px','670px','550px','500px']" style="height: 670px;">
 					<div class="owl-stage-outer">
 						<div class="owl-stage">
-							<!-- Carousel Slide 1 -->
+
 							<div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-7">
-											<div class="d-flex flex-column align-items-center">
-												<h2 class="text-color-secondary font-weight-bold text-13 mb-4 appear-animation"
-													data-appear-animation="blurIn"
-													data-plugin-options="{'minWindowWidth': 0}">
-													AMAAC
-
-												</h2>
-												<div class=" animated-text text-4-5 text-color-secondary font-weight-light opacity-7 text-center mb-4"
-
-													>
-													We are dedicated to fostering a vibrant, informed, and empowered American Muslim and Arab community. In a rapidly changing world, we work tirelessly to ensure our voices are heard, our rights are protected, and our contributions to American society are recognized and celebrated. Explore our site to learn more about our mission, the issues we address, and how you can join us in building
-
-												</div>
-												<div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="5000">
-													<div class="d-flex align-items-center mt-2">
-														<a href="#"
-															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
-															 About Us</a>
-														<a href="#"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															Our Work <i class="fas fa-arrow-right ms-2"></i></a>
-
-													</div>
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Carousel Slide 2 -->
-							<div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}); background-size: cover; background-position: center;">
+								style="background-image: url({{ asset('front/img/home/slide1.jpg') }}); background-size: cover; background-position: center;">
 								<div class="container position-relative z-index-3 h-100">
 									<div class="row justify-content-center align-items-center h-100">
 										<div class="col-lg-6">
 											<div class="d-flex flex-column align-items-center">
-												<h3 class="position-relative text-color-secondary text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+
+                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Empowering Communities</h1>
+												<h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
 													data-appear-animation="fadeInDownShorterPlus"
 													data-plugin-options="{'minWindowWidth': 0}">
 													<span
@@ -76,7 +45,7 @@
 															data-appear-animation-delay="250"
 															data-plugin-options="{'minWindowWidth': 0}" alt="" />
 													</span>
-													Building Bridges Between Cultures
+													 Empowering Arab & Muslim Voices in America
 													<span
 														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
 														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
@@ -86,48 +55,250 @@
 															data-plugin-options="{'minWindowWidth': 0}" alt="" />
 													</span>
 												</h3>
-												<h2 class="porto-big-title text-color-secondary font-weight-extra-bold mb-3"
-													data-plugin-animated-letters
-													data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 50, 'animationName': 'fadeInRightShorterOpacity', 'letterClass': 'd-inline-block'}">
-													AMAAC</h2>
+
 												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
 													>
-													Empowering Arab and Muslim communities to engage, lead, and inspire
-													positive change in America
+													 Building strong, confident communities through advocacy, education, and inclusive leadership.
 												</p>
+
+                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+													data-appear-animation-delay="5000">
+													<div class="d-flex align-items-center mt-2">
+														{{-- <a href="#"
+															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
+															 About Us</a> --}}
+														<a href="#"
+															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+															 Learn More
+                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                                             </a>
+
+													</div>
+
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-
-							<!-- Carousel Slide 3 -->
-							<div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}); background-size: cover; background-position: center;">
+                            <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+								style="background-image: url({{ asset('front/img/home/slide2.jpg') }}); background-size: cover; background-position: center;">
 								<div class="container position-relative z-index-3 h-100">
 									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-7">
+										<div class="col-lg-6">
 											<div class="d-flex flex-column align-items-center">
-												<h2 class="text-color-secondary font-weight-bold text-13 mb-4 appear-animation"
-													data-appear-animation="blurIn"
-													data-plugin-options="{'minWindowWidth': 0}"> Stronger Community
-												</h2>
-												<p class="animated-text text-4-5 text-color-secondary font-weight-light opacity-7 text-center mb-4"
+
+                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Defending Rights & Dignity</h1>
+												<h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+													data-appear-animation="fadeInDownShorterPlus"
+													data-plugin-options="{'minWindowWidth': 0}">
+													<span
+														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInRightShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+													 Protecting Civil Rights. Advancing Human Dignity
+
+													<span
+														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInLeftShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+
+												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
 													>
-													Uniting voices to promote equality, mutual respect, and social
-													harmony.
+													We stand against discrimination and work to ensure every individual is treated with fairness, respect, and justice
 												</p>
-												<div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="3300">
+
+                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+													data-appear-animation-delay="5000">
 													<div class="d-flex align-items-center mt-2">
-														<a href="#"
+														{{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
-															Get Involved</a>
+															 About Us</a> --}}
 														<a href="#"
 															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															Our Work <i class="fas fa-arrow-right ms-2"></i></a>
+															  Our Mission
+                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                                             </a>
+
 													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                             <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+								style="background-image: url({{ asset('front/img/home/slide3.jpg') }});
+                                background-size: cover; background-position: center; width: 100%;">
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-6">
+											<div class="d-flex flex-column align-items-center">
+
+                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Shaping Policy for a Better Future</h1>
+												<h3 class="position-relative text-color-secondary text-4 text-center line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+													data-appear-animation="fadeInDownShorterPlus"
+													data-plugin-options="{'minWindowWidth': 0}">
+													<span
+														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInRightShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+													Influencing Policy Through Knowledge & Action
+													<span
+														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInLeftShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+
+												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
+													>
+													Research-driven advocacy shaping fair public policies for Arab and Muslim communities nationwide
+												</p>
+
+                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+													data-appear-animation-delay="5000">
+													<div class="d-flex align-items-center mt-2">
+														{{-- <a href="#"
+															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
+															 About Us</a> --}}
+														<a href="#"
+															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+															 Explore Our Work
+                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                                             </a>
+
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                             <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+								style="background-image: url({{ asset('front/img/home/slide4.jpg') }}); background-size: cover; background-position: center;">
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-6">
+											<div class="d-flex flex-column align-items-center">
+
+                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Bridging Cultures & Building Understanding</h1>
+												<h3 class="position-relative text-color-secondary text-4 text-center line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+													data-appear-animation="fadeInDownShorterPlus"
+													data-plugin-options="{'minWindowWidth': 0}">
+													<span
+														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInRightShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+													Strengthening Bridges Between America, the Arab World, and the Muslim World
+
+													<span
+														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInLeftShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+
+												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
+													>
+													 Promoting cultural dialogue, media literacy, and representation that reflects our shared values and humanity
+												</p>
+
+                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+													data-appear-animation-delay="5000">
+													<div class="d-flex align-items-center mt-2">
+														{{-- <a href="#"
+															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
+															 About Us</a> --}}
+														<a href="#"
+															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+															  Discover More
+                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                                             </a>
+
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+								style="background-image: url({{ asset('front/img/home/slide5.jpg') }}); background-size: cover; background-position: center;">
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-center align-items-center h-100">
+										<div class="col-lg-6">
+											<div class="d-flex flex-column align-items-center">
+
+                                                    <h1 class="text-color-secondary font-weight-extra-bold text-10 mb-3 text-center appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Investing in the Next Generation</h1>
+												<h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+													data-appear-animation="fadeInDownShorterPlus"
+													data-plugin-options="{'minWindowWidth': 0}">
+													<span
+														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInRightShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+													 Empowering Youth to Lead With Confidence
+													<span
+														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+															class="w-auto appear-animation"
+															data-appear-animation="fadeInLeftShorter"
+															data-appear-animation-delay="250"
+															data-plugin-options="{'minWindowWidth': 0}" alt="" />
+													</span>
+												</h3>
+
+												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
+													>
+													Leadership programs, civic engagement initiatives, and mentorship opportunities for the future generation of Arab and Muslim leaders.
+
+												</p>
+
+                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+													data-appear-animation-delay="5000">
+													<div class="d-flex align-items-center mt-2">
+														{{-- <a href="#"
+															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
+															 About Us</a> --}}
+														<a href="#"
+															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+															 Join Our Programs
+                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                                             </a>
+
+													</div>
+
 												</div>
 											</div>
 										</div>
@@ -135,11 +306,16 @@
 								</div>
 							</div>
 
+
+
+
 						</div>
 					</div>
 					<div class="owl-dots mb-3">
 						<button role="button" class="owl-dot active"><span></span></button>
 						<button role="button" class="owl-dot"><span></span></button>
+                        <button role="button" class="owl-dot"><span></span></button>
+                        <button role="button" class="owl-dot"><span></span></button>
 						<button role="button" class="owl-dot"><span></span></button>
 					</div>
 				</div>
@@ -185,20 +361,7 @@
                     <p class="pb-2 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible text-color-secondary borderd-primary"
                          data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
-                        We are a leading organization committed to promoting mutual understanding between
-                        the
-                        United States and the Arab and Islamic world. We work to defend rights, support
-                        sustainable
-                        development and advance progress, growth and prosperity globally.
-                        We are committed to Empowering Muslim and Arab communities in the United States and
-                        around the world, and supporting their political, social, and cultural renaissance,
-                        through
-                        conscious, influential leadership and balanced international relations.
-                        AMAAC is a platform for hope, a bridge for understanding, and a voice for justice.
-                        We aspire to
-                        be an integral part of global efforts to build a more peaceful and just world, where
-                        everyone
-                        lives with dignity and mutual respect.
+                        AMAAC is a non-profit council committed to promoting mutual understanding between the United States and the Arab and Islamic world. We defend rights, support sustainable development, and contribute to social, cultural, and political progress. AMAAC is a platform for hope, a bridge for understanding, and a voice for justice.
                     </p>
                     <a href="https://elements.envato.com/"
                         class="btn btn-secondary  btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible "
@@ -255,20 +418,10 @@
                     <p class="pb-2 mb-4 mt-3 appear-animation animated fadeInUpShorter appear-animation-visible text-color-primary borderd-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
-                        We are a leading organization committed to promoting mutual understanding between
-                        the
-                        United States and the Arab and Islamic world. We work to defend rights, support
-                        sustainable
-                        development and advance progress, growth and prosperity globally.
-                        We are committed to Empowering Muslim and Arab communities in the United States and
-                        around the world, and supporting their political, social, and cultural renaissance,
-                        through
-                        conscious, influential leadership and balanced international relations.
-                        AMAAC is a platform for hope, a bridge for understanding, and a voice for justice.
-                        We aspire to
-                        be an integral part of global efforts to build a more peaceful and just world, where
-                        everyone
-                        lives with dignity and mutual respect.
+                        *“At AMAAC, we believe that justice, dignity, and mutual respect are not luxuries, but rights for every human being. Our communities have contributed enormously to the scientific, cultural, and economic progress of the United States, yet they still face misunderstanding and discrimination.
+                        AMAAC was founded to turn concern into action. We listen to our communities, amplify their voices where decisions are made, and build partnerships that create real opportunities for youth, families, and future generations.
+                    Together, we can reshape the narrative, defend our rights, and build bridges that lead to a more peaceful and inclusive society – in America and beyond.”*
+
                     </p>
                     <a href="https://elements.envato.com/"
                         class="btn btn-primary btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible test-color-secondary"
@@ -303,12 +456,11 @@
                                     <i class="icons icon-support text-color-primary"></i>
                                 </div>
                                 <h4 class="font-weight-bold text-color-primary text-4">Building Cultural Bridges</h4>
-                                <p class="text-color-primary"> The core of AMAAC's vision is to build strong and lasting
-                        bonds based on mutual understanding and appreciation</p>
+                                <p class="text-color-primary"> We create platforms for dialogue and exchange between Arab, Muslim, and wider American communities. Through public events, cultural programs, and partnerships, we highlight our shared values, histories, and aspirations.</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
-                            style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}); background-size: cover; background-position: center;"
+                            style="background-image: url({{ asset('front/img/home/missioatglance1.jpg') }}); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
                             {{-- <div class="flip-content my-4" bis_skin_checked="1">
                                 <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
@@ -331,13 +483,11 @@
                                     <i class="icons icon-layers text-color-primary"></i>
                                 </div>
                                 <h4 class="font-weight-bold text-color-primary text-4">Protecting Rights, </h4>
-                                <p class="text-color-primary">A firm commitment to supporting Arab and
-                        Muslim communities wherever they are located and protecting their
-                        rights</p>
+                                <p class="text-color-primary">AMAAC monitors and responds to violations of civil and human rights affecting Muslims and Arabs. We support individuals and work with legal partners, and advocate for policies that uphold equality and justice for all.</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
-                            style="background-image: url({{ asset('front/img/home/IMG-20251119-WA0029.jpg') }}); background-size: cover; background-position: center;"
+                            style="background-image: url({{ asset('front/img/home/missioatglance2.jpg') }}); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
                             {{-- <div class="flip-content my-4" bis_skin_checked="1">
                                 <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
@@ -361,12 +511,11 @@
                                 </div>
                                 <h4 class="font-weight-bold text-color-primary text-4">Influencing
                                     Policy</h4>
-                                <p class="text-color-primary">AMAAC will strive to be an influential force in shaping U.S.
-                        foreign policy related to the Middle East and the Islamic world.</p>
+                                <p class="text-color-primary">We engage with policymakers, think tanks, and civil society to ensure that the voices of Muslims and Arabs are heard in the halls of power. AMAAC provides  organizes advocacy campaigns that shape fair and balanced public policy</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
-                            style="background-image: url('{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}'); background-size: cover; background-position: center;"
+                            style="background-image: url('{{ asset('front/img/home/missioatglance3.jpg') }}'); background-size: cover; background-position: center;"
                             bis_skin_checked="1">
                             {{-- <div class="flip-content my-4" bis_skin_checked="1">
                                 <h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
@@ -407,233 +556,127 @@
                                 <div class="owl-stage"
                                     style="transform: translate3d(-2302px, 0px, 0px); transition: 1s; width: 3453px; ">
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                     <a href="{{ route('news.future') }}">
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}" class="img-fluid border-radius-0"
+                                                    <img src="{{ asset('front/img/home/article1thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Presentation</span>
-                                                        <span class="thumb-info-type">Brand</span>
+                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                            The Future of Arab & Muslim Representation in American Media</span>
+                                                        <span class="thumb-info-type mt-2">Misrepresentation remains a major challenge. This article explores the current landscape of media portrayals, highlights positive change-makers, and outlines AMAAC’s media literacy initiatives to empower content creators and influencers in our communities</span>
                                                     </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
+
                                                 </span>
                                             </span>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                     <a href="{{ route('news.rights') }}">
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}" class="img-fluid border-radius-0"
+                                                    <img src="{{ asset('front/img/home/article2thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Porto
-                                                            Watch</span>
-                                                        <span class="thumb-info-type">Media</span>
+                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                            Know Your Rights: A Complete Guide for Arab & Muslim Americans</span>
+                                                        <span class="thumb-info-type mt-2"> An essential resource explaining constitutional rights, protections against discrimination, what to do if confronted with Islamophobia, and how AMAAC is expanding its legal-support and advocacy network across the United States.</span>
                                                     </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
+
                                                 </span>
                                             </span>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                     <a href="{{ route('news.leadership') }}">
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/IMG-20251119-WA0027.jpg') }}" class="img-fluid border-radius-0"
+                                                    <img src="{{ asset('front/img/home/article3thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Identity</span>
-                                                        <span class="thumb-info-type">Logo</span>
+                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Youth Leadership: How the Next Generation Is Redefining Civic Engagement</span>
+                                                        <span class="thumb-info-type mt-2">Showcasing inspiring stories of Arab and Muslim American youth leading community projects, advocating in local government, and representing their identities confidently. Includes information about AMAAC’s Youth Civic Leadership Fellowship.</span>
                                                     </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/IMG-20251119-WA0027.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
+
                                                 </span>
                                             </span>
                                         </div>
+                                    </a>
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                     <a href="{{ route('news.relations') }}">
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}" class="img-fluid border-radius-0"
+                                                    <img src="{{ asset('front/img/home/article4thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Porto
-                                                            Screens</span>
-                                                        <span class="thumb-info-type">Website</span>
+                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                            U.S.–Arab Relations: Why Cultural Understanding Matters More Than Ever
+                                                            </span>
+                                                        <span class="thumb-info-type mt-2">A balanced, informative piece examining how cultural diplomacy and people-to-people engagement help build trust and reduce misconceptions. Features AMAAC’s role in cultural programs and community dialogue.
+                                                        </span>
                                                     </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
+
                                                 </span>
                                             </span>
                                         </div>
+                                    </a>
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                      <a href="{{ route('news.combating') }}">
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/IMG-20251119-WA0020.jpg') }}" class="img-fluid border-radius-0"
+                                                    <img src="{{ asset('front/img/home/article5thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Three
-                                                            Bottles</span>
-                                                        <span class="thumb-info-type">Logo</span>
+                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                            Combating Islamophobia: Practical Steps for Communities & Allies</span>
+                                                        <span class="thumb-info-type mt-2"> A guide offering practical strategies for schools, workplaces, parents, and community leaders to create safer and more inclusive environments. Includes recommended reporting channels and AMAAC initiatives supporting victims of discrimination</span>
                                                     </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/IMG-20251119-WA0020.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
+
                                                 </span>
                                             </span>
                                         </div>
+                                        </a>
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                     <a href="{{ route('news.strengthening') }}">
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}" class="img-fluid border-radius-0"
+                                                    <img src="{{ asset('front/img/home/article6thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Presentation</span>
-                                                        <span class="thumb-info-type">Brand</span>
+                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Strengthening Community Resilience Through Local Partnerships
+                                                            </span>
+                                                        <span class="thumb-info-type mt-2"> Explores how mosques, community centers, NGOs, universities, and advocacy groups can collaborate to deliver impactful programs—from mental health support to voter education. Highlights new AMAAC partnerships and success stories</span>
                                                     </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
+
                                                 </span>
                                             </span>
                                         </div>
+                                        </a>
                                     </div>
-                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                        <div class="portfolio-item">
-                                            <span
-                                                class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
-                                                <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                                    <span class="thumb-info-title bg-primary text-secondary">
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Porto
-                                                            Watch</span>
-                                                        <span class="thumb-info-type">Media</span>
-                                                    </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                        <div class="portfolio-item">
-                                            <span
-                                                class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
-                                                <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/IMG-20251119-WA0027.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                                    <span class="thumb-info-title bg-primary text-secondary">
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Identity</span>
-                                                        <span class="thumb-info-type">Logo</span>
-                                                    </span>
-                                                    <span class="thumb-info-action">
-                                                        <a href="portfolio-single-wide-slider.html">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-primary"><i
-                                                                    class="fas fa-link"></i></span>
-                                                        </a>
-                                                        <a href="{{ asset('front/img/home/IMG-20251119-WA0027.jpg') }}" class="lightbox-portfolio">
-                                                            <span
-                                                                class="thumb-info-action-icon thumb-info-action-icon-light"><i
-                                                                    class="fas fa-search text-dark"></i></span>
-                                                        </a>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </div>
+
 
 
                                 </div>

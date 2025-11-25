@@ -27,9 +27,9 @@
 
         .goal-section:hover {
             /*  transform: translateY(-5px) scale(1.01);
-                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-                        border-color: var(--primary);
-                        */
+                                            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                                            border-color: var(--primary);
+                                            */
             transform: translateY(-10px) scale(1.02);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
             background: #0a2b5a;
@@ -80,6 +80,26 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+
+        .four-boxes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        /* تابلت */
+        @media (max-width: 991px) {
+            .four-boxes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* موبايل */
+        @media (max-width: 575px) {
+            .four-boxes {
+                grid-template-columns: repeat(1, 1fr);
             }
         }
     </style>
@@ -146,115 +166,268 @@
                         <p>Encouraging collaborative work across religions and cultures, creating common ground for
                             understanding.</p>
                     </section>
-                    <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
+                    <section class="goal-section appear-animation modern-goal" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">
-                        <h3 class="goal-title">Education, Development, and Personal Empowerment</h3>
-                        <p>Advocating for Justice and Equality: We will serve as a strong voice for Muslims and Arabs in the
-                            United States and around the world, defending their civil and human rights. We will combat
-                            discrimination and Islamophobia, and provide legal and moral support to victims..</p>
-                        <p>Promoting Civic Engagement: We will encourage Arab and Muslim communities to actively participate
-                            in the political and civic processes in their countries of residence, with a focus on building
-                            promising young leaders capable of effectively representing the interests of their communities..
+
+                        <h3 class="goal-title text-center mb-4">
+                            Education, Development, and Personal Empowerment
+                        </h3>
+
+                        <p class="goal-intro text-center">
+                            Our mission focuses on strengthening communities through justice, civic participation, and
+                            sustainable development.
                         </p>
-                        <p>Supporting Sustainable Development: We will collaborate with local and international
-                            organizations to support sustainable development projects in Arab and Muslim countries, with a
-                            focus on education, healthcare, and women and youth empowerment. Our role will not simply be to
-                            provide assistance, but rather to build capacity to enable these communities to achieve self
-                            sufficiency and prosperity.</p>
+
+                        <div class="goal-modern-boxes four-boxes">
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-gavel"></i>
+                                </div>
+                                <p><strong>Advocating for Justice & Equality:</strong> Serving as a strong voice for Muslims
+                                    and Arabs globally, defending civil and human rights, combating discrimination, and
+                                    providing legal and moral support to victims.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-vote-yea"></i>
+                                </div>
+                                <p><strong>Promoting Civic Engagement:</strong> Encouraging active participation in
+                                    political and civic processes while supporting the development of young leaders capable
+                                    of representing their communities effectively.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <p><strong>Supporting Sustainable Development:</strong> Partnering with local and
+                                    international organizations to support projects in education, healthcare, and women &
+                                    youth empowerment across Arab and Muslim countries.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <p><strong>Building Community Self-Sufficiency:</strong> Focusing not only on providing
+                                    assistance, but also on developing capacity and resources to help communities achieve
+                                    long-term independence and prosperity.</p>
+                            </div>
+
+                        </div>
                     </section>
 
+
                     <!-- Section 6 -->
-                    <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
+                    <section class="goal-section alt appear-animation modern-goal" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="600">
-                        <h3 class="goal-title">Influencing Policy and Decision-Making</h3>
-                        <p>AMAAC will strive to be an influential force in shaping U.S. foreign policy related to the Middle
-                            East and the Islamic world:.</p>
-                        <p>Policy Analysis and Recommendations: We will conduct in-depth research and independent analysis
-                            of current U.S. policies and provide informed recommendations to decision-makers to ensure that
-                            these policies are fair, effective, and serve the interests of all parties.</p>
-                        <p>
-                            Policy Engagement: We will build strong relationships with members of Congress, the U.S.
-                            Administration, and other stakeholders in Washington, D.C. We will organize outreach events,
-                            workshops, and private meetings to present our views and influence important decisions
+
+                        <h3 class="goal-title text-center mb-4">
+                            Influencing Policy and Decision-Making
+                        </h3>
+
+                        <p class="goal-intro text-center">
+                            AMAAC will strive to be an influential force in shaping U.S. foreign policy related to the
+                            Middle East and the Islamic world.
                         </p>
-                        <p>
-                            Building Strategic Alliances: We will collaborate with human rights organizations, research
-                            centers, and other think tanks that share our goals to enhance our influence and push for more
-                            balanced and just policies
-                        </p>
+
+                        <div class="goal-modern-boxes four-boxes">
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <p><strong>Policy Analysis & Recommendations:</strong> Conducting in-depth research and
+                                    providing informed recommendations to ensure U.S. policies are fair, effective, and
+                                    balanced.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <p><strong>Policy Engagement:</strong> Building strong relationships with Congress, the U.S.
+                                    Administration, and Washington stakeholders to influence key decisions.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <p><strong>Outreach & Advocacy:</strong> Organizing workshops, outreach events, and private
+                                    meetings to communicate our perspectives and enhance our impact.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <p><strong>Strategic Alliances:</strong> Collaborating with human rights groups, research
+                                    centers, and think tanks to push for more just and balanced policies.</p>
+                            </div>
+
+                        </div>
                     </section>
-                    <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
+
+
+                    <section class="goal-section appear-animation modern-goal" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">
-                        <h3 class="goal-title">
+
+                        <h3 class="goal-title text-center mb-4">
                             Innovation and Adaptation
                         </h3>
-                        <p>We believe that the world is constantly changing, so our vision must be flexible and adaptable.
+
+                        <p class="goal-intro text-center">
+                            We believe that the world is constantly changing, so our vision must be flexible and adaptable.
                         </p>
-                        <p>Embracing Technology: We will leverage the latest technologies and social media to spread our
-                            message, organize our campaigns, and engage with communities around the world.</p>
-                        <p>Continuous research and development: We will commit to continuous research and development of our
-                            programs and initiatives, and regularly evaluate their impact to ensure their effectiveness and
-                            ability to achieve our goals.</p>
-                        <p>
-                            Providing workshops and knowledge resources (such as "Know Your Rights" and "Building Community
-                            Leadership
-                        </p>
-                        <p>
-                            Facilitating access to legal, social, and economic resources.
-                        </p>
+
+                        <div class="goal-modern-boxes four-boxes">
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <p><strong>Embracing Technology:</strong> Leveraging the latest technologies and social
+                                    media to spread our message, organize campaigns, and engage with communities globally.
+                                </p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <p><strong>Continuous research and development:</strong> Regularly improving programs and
+                                    evaluating impact to enhance effectiveness and achieve goals.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <p><strong>Workshops & knowledge resources:</strong> Providing workshops and resources like
+                                    “Know Your Rights” and “Building Community Leadership”.</p>
+                            </div>
+
+                            <div class="goal-modern-box">
+                                <div class="icon-circle">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <p><strong>Facilitating access to resources:</strong> Supporting access to legal, social,
+                                    and economic resources.</p>
+                            </div>
+
+                        </div>
                     </section>
+
+
                     <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="600">
-                        <h3 class="goal-title">
-                                Promoting Understanding and Building Bridges
-                            </h3>
-                        <p>Primary Objective: Transform negative perceptions of Arabs and Muslims into deeper understanding and mutual appreciation in Western societies.</p>
-                        <p>Detailed Objectives: Launching large-scale media awareness campaigns: Producing and distributing multimedia content (documentaries, short videos, articles, podcasts) that highlights the rich Arab and Islamic culture, shared history, and civilizational contributions.</p>
-                        <p>
-                            Developing Innovative Educational Programs: Designing and implementing curricula and workshops for educational institutions and schools in the West to provide accurate and unbiased information about Islam and Arabs.
-                        </p>
-                        <p>
-                            Establishing Interfaith and Intercultural Dialogue Platforms: Organizing conferences, seminars, and periodic meetings that bring together thought leaders, academics, and representatives of different religions to foster constructive dialogue on shared issues.
-                        </p>
-                        <p>
-                        Facilitating cultural and academic exchange programs: Launching student, researcher, and artist exchange programs between the United States and Arab and Islamic countries to enhance firsthand experiences.
-                        </p>
-                    </section>
-                     <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
-                        data-appear-animation-delay="500">
-                        <h3 class="goal-title">
-                            Supporting communities and protecting rights
+
+                        <h3 class="goal-title text-center mb-4">
+                            Promoting Understanding and Building Bridges
                         </h3>
-                        <p>Primary goal: Empowering Arab and Muslim communities globally and defending their civil and human rights.
-                        </p>
-                        <p>Detailed goals: Providing legal and moral support to victims of discrimination: Establishing a network of lawyers and volunteers to provide legal advice and support to those affected by Islamophobia and Arab hatred, and documenting these incidents.</p>
-                        <p>Launching leadership capacity-building programs: Developing workshops and training initiatives for young Muslims and Arabs to enhance their skills in leadership, civic engagement, and advocacy.</p>
-                        <p>
-                           Supporting sustainable development projects: Collaborating with local and international organizations in Arab and Islamic countries to support education, health, women's empowerment, and entrepreneurship projects, with a focus on building community self sufficiency.
-                        </p>
-                        <p>
-                           Providing humanitarian and relief assistance: Rapidly responding to humanitarian crises in the Arab and Islamic world by providing material and moral support to those affected.
-                        </p>
+
+                        <div class="goal-boxes">
+                            <div class="goal-box">
+                                <p><strong>Primary Objective:</strong> Transform negative perceptions of Arabs and Muslims
+                                    into deeper understanding and mutual appreciation in Western societies.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Media awareness campaigns:</strong> Producing and distributing documentaries,
+                                    short videos, articles, and podcasts that highlight Arab and Islamic culture, shared
+                                    history, and global contributions.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Innovative educational programs:</strong> Designing curricula and workshops for
+                                    Western schools and institutions that provide accurate, unbiased information about Islam
+                                    and Arabs.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Interfaith & intercultural dialogue platforms:</strong> Organizing conferences
+                                    and regular meetings that gather scholars, leaders, and representatives of different
+                                    religions to promote constructive dialogue.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Cultural & academic exchange programs:</strong> Launching exchange programs for
+                                    students, researchers, and artists to strengthen firsthand understanding between the
+                                    U.S. and Arab/Islamic countries.</p>
+                            </div>
+                        </div>
                     </section>
-                    <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
+
+                    {{-- <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="600">
                         <h3 class="goal-title">
-                                Influencing Policy and Decision-Making
-                            </h3>
-                        <p>Primary Objective: For AMAAC to be an influential voice in shaping US foreign policy relevant to the Arab and Islamic world.</p>
-                        <p>Detailed Objectives: Conducting in-depth policy research and analysis: Establishing a specialized research center that provides independent studies and analyses of US policies in the region and their impact on societies.</p>
+                            Promoting Understanding and Building Bridges
+                        </h3>
+                        <p>Primary Objective: Transform negative perceptions of Arabs and Muslims into deeper understanding
+                            and mutual appreciation in Western societies.</p>
+                        <p>Detailed Objectives: Launching large-scale media awareness campaigns: Producing and distributing
+                            multimedia content (documentaries, short videos, articles, podcasts) that highlights the rich
+                            Arab and Islamic culture, shared history, and civilizational contributions.</p>
                         <p>
-                           Active Participation in the Decision-Making Process: Building strong relationships with members of Congress, administration officials, and policy advisors to provide informed and influential recommendations.
+                            Developing Innovative Educational Programs: Designing and implementing curricula and workshops
+                            for educational institutions and schools in the West to provide accurate and unbiased
+                            information about Islam and Arabs.
                         </p>
                         <p>
-                           Organizing forums and dialogue conferences with decision makers: Hosting events that bring together experts and decision makers to discuss pressing issues and offer practical solutions.
+                            Establishing Interfaith and Intercultural Dialogue Platforms: Organizing conferences, seminars,
+                            and periodic meetings that bring together thought leaders, academics, and representatives of
+                            different religions to foster constructive dialogue on shared issues.
                         </p>
                         <p>
-                        Building strategic alliances with relevant organizations: Collaborating with research centers, human rights organizations, and other civil society organizations to enhance joint efforts to defend justice.
+                            Facilitating cultural and academic exchange programs: Launching student, researcher, and artist
+                            exchange programs between the United States and Arab and Islamic countries to enhance firsthand
+                            experiences.
                         </p>
-                    </section>
+                    </section> --}}
                     <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">
+
+                        <h3 class="goal-title text-center mb-4">
+                            Supporting communities and protecting rights
+                        </h3>
+
+                        <div class="goal-boxes">
+                            <div class="goal-box">
+                                <p><strong>Primary goal:</strong> Empowering Arab and Muslim communities globally and
+                                    defending their civil and human rights.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Providing legal and moral support:</strong> Establishing a network of lawyers and
+                                    volunteers to provide legal advice and support to those affected by Islamophobia and
+                                    Arab hatred, and documenting these incidents.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Leadership capacity-building programs:</strong> Developing workshops and training
+                                    initiatives for young Muslims and Arabs to enhance leadership, civic engagement, and
+                                    advocacy skills.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Supporting sustainable development projects:</strong> Collaborating with
+                                    organizations to support education, health, women's empowerment, and entrepreneurship,
+                                    focusing on community self-sufficiency.</p>
+                            </div>
+
+                            <div class="goal-box">
+                                <p><strong>Humanitarian and relief assistance:</strong> Rapid response to humanitarian
+                                    crises in the Arab and Islamic world by providing support to those affected.</p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    {{-- <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
+                        data-appear-animation-delay="500">
                         <h3 class="goal-title">
                             Supporting communities and protecting rights
                         </h3>
@@ -268,7 +441,8 @@
                         <p>
                            Providing humanitarian and relief assistance: Rapidly responding to humanitarian crises in the Arab and Islamic world by providing material and moral support to those affected.
                         </p>
-                    </section>
+                    </section> --}}
+
                 </div>
 
             </div>

@@ -67,7 +67,8 @@
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible "
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
                             bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary" bis_skin_checked="1">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
                                 <div class="box-content " bis_skin_checked="1">
                                     {{-- <i class="icon-featured icon-screen-tablet icons text-color-white bg-color-primary"></i> --}}
                                     <i
@@ -89,7 +90,8 @@
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
                             bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary" bis_skin_checked="1">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
                                 <div class="box-content" bis_skin_checked="1">
                                     <i
                                         class="fa-solid fa-square-poll-horizontal text-color-primary bg-color-secondary icon-featured"></i>
@@ -112,9 +114,11 @@
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
                             bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary" bis_skin_checked="1">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
                                 <div class="box-content" bis_skin_checked="1">
-                                    <i class="fa-solid fa-newspaper text-color-primary bg-color-secondary icon-featured"></i>
+                                    <i
+                                        class="fa-solid fa-newspaper text-color-primary bg-color-secondary icon-featured"></i>
 
                                     <h4 class="font-weight-bold text-start text-color-secondary"> Media & Public Relations:
                                     </h4>
@@ -136,7 +140,8 @@
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
                             bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary" bis_skin_checked="1">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
                                 <div class="box-content" bis_skin_checked="1">
 
                                     <i class="fa-solid fa-passport text-color-primary bg-color-secondary icon-featured"></i>
@@ -159,7 +164,8 @@
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
                             bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary" bis_skin_checked="1">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
                                 <div class="box-content" bis_skin_checked="1">
                                     <i
                                         class="fa-solid fa-scale-balanced text-color-primary bg-color-secondary icon-featured"></i>
@@ -182,7 +188,8 @@
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
                             bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary" bis_skin_checked="1">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
                                 <div class="box-content" bis_skin_checked="1">
                                     <i
                                         class="fa-solid fa-people-group text-color-primary bg-color-secondary icon-featured"></i>
@@ -202,6 +209,62 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Research & Policy Analysis -->
+                        <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
+
+                            <div
+                                class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary">
+                                <div class="box-content">
+
+                                    <i
+                                        class="fa-solid fa-chart-pie text-color-primary bg-color-secondary icon-featured"></i>
+
+                                    <h4 class="font-weight-bold text-start text-color-secondary">
+                                        Research & Policy Analysis
+                                    </h4>
+
+                                    <ul class="px-2 text-start text-color-secondary">
+                                        <li>AMAAC conducts research and publishes policy briefs on issues impacting Arab and
+                                            Muslim communities.</li>
+                                        <li>Topics include civil rights, immigration, foreign policy, and media
+                                            representation.</li>
+                                        <li>Resources are created to support policymakers, journalists, and community
+                                            leaders in informed decision-making.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Partnerships & Coalition Building -->
+                        <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="900">
+
+                            <div
+                                class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary">
+                                <div class="box-content">
+
+                                    <i
+                                        class="fa-solid fa-handshake-angle text-color-primary bg-color-secondary icon-featured"></i>
+
+                                    <h4 class="font-weight-bold text-start text-color-secondary">
+                                        Partnerships & Coalition Building
+                                    </h4>
+
+                                    <ul class="px-2 text-start text-color-secondary">
+                                        <li>AMAAC builds strategic partnerships to amplify community impact.</li>
+                                        <li>Collaborations include mosques, community centers, universities, and civil
+                                            society organizations.</li>
+                                        <li>Working with international institutions to design joint programs and strengthen
+                                            collective advocacy.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

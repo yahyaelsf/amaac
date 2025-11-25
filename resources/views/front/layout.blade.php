@@ -157,12 +157,12 @@
 			<footer id="footer" class="border-0" style="background : var(--secondary)">
     <div class="container">
 
-        <div class="row py-5 ">
+        <div class="row pt-5 ">
             <div class="col-md-5 mb-4 mb-lg-0 text-center text-md-start">
                 <a href="index.html" class="logo pe-0 pe-lg-3">
                     <img alt="Porto Website Template" src="{{ asset('front/img/home/amaac_logo-removebg-preview.png') }}" class="mb-4 mt-1" height="80">
                 </a>
-                <p class="mt-2 mb-2 text-color-primary">We are a leading organization committed to promoting mutual understanding between the United States and the Arab and Islamic world. We work to defend rights, support sustainable development and advance progress, growth and prosperity globally...</p>
+                <p class="mt-2 mb-2 text-color-primary">Building bridges of understanding, defending rights, and empowering communities</p>
             </div>
 
             <div class="col-sm-4 col-md-3 text-center text-md-start">
@@ -175,6 +175,7 @@
                     <li><i class="fas fa-angle-right"></i><a href="{{ route('front.involved') }}" class="link-hover-style-1 ms-1 text-color-primary"> Get Involved</a></li>
                     <li><i class="fas fa-angle-right"></i><a href="{{ route('front.contact') }}" class="link-hover-style-1 ms-1 text-color-primary"> Contact Us</a></li>
                 </ul>
+
             </div>
 
             <div class="col-sm-8 col-md-4 mb-4 mb-lg-0 text-center text-md-start">
@@ -184,22 +185,36 @@
 
                     <div class="col-4 col-md-6 pe-2 ps-0 mb-2">
                         <div class="image-gallery-item">
-                            <a href="{{ asset('front/img/home/IMG-20251119-WA0022.jpg') }}" class="lightbox-portfolio image-zoom">
-                                <img src="{{ asset('front/img/home/IMG-20251119-WA0022.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
+                            <a href="{{ route('news.future') }}" class="lightbox-portfolio image-zoom">
+                                <img src="{{ asset('front/img/home/article1thumbnail.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
                             </a>
                         </div>
                     </div>
 
                     <div class="col-4 col-md-6 pe-2 ps-0 mb-2">
                         <div class="image-gallery-item">
-                            <a href="{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}" class="lightbox-portfolio image-zoom">
-                                <img src="{{ asset('front/img/home/IMG-20251119-WA0016.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
+                            <a href="{{ route('news.rights') }}" class="lightbox-portfolio image-zoom">
+                                <img src="{{ asset('front/img/home/article2thumbnail.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
                             </a>
                         </div>
                     </div>
 
                 </div>
+                <p class="mt-3 mb-0 text-center text-lg-start">
+								<i class="fab fa-whatsapp text-color-primary"></i><span class=" opacity-7 ps-2 text-color-primary">+1 312-622-6666</span>
+								<i class="far fa-envelope text-color-primary ms-4 me-2"></i><a class="text-color-primary" href="mailto:mail@example.com"
+									class="opacity-7 ps-2">info@amaac.com</a>
+							</p>
             </div>
+            <div class="footer-copyright footer-copyright-style-2 bg-transparent footer-top-light-border mt-3">
+					<div class="container py-2">
+						<div class="row py-2">
+							<div class="col d-flex align-items-center justify-content-center mb-lg-0">
+								<p>© Copyright 2025 AMAAC. All Rights Reserved.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
         </div>
     </div>

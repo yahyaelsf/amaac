@@ -152,7 +152,7 @@
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
                                                     Integrity</h2>
-                                                <p class="text-color-primary">Operating with transparency, honesty, and
+                                                <p class="text-color-primary">Acting with transparency, honesty, and
                                                     accountability. </p>
 
                                             </div>
@@ -195,7 +195,8 @@
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
                                                     Compassion</h2>
                                                 <p class="text-color-primary">
-                                                    Embodying empathy and care for all people.</p>
+                                                    Embodying empathy and care for all people, especially the vulnerable.
+                                                </p>
 
                                             </div>
                                         </article>
@@ -216,8 +217,7 @@
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
                                                     Inclusivity </h2>
                                                 <p class="text-color-primary">Celebrating diversity and ensuring all voices
-                                                    are
-                                                    heard. </p>
+                                                    are heard and respected</p>
 
                                             </div>
                                         </article>
@@ -237,8 +237,8 @@
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
                                                     Empowerment</h2>
-                                                <p class="text-color-primary">Equipping individuals and communities with the
-                                                    tools for self-determination, impact and progress.</p>
+                                                <p class="text-color-primary">Providing individuals and communities with
+                                                    tools for self-determination and progress.</p>
 
                                             </div>
                                         </article>
@@ -258,9 +258,8 @@
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
                                                     Respect and equality for all</h2>
-                                                <p class="text-color-primary">we believe that every individual deserves
-                                                    dignity, respect, and
-                                                    equal opportunity.</p>
+                                                <p class="text-color-primary">Believing that every person deserves dignity,
+                                                    security, and equal opportunity.</p>
 
                                             </div>
                                         </article>
@@ -320,12 +319,13 @@
                             class="font-weight-extra-bold text-color-primary">
                             Mission</strong></h2>
                     <p class="lead text-color-primary borderd-secondary">
-                        The mission of the American Muslim dnd Arab Affairs Council
-                        for is to promote mutual understanding, build bridges of dialogue,
-                        and advocate for the rights of Arab and Muslim communities in
-                        the United States and around the world. We work to positively
-                        influence policy, support sustainable development, and combat
-                        negative stereotypes to achieve a more just and peaceful world.
+                        The mission of the American Muslim and Arab Affairs Council (AMAAC) is to promote mutual
+                        understanding, build bridges of dialogue, and advocate for the rights and dignity of Arab and Muslim
+                        communities in the United States and around the world.
+                        We work to positively influence public policy, support sustainable development, and challenge
+                        negative stereotypes. Through research, advocacy, and community partnerships, AMAAC strives to
+                        contribute to a more just and peaceful world where all people live with dignity and mutual respect.
+
                     </p>
                 </div>
                 <div

@@ -39,8 +39,8 @@
                                 </h1>
                             </div>
                             <div class="overflow-hidden mb-3">
-                                <p class="lead mb-0 appear-animation text-color-secondary-100" data-appear-animation="maskUp"
-                                    data-appear-animation-delay="200">
+                                <p class="lead mb-0 appear-animation text-color-secondary-100"
+                                    data-appear-animation="maskUp" data-appear-animation-delay="200">
                                     Our diverse and inspiring team is committed to fulfilling
                                     AMAAC's vision. Our members combine deep expertise and a
                                     shared passion for serving the causes of peace and justice."
@@ -55,8 +55,8 @@
         </div>
         <div class="container py-4">
 
-            <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center text-color-light-100" data-sort-id="team"
-                data-option-key="filter">
+            <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center text-color-light-100"
+                data-sort-id="team" data-option-key="filter">
                 {{-- <li class="nav-item active" data-option-value="*"><a class="nav-link text-2-5 text-uppercase text-color-light-100 active "
                         href="#">Show All</a></li>
                 <li class="nav-item" data-option-value=".leadership"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
@@ -75,17 +75,18 @@
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="{{ route('front.teamPage') }}">
-                                    <img src="{{ asset('front/img/team/team-1.jpg') }}" class="img-fluid" alt="">
+                                    <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.04.06_d144ae8fs.jpg') }}" class="img-fluid"
+                                        style="height : 260px !important" alt="">
                                     <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">John Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">CEO</span>
+                                        <span class="thumb-info-inner text-color-secondary">Dr.Tamara</span>
+                                        <span class="thumb-info-type text-color-secondary">Founding President & Chair</span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                    A seasoned researcher and community leader with 20+ years of experience in advocacy,
+                                    interfaith work,</span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
                                             class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
@@ -102,14 +103,13 @@
                                     <img src="{{ asset('front/img/team/team-2.jpg') }}" class="img-fluid" alt="">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Jessica Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Marketing</span>
+                                        <span class="thumb-info-type text-color-secondary">Executive Director</span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
+                                <span class="thumb-info-caption-text text-color-secondary"> Responsible for overseeing
+                                    day-to-day operations, strategic planning, and partnerships. </span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a href="http://www.twitter.com"><i
                                             class="fab fa-x-twitter text-color-secondary"></i><span>Twitter</span></a>
@@ -126,14 +126,14 @@
                                     <img src="{{ asset('front/img/team/team-3.jpg') }}" class="img-fluid" alt="">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Rick Edward Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Developer</span>
+                                        <span class="thumb-info-type text-color-secondary">Director of Policy &
+                                            Advocacy</span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                 Leads AMAAC’s policy research, government relations on civil rights, immigration, and U.S. foreign policy </span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
                                             class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
@@ -152,14 +152,16 @@
                                     <img src="{{ asset('front/img/team/team-4.jpg') }}" class="img-fluid" alt="">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Melinda Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Design</span>
+                                        <span class="thumb-info-type text-color-secondary">Program Manager – Youth &
+                                            Community Development
+                                        </span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
+                                <span class="thumb-info-caption-text text-color-secondary"> Designs and implements youth
+                                    leadership, civic engagement, and community empowerment programs.
+                                </span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
                                             class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
@@ -179,14 +181,13 @@
                                         alt="">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Robert Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Design</span>
+                                        <span class="thumb-info-type text-color-secondary">Communications & Media Director
+</span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
+                                <span class="thumb-info-caption-text text-color-secondary">Manages media relations and digital storytelling to promote accurate about Arab and Muslim communities.</span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
                                             class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
@@ -202,14 +203,14 @@
                                         alt="">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Melissa Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Marketing</span>
+                                        <span class="thumb-info-type text-color-secondary">Digital Content & Design Specialist
+</span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
+                                <span class="thumb-info-caption-text text-color-secondary"> Oversees visual identity, website content, graphics, and multimedia materials across AMAAC’s platforms.
+</span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
                                             class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
@@ -221,56 +222,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item development">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
-                                    <img src="{{ asset('front/img/team/team-7.jpg') }}" class="img-fluid"
-                                        alt="">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Janice Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Developer</span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
-                                <span class="thumb-info-social-icons mb-4">
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary"></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item development">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
-                                    <img src="{{ asset('front/img/team/team-8.jpg') }}" class="img-fluid"
-                                        alt="">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Jerry Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Developer</span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit.
-                                    Cras ac ligula mi, non suscipitaccumsan.</span>
-                                <span class="thumb-info-social-icons mb-4">
-                                    <a target="_blank" href="http://www.facebook.com"><i
-                                            class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
-                                    <a href="http://www.twitter.com"><i
-                                            class="fab fa-x-twitter text-color-secondary"></i><span>Twitter</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary"></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
+
                 </div>
 
             </div>

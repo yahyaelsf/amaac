@@ -26,8 +26,24 @@ Route::get('/about-me' ,[HomeController::class ,'teamPage'])->name('front.teamPa
 Route::get('/our-works' ,[HomeController::class ,'works'])->name('front.works');
 Route::get('/get-involved' ,[HomeController::class ,'involved'])->name('front.involved');
 Route::get('/contact-us' ,[HomeController::class ,'contact'])->name('front.contact');
-
-
+Route::get('/future-Arab-muslim',function(){
+    return view('front.news.Future');
+})->name('news.future');
+Route::get('/know-your-rights',function(){
+    return view('front.news.Rights');
+})->name('news.rights');
+Route::get('/youth-leadership:',function(){
+    return view('front.news.Generation');
+})->name('news.leadership');
+Route::get('/arab-relations:',function(){
+    return view('front.news.Relations');
+})->name('news.relations');
+Route::get('/combating-islamophobia',function(){
+    return view('front.news.Combating');
+})->name('news.combating');
+Route::get('/strengthening-community-resilience',function(){
+    return view('front.news.Strengthening');
+})->name('news.strengthening');
 
 
 
