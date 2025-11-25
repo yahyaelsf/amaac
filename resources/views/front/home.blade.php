@@ -556,72 +556,81 @@
                                 <div class="owl-stage"
                                     style="transform: translate3d(-2302px, 0px, 0px); transition: 1s; width: 3453px; ">
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                     <a href="{{ route('news.future') }}">
+
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
                                                     <img src="{{ asset('front/img/home/article1thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
+                                                          <a href="{{ route('news.future') }}" class="">
                                                     <span class="thumb-info-title bg-primary text-secondary">
+
                                                         <span
                                                             class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
                                                             The Future of Arab & Muslim Representation in American Media</span>
                                                         <span class="thumb-info-type mt-2">Misrepresentation remains a major challenge. This article explores the current landscape of media portrayals, highlights positive change-makers, and outlines AMAAC’s media literacy initiatives to empower content creators and influencers in our communities</span>
+
                                                     </span>
+                                                     </a>
 
                                                 </span>
                                             </span>
                                         </div>
-                                        </a>
+
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                     <a href="{{ route('news.rights') }}">
+
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
                                                     <img src="{{ asset('front/img/home/article2thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
+                                                     <a href="{{ route('news.rights') }}">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
                                                             class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
                                                             Know Your Rights: A Complete Guide for Arab & Muslim Americans</span>
                                                         <span class="thumb-info-type mt-2"> An essential resource explaining constitutional rights, protections against discrimination, what to do if confronted with Islamophobia, and how AMAAC is expanding its legal-support and advocacy network across the United States.</span>
                                                     </span>
+                                                    </a>
 
                                                 </span>
                                             </span>
                                         </div>
-                                        </a>
+
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                     <a href="{{ route('news.leadership') }}">
+
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
                                                     <img src="{{ asset('front/img/home/article3thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
+                                                        <a href="{{ route('news.leadership') }}">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
                                                             class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Youth Leadership: How the Next Generation Is Redefining Civic Engagement</span>
                                                         <span class="thumb-info-type mt-2">Showcasing inspiring stories of Arab and Muslim American youth leading community projects, advocating in local government, and representing their identities confidently. Includes information about AMAAC’s Youth Civic Leadership Fellowship.</span>
                                                     </span>
+                                                     </a>
 
                                                 </span>
                                             </span>
                                         </div>
-                                    </a>
+
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                     <a href="{{ route('news.relations') }}">
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
                                                     <img src="{{ asset('front/img/home/article4thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
+                                     <a href="{{ route('news.relations') }}">
+
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
                                                             class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
@@ -630,51 +639,53 @@
                                                         <span class="thumb-info-type mt-2">A balanced, informative piece examining how cultural diplomacy and people-to-people engagement help build trust and reduce misconceptions. Features AMAAC’s role in cultural programs and community dialogue.
                                                         </span>
                                                     </span>
-
+                                                </a>
                                                 </span>
                                             </span>
                                         </div>
-                                    </a>
+
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                      <a href="{{ route('news.combating') }}">
+
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
                                                     <img src="{{ asset('front/img/home/article5thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
+                                                         <a href="{{ route('news.combating') }}">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
                                                             class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
                                                             Combating Islamophobia: Practical Steps for Communities & Allies</span>
                                                         <span class="thumb-info-type mt-2"> A guide offering practical strategies for schools, workplaces, parents, and community leaders to create safer and more inclusive environments. Includes recommended reporting channels and AMAAC initiatives supporting victims of discrimination</span>
                                                     </span>
-
+                                                </a>
                                                 </span>
                                             </span>
                                         </div>
-                                        </a>
+
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                     <a href="{{ route('news.strengthening') }}">
+
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
                                                     <img src="{{ asset('front/img/home/article6thumbnail.jpg') }}" class="img-fluid border-radius-0"
                                                         alt="">
+                                                         <a href="{{ route('news.strengthening') }}">
                                                     <span class="thumb-info-title bg-primary text-secondary">
                                                         <span
                                                             class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Strengthening Community Resilience Through Local Partnerships
                                                             </span>
                                                         <span class="thumb-info-type mt-2"> Explores how mosques, community centers, NGOs, universities, and advocacy groups can collaborate to deliver impactful programs—from mental health support to voter education. Highlights new AMAAC partnerships and success stories</span>
                                                     </span>
-
+                                                     </a>
                                                 </span>
                                             </span>
                                         </div>
-                                        </a>
+
                                     </div>
 
 
