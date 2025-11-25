@@ -82,7 +82,7 @@
 								</div>
 							</div>
                             <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/slide2.jpg') }}); background-size: cover; background-position: center;">
+								style="background-image: url({{ asset('front/img/home/Slide2.jpg') }}); background-size: cover; background-position: center;">
 								<div class="container position-relative z-index-3 h-100">
 									<div class="row justify-content-center align-items-center h-100">
 										<div class="col-lg-6">
