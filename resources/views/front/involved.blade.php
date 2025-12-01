@@ -43,10 +43,7 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        .btn-involve:hover {
-            background: #b8942c;
-            color: #fff;
-        }
+
 
         /* Appear Animation */
         .appear-animation {
@@ -351,7 +348,7 @@
                         data-appear-animation-delay="100">
                         <h4>Become a <strong>Member</strong></h4>
                         <p>Support our mission and receive exclusive updates, opportunities, and special invitations.</p>
-                        <a href="#" class="btn btn-involve">Join Now</a>
+                        <a href="#" class="btn btn-modern btn-secondary">Join Now</a>
                     </div>
                 </div>
 
@@ -367,7 +364,7 @@
                             <li>Social media and communications</li>
                             <li>Community outreach</li>
                         </ul>
-                        <a href="#" class="btn btn-involve">Become a Volunteer</a>
+                        <a href="#" class="btn btn-modern btn-secondary">Become a Volunteer</a>
                     </div>
                 </div>
 
@@ -377,7 +374,7 @@
                         data-appear-animation-delay="300">
                         <h4>Donate</h4>
                         <p>Your financial contribution directly fuels our advocacy, education, and legal efforts.</p>
-                        <a href="#" class="btn btn-involve">Donate Now</a>
+                        <a href="#" class="btn btn-modern btn-secondary">Donate Now</a>
                     </div>
                 </div>
 
@@ -388,7 +385,7 @@
                         <h4>Take <strong>Action</strong></h4>
                         <p>Participate in campaigns, sign petitions, and contact your elected officials about critical
                             issues.</p>
-                        <a href="#" class="btn btn-involve">View Action Alerts</a>
+                        <a href="#" class="btn btn-modern btn-secondary">View Action Alerts</a>
                     </div>
                 </div>
 
@@ -398,7 +395,7 @@
                         data-appear-animation-delay="500">
                         <h4>Stay <strong>Informed</strong></h4>
                         <p>Subscribe to our newsletter for updates, news, and opportunities to take action.</p>
-                        <a href="#" class="btn btn-involve">Subscribe</a>
+                        <a href="#" class="btn btn-modern btn-secondary">Subscribe</a>
                     </div>
                 </div>
 
@@ -409,7 +406,7 @@
                         <h4>Share Your <strong>Story</strong></h4>
                         <p>If you've experienced discrimination or have a story that can inspire change, we want to hear
                             from you.</p>
-                        <a href="#" class="btn btn-involve">Share Your Story</a>
+                        <a href="#" class="btn btn-modern btn-secondary">Share Your Story</a>
                     </div>
                 </div>
             </div>

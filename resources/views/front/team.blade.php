@@ -35,11 +35,11 @@
                             <div class="overflow-hidden mb-3">
                                 <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-secondary "
                                     data-appear-animation="maskUp">
-                                    Our <span class="text-color-secondary"></span>
+                                    Our <span class="text-color-secondary">Team</span>
                                 </h1>
                             </div>
                             <div class="overflow-hidden mb-3">
-                                <p class="lead mb-0 appear-animation text-color-secondary-100"
+                                <p class="lead mb-0 appear-animation text-color-secondary"
                                     data-appear-animation="maskUp" data-appear-animation-delay="200">
                                     Our diverse and inspiring team is committed to fulfilling
                                     AMAAC's vision. Our members combine deep expertise and a
