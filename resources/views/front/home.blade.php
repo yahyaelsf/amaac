@@ -418,9 +418,9 @@
                     <p class="pb-2 mb-4 mt-3 appear-animation animated fadeInUpShorter appear-animation-visible text-color-primary borderd-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
-                        *“At AMAAC, we believe that justice, dignity, and mutual respect are not luxuries, but rights for every human being. Our communities have contributed enormously to the scientific, cultural, and economic progress of the United States, yet they still face misunderstanding and discrimination.
+                        At AMAAC, we believe that justice, dignity, and mutual respect are not luxuries, but rights for every human being. Our communities have contributed enormously to the scientific, cultural, and economic progress of the United States, yet they still face misunderstanding and discrimination.
                         AMAAC was founded to turn concern into action. We listen to our communities, amplify their voices where decisions are made, and build partnerships that create real opportunities for youth, families, and future generations.
-                    Together, we can reshape the narrative, defend our rights, and build bridges that lead to a more peaceful and inclusive society – in America and beyond.”*
+                    Together, we can reshape the narrative, defend our rights, and build bridges that lead to a more peaceful and inclusive society in America and beyond.
 
                     </p>
                     <a href="{{ route('front.contact') }}"
