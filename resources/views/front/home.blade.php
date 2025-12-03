@@ -67,7 +67,7 @@
 														{{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="#"
+														<a href="{{ route('front.about') }}"
 															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
 															 Learn More
                                                              {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
@@ -123,7 +123,7 @@
 														{{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="#"
+														<a href="#mission"
 															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
 															  Our Mission
                                                              {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
@@ -179,7 +179,7 @@
 														{{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="#"
+														<a href="{{ route('front.works') }}"
 															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
 															 Explore Our Work
                                                              {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
@@ -235,7 +235,7 @@
 														{{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="#"
+														<a href="{{ route('front.goals') }}"
 															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
 															  Discover More
                                                              {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
@@ -291,7 +291,7 @@
 														{{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="#"
+														<a href="{{ route('front.involved') }}"
 															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
 															 Join Our Programs
                                                              {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
@@ -335,7 +335,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="get-started text-start text-lg-end">
-                        <a href="#" class="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3 text-color-secondary">
+                        <a href="{{ route('front.about') }}" class="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3 text-color-secondary">
                             Learn more</a>
                         <!-- <div class="learn-more">or <a href="index.html">learn more.</a></div> -->
                     </div>
@@ -363,7 +363,7 @@
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
                         AMAAC is a non-profit council committed to promoting mutual understanding between the United States and the Arab and Islamic world. We defend rights, support sustainable development, and contribute to social, cultural, and political progress. AMAAC is a platform for hope, a bridge for understanding, and a voice for justice.
                     </p>
-                    <a href="https://elements.envato.com/"
+                    <a href="{{ route('front.contact') }}"
                         class="btn btn-secondary  btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible "
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
                         data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">
@@ -423,7 +423,7 @@
                     Together, we can reshape the narrative, defend our rights, and build bridges that lead to a more peaceful and inclusive society – in America and beyond.”*
 
                     </p>
-                    <a href="https://elements.envato.com/"
+                    <a href="{{ route('front.contact') }}"
                         class="btn btn-primary btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible test-color-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
                         data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">
@@ -435,7 +435,7 @@
     </section>
 
 
-    <section class="section bg-color-primary section-height-3 border-0 m-0">
+    <section class="section bg-color-primary section-height-3 border-0 m-0" id="mission">
         <div class="container">
             <div class="row">
                 <div class="col">

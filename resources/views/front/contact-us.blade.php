@@ -95,10 +95,9 @@
                                 style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
                                 <div class="gm-err-container">
                                     <div class="gm-err-content">
-                                        <div class="gm-err-icon"><iframe
-                                                src="https://www.google.com/maps?q=New+York&output=embed" width="100%"
-                                                height="400" style="border:0;" allowfullscreen="" loading="lazy">
-                                            </iframe></div>
+                                        <div class="gm-err-icon">
+                                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.9799223158952!2d-77.03873797545137!3d38.90157444645846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bbd9d49f1f%3A0x12f6b3d6b63564ed!2zMTc3NSBJIFN0IE5XIHN1aXRlIDExNTAsIFdhc2hpbmd0b24sIERDIDIwMDA22Iwg2KfZhNmI2YTYp9mK2KfYqiDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2s!4v1764745507298!5m2!1sar!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
                                         <div class="gm-err-title">Oops! Something went wrong.</div>
                                         <div class="gm-err-message">This page didn't load Google Maps correctly. See the
                                             JavaScript console for technical details.</div>

@@ -32,11 +32,11 @@
                 class="menu-item {{ \Illuminate\Support\Str::contains(request()->route()->getName(), 'sliders') ? 'active' : '' }}">
                 <a href="{{ route('admin.sliders.index') }}" class="menu-link">
                     <i class="menu-icon fa-solid fa-sliders"></i>
-                    <div data-i18n="Sliders">Sliders</div>
+                    <div data-i18n="Contacts">Contacts</div>
                 </a>
             </li>
         @endcan
-        <li class="menu-item {{ request()->routeIs('admin.chat') ? 'active' : '' }}">
+        {{-- <li class="menu-item {{ request()->routeIs('admin.chat') ? 'active' : '' }}">
             <a href="{{ route('admin.chat') }}" class="menu-link">
                 <i class="menu-icon fa-brands fa-rocketchat"></i>
                 <div data-i18n="Chat">Chat</div>
@@ -191,8 +191,8 @@
                     <div data-i18n="Users">Users</div>
                 </a>
             </li>
-        @endcan
-        @can('admins-view')
+        @endcan --}}
+        {{-- @can('admins-view')
             <li
                 class="menu-item {{ \Illuminate\Support\Str::contains(request()->route()->getName(), 'admins') ? 'active' : '' }}">
                 <a href="{{ route('admin.admins.index') }}" class="menu-link">
@@ -200,7 +200,7 @@
                     <div data-i18n="Admins">Admins</div>
                 </a>
             </li>
-        @endcan
+        @endcan --}}
         <li
             class="menu-item {{ \Illuminate\Support\Str::contains(request()->route()->getName(), 'admins') ? 'active' : '' }}">
             <form method="POST" action="{{ route('admin.logout') }}" class="menu-link">

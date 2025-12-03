@@ -15,7 +15,7 @@
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="{{ asset('front/img/home/amaac_logo-removebg-preview_cut.png') }}" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="{{ asset('front/img/apple-touch-icon.png') }}">
+		<link rel="apple-touch-icon" href="{{ asset('front/img/home/amaac_logo-removebg-preview_cut.png') }}">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
