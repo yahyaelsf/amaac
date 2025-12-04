@@ -108,7 +108,7 @@
                 grid-template-columns: repeat(1, 1fr);
             }
         }
-        .mobile-slider.img-thumbnail{
+        .mobile-slider .img-thumbnail{
             height: 350px !important;
         }
     </style>
@@ -413,7 +413,7 @@
                         </div>
                     </section> --}}
 
-                    <section class="section section-height-4 mt-0  border-0 bg-primary mobile-slider">
+                    <section class="section section-height-4 mt-0  border-0 bg-primary ">
                         <div class="container" bis_skin_checked="1">
                             <div class="row justify-content-center d-none d-md-block" bis_skin_checked="1">
                                 <div class="col-lg-12" bis_skin_checked="1">
@@ -482,7 +482,7 @@
 
                                 </div>
                             </div>
-                            <div class="row d-block d-md-none">
+                            <div class="row d-block d-md-none mobile-slider">
                                 <div class="col">
 
                                     <div class="my-4 lightbox appear-animation animated fadeInUpShorter appear-animation-visible"
@@ -791,7 +791,7 @@
 
             </div>
 
-         
+
 
 
 
