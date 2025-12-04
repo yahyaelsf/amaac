@@ -108,7 +108,7 @@
                 grid-template-columns: repeat(1, 1fr);
             }
         }
-        .mobile-slider .img-thumbnail{
+        .mobile-slider.img-thumbnail{
             height: 350px !important;
         }
     </style>
@@ -218,7 +218,7 @@
     <section class="bg-primary">
 
         <div class="container  pb-4" bis_skin_checked="1">
-            <div class="row" bis_skin_checked="1">
+            <div class="row pb-3" bis_skin_checked="1">
 
                 <div class="goals-container">
                     {{-- <h2 class="text-center mb-5 text-color-secondary">Our Strategic Goals</h2> --}}
@@ -413,7 +413,7 @@
                         </div>
                     </section> --}}
 
-                    <section class="section mt-0  border-0 bg-primary mobile-slider">
+                    <section class="section section-height-4 mt-0  border-0 bg-primary mobile-slider">
                         <div class="container" bis_skin_checked="1">
                             <div class="row justify-content-center d-none d-md-block" bis_skin_checked="1">
                                 <div class="col-lg-12" bis_skin_checked="1">
@@ -485,7 +485,7 @@
                             <div class="row d-block d-md-none">
                                 <div class="col">
 
-                                    <div class=" lightbox appear-animation animated fadeInUpShorter appear-animation-visible"
+                                    <div class="my-4 lightbox appear-animation animated fadeInUpShorter appear-animation-visible"
                                         data-appear-animation="fadeInUpShorter"
                                         data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}"
                                         style="animation-delay: 100ms;">
@@ -791,7 +791,7 @@
 
             </div>
 
-           
+         
 
 
 
