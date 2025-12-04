@@ -111,6 +111,14 @@
         .mobile-slider .img-thumbnail{
             height: 350px !important;
         }
+        .owl-theme .owl-dots{
+            margin-top : 25px;
+        }
+         .owl-theme .owl-dots .owl-dot.active span,
+         .owl-theme .owl-dots .owl-dot:hover span{
+            background: var(--secondary)
+        }
+
     </style>
 @endsection
 @section('content')
