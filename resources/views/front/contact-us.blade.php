@@ -125,7 +125,7 @@
                             </li>
                             <li><i class="fas fa-envelope top-6 text-color-primary bg-color-secondary"></i> <strong
                                     class="text-secondary">Email:</strong> <a class="text-color-secondary-100"
-                                    href="mailto:mail@example.com">info@ammac.com</a></li>
+                                    href="mailto:mail@example.com">info@amaacouncil.com/</a></li>
                         </ul>
                     </div>
                     {{--

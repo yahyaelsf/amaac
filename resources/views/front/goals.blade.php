@@ -27,9 +27,9 @@
 
         .goal-section:hover {
             /*  transform: translateY(-5px) scale(1.01);
-                                            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-                                            border-color: var(--primary);
-                                            */
+                                                                            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+                                                                            border-color: var(--primary);
+                                                                            */
             transform: translateY(-10px) scale(1.02);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
             background: #0a2b5a;
@@ -89,6 +89,12 @@
             gap: 25px;
         }
 
+        .image-zoom-in-out {
+            height: 300px !important;
+            width: 400px;
+            border: none;
+        }
+
         /* تابلت */
         @media (max-width: 991px) {
             .four-boxes {
@@ -107,7 +113,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0028.jpg') }}'); background-position: center center;
+        style="background-image: url('{{ asset('front/img/home/hedaer_background.png') }}'); background-position: bottom center;
         background-size: cover;">
         <div class="container">
             <div class="row mt-5">
@@ -125,48 +131,131 @@
         </div>
     </section>
     <section class="bg-primary">
+        <div class="container">
+            <div class="row align-items-center py-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
+                data-appear-animation="fadeInLeftShorter" style="animation-delay: 100ms;">
+                <div class="col-md-4 px-5 px-md-3 ">
+                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section1.png') }}"
+                        alt="layout styles">
+                </div>
+                <div class="col-md-8 ps-md-5">
+                    {{-- class="img-fluid position-relative appear-animation mb-2 image-zoom-in-out animated expandIn appear-animation-visible" --}}
+                    <h2 class="font-weight-normal text-6 mb-3 text-color-secondary">Defending Civil Rights and Social
+                        Justice</h2>
+                    <p class="text-color-secondary">Combating all forms of discrimination and prejudice.</p>
+                    <p class="text-color-secondary">Promoting public policies that protect the constitutional freedoms of
+                        Muslims and Arabs.</p>
+                    <p class="text-color-secondary">Monitoring discriminatory practices in labor, education, media, and law
+                        enforcement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-secondary">
+        <div class="container">
+
+            <div class="row align-items-center py-5 appear-animation animated fadeInRightShorter appear-animation-visible"
+                data-appear-animation="fadeInRightShorter" style="animation-delay: 100ms;">
+                <div class="col-md-8 pe-md-5 mb-5 mb-md-0 text-color-primary order-2 order-md-1">
+                    <h2 class="font-weight-normal text-6 mb-3 text-color-primary">
+                        Political Empowerment and Civic Participation</h2>
+                    <p class="text-color-primary">Supporting increased Arab and Muslim representation in local and federal
+                        councils.</p>
+                    <p class="text-color-primary">Providing awareness and training programs to enhance political and
+                        societal presence.</p>
+                </div>
+                <div class="col-md-4 px-5 px-md-3 order-1 order-md-2">
+                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section2.png') }}"
+                        alt="layout styles">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row align-items-center py-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
+                data-appear-animation="fadeInLeftShorter" style="animation-delay: 100ms;">
+                <div class="col-md-4 px-5 px-md-3">
+                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section3.png') }}"
+                        alt="layout styles">
+                </div>
+                <div class="col-md-8 ps-md-5">
+                    {{-- class="img-fluid position-relative appear-animation mb-2 image-zoom-in-out animated expandIn appear-animation-visible" --}}
+                    <h2 class="font-weight-normal text-6 mb-3 text-color-secondary">Defending Civil Rights and Social
+                        Justice</h2>
+                    <p class="text-color-secondary">Combating all forms of discrimination and prejudice.</p>
+                    <p class="text-color-secondary">Promoting public policies that protect the constitutional freedoms of
+                        Muslims and Arabs.</p>
+                    <p class="text-color-secondary">Monitoring discriminatory practices in labor, education, media, and law
+                        enforcement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-secondary">
+        <div class="container">
+
+            <div class="row align-items-center py-5 appear-animation animated fadeInRightShorter appear-animation-visible"
+                data-appear-animation="fadeInRightShorter" style="animation-delay: 100ms;">
+                <div class="col-md-8 pe-md-5 mb-5 mb-md-0 text-color-primary order-2 order-md-1">
+                    <h2 class="font-weight-normal text-6 mb-3 text-color-primary">
+                        Political Empowerment and Civic Participation</h2>
+                    <p class="text-color-primary">Supporting increased Arab and Muslim representation in local and federal
+                        councils.</p>
+                    <p class="text-color-primary">Providing awareness and training programs to enhance political and
+                        societal presence.</p>
+                </div>
+                <div class="col-md-4 px-5 px-md-3 order-1 order-md-2">
+                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section4.png') }}"
+                        alt="layout styles">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary">
 
         <div class="container  pb-4" bis_skin_checked="1">
             <div class="row pb-3" bis_skin_checked="1">
 
                 <div class="goals-container">
-                    <h2 class="text-center mb-5 text-color-secondary">Our Strategic Goals</h2>
+                    {{-- <h2 class="text-center mb-5 text-color-secondary">Our Strategic Goals</h2> --}}
 
                     <!-- Section 1 -->
-                    <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="100">
                         <h3 class="goal-title ">Defending Civil Rights and Social Justice</h3>
                         <p>Combating all forms of discrimination and prejudice.</p>
                         <p>Promoting public policies that protect the constitutional freedoms of Muslims and Arabs.</p>
                         <p>Monitoring discriminatory practices in labor, education, media, and law enforcement.</p>
-                    </section>
+                    </section> --}}
 
                     <!-- Section 2 -->
-                    <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="200">
                         <h3 class="goal-title">Political Empowerment and Civic Participation</h3>
                         <p>Supporting increased Arab and Muslim representation in local and federal councils.</p>
                         <p>Providing awareness and training programs to enhance political and societal presence.</p>
-                    </section>
+                    </section> --}}
 
                     <!-- Section 3 -->
-                    <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="300">
                         <h3 class="goal-title">Preserving and Promoting Cultural Identity</h3>
                         <p>Organizing artistic and cultural events that highlight Arab and Islamic heritage.</p>
                         <p>Supporting educational initiatives that re-present the image of Islam and Arabism.</p>
                         <p>Producing media content that counters stereotypes and misinformation.</p>
-                    </section>
+                    </section> --}}
 
                     <!-- Section 4 -->
-                    <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="400">
                         <h3 class="goal-title">Community Building and Unity</h3>
                         <p>Launching community dialogue initiatives and promoting solidarity among community members.</p>
                         <p>Encouraging collaborative work across religions and cultures, creating common ground for
                             understanding.</p>
-                    </section>
-                    <section class="goal-section appear-animation modern-goal" data-appear-animation="fadeInUp"
+                    </section> --}}
+
+                    {{-- <section class="goal-section appear-animation modern-goal" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">
 
                         <h3 class="goal-title text-center mb-4">
@@ -217,11 +306,11 @@
                             </div>
 
                         </div>
-                    </section>
+                    </section> --}}
 
 
                     <!-- Section 6 -->
-                    <section class="goal-section alt appear-animation modern-goal" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section alt appear-animation modern-goal" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="600">
 
                         <h3 class="goal-title text-center mb-4">
@@ -269,10 +358,10 @@
                             </div>
 
                         </div>
-                    </section>
+                    </section> --}}
 
 
-                    <section class="goal-section appear-animation modern-goal" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section appear-animation modern-goal" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">
 
                         <h3 class="goal-title text-center mb-4">
@@ -319,10 +408,262 @@
                             </div>
 
                         </div>
+                    </section> --}}
+
+                    <section class="section section-height-4 mt-0  border-0 bg-primary">
+                        <div class="container" bis_skin_checked="1">
+                            <div class="row justify-content-center d-none d-md-block" bis_skin_checked="1">
+                                <div class="col-lg-12" bis_skin_checked="1">
+
+                                    <div class="owl-carousel owl-theme nav-inside nav-inside-edge nav-squared nav-with-transparency nav-light owl-loaded owl-drag owl-carousel-init"
+                                        data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': true, 'dots': true}"
+                                        style="height: auto;">
+
+
+
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage"
+                                                style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1668px;">
+                                                <div class="owl-item active" style="width: 546px; margin-right: 10px;">
+                                                    <div>
+                                                        <div class="img-thumbnail border-0 p-0 d-block">
+                                                            <img class="img-fluid border-radius-0"
+                                                                src="{{ asset('front/img/home/slider_1.png') }}"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 546px; margin-right: 10px;">
+                                                    <div>
+                                                        <div class="img-thumbnail border-0 p-0 d-block">
+                                                            <img class="img-fluid border-radius-0"
+                                                                src="{{ asset('front/img/home/slider2.png') }}"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 546px; margin-right: 10px;">
+                                                    <div>
+                                                        <div class="img-thumbnail border-0 p-0 d-block">
+                                                            <img class="img-fluid border-radius-0"
+                                                                src="{{ asset('front/img/home/slider3.png') }}"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 546px; margin-right: 10px;">
+                                                    <div>
+                                                        <div class="img-thumbnail border-0 p-0 d-block">
+                                                            <img class="img-fluid border-radius-0"
+                                                                src="{{ asset('front/img/home/slider4.png') }}"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 546px; margin-right: 10px;">
+                                                    <div>
+                                                        <div class="img-thumbnail border-0 p-0 d-block">
+                                                            <img class="img-fluid border-radius-0"
+                                                                src="{{ asset('front/img/home/slider5.png') }}"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-nav"><button type="button" role="presentation"
+                                                class="owl-prev disabled"></button><button type="button"
+                                                role="presentation" class="owl-next"></button></div>
+                                        <div class="owl-dots disabled"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row d-block d-md-none">
+                                <div class="col">
+
+                                    <div class="my-4 lightbox appear-animation animated fadeInUpShorter appear-animation-visible"
+                                        data-appear-animation="fadeInUpShorter"
+                                        data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}"
+                                        style="animation-delay: 100ms;">
+                                        <div class="owl-carousel owl-theme pb-3 owl-loaded owl-drag owl-carousel-init"
+                                            data-plugin-options="{'items': 4, 'margin': 35, 'loop': true ,'autoHeight': false , 'autoplay': true}"
+                                            style="height: auto;">
+
+                                            <div class="owl-stage-outer">
+                                                <div class="owl-stage"
+                                                    style="transform: translate3d(-2302px, 0px, 0px); transition: 1s; width: 3453px; ">
+                                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                                        <article
+                                                            class="post post-medium border-0 pb-0 mb-5 bg-color-secondary">
+                                                            <div class="post-image">
+                                                                <a href="#">
+                                                                    <img src="{{ asset('front/img/home/slider1_1.png') }}"
+                                                                        class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
+                                                                        alt="" height="300px">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="post-content p-1 text-color-primary">
+
+                                                                <h2
+                                                                    class="font-weight-semibold text-5 line-height-6 mt-3
+                                                                    mb-2 text-color-primary">
+                                                                    Advocating for justice & equality
+                                                                </h2>
+                                                                <ul class="text-color-primary text-start">
+                                                                    <li>Ensuring Equal Rights</li>
+                                                                    <li>Challenging Discrimination</li>
+                                                                    <li>Legal Aid & Advocacy</li>
+                                                                    <li>Policy Reform</li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                                        <article
+                                                            class="post post-medium border-0 pb-0 mb-5 bg-color-secondary">
+                                                            <div class="post-image">
+                                                                <a href="#">
+                                                                    <img src="{{ asset('front/img/home/slider1_2.png') }}"
+                                                                        class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
+                                                                        alt="" height="300px">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="post-content p-1 text-color-primary">
+
+                                                                <h2
+                                                                    class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
+                                                                    Participation, Leadership, and Active Citizenship</h2>
+                                                                <ul class="text-color-primary text-start">
+                                                                    <li> Voter Registration & Education</li>
+                                                                    <li> Community Dialogue</li>
+                                                                    <li>Leadership Training</li>
+                                                                    <li>Policy Advocacy & Representation</li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                                        <article
+                                                            class="post post-medium border-0 pb-0 mb-5 bg-color-secondary">
+                                                            <div class="post-image">
+                                                                <a href="#">
+                                                                    <img src="{{ asset('front/img/home/slider1_3.png') }}"
+                                                                        class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
+                                                                        alt="" height="300px">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="post-content p-1 text-color-primary">
+
+                                                                <h2
+                                                                    class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
+                                                                    Growth, Health, and Future Opportunities</h2>
+                                                                 <ul class="text-color-primary text-start">
+                                                                    <li> Quality Education Access</li>
+                                                                    <li> Healthcare Inutiatives </li>
+                                                                    <li>Youth & Women Empowerment</li>
+                                                                    <li>Skills Development</li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                                        <article
+                                                            class="post post-medium border-0 pb-0 mb-5 bg-color-secondary">
+                                                            <div class="post-image">
+                                                                <a href="#">
+                                                                    <img src="{{ asset('front/img/home/slider1_4.png') }}"
+                                                                        class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
+                                                                        alt="" height="300px">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="post-content p-1 text-color-primary">
+
+                                                                <h2
+                                                                    class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
+                                                                    Stability, Resilience, and Long-term Prosperity </h2>
+                                                                 <ul class="text-color-primary text-start">
+                                                                    <li> Economic Development </li>
+                                                                    <li> Community Networks </li>
+                                                                    <li>Resource Building</li>
+                                                                    <li>Self-Reliance Programs</li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                                        <article
+                                                            class="post post-medium border-0 pb-0 mb-5 bg-color-secondary">
+                                                            <div class="post-image">
+                                                                <a href="#">
+                                                                    <img src="{{ asset('front/img/home/section2_1.png') }}"
+                                                                        class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
+                                                                        alt="" height="300px">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="post-content p-1 text-color-primary">
+
+                                                                <h2
+                                                                    class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
+                                                                    Deep Research & Informed Briefs</h2>
+                                                                <ul class="text-color-primary text-start">
+                                                                    <li> Data Driven Insights </li>
+                                                                    <li>  Comprehensive Policy Briefs</li>
+                                                                    <li>Evidence Based Recommendations</li>
+                                                                    <li>Future Trend Analysis</li>
+                                                                </ul>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+                                                        <article
+                                                            class="post post-medium border-0 pb-0 mb-5 bg-color-secondary">
+                                                            <div class="post-image">
+                                                                <a href="#">
+                                                                    <img src="{{ asset('front/img/home/section2_2.png') }}"
+                                                                        class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0"
+                                                                        alt="" height="300px">
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="post-content p-1 text-color-primary">
+
+                                                                <h2
+                                                                    class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
+                                                                    Engagement with Congress & Administration</h2>
+                                                                <ul class="text-color-primary text-start">
+                                                                    <li> Direct Congressional </li>
+                                                                    <li> Executive Branch Advocacy  </li>
+                                                                    <li>Stakeholder Meetings</li>
+                                                                    <li>Effective Communication Channels</li>
+                                                                </ul>
+
+                                                            </div>
+                                                        </article>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
 
-                    <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="600">
 
                         <h3 class="goal-title text-center mb-4">
@@ -359,7 +700,7 @@
                                     U.S. and Arab/Islamic countries.</p>
                             </div>
                         </div>
-                    </section>
+                    </section> --}}
 
                     {{-- <section class="goal-section alt appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="600">
@@ -387,7 +728,7 @@
                             experiences.
                         </p>
                     </section> --}}
-                    <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
+                    {{-- <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">
 
                         <h3 class="goal-title text-center mb-4">
@@ -424,7 +765,7 @@
                             </div>
                         </div>
 
-                    </section>
+                    </section> --}}
 
                     {{-- <section class="goal-section appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">

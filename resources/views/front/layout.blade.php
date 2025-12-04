@@ -185,7 +185,7 @@
 
                     <div class="col-4 col-md-6 pe-2 ps-0 mb-2">
                         <div class="image-gallery-item">
-                            <a href="{{ route('news.future') }}" class="lightbox-portfolio image-zoom">
+                            <a href="{{ route('news.future') }}" class="image-zoom">
                                 <img src="{{ asset('front/img/home/article1thumbnail.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
                             </a>
                         </div>
@@ -193,7 +193,7 @@
 
                     <div class="col-4 col-md-6 pe-2 ps-0 mb-2">
                         <div class="image-gallery-item">
-                            <a href="{{ route('news.rights') }}" class="lightbox-portfolio image-zoom">
+                            <a href="{{ route('news.rights') }}" class="image-zoom">
                                 <img src="{{ asset('front/img/home/article2thumbnail.jpg') }}" class="img-fluid" style="height: 120px !important;" alt="">
                             </a>
                         </div>
