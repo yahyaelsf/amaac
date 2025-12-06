@@ -7,7 +7,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.40_e3906b96.jpg') }}'); background-position: center center;
+        style="background-image: url('{{ asset('front/img/home/IMG-20251206-WA0010.jpg') }}'); background-position: center center;
         background-size: cover;">
         <div class="container">
             <div class="row mt-5">

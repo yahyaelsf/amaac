@@ -27,7 +27,7 @@
 						<div class="owl-stage">
 
 							<div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/slide1.jpg') }}); background-size: cover; background-position: center;">
+								style="background-image: url({{ asset('front/img/home/IMG-20251206-WA0004.jpg') }}); background-size: cover; background-position: center;">
 								<div class="container position-relative z-index-3 h-100">
 									<div class="row justify-content-center align-items-center h-100">
 										<div class="col-lg-6">
@@ -250,7 +250,7 @@
 								</div>
 							</div>
                             <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/slide5.jpg') }}); background-size: cover; background-position: center;">
+								style="background-image: url({{ asset('front/img/home/IMG-20251206-WA0002.jpg') }}); background-size: cover; background-position: center;">
 								<div class="container position-relative z-index-3 h-100">
 									<div class="row justify-content-center align-items-center h-100">
 										<div class="col-lg-6">
@@ -381,7 +381,7 @@
                         data-appear-animation-duration="750" style="animation-delay: 0ms;">
                         <div class="strong-shadow rounded strong-shadow-top-right image-zoom">
                             <img loading="lazy"
-                                src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.42.49_fc81cf2e.jpg') }}"
+                                src="{{ asset('front/img/home/IMG-20251206-WA0007.jpg') }}"
                                 class="img-fluid border border-width-10 border-color-light rounded box-shadow-3"
                                 alt="Porto Admin" style="height : 550px ; width: 100%">
 

@@ -2,7 +2,7 @@
 @section('css')
     <style>
         .post-image img {
-            height: 150px;
+            height: 200px;
         }
 
         @media (max-width: 575px) {
@@ -56,7 +56,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/IMG-20251119-WA0013.jpg') }}'); background-position: center center;
+        style="background-image: url('{{ asset('front/img/home/IMG-20251206-WA0006.jpg') }}'); background-position: center center;
         background-size: cover;">
         <div class="container">
             <div class="row mt-5">
@@ -331,7 +331,7 @@
                 <div
                     class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 position-relative mt-sm-5 image-stack">
 
-                    <img src="{{ asset('front/img/home/IMG-20251119-WA0022.jpg') }}"
+                    <img src="{{ asset('front/img/home/IMG-20251206-WA0007.jpg') }}"
                         class="img-fluid position-relative appear-animation mb-2 image-zoom-in-out"
                         data-appear-animation="expandIn" data-appear-animation-delay="600" alt="" />
 

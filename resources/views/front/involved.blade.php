@@ -68,7 +68,7 @@
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/WhatsApp-Image-2025-11-18 at 19.44.23_147f7548.jpg') }}');">
+        style="background-image: url('{{ asset('front/img/home/IMG-20251206-WA0008.jpg') }}');background-position: center center">
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
