@@ -131,7 +131,7 @@
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
-                                    <img src="{{ asset('front/img/team/team-3.jpg') }}" class="img-fluid" alt="">
+                                    <img src="{{ asset('front/img/team/WhatsApp Image 2025-12-14 at 2.34.53 PM.jpeg') }}" class="img-fluid" alt="">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary"> Dr. Hayatullah Atid </span>
                                         <span class="thumb-info-type text-color-secondary">General Assembly
@@ -155,7 +155,7 @@
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
-                                    <img src="{{ asset('front/img/team/team-4.jpg') }}" class="img-fluid" alt="">
+                                    <img src="{{ asset('front/img/team/Muhammed  Hassani.jpg') }}" style="height : 355px !important" class="img-fluid" alt="">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Mohammed Hassani </span>
                                         <span class="thumb-info-type text-color-secondary">Board of Trustees
@@ -183,8 +183,8 @@
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
-                                    <img src="{{ asset('front/img/team/team-5.jpg') }}" class="img-fluid"
-                                        alt="">
+                                    <img src="{{ asset('front/img/team/WhatsApp Image 2025-12-14 at 2.36.10 PM.jpeg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Dr. Bader Al Hussinan </span>
                                         <span class="thumb-info-type text-color-secondary">General Assembly
@@ -241,7 +241,7 @@
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
-                                    <img src="{{ asset('front/img/team/Muhammed  Hassani.jpg') }}" class="img-fluid"
+                                    <img src="{{ asset('front/img/team/hazem.jpg') }}" class="img-fluid"
                                         alt="" style="height : 355px !important">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Hazem Qashou
@@ -271,7 +271,7 @@
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
-                                    <img src="{{ asset('front/img/team/team-1.jpg') }}" class="img-fluid"
+                                    <img src="{{ asset('front/img/team/WhatsApp Image 2025-12-14 at 2.34.54 PM.jpeg') }}" class="img-fluid"
                                         alt="" style="height : 355px !important">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Dr. Abdelrahim Al Hour
