@@ -39,8 +39,8 @@
                                 </h1>
                             </div>
                             <div class="overflow-hidden mb-3">
-                                <p class="lead mb-0 appear-animation text-color-secondary"
-                                    data-appear-animation="maskUp" data-appear-animation-delay="200">
+                                <p class="lead mb-0 appear-animation text-color-secondary" data-appear-animation="maskUp"
+                                    data-appear-animation-delay="200">
                                     Our diverse and inspiring team is committed to fulfilling
                                     AMAAC's vision. Our members combine deep expertise and a
                                     shared passion for serving the causes of peace and justice."
@@ -71,153 +71,286 @@
 
             <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
                 <div class="row team-list sort-destination" data-sort-id="team">
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item leadership bg-primary">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item leadership bg-primary">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
-                                    <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.04.06_d144ae8fs.jpg') }}" class="img-fluid"
-                                        style="height : 260px !important" alt="">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.04.06_d144ae8fs.jpg') }}"
+                                        class="img-fluid" style="height : 355px !important" alt="">
                                     <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Dr.Tamara</span>
-                                        <span class="thumb-info-type text-color-secondary">Founding President & Chair</span>
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Tamara Alqolaghassi </span>
+                                        <span class="thumb-info-type text-color-secondary">President </span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
                                 <span class="thumb-info-caption-text text-color-secondary">
-                                    A seasoned researcher and community leader with 20+ years of experience in advocacy,
-                                    interfaith work,</span>
+                                    Dr. Alqolaghassi is a multifaceted entrepreneur who heads Capital Investment Holding
+                                    Group and its subsidiaries; she also serves as CEO of $Pay Rem, president of the
+                                    American International Education Federation and chairperson of global development
+                                    bodies. Her work spans leadership, management, investment and education, and she leads
+                                    international initiatives that align business innovation with UN Sustainable Development
+                                    Goals.</span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
-                                            class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
                                     <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary"></i><span>Linkedin</span></a>
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
                                 </span>
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item marketing">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
-                                    <img src="{{ asset('front/img/team/team-2.jpg') }}" class="img-fluid" alt="">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/7.png') }}" class="img-fluid" alt="">
                                     <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Jessica Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Executive Director</span>
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Abdullah Abbas </span>
+                                        <span class="thumb-info-type text-color-secondary">Vice President </span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary"> Responsible for overseeing
-                                    day-to-day operations, strategic planning, and partnerships. </span>
+                                <span class="thumb-info-caption-text text-color-secondary"> An Egyptian physician turned
+                                    entrepreneur, Dr. Abbas founded his first export import company in 1999 and later
+                                    launched a series of global ventures—including Falcon, OCTA, Beovita, Bionatural America
+                                    and the PropTech super app Kemedar. He is known for combining IT innovation,
+                                    international marketing and strategic planning; his companies operate in more than 25
+                                    countries and apply blockchain and AI in real estate technology. </span>
                                 <span class="thumb-info-social-icons mb-4">
-                                    <a href="http://www.twitter.com"><i
-                                            class="fab fa-x-twitter text-color-secondary"></i><span>Twitter</span></a>
+                                    <a target="_blank" href="{{ asset('front/img/team/1-abdullah-resume-photo-album.pdf') }}"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
                                     <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary"></i><span>Linkedin</span></a>
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
                                 </span>
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item development">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item development">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
+                                <a href="#">
                                     <img src="{{ asset('front/img/team/team-3.jpg') }}" class="img-fluid" alt="">
                                     <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Rick Edward Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Director of Policy &
-                                            Advocacy</span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">
-                                 Leads AMAAC’s policy research, government relations on civil rights, immigration, and U.S. foreign policy </span>
-                                <span class="thumb-info-social-icons mb-4">
-                                    <a target="_blank" href="http://www.facebook.com"><i
-                                            class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
-                                    <a href="http://www.twitter.com"><i
-                                            class="fab fa-x-twitter text-color-secondary"></i><span>Twitter</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary"></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item design">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
-                                    <img src="{{ asset('front/img/team/team-4.jpg') }}" class="img-fluid" alt="">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Melinda Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Program Manager – Youth &
-                                            Community Development
+                                        <span class="thumb-info-inner text-color-secondary"> Dr. Hayatullah Atid </span>
+                                        <span class="thumb-info-type text-color-secondary">General Assembly
                                         </span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary"> Designs and implements youth
-                                    leadership, civic engagement, and community empowerment programs.
-                                </span>
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                    Founder and chairman of the Organization for Talent Development and Entrepreneurship (OTED), Dr. Atid is an Afghan-born consultant with doctorates in human development and Islamic economics who trains professionals across Asia and the Middle East. The Afghan embassy in Japan has noted his leadership of civil society groups, international initiatives, community programs, and humanitarian efforts, and his dedication to assisting the Afghan people. </span>
                                 <span class="thumb-info-social-icons mb-4">
-                                    <a target="_blank" href="http://www.facebook.com"><i
-                                            class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
-                                    <a href="http://www.twitter.com"><i
-                                            class="fab fa-x-twitter text-color-secondary"></i><span>Twitter</span></a>
+                                  <a target="_blank" href="{{ asset('front/img/team/Dr.Hayatullah Atid CV 2025.pdf') }}"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
                                     <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary"></i><span>Linkedin</span></a>
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
                                 </span>
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item development">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item design">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/team-4.jpg') }}" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Mohammed Hassani </span>
+                                        <span class="thumb-info-type text-color-secondary">Board of Trustees
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary"> An Algerian business leader and
+                                    veteran trade unionist, Mohammed Hassani heads the Algerian Forum for Import Export,
+                                    Trading & Investment (AFIETI). He previously worked in the FLN and at the petroleum firm
+                                    Naftal, created the National Federation of Real Estate Agencies and has been active in
+                                    anti corruption efforts.
+                                </span>
+                                <span class="thumb-info-social-icons mb-4">
+                                   <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item development">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
                                     <img src="{{ asset('front/img/team/team-5.jpg') }}" class="img-fluid"
                                         alt="">
                                     <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Robert Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Communications & Media Director
-</span>
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Bader Al Hussinan </span>
+                                        <span class="thumb-info-type text-color-secondary">General Assembly
+                                        </span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Manages media relations and digital storytelling to promote accurate about Arab and Muslim communities.</span>
+                                <span class="thumb-info-caption-text text-color-secondary">Dr. Al Hussinan is Senior Vice
+                                    President and Head of the Payments Section at Riyad Bank, where he brings over 20 years
+                                    of experience in payment operations. He collaborates with the Saudi Central Bank on
+                                    remittance initiatives, previously managed the SARIE system and leads Riyad Bank’s
+                                    adoption of ISO 20022 standards.</span>
                                 <span class="thumb-info-social-icons mb-4">
-                                    <a target="_blank" href="http://www.facebook.com"><i
-                                            class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
+                                  <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
                                 </span>
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-3 isotope-item marketing">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
-                                <a href="{{ route('front.teamPage') }}">
-                                    <img src="{{ asset('front/img/team/team-6.jpg') }}" class="img-fluid"
-                                        alt="">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/mariam sharifa sudan.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
                                     <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Melissa Doe</span>
-                                        <span class="thumb-info-type text-color-secondary">Digital Content & Design Specialist
-</span>
+                                        <span class="thumb-info-inner text-color-secondary">Mariam Al Sharif Ibrahim Al
+                                            Hindi </span>
+                                        <span class="thumb-info-type text-color-secondary">General Assembly
+                                        </span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary"> Oversees visual identity, website content, graphics, and multimedia materials across AMAAC’s platforms.
-</span>
+                                <span class="thumb-info-caption-text text-color-secondary">
+
+
+                                 Mariam is a Sudanese architect and strategist, founder of the Vision Center for Planning and Strategic Consultation, an independent think tank collaborating with Sudan’s government. She represented Sudan at a U.S. investment conference and served as a goodwill ambassador, receiving international recognition
+
+                                </span>
+                                <span class="thumb-info-social-icons mb-4">
+                                   <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/Muhammed  Hassani.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Hazem Qashou
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">Board of Directors
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary"> Hazem Qashou is a Jordanian
+                                    politician and engineering consultant who previously served as Minister of Municipal
+                                    Affairs and later as a member of the Jordanian parliament. He now acts as deputy and
+                                    secretary general of the Al Rissala Party, supporting regional cooperation and issues
+                                    such as Morocco’s territorial integrity.
+                                </span>
+                                <span class="thumb-info-social-icons mb-4">
+                                    <a target="_blank" href="{{ asset('front/img/team/حازم قشوع.jpg') }}"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/team-1.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Abdelrahim Al Hour
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">BBoard of Trustees
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                    Dr. Abdelrahim Ali Al Hour is a journalist specialising in social economics who produces
+                                    and presents the television programme “Anta Wa Malok” on Al Jazeera. He also serves on
+                                    the administration of Al Wehda Medical Group, consults on business development for Q
+                                    Auto (Audi & Volkswagen) and lectures at Qatar Finance & Business Academy and Qatar
+                                    Aeronautical College.
+                                </span>
+                                <span class="thumb-info-social-icons mb-4">
+                                   <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/ali.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Ali Mahamat Abdoulaye
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">Advisory Board
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+
+
+
+                                     Dr. Ali Mahamat Abdoulaye is a Chadian educator and media figure with degrees in Arabic language, educational planning, and media, as well as honorary doctorates in peace and coexistence. He founded and edits Chad’s Peace newspaper and holds leadership roles in several educational, charitable, and youth organizations.
+
+                                <span class="thumb-info-social-icons mb-4">
+                                   <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                      <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/Mariam Khan.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Mariam Khan
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">General Assembly
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                    Dr. Mariam Khan is the founder and president of Pakistan’s Community Development Foundation and co founder of the Global Women’s Development Network. Since 2009 she has championed women’s economic empowerment and has grown CDF into a network of 50 partner institutions, using information technology initiatives to connect women with global opportunities.
+                                </span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
-                                            class="fab fa-facebook-f text-color-secondary"></i><span>Facebook</span></a>
-                                    <a href="http://www.twitter.com"><i
-                                            class="fab fa-x-twitter text-color-secondary"></i><span>Twitter</span></a>
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
                                     <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary"></i><span>Linkedin</span></a>
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
                                 </span>
                             </span>
                         </span>
