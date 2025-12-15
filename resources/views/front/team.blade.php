@@ -57,21 +57,27 @@
 
             <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center text-color-light-100"
                 data-sort-id="team" data-option-key="filter">
-                {{-- <li class="nav-item active" data-option-value="*"><a class="nav-link text-2-5 text-uppercase text-color-light-100 active "
+                <li class="nav-item active" data-option-value="*"><a class="nav-link text-2-5 text-uppercase text-color-light-100 active "
                         href="#">Show All</a></li>
-                <li class="nav-item" data-option-value=".leadership"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
-                        href="#">Leadership</a></li>
-                <li class="nav-item" data-option-value=".marketing"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
-                        href="#">Marketing</a></li>
-                <li class="nav-item" data-option-value=".development"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
-                        href="#">Development</a></li>
-                <li class="nav-item" data-option-value=".design"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
-                        href="#">Design</a></li> --}}
+                <li class="nav-item" data-option-value=".President"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
+                        href="#">President</a></li>
+                <li class="nav-item" data-option-value=".Vice"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
+                        href="#">Vice President</a></li>
+                 <li class="nav-item" data-option-value=".Directors"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
+                        href="#">Board of Directors</a></li>
+                <li class="nav-item" data-option-value=".assembly"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
+                        href="#">General Assembly</a></li>
+                <li class="nav-item" data-option-value=".Trustees"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
+                        href="#">Board of Trustees</a></li>
+
+
+                <li class="nav-item" data-option-value=".Advisory"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
+                        href="#">Advisory Board</a></li>
             </ul>
 
             <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
                 <div class="row team-list sort-destination" data-sort-id="team">
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item leadership bg-primary">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item President bg-primary">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
@@ -100,7 +106,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Vice">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
@@ -127,7 +133,37 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item development">
+                     <div class="col-12 col-sm-6 col-lg-4 isotope-item Directors">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/hazem.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Hazem Qashou
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">Board of Directors
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                 Hazem Qashou is a prominent Jordanian politician and experienced engineering consultant who previously served as Minister of Municipal Affairs and later as a respected member of the Jordanian parliament. He now acts as deputy and secretary general of the Al Rissala Party, actively supporting regional cooperation, democratic values, sustainable development, and issues such as Morocco’s territorial integrity and national unity.
+                                </span>
+
+                                <span class="thumb-info-social-icons mb-4">
+                                    <a target="_blank" href="{{ asset('front/img/team/حازم قشوع.jpg') }}"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+
+
+                     <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
@@ -141,7 +177,13 @@
                             </span>
                             <span class="thumb-info-caption">
                                 <span class="thumb-info-caption-text text-color-secondary">
-                                    Founder and chairman of the Organization for Talent Development and Entrepreneurship (OTED), Dr. Atid is an Afghan-born consultant with doctorates in human development and Islamic economics who trains professionals across Asia and the Middle East. The Afghan embassy in Japan has noted his leadership of civil society groups, international initiatives, community programs, and humanitarian efforts, and his dedication to assisting the Afghan people. </span>
+                               Dr. Atid, an Afghan-born consultant with doctorates in human development and Islamic economics, is founder and chairman of the Organization for Talent Development and Entrepreneurship (OTED). Recognized by the Afghan embassy in Japan, he leads international and humanitarian initiatives aiding the Afghan people.
+
+
+
+
+
+                                </span>
                                 <span class="thumb-info-social-icons mb-4">
                                   <a target="_blank" href="{{ asset('front/img/team/Dr.Hayatullah Atid CV 2025.pdf') }}"><i
                                             class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
@@ -151,63 +193,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item design">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="#">
-                                    <img src="{{ asset('front/img/team/Muhammed  Hassani.jpg') }}" style="height : 355px !important" class="img-fluid" alt="">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Mohammed Hassani </span>
-                                        <span class="thumb-info-type text-color-secondary">Board of Trustees
-                                        </span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary"> An Algerian business leader and
-                                    veteran trade unionist, Mohammed Hassani heads the Algerian Forum for Import Export,
-                                    Trading & Investment (AFIETI). He previously worked in the FLN and at the petroleum firm
-                                    Naftal, created the National Federation of Real Estate Agencies and has been active in
-                                    anti corruption efforts.
-                                </span>
-                                <span class="thumb-info-social-icons mb-4">
-                                   <a target="_blank" href="http://www.facebook.com"><i
-                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item development">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="#">
-                                    <img src="{{ asset('front/img/team/WhatsApp Image 2025-12-14 at 2.36.10 PM.jpeg') }}" class="img-fluid"
-                                        alt="" style="height : 355px !important">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Dr. Bader Al Hussinan </span>
-                                        <span class="thumb-info-type text-color-secondary">General Assembly
-                                        </span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">Dr. Al Hussinan is Senior Vice
-                                    President and Head of the Payments Section at Riyad Bank, where he brings over 20 years
-                                    of experience in payment operations. He collaborates with the Saudi Central Bank on
-                                    remittance initiatives, previously managed the SARIE system and leads Riyad Bank’s
-                                    adoption of ISO 20022 standards.</span>
-                                <span class="thumb-info-social-icons mb-4">
-                                  <a target="_blank" href="http://www.facebook.com"><i
-                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
@@ -237,29 +223,27 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                     <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
-                                    <img src="{{ asset('front/img/team/hazem.jpg') }}" class="img-fluid"
+                                    <img src="{{ asset('front/img/team/WhatsApp Image 2025-12-14 at 2.36.10 PM.jpeg') }}" class="img-fluid"
                                         alt="" style="height : 355px !important">
                                     <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Hazem Qashou
-                                        </span>
-                                        <span class="thumb-info-type text-color-secondary">Board of Directors
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Bader Al Hussinan </span>
+                                        <span class="thumb-info-type text-color-secondary">General Assembly
                                         </span>
                                     </span>
                                 </a>
                             </span>
                             <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary"> Hazem Qashou is a Jordanian
-                                    politician and engineering consultant who previously served as Minister of Municipal
-                                    Affairs and later as a member of the Jordanian parliament. He now acts as deputy and
-                                    secretary general of the Al Rissala Party, supporting regional cooperation and issues
-                                    such as Morocco’s territorial integrity.
-                                </span>
+                                <span class="thumb-info-caption-text text-color-secondary">Dr. Al Hussinan is Senior Vice
+                                    President and Head of the Payments Section at Riyad Bank, where he brings over 20 years
+                                    of experience in payment operations. He collaborates with the Saudi Central Bank on
+                                    remittance initiatives, previously managed the SARIE system and leads Riyad Bank’s
+                                    adoption of ISO 20022 standards.</span>
                                 <span class="thumb-info-social-icons mb-4">
-                                    <a target="_blank" href="{{ asset('front/img/team/حازم قشوع.jpg') }}"><i
+                                  <a target="_blank" href="http://www.facebook.com"><i
                                             class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
                                     <a href="http://www.linkedin.com"><i
                                             class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
@@ -267,7 +251,60 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+
+
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Trustees">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/Muhammed  Hassani.jpg') }}" style="height : 355px !important" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Mohammed Hassani </span>
+                                        <span class="thumb-info-type text-color-secondary">Board of Trustees
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary"> An Algerian business leader and veteran trade unionist, Mohammed Hassani heads the Algerian Forum for Import Export, Trading & Investment (AFIETI). He previously worked in the FLN and at the petroleum firm Naftal, created the National Federation of Real Estate Agencies, and has been active in national anti-corruption and economic reform efforts.
+
+                                <span class="thumb-info-social-icons mb-4">
+                                   <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/Mariam Khan.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">Dr. Mariam Khan
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">General Assembly
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                    Dr. Mariam Khan is the founder and president of Pakistan’s Community Development Foundation and co founder of the Global Women’s Development Network. Since 2009 she has championed women’s economic empowerment and has grown CDF into a network of 50 partner institutions, using information technology initiatives to connect women with global opportunities.
+                                </span>
+                                <span class="thumb-info-social-icons mb-4">
+                                    <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Trustees">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
@@ -276,7 +313,7 @@
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">Dr. Abdelrahim Al Hour
                                         </span>
-                                        <span class="thumb-info-type text-color-secondary">BBoard of Trustees
+                                        <span class="thumb-info-type text-color-secondary">Board of Trustees
                                         </span>
                                     </span>
                                 </a>
@@ -298,7 +335,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Advisory">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
@@ -328,33 +365,7 @@
                             </span>
                         </span>
                     </div>
-                      <div class="col-12 col-sm-6 col-lg-4 isotope-item marketing">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="#">
-                                    <img src="{{ asset('front/img/team/Mariam Khan.jpg') }}" class="img-fluid"
-                                        alt="" style="height : 355px !important">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">Dr. Mariam Khan
-                                        </span>
-                                        <span class="thumb-info-type text-color-secondary">General Assembly
-                                        </span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">
-                                    Dr. Mariam Khan is the founder and president of Pakistan’s Community Development Foundation and co founder of the Global Women’s Development Network. Since 2009 she has championed women’s economic empowerment and has grown CDF into a network of 50 partner institutions, using information technology initiatives to connect women with global opportunities.
-                                </span>
-                                <span class="thumb-info-social-icons mb-4">
-                                    <a target="_blank" href="http://www.facebook.com"><i
-                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
+
 
                 </div>
 
@@ -363,3 +374,4 @@
         </div>
     </section>
 @endsection
+{{-- 0595050642 --}}
