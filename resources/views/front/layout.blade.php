@@ -275,8 +275,5 @@
 </body>
 
 </html>
-Daily Report 14/12/2025
-From: 9:00 To: 5:35
-1_work on content on gaza academy
-2_make changes on team page on ammac website
+
 

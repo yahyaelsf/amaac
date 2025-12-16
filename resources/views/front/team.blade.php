@@ -61,8 +61,8 @@
                         href="#">Show All</a></li>
                 <li class="nav-item" data-option-value=".President"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
                         href="#">President</a></li>
-                <li class="nav-item" data-option-value=".Vice"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
-                        href="#">Vice President</a></li>
+                {{-- <li class="nav-item" data-option-value=".Vice"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
+                        href="#">Vice President</a></li> --}}
                  <li class="nav-item" data-option-value=".Directors"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
                         href="#">Board of Directors</a></li>
                 <li class="nav-item" data-option-value=".assembly"><a class="nav-link text-2-5 text-uppercase text-color-light-100"
@@ -106,7 +106,7 @@
                             </span>
                         </span>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Vice">
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item President">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
