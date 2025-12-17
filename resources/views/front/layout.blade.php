@@ -167,7 +167,7 @@
                                         <i class="fas fa-bars"></i>
                                     </button>
                                 </div>
-                                <div class="header-nav-features order-1 order-lg-2">
+                                <div class="header-nav-features order-1 order-lg-2 d-none d-lg-block">
                                     <div class="header-nav-feature header-nav-features-social-icons d-inline-flex"
                                         style="width:210px">
                                         <ul
