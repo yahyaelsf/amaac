@@ -354,5 +354,399 @@ return [
     'suggestion' => 'Suggestion',
     'complaint' => 'Complaint',
     'another' => 'Another',
+    'hero1_title' => 'Empowering Communities',
+    'hero1_subtitle' => 'Empowering Arab & Muslim Voices in America',
+    'hero1_description' => 'Building strong, confident communities through advocacy, education, and inclusive leadership.',
+    'hero1_button' => 'Learn More',
+    'hero2_title'       => 'Defending Rights & Dignity',
+    'hero2_subtitle'    => 'Protecting Civil Rights. Advancing Human Dignity',
+    'hero2_description' => 'We stand against discrimination and work to ensure every individual is treated with fairness, respect, and justice',
+    'hero2_button'      => 'Our Mission',
+    'hero3_title'       => 'Shaping Policy for a Better Future',
+    'hero3_subtitle'    => 'Influencing Policy Through Knowledge & Action',
+    'hero3_description' => 'Research-driven advocacy shaping fair public policies for Arab and Muslim communities nationwide',
+    'hero3_button'      => 'Explore Our Work',
+    'hero4_title'       => 'Bridging Cultures & Building Understanding',
+    'hero4_subtitle'    => 'Strengthening Bridges Between America, the Arab World, and the Muslim World',
+    'hero4_description' => 'Promoting cultural dialogue, media literacy, and representation that reflects our shared values and humanity',
+    'hero4_button'      => 'Discover More',
+    'hero5_title'       => 'Investing in the Next Generation',
+    'hero5_subtitle'    => 'Empowering Youth to Lead With Confidence',
+    'hero5_description' => 'Leadership programs, civic engagement initiatives, and mentorship opportunities for the future generation of Arab and Muslim leaders.',
+    'hero5_button'      => 'Join Our Programs',
+     'subhero_text'   => 'American Muslim and Arab Affairs Council',
+    'subhero_acronym'=> 'AMAAC',
+    'subhero_desc'   => 'Building bridges of understanding, promoting justice, amplifying voices, empowering communities, and advocating for the rights and empowerment of Muslims and Arabs in the United States and around the world.',
+    'subhero_button' => 'Learn More',
+    'about_title'       => 'Who We Are',
+    'about_name'        => 'American Muslim and Arab Affairs Council',
+    'about_description' => 'AMAAC is a non-profit council committed to promoting mutual understanding between the United States and the Arab and Islamic world. We defend rights, support sustainable development, and contribute to social, cultural, and political progress. AMAAC is a platform for hope, a bridge for understanding, and a voice for justice.',
+    'about_button'      => 'Donate',
+    'president_title'       => 'President Statement',
+    'president_description' => 'At AMAAC, we believe that justice, dignity, and mutual respect are not luxuries, but rights for every human being. Our communities have contributed enormously to the scientific, cultural, and economic progress of the United States, yet they still face misunderstanding and discrimination. AMAAC was founded to turn concern into action. We listen to our communities, amplify their voices where decisions are made, and build partnerships that create real opportunities for youth, families, and future generations. Together, we can reshape the narrative, defend our rights, and build bridges that lead to a more peaceful and inclusive society in America and beyond.',
+    'president_button'      => 'Donate',
+
+    'mission_title' => 'Our Mission at a Glance',
+
+    'mission_card1_title'       => 'Building Cultural Bridges',
+    'mission_card1_description' => 'We create platforms for dialogue and exchange between Arab, Muslim, and wider American communities. Through public events, cultural programs, and partnerships, we highlight our shared values, histories, and aspirations.',
+
+    'mission_card2_title'       => 'Protecting Rights',
+    'mission_card2_description' => 'AMAAC actively monitors and responds to violations of civil and human rights affecting Muslims and Arabs. We support individuals, work with legal partners, and advocate for inclusive policies that uphold equality and justice for all.',
+
+    'mission_card3_title'       => 'Influencing Policy',
+    'mission_card3_description' => 'We engage with policymakers, think tanks, and civil society to ensure that the voices of Muslims and Arabs are heard in the halls of power. AMAAC organizes advocacy campaigns that shape fair and balanced public policy.',
+
+    'news_section_title' => 'Latest',
+    'news_section_title_strong' => 'News',
+    'news_section_title_suffix' => 'and Projects',
+
+    /* Article 1 */
+    'news_1_title' => 'The Future of Arab & Muslim Representation in American Media',
+    'news_1_desc'  => 'Misrepresentation remains a major challenge. This article explores the current landscape of media portrayals, highlights positive change-makers, and outlines AMAAC’s media literacy initiatives to empower content creators and influencers in our communities.',
+
+    /* Article 2 */
+    'news_2_title' => 'Know Your Rights: A Complete Guide for Arab & Muslim Americans',
+    'news_2_desc'  => 'An essential resource explaining constitutional rights, protections against discrimination, what to do if confronted with Islamophobia, and how AMAAC is expanding its legal-support and advocacy network across the United States.',
+
+    /* Article 3 */
+    'news_3_title' => 'Youth Leadership: How the Next Generation Is Redefining Civic Engagement',
+    'news_3_desc'  => 'Showcasing inspiring stories of Arab and Muslim American youth leading community projects, advocating in local government, and representing their identities confidently. Includes information about AMAAC’s Youth Civic Leadership Fellowship.',
+
+    /* Article 4 */
+    'news_4_title' => 'U.S.–Arab Relations: Why Cultural Understanding Matters More Than Ever',
+    'news_4_desc'  => 'A balanced, informative piece examining how cultural diplomacy and people-to-people engagement help build trust and reduce misconceptions. Features AMAAC’s role in cultural programs and community dialogue.',
+
+    /* Article 5 */
+    'news_5_title' => 'Combating Islamophobia: Practical Steps for Communities & Allies',
+    'news_5_desc'  => 'A guide offering practical strategies for schools, workplaces, parents, and community leaders to create safer and more inclusive environments. Includes recommended reporting channels and AMAAC initiatives supporting victims of discrimination.',
+
+    /* Article 6 */
+    'news_6_title' => 'Strengthening Community Resilience Through Local Partnerships',
+    'news_6_desc'  => 'Explores how mosques, community centers, NGOs, universities, and advocacy groups can collaborate to deliver impactful programs—from mental health support to voter education. Highlights new AMAAC partnerships and success stories.',
+
+     'newsletter_title' => 'Stay',
+    'newsletter_title_strong' => 'Connected',
+    'newsletter_title_suffix' => 'With Us',
+
+    'newsletter_description' => 'Subscribe to our newsletter and never miss an update.',
+
+    'newsletter_placeholder' => 'Enter your email address...',
+    'newsletter_button' => 'SUBSCRIBE',
+     'about_hero_title' => 'Building Bridges of Understanding and Cooperation',
+    'about_intro_title' => 'Committed to Building a Future of Peace and Understanding',
+    'about_intro_desc' => 'Emerging from the heart of the United States, the American Muslim and Arab Affairs Council (AMAAC) is dedicated to building bridges of cooperation and understanding between the Arab and Muslim world and America. Our mission is rooted in promoting justice, equality, and mutual respect among communities.',
+    'about_values_title' => 'Our <strong class="font-weight-extra-bold text-color-primary">Core</strong> Values',
+    'about_value_1_title' => 'Integrity',
+    'about_value_1_desc' => 'Acting with transparency, honesty, and accountability.',
+    'about_value_2_title' => 'Justice',
+    'about_value_2_desc' => 'Upholding fairness, equity, and human rights for all.',
+    'about_value_3_title' => 'Compassion',
+    'about_value_3_desc' => 'Embodying empathy and care for all people, especially the vulnerable.',
+    'about_value_4_title' => 'Inclusivity',
+    'about_value_4_desc' => 'Celebrating diversity and ensuring all voices are heard and respected.',
+    'about_value_5_title' => 'Empowerment',
+    'about_value_5_desc' => 'Providing individuals and communities with tools for self-determination and progress.',
+    'about_value_6_title' => 'Respect and equality for all',
+    'about_value_6_desc' => 'Believing that every person deserves dignity, security, and equal opportunity.',
+    'about_vision_title' => 'Our <span class="text-color-secondary">Vision</span>',
+    'about_vision_desc' => 'AMAAC’s vision is not just another organization; it will be a driving force for positive change, with a profound vision centered on promoting peace, justice, and mutual understanding. Fostering Understanding and Building Bridges, at the core of AMAAC\'s vision is to build strong and lasting bonds based on mutual understanding and appreciation. We seek to',
+        'about_mission_title' => 'Our <strong class="font-weight-extra-bold text-color-primary">Mission</strong>',
+    'about_mission_desc' => 'The mission of the American Muslim and Arab Affairs Council (AMAAC) is to promote mutual understanding, build bridges of dialogue, and advocate for the rights and dignity of Arab and Muslim communities in the United States and around the world. We work to positively influence public policy, support sustainable development, and challenge negative stereotypes. Through research, advocacy, and community partnerships, AMAAC strives to contribute to a more just and peaceful world where all people live with dignity and mutual respect.',
+        'about_actions_1_title' => 'Supporting Sustainable Development',
+    'about_actions_1_desc'  => 'We will work tirelessly to combat negative stereotypes and misconceptions about Arabs and Muslims in the West, presenting a true image that reflects the cultural diversity, rich history, and civilizational contributions of these peoples. We will organize public awareness campaigns, produce rich media content, and collaborate with educational and media institutions to ensure our message reaches the widest possible audience.',
+
+    'about_actions_2_title' => 'Correct Misconceptions',
+    'about_actions_2_desc'  => 'We will launch dialogue initiatives that bring together individuals and communities from diverse backgrounds. These platforms will provide safe spaces for constructive discussion about common issues and challenges. Advocating for Justice and Equality, we will serve as a strong voice for Muslims and Arabs in the United States and around the world, defending their civil and human rights.',
+
+    'about_actions_3_title' => 'Promote Intercultural Dialogue',
+    'about_actions_3_desc'  => 'We will encourage Arab and Muslim communities to actively participate in political and civic processes in their countries of residence, with a focus on building promising young leaders capable of effectively representing the interests of their communities.',
+
+    'about_actions_4_title' => 'Promoting Civic Engagement',
+    'about_actions_4_desc'  => 'We will collaborate with local and international organizations to support sustainable development projects in Arab and Muslim countries, focusing on education, healthcare, and women and youth empowerment. Our role is to build capacity and enable communities to achieve self-sufficiency and prosperity.',
+        'goal_hero_title' => 'Our Strategic Objectives',
+
+    // Goal Section 1
+    'goal_1_title' => 'Defending Civil Rights and Social Justice',
+    'goal_1_point_1' => 'Combating all forms of discrimination and prejudice.',
+    'goal_1_point_2' => 'Promoting public policies that protect the constitutional freedoms of Muslims and Arabs.',
+    'goal_1_point_3' => 'Monitoring discriminatory practices in labor, education, media, and law enforcement.',
+
+    // Goal Section 2
+    'goal_2_title' => 'Political Empowerment and Civic Participation',
+    'goal_2_point_1' => 'Supporting increased Arab and Muslim representation in local and federal councils.',
+    'goal_2_point_2' => 'Providing awareness and training programs to enhance political and societal presence.',
+
+    // Goal Section 3
+    'goal_3_title' => 'Preserving and Promoting Cultural Identity',
+    'goal_3_point_1' => 'Organizing artistic and cultural events that highlight Arab and Islamic heritage.',
+    'goal_3_point_2' => 'Supporting educational initiatives that present an accurate image of Islam and Arab identity.',
+    'goal_3_point_3' => 'Producing media content that counters stereotypes and misinformation.',
+
+    // Goal Section 4
+    'goal_4_title' => 'Community Building and Unity',
+    'goal_4_point_1' => 'Launching community dialogue initiatives and promoting solidarity.',
+    'goal_4_point_2' => 'Encouraging collaboration across religions and cultures to create shared understanding.',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Mobile Slider – Strategic Pillars
+    |--------------------------------------------------------------------------
+    */
+
+    'goal_slider_1_title' => 'Advocating for Justice & Equality',
+    'goal_slider_1_items' => [
+        'Ensuring Equal Rights',
+        'Challenging Discrimination',
+        'Legal Aid & Advocacy',
+        'Policy Reform',
+    ],
+
+    'goal_slider_2_title' => 'Participation, Leadership, and Active Citizenship',
+    'goal_slider_2_items' => [
+        'Voter Registration & Education',
+        'Community Dialogue',
+        'Leadership Training',
+        'Policy Advocacy & Representation',
+    ],
+
+    'goal_slider_3_title' => 'Growth, Health, and Future Opportunities',
+    'goal_slider_3_items' => [
+        'Quality Education Access',
+        'Healthcare Initiatives',
+        'Youth & Women Empowerment',
+        'Skills Development',
+    ],
+
+    'goal_slider_4_title' => 'Stability, Resilience, and Long-term Prosperity',
+    'goal_slider_4_items' => [
+        'Economic Development',
+        'Community Networks',
+        'Resource Building',
+        'Self-Reliance Programs',
+    ],
+        'goal_slider_5_title' =>  'Deep Research & Informed Briefs',
+        'goal_slider_5_items' => [
+            'Data Driven Insights',
+            'Comprehensive Policy Briefs',
+            'Evidence Based Recommendations',
+            'Future Trend Analysis',
+        ],
+
+        'goal_slider_6_title' => 'Engagement with Congress & Administration',
+        'goal_slider_6_items' => [
+            'Direct Congressional Engagement',
+            'Executive Branch Advocacy',
+            'Stakeholder Meetings',
+            'Effective Communication Channels',
+        ],
+        'works_page' => [
+
+        'header_title' => 'Our Achievements',
+        'intro_title' => 'Our Work',
+        'intro_text' => 'AMAAC stands at the forefront of advocacy, working tirelessly to protect the civil rights and address the concerns of Muslims and Arabs.
+                        We engage with policymakers, educate the public, and mobilize our community to challenge discrimination, promote equitable policies, and ensure our voices are integral to the national dialogue.
+                        We are at the forefront of tackling key challenges and opportunities facing our communities. Our work spans a variety of critical areas:',
+
+        'areas' => [
+            'civil_rights' => [
+                'title' => 'Civil Rights & Anti-Discrimination',
+                'items' => [
+                    'Combating Islamophobia and anti-Arab sentiment.',
+                    'Addressing workplace and housing discrimination.',
+                    'Protecting freedom of speech and religious expression.',
+                    'Advocating against unlawful surveillance and profiling.',
+                    'Providing legal resources and support for victims of discrimination.',
+                ],
+            ],
+
+            'civic_engagement' => [
+                'title' => 'Civic Engagement & Political Participation',
+                'items' => [
+                    'Encouraging voter registration and participation.',
+                    'Educating on policy issues and legislative processes.',
+                    'Facilitating community advocacy on local, state, and national levels.',
+                    'Developing future leaders and advocates within our communities.',
+                ],
+            ],
+
+            'media_pr' => [
+                'title' => 'Media & Public Relations',
+                'items' => [
+                    'Challenging stereotypes and promoting accurate portrayals of American Muslims and Arabs in media.',
+                    'Engaging with journalists and media outlets to ensure fair and balanced reporting.',
+                    'Developing education campaigns to foster greater understanding.',
+                ],
+            ],
+
+            'immigration' => [
+                'title' => 'Immigration & Refugee Support',
+                'items' => [
+                    'Advocating for humane and just immigration policies.',
+                    'Providing resources and support for new immigrants and refugees.',
+                    'Providing legal resources and support for victims of discrimination.',
+                    'Working to combat discriminatory immigration practices.',
+                ],
+            ],
+
+            'human_rights' => [
+                'title' => 'Human Rights & Foreign Policy',
+                'items' => [
+                    'Raising awareness about human rights issues affecting Muslim and Arab communities globally.',
+                    'Advocating for U.S. foreign policies that promote peace, justice, and human dignity in the Middle East and beyond.',
+                    'Actively supporting humanitarian efforts in regions facing conflict or crisis.',
+                ],
+            ],
+
+            'youth_development' => [
+                'title' => 'Youth & Community Development',
+                'items' => [
+                    'Investing in programs that empower youth and foster their civic leadership.',
+                    'Supporting initiatives that strengthen community institutions and networks.',
+                    'Promoting interfaith and intercultural dialogue and collaboration.',
+                ],
+            ],
+
+            'research_policy' => [
+                'title' => 'Research & Policy Analysis',
+                'items' => [
+                    'AMAAC conducts research and publishes policy briefs on issues impacting Arab and Muslim communities.',
+                    'Topics include civil rights, immigration, foreign policy, and media representation.',
+                    'Resources are created to support policymakers, journalists, and community leaders in informed decision-making.',
+                ],
+            ],
+
+            'partnerships' => [
+                'title' => 'Partnerships & Coalition Building',
+                'items' => [
+                    'AMAAC builds strategic partnerships to amplify community impact.',
+                    'Collaborations include mosques, community centers, universities, and civil society organizations.',
+                    'Working with international institutions to design joint programs and strengthen collective advocacy.',
+                ],
+            ],
+
+        ],
+
+    ],
+        'get_involved_page' => [
+
+        'header' => [
+            'title' => 'Be Part of Change',
+        ],
+
+        'intro' => [
+            'title' => 'Get Involved',
+            'headline_strong' => 'Your Voice. Your Action. Our Future.',
+            'headline_text' => 'AMAAC\'s work is powered by the passion and dedication of individuals like you.',
+            'description' => 'Join us in making a meaningful impact through membership, volunteering, donations, advocacy, staying informed, and sharing your story to inspire change.',
+            'quote' => 'Together, we can build a more just and inclusive future for Arab and Muslim communities across the United States.',
+        ],
+
+        'cards' => [
+
+            'member' => [
+                'title' => 'Become a',
+                'title_strong' => 'Member',
+                'text' => 'Support our mission and receive exclusive updates, opportunities, and special invitations.',
+                'button' => 'Join Now',
+            ],
+
+            'volunteer' => [
+                'title' => 'Volunteer',
+                'title_strong' => 'With Us',
+                'text' => 'Lend your time and skills to support our programs and initiatives.',
+                'items' => [
+                    'Event planning and support',
+                    'Research and data analysis',
+                    'Social media and communications',
+                    'Community outreach',
+                ],
+                'button' => 'Become a Volunteer',
+            ],
+
+            'donate' => [
+                'title' => 'Donate',
+                'text' => 'Your financial contribution directly fuels our advocacy, education, and legal efforts.',
+                'button' => 'Donate Now',
+            ],
+
+            'action' => [
+                'title' => 'Take',
+                'title_strong' => 'Action',
+                'text' => 'Participate in campaigns, sign petitions, and contact your elected officials about critical issues.',
+                'button' => 'View Action Alerts',
+            ],
+
+            'informed' => [
+                'title' => 'Stay',
+                'title_strong' => 'Informed',
+                'text' => 'Subscribe to our newsletter for updates, news, and opportunities to take action.',
+                'button' => 'Subscribe',
+            ],
+
+            'story' => [
+                'title' => 'Share Your',
+                'title_strong' => 'Story',
+                'text' => 'If you\'ve experienced discrimination or have a story that can inspire change, we want to hear from you.',
+                'button' => 'Share Your Story',
+            ],
+
+        ],
+
+    ],
+        'contact_page' => [
+
+        'header' => [
+            'title' => 'Connect with the American Muslim and Arab Affairs Council',
+        ],
+
+        'intro' => [
+            'title' => 'Contact Us',
+            'subtitle' => 'Feel free to ask for details, don’t save any questions!',
+        ],
+
+        'form' => [
+            'success' => 'Success! Your message has been sent to us.',
+            'error' => 'Error! There was an error sending your message.',
+
+            'fields' => [
+                'name' => 'Full Name',
+                'email' => 'Email Address',
+                'subject' => 'Subject',
+                'message' => 'Message',
+            ],
+
+            'validation' => [
+                'name' => 'Please enter your name.',
+                'email_required' => 'Please enter your email address.',
+                'email_valid' => 'Please enter a valid email address.',
+                'subject' => 'Please enter the subject.',
+                'message' => 'Please enter your message.',
+            ],
+
+            'submit' => 'Send Message',
+            'loading' => 'Loading...',
+        ],
+
+        'location' => [
+            'title' => 'Our Location',
+        ],
+
+        'office' => [
+            'title' => 'Our Office',
+            'address_label' => 'Address:',
+            'address' => '1775 Eye Street NW STE 1150, Washington, D.C.',
+            'phone_label' => 'Phone:',
+            'phone' => '+1 312-622-6666',
+            'email_label' => 'Email:',
+            'email' => 'info@amaacouncil.com',
+        ],
+
+        'touch' => [
+            'title' => 'Get in Touch',
+            'text' => 'AMAAC is here to listen and respond. Whether you are a community member in need of support, a journalist seeking information, or an organization exploring partnership, we invite you to reach out. We do our best to respond to all messages in a timely manner.',
+        ],
+
+    ],
 
 ];

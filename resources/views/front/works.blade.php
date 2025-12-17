@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-9 font-weight-bold text-color-secondary ">Our Achievements</h1>
+                    <h1 class="text-9 font-weight-bold text-color-secondary ">{{ __('general.works_page.header_title') }}</h1>
                     {{-- <span class="sub-title">Addressing Critical Issues Affecting Muslims and Arabs
                         in USA and all over the world </span> --}}
                 </div>
@@ -36,20 +36,13 @@
                             <div class="overflow-hidden mb-3">
                                 <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-secondary "
                                     data-appear-animation="maskUp">
-                                    Our <span class="text-color-secondary">Work</span>
+                                    {{ __('general.works_page.intro_title') }}
                                 </h1>
                             </div>
                             <div class="overflow-hidden mb-3">
                                 <p class="lead mb-0 appear-animation text-color-secondary" data-appear-animation="maskUp"
                                     data-appear-animation-delay="200">
-                                    AMAAC stands at the forefront of advocacy, working tirelessly to
-                                    protect the civil rights and address the concerns of Muslims and
-                                    Arabs. We engage with policymakers, educate the public, and
-                                    mobilize our community to challenge discrimination, promote
-                                    equitable policies, and ensure our voices are integral to the national
-                                    dialogue.
-                                    We are at the forefront of tackling key challenges and opportunities
-                                    facing our communities. Our work spans a variety of critical areas:
+                                    {{ __('general.works_page.intro_text') }}
                                 </p>
                             </div>
                         </div>
@@ -64,6 +57,7 @@
             <div class="row" bis_skin_checked="1">
                 <div class="featured-boxes featured-boxes-style-2" bis_skin_checked="1">
                     <div class="row" bis_skin_checked="1">
+
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible "
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
                             bis_skin_checked="1" style="animation-delay: 700ms;">
@@ -74,39 +68,11 @@
                                     <i
                                         class="fa-solid fa-shield-halved text-color-primary bg-color-secondary icon-featured"></i>
 
-                                    <h4 class="font-weight-bold text-start text-color-secondary">Civil Rights &
-                                        Anti-Discrimination: </h4>
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li> Combating Islamophobia and anti-Arab sentiment. </li>
-                                        <li>Addressing workplace and housing discrimination. </li>
-                                        <li>Protecting freedom of speech and religious expression. </li>
-                                        <li> Advocating against unlawful surveillance and profiling. </li>
-                                        <li> Providing legal resources and support for victims of
-                                            discrimination. </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
-                            bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
-                                bis_skin_checked="1">
-                                <div class="box-content" bis_skin_checked="1">
-                                    <i
-                                        class="fa-solid fa-square-poll-horizontal text-color-primary bg-color-secondary icon-featured"></i>
-
-                                    <h4 class="font-weight-bold text-start text-color-secondary">Civic Engagement &
-                                        Political
-                                        Participation: </h4>
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li> Encouraging voter registration and participation. </li>
-                                        <li>Educating on policy issues and legislative processes. </li>
-                                        <li>Facilitating community advocacy on local, state, and national
-                                            levels. </li>
-                                        <li> Developing future leaders and advocates within our
-                                            communities. </li>
-
+                                    <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.civil_rights.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.civil_rights.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -120,19 +86,11 @@
                                     <i
                                         class="fa-solid fa-newspaper text-color-primary bg-color-secondary icon-featured"></i>
 
-                                    <h4 class="font-weight-bold text-start text-color-secondary"> Media & Public Relations:
-                                    </h4>
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li> Challenging stereotypes and promoting accurate portrayals of
-                                            American Muslims and Arabs in media.
-                                        </li>
-
-                                        <li>Engaging with journalists and media outlets to ensure fair and
-                                            balanced reporting. </li>
-
-                                        <li>Developing public education campaigns to foster greater
-                                            understanding. </li>
-
+                                   <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.media_pr.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.media_pr.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -143,20 +101,33 @@
                             <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
                                 bis_skin_checked="1">
                                 <div class="box-content" bis_skin_checked="1">
+                                    <i
+                                        class="fa-solid fa-square-poll-horizontal text-color-primary bg-color-secondary icon-featured"></i>
+
+                                    <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.civic_engagement.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.civic_engagement.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
+                            bis_skin_checked="1" style="animation-delay: 700ms;">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
+                                <div class="box-content" bis_skin_checked="1">
 
                                     <i class="fa-solid fa-passport text-color-primary bg-color-secondary icon-featured"></i>
 
-                                    <h4 class="font-weight-bold text-start text-color-secondary"> Immigration & Refugee
-                                        Support:
-                                    </h4>
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li> Advocating for humane and just immigration policies. </li>
-                                        <li>Providing resources and support for new immigrants and
-                                            refugees. </li>
-                                        <li> Providing legal resources and support for victims of
-                                            discrimination. </li>
-                                        <li>Working to combat discriminatory immigration practices. </li>
-
+                                   <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.immigration.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.immigration.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -170,45 +141,16 @@
                                     <i
                                         class="fa-solid fa-scale-balanced text-color-primary bg-color-secondary icon-featured"></i>
 
-                                    <h4 class="font-weight-bold text-start text-color-secondary"> Human Rights & Foreign
-                                        Policy:
-                                    </h4>
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li> Raising awareness about human rights issues affecting Muslim
-                                            and Arab communities globally.</li>
-                                        <li> Advocating for U.S. foreign policies that promote peace, justice,
-                                            and human dignity in the Middle East and beyond. </li>
-                                        <li>Supporting humanitarian efforts in regions facing conflict or
-                                            crisis. </li>
-
+                                    <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.human_rights.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.human_rights.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
-                            bis_skin_checked="1" style="animation-delay: 700ms;">
-                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
-                                bis_skin_checked="1">
-                                <div class="box-content" bis_skin_checked="1">
-                                    <i
-                                        class="fa-solid fa-people-group text-color-primary bg-color-secondary icon-featured"></i>
 
-                                    <h4 class="font-weight-bold text-start text-color-secondary">Youth & Community
-                                        Development:
-                                    </h4>
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li> Investing in programs that empower youth and foster their civic
-                                            leadership. </li>
-                                        <li>Supporting initiatives that strengthen community institutions and
-                                            networks. </li>
-                                        <li>Promoting interfaith and intercultural dialogue and
-                                            collaboration. </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                         <!-- Research & Policy Analysis -->
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700">
@@ -220,23 +162,34 @@
                                     <i
                                         class="fa-solid fa-chart-pie text-color-primary bg-color-secondary icon-featured"></i>
 
-                                    <h4 class="font-weight-bold text-start text-color-secondary">
-                                        Research & Policy Analysis
-                                    </h4>
-
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li>AMAAC conducts research and publishes policy briefs on issues impacting Arab and
-                                            Muslim communities.</li>
-                                        <li>Topics include civil rights, immigration, foreign policy, and media
-                                            representation.</li>
-                                        <li>Resources are created to support policymakers, journalists, and community
-                                            leaders in informed decision-making.</li>
+                                   <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.research_policy.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.research_policy.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
                                     </ul>
 
                                 </div>
                             </div>
                         </div>
+                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="700"
+                            bis_skin_checked="1" style="animation-delay: 700ms;">
+                            <div class="featured-box featured-box-effect-4 border border-color-secondary rounded p-3 borderd-secondary"
+                                bis_skin_checked="1">
+                                <div class="box-content" bis_skin_checked="1">
+                                    <i
+                                        class="fa-solid fa-people-group text-color-primary bg-color-secondary icon-featured"></i>
 
+                                    <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.youth_development.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.youth_development.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- Partnerships & Coalition Building -->
                         <div class="col-md-6 col-lg-6 appear-animation animated fadeInRightShorter appear-animation-visible"
@@ -249,16 +202,11 @@
                                     <i
                                         class="fa-solid fa-handshake-angle text-color-primary bg-color-secondary icon-featured"></i>
 
-                                    <h4 class="font-weight-bold text-start text-color-secondary">
-                                        Partnerships & Coalition Building
-                                    </h4>
-
-                                    <ul class="px-2 text-start text-color-secondary">
-                                        <li>AMAAC builds strategic partnerships to amplify community impact.</li>
-                                        <li>Collaborations include mosques, community centers, universities, and civil
-                                            society organizations.</li>
-                                        <li>Working with international institutions to design joint programs and strengthen
-                                            collective advocacy.</li>
+                                   <h4 class="font-weight-bold {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">{{ __('general.works_page.areas.partnerships.title') }}</h4>
+                                    <ul class="px-2 {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}  text-color-secondary">
+                                        @foreach( __('general.works_page.areas.partnerships.items') as $item)
+                                            <li>{{ $item }}</li>
+                                        @endforeach
                                     </ul>
 
                                 </div>

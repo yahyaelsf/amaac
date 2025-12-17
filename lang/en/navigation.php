@@ -30,5 +30,12 @@ return [
     'assemblyFolders' => 'Assemblies Folders',
     'assemblies' => 'Assemblies',
     'itemFolders' => 'Items Folders',
-    'items' => 'Items'
+    'items' => 'Items',
+    'home'      => 'Home',
+    'about'     => 'About Us',
+    'goals'     => 'Our Goals',
+    'team'      => 'Our Team',
+    'work'      => 'Our Work',
+    'involved'  => 'Get Involved',
+    'contact'   => 'Contact Us',
 ];

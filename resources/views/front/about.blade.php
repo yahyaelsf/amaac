@@ -51,6 +51,9 @@
             background-color: var(--secondary) !important;
             /* اللون عند التفاعل */
         }
+        .owl-dots{
+            margin-top: 30px;
+        }
     </style>
 @endsection
 @section('content')
@@ -61,8 +64,8 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-9 font-weight-bold text-color-secondary ">Building Bridges of Understanding and
-                        Cooperation</h1>
+                    <h1 class="text-9 font-weight-bold text-color-secondary ">{{ __('general.about_hero_title') }}
+                        </h1>
                     {{-- <span class="sub-title">Building Bridges of Understanding and Cooperation</span> --}}
                 </div>
                 {{-- <div class="col-md-12 align-self-center order-1">
@@ -85,23 +88,13 @@
                             <div class="overflow-hidden mb-3">
                                 <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-secondary "
                                     data-appear-animation="maskUp">
-                                    Committed to Building a Future
-                                    of
-                                    Peace and
-                                    Understanding
+                                    {{ __('general.about_intro_title') }}
                                 </h1>
                             </div>
                             <div class="overflow-hidden mb-3">
                                 <p class="lead mb-0 appear-animation text-color-secondary hero-desc"
                                     data-appear-animation="maskUp" data-appear-animation-delay="200">
-                                    Emerging from the heart of the United States, the American Muslim and Arab Affairs
-                                    Council
-                                    (AMAAC)
-                                    is dedicated to building bridges of cooperation and understanding between the Arab and
-                                    Muslim
-                                    world and America. Our mission is rooted in promoting justice, equality, and mutual
-                                    respect
-                                    among communities.
+                                   {{ __('general.about_intro_desc') }}
                                 </p>
                             </div>
                         </div>
@@ -118,8 +111,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="font-weight-normal text-center text-6 pb-3 text-color-primary ">Our
-                        <strong class="font-weight-extra-bold text-color-primary ">Core </strong>Values
+                    <h2 class="font-weight-normal text-center text-6 pb-3 text-color-primary ">
+                       {!! __('general.about_values_title') !!}
                     </h2>
                 </div>
             </div>
@@ -151,9 +144,10 @@
 
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                    Integrity</h2>
-                                                <p class="text-color-primary">Acting with transparency, honesty, and
-                                                    accountability. </p>
+                                                     {{ __('general.about_value_1_title') }}</h2>
+                                                <p class="text-color-primary">
+                                                  {{ __('general.about_value_1_desc') }}
+                                                 </p>
 
                                             </div>
                                         </article>
@@ -172,9 +166,10 @@
 
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                    Justice</h2>
-                                                <p class="text-color-primary">Upholding fairness, equity, and human rights
-                                                    for all.</p>
+                                                    {{ __('general.about_value_2_title') }}</h2>
+                                                <p class="text-color-primary">
+                                                  {{ __('general.about_value_2_desc') }}
+                                                </p>
 
                                             </div>
                                         </article>
@@ -193,9 +188,9 @@
 
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                    Compassion</h2>
+                                                    {{ __('general.about_value_3_title') }}</h2>
                                                 <p class="text-color-primary">
-                                                    Embodying empathy and care for all people, especially the vulnerable.
+                                                     {{ __('general.about_value_3_desc') }}
                                                 </p>
 
                                             </div>
@@ -215,9 +210,8 @@
 
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                    Inclusivity </h2>
-                                                <p class="text-color-primary">Celebrating diversity and ensuring all voices
-                                                    are heard and respected</p>
+                                                    {{ __('general.about_value_4_title') }} </h2>
+                                                <p class="text-color-primary">  {{ __('general.about_value_4_desc') }}</p>
 
                                             </div>
                                         </article>
@@ -236,9 +230,8 @@
 
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                    Empowerment</h2>
-                                                <p class="text-color-primary">Providing individuals and communities with
-                                                    tools for self-determination and progress.</p>
+                                                    {{ __('general.about_value_5_title') }}</h2>
+                                                <p class="text-color-primary">{{ __('general.about_value_5_desc') }}</p>
 
                                             </div>
                                         </article>
@@ -257,9 +250,8 @@
 
                                                 <h2
                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                    Respect and equality for all</h2>
-                                                <p class="text-color-primary">Believing that every person deserves dignity,
-                                                    security, and equal opportunity.</p>
+                                                    {{ __('general.about_value_6_title') }}</h2>
+                                                <p class="text-color-primary">  {{ __('general.about_value_6_desc') }}</p>
 
                                             </div>
                                         </article>
@@ -286,21 +278,13 @@
                             <div class="overflow-hidden mb-3">
                                 <h1 class="font-weight-bold text-8 mb-0 appear-animation text-color-secondary "
                                     data-appear-animation="maskUp">
-                                    Our <span class="text-color-secondary">Vision</span>
+                                     {!! __('general.about_vision_title') !!}
                                 </h1>
                             </div>
                             <div class="overflow-hidden mb-3">
                                 <p class="lead mb-0 appear-animation text-color-secondary" data-appear-animation="maskUp"
                                     data-appear-animation-delay="200">
-                                    AMAAC’s
-                                    vision
-                                    It will not be just another organization; it will be a driving force for
-                                    positive change, with a profound vision centered on promoting
-                                    peace, justice, and mutual understanding.
-                                    Fostering Understanding and Building Bridges
-                                    At the core of AMAAC's vision is to build strong and lasting bonds
-                                    based on mutual understanding and appreciation. We seek to:
-                                </p>
+                                      {{ __('general.about_vision_desc') }}
                             </div>
                         </div>
                     </div>
@@ -315,16 +299,11 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
-                    <h2 class=" font-weight-normal text-6 mb-2 text-color-primary ">Our <strong
-                            class="font-weight-extra-bold text-color-primary">
-                            Mission</strong></h2>
+                    <h2 class=" font-weight-normal text-6 mb-2 text-color-primary ">
+                     {!! __('general.about_mission_title') !!}
+                    </h2>
                     <p class="lead text-color-primary borderd-secondary">
-                        The mission of the American Muslim and Arab Affairs Council (AMAAC) is to promote mutual
-                        understanding, build bridges of dialogue, and advocate for the rights and dignity of Arab and Muslim
-                        communities in the United States and around the world.
-                        We work to positively influence public policy, support sustainable development, and challenge
-                        negative stereotypes. Through research, advocacy, and community partnerships, AMAAC strives to
-                        contribute to a more just and peaceful world where all people live with dignity and mutual respect.
+                         {{ __('general.about_mission_desc') }}
 
                     </p>
                 </div>
@@ -333,7 +312,9 @@
 
                     <img src="{{ asset('front/img/home/IMG-20251206-WA0007.jpg') }}"
                         class="img-fluid position-relative appear-animation mb-2 image-zoom-in-out"
-                        data-appear-animation="expandIn" data-appear-animation-delay="600" alt="" />
+                        data-appear-animation="expandIn" data-appear-animation-delay="600" alt="" @if(app()->getLocale() == 'ar')
+                        style="margin-right: 50%;"
+                        @endif />
 
                 </div>
             </div>
@@ -358,59 +339,42 @@
                                 bis_skin_checked="1">
                                 <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
                                     <div class="text-center" bis_skin_checked="1">
-                                        <h2 class="font-weight-semibold text-10 text-color-secondary">Supporting
-                                            Sustainable
-                                            Development</h2>
-                                        <p class="lead lead-2 mb-0 text-color-light">We will work tirelessly to combat
-                                            negative stereotypes and misconceptions about Arabs and Muslims
-                                            in the West, presenting a true image that reflects the cultural
-                                            diversity, rich history, and civilizational contributions of these
-                                            peoples. We will organize public awareness campaigns, produce rich
-                                            media content, and collaborate with educational and media
-                                            institutions to ensure our message reaches the widest possible
-                                            audience.</p>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
-                                    <div class="text-center" bis_skin_checked="1">
-                                        <h2 class="font-weight-semibold text-10 text-color-secondary">Correct
-                                            misconceptions
+                                        <h2 class="font-weight-semibold text-10 text-color-secondary">
+
+                                        {{ __('general.about_actions_1_title') }}
                                         </h2>
-                                        <p class="lead lead-2 mb-0 text-color-light">We will launch dialogue initiatives
-                                            that bring together individuals and communities from diverse
-                                            backgrounds. These platforms will provide safe spaces for
-                                            constructive discussion about common issues and challenges.
-                                            Advocating for Justice and Equality: We will serve as a strong voice
-                                            for Muslims and Arabs in the United States and around the world,
-                                            defending their civil and human rights. We will combat
-                                            discrimination and Islamophobia, and provide legal and moral
-                                            support to victims. </p>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
-                                    <div class="text-center" bis_skin_checked="1">
-                                        <h2 class="font-weight-semibold text-10 text-color-secondary"> Promote
-                                            intercultural dialogue
-                                        </h2>
-                                        <p class="lead lead-2 mb-0 text-color-light">We will encourage Arab and
-                                            Muslim communities to actively participate in the political and civic
-                                            processes in their countries of residence, with a focus on building
-                                            promising young leaders capable of effectively representing the
-                                            interests of their communities.</p>
+                                        <p class="lead lead-2 mb-0 text-color-light">
+                                         {{ __('general.about_actions_1_desc') }}
+                                           </p>
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
                                     <div class="text-center" bis_skin_checked="1">
                                         <h2 class="font-weight-semibold text-10 text-color-secondary">
-                                            Promoting Civic Engagement
+                                             {{ __('general.about_actions_2_title') }}
                                         </h2>
-                                        <p class="lead lead-2 mb-0 text-color-light">We will collaborate with
-                                            local and international organizations to support sustainable
-                                            development projects in Arab and Muslim countries, with a focus on
-                                            education, healthcare, and women and youth empowerment. Our
-                                            role will not simply be to provide assistance, but rather to build
-                                            capacity to enable these communities to achieve self-sufficiency and
-                                            prosperity.</p>
+                                        <p class="lead lead-2 mb-0 text-color-light">
+                                         {{ __('general.about_actions_2_desc') }} </p>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
+                                    <div class="text-center" bis_skin_checked="1">
+                                        <h2 class="font-weight-semibold text-10 text-color-secondary">
+                                             {{ __('general.about_actions_3_title') }}
+                                        </h2>
+                                        <p class="lead lead-2 mb-0 text-color-light">
+                                             {{ __('general.about_actions_3_desc') }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 726px; margin-right: 100px;" bis_skin_checked="1">
+                                    <div class="text-center" bis_skin_checked="1">
+                                        <h2 class="font-weight-semibold text-10 text-color-secondary">
+                                             {{ __('general.about_actions_4_title') }}
+                                        </h2>
+                                        <p class="lead lead-2 mb-0 text-color-light">
+                                             {{ __('general.about_actions_4_desc') }}
+                                        </p>
                                     </div>
                                 </div>
                             </div>

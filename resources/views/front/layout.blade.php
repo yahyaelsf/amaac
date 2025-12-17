@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
 
@@ -22,9 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
     <!-- Web Fonts  -->
-    <link id="googleFonts"
-        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap"
-        rel="stylesheet" type="text/css">
+
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="{{ asset('front/vendor/bootstrap/css/bootstrap.min.css') }}">
@@ -37,11 +35,30 @@
 
     <!-- Theme CSS -->
     {{-- <link rel="stylesheet" href="{{ asset('front/css/theme.css') }}"> --}}
-    <link rel="stylesheet" href="{{ asset('front/css/theme_old.css') }}">
-    <link rel="stylesheet" href="{{ asset('front/css/theme-elements.css') }}">
+    @if (app()->getLocale() == 'ar')
+     <link rel="stylesheet" href="{{ asset('front/css/theme-elements-rtl.css') }}">
+        <link rel="stylesheet" href="{{ asset('front/css/theme_ar.css') }}">
+        <link rel="stylesheet" href="{{ asset('front/css/my-style-ar.css') }}">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;1,300&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    @else
+     <link rel="stylesheet" href="{{ asset('front/css/theme-elements.css') }}">
+        <link rel="stylesheet" href="{{ asset('front/css/theme_old.css') }}">
+        <link rel="stylesheet" href="{{ asset('front/css/my-style.css') }}">
+          <link id="googleFonts"
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap"
+        rel="stylesheet" type="text/css">
+    @endif
+
+
     <link rel="stylesheet" href="{{ asset('front/css/theme-blog.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/theme-shop.css') }}">
-    <link rel="stylesheet" href="{{ asset('front/css/my-style.css') }}">
+
 
     <!-- Skin CSS -->
     <link id="skinCSS" rel="stylesheet" href="{{ asset('front/css/skins/default.css') }}">
@@ -76,56 +93,72 @@
                                     <div
                                         class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                         <nav class="collapse ">
-                                            <ul class="nav nav-pills " id="mainNav">
+                                            <ul class="nav nav-pills  w-100" id="mainNav">
                                                 <li>
-                                                    <a class="dropdown-item dropdown-toggle   {{ $home ? 'active' : '' }}"
+                                                    <a class="dropdown-item {{ $home ? 'active' : '' }}"
                                                         href="{{ route('front.home') }}">
-                                                        Home
+                                                        {{ __('navigation.home') }}
                                                     </a>
-
                                                 </li>
-                                                <li class="dropdown dropdown-mega">
-                                                    <a class="dropdown-item dropdown-toggle {{ $about ? 'active' : '' }}"
+
+                                                <li>
+                                                    <a class="dropdown-item {{ $about ? 'active' : '' }}"
                                                         href="{{ route('front.about') }}">
-                                                        About Us
+                                                        {{ __('navigation.about') }}
                                                     </a>
-
                                                 </li>
+
                                                 <li>
-                                                    <a class="dropdown-item dropdown-toggle {{ $goals ? 'active' : '' }}"
+                                                    <a class="dropdown-item {{ $goals ? 'active' : '' }}"
                                                         href="{{ route('front.goals') }}">
-                                                        Our goals
+                                                        {{ __('navigation.goals') }}
                                                     </a>
-
                                                 </li>
+
                                                 <li>
-                                                    <a class="dropdown-item dropdown-toggle {{ $team ? 'active' : '' }}"
+                                                    <a class="dropdown-item {{ $team ? 'active' : '' }}"
                                                         href="{{ route('front.team') }}">
-                                                        Our Team
+                                                        {{ __('navigation.team') }}
                                                     </a>
-
                                                 </li>
+
                                                 <li>
-                                                    <a class="dropdown-item dropdown-toggle {{ $work ? 'active' : '' }}"
+                                                    <a class="dropdown-item {{ $work ? 'active' : '' }}"
                                                         href="{{ route('front.works') }}">
-                                                        Our Work
+                                                        {{ __('navigation.work') }}
                                                     </a>
-
                                                 </li>
+
                                                 <li>
-                                                    <a class="dropdown-item dropdown-toggle {{ $involved ? 'active' : '' }}"
+                                                    <a class="dropdown-item {{ $involved ? 'active' : '' }}"
                                                         href="{{ route('front.involved') }}">
-                                                        Get Involved
+                                                        {{ __('navigation.involved') }}
                                                     </a>
-
                                                 </li>
+
                                                 <li>
-                                                    <a class="dropdown-item dropdown-toggle {{ $contact ? 'active' : '' }}"
+                                                    <a class="dropdown-item {{ $contact ? 'active' : '' }}"
                                                         href="{{ route('front.contact') }}">
-                                                        Contact Us
+                                                        {{ __('navigation.contact') }}
                                                     </a>
-
                                                 </li>
+                                                @if (app()->getLocale() == 'ar')
+                                                    <li>
+                                                        <a class="dropdown-item dropdown-toggle {{ $contact ? 'active' : '' }}"
+                                                            href="{{ route('lang.switch', 'en') }}">
+                                                            EN
+                                                        </a>
+
+                                                    </li>
+                                                @else
+                                                    <li>
+                                                        <a class="dropdown-item dropdown-toggle {{ $contact ? 'active' : '' }}"
+                                                            href="{{ route('lang.switch', 'ar') }}">
+                                                            AR
+                                                        </a>
+
+                                                    </li>
+                                                @endif
                                             </ul>
                                         </nav>
                                     </div>
@@ -134,8 +167,9 @@
                                         <i class="fas fa-bars"></i>
                                     </button>
                                 </div>
-                                <div class="header-nav-features order-1 order-lg-2" >
-                                    <div class="header-nav-feature header-nav-features-social-icons d-inline-flex" style="width:204px">
+                                <div class="header-nav-features order-1 order-lg-2">
+                                    <div class="header-nav-feature header-nav-features-social-icons d-inline-flex"
+                                        style="width:210px">
                                         <ul
                                             class="header-social-icons social-icons d-none d-sm-block social-icons-clean ms-0">
                                             <li class="social-icons-facebook"><a
@@ -183,43 +217,89 @@
             @yield('content')
 
         </div>
-
+        @php
+            $isRtl = app()->getLocale() === 'ar';
+        @endphp
         <footer id="footer" class="border-0" style="background : var(--secondary)">
             <div class="container">
 
                 <div class="row pt-5 ">
-                    <div class="col-md-5 mb-4 mb-lg-0 text-center text-md-start">
+                    <div class="col-md-5 mb-4 mb-lg-0 text-center {{ $isRtl ? 'text-md-end' : 'text-md-start' }}">
                         <a href="index.html" class="logo pe-0 pe-lg-3">
                             <img alt="Porto Website Template"
                                 src="{{ asset('front/img/home/amaac_logo-removebg-preview.png') }}" class="mb-4 mt-1"
                                 height="80">
                         </a>
-                        <p class="mt-2 mb-2 text-color-primary">Building bridges of understanding, defending rights,
-                            and empowering communities</p>
+                        <p class="mt-2 mb-2 text-color-primary"> {{ __('footer.description') }}</p>
                     </div>
 
-                    <div class="col-sm-4 col-md-3 text-center text-md-start">
-                        <h5 class="text-3 mb-3 mt-4 mt-sm-0 text-color-primary">USEFUL LINKS</h5>
+                    @php
+                        $textAlign = $isRtl ? 'text-md-end' : 'text-md-start';
+                        $iconDir = $isRtl ? 'left' : 'right';
+                        $linkSpace = $isRtl ? 'me-1' : 'ms-1';
+                    @endphp
+
+                    <div class="col-sm-4 col-md-3 text-center {{ $textAlign }}">
+                        <h5 class="text-3 mb-3 mt-4 mt-sm-0 text-color-primary">
+                            {{ __('footer.useful_links') }}
+                        </h5>
+
                         <ul class="list list-icons list-icons-sm text-color-primary d-inline-block d-md-block">
-                            <li><i class="fas fa-angle-right"></i><a href="{{ route('front.about') }}"
-                                    class="link-hover-style-1 ms-1 text-color-primary"> About Us</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="{{ route('front.goals') }}"
-                                    class="link-hover-style-1 ms-1 text-color-primary"> Our Goals</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="{{ route('front.team') }}"
-                                    class="link-hover-style-1 ms-1 text-color-primary"> Our Team</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="{{ route('front.works') }}"
-                                    class="link-hover-style-1 ms-1 text-color-primary"> Our Work</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="{{ route('front.involved') }}"
-                                    class="link-hover-style-1 ms-1 text-color-primary"> Get Involved</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="{{ route('front.contact') }}"
-                                    class="link-hover-style-1 ms-1 text-color-primary"> Contact Us</a></li>
-                        </ul>
+                            <li>
+                                <i class="fas fa-angle-{{ $iconDir }}"></i>
+                                <a href="{{ route('front.about') }}"
+                                    class="link-hover-style-1 {{ $linkSpace }} text-color-primary">
+                                    {{ __('footer.about') }}
+                                </a>
+                            </li>
 
+                            <li>
+                                <i class="fas fa-angle-{{ $iconDir }}"></i>
+                                <a href="{{ route('front.goals') }}"
+                                    class="link-hover-style-1 {{ $linkSpace }} text-color-primary">
+                                    {{ __('footer.goals') }}
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-angle-{{ $iconDir }}"></i>
+                                <a href="{{ route('front.team') }}"
+                                    class="link-hover-style-1 {{ $linkSpace }} text-color-primary">
+                                    {{ __('footer.team') }}
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-angle-{{ $iconDir }}"></i>
+                                <a href="{{ route('front.works') }}"
+                                    class="link-hover-style-1 {{ $linkSpace }} text-color-primary">
+                                    {{ __('footer.work') }}
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-angle-{{ $iconDir }}"></i>
+                                <a href="{{ route('front.involved') }}"
+                                    class="link-hover-style-1 {{ $linkSpace }} text-color-primary">
+                                    {{ __('footer.involved') }}
+                                </a>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-angle-{{ $iconDir }}"></i>
+                                <a href="{{ route('front.contact') }}"
+                                    class="link-hover-style-1 {{ $linkSpace }} text-color-primary">
+                                    {{ __('footer.contact') }}
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="col-sm-8 col-md-4 mb-4 mb-lg-0 text-center text-md-start">
-                        <h5 class="text-3 mb-3 text-color-primary">RECENT POSTS</h5>
-                        <div class="row lightbox mt-2 mx-0 justify-content-center justify-content-md-start"
+
+                    <div
+                        class="col-sm-8 col-md-4 mb-4 mb-lg-0 text-center {{ $isRtl ? 'text-md-end' : 'text-md-start' }}">
+                        <h5 class="text-3 mb-3 text-color-primary"> {{ __('footer.recent_posts') }}</h5>
+                        <div class="row lightbox mt-2 mx-0 justify-content-center {{ $isRtl ? 'justify-content-md-end' : 'justify-content-md-start' }} "
                             data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
 
                             <div class="col-4 col-md-6 pe-2 ps-0 mb-2">
@@ -241,18 +321,25 @@
                             </div>
 
                         </div>
-                        <p class="mt-3 mb-0 text-center text-lg-start">
-                            <i class="fab fa-whatsapp text-color-primary"></i><span
-                                class=" opacity-7 ps-2 text-color-primary">+1 312-622-6666</span>
-                            <i class="far fa-envelope text-color-primary ms-4 me-2"></i><a class="text-color-primary"
-                                href="mailto:mail@example.com" class="opacity-7 ps-2">info@amaac.com</a>
+                        <p class="mt-3 mb-0 text-center {{ $isRtl ? 'text-lg-end' : 'text-lg-start' }}">
+                            <i class="fab fa-whatsapp text-color-primary"></i>
+                            <span class="opacity-7 {{ $isRtl ? 'pe-2' : 'ps-2' }} text-color-primary">
+                                +1 312-622-6666
+                            </span>
+
+                            <i
+                                class="far fa-envelope text-color-primary {{ $isRtl ? 'ms-0 me-4' : 'ms-4 me-0' }}"></i>
+                            <a href="mailto:info@amaac.com"
+                                class="text-color-primary opacity-7 {{ $isRtl ? 'pe-2' : 'ps-2' }}">
+                                info@amaacouncil.com
+                            </a>
                         </p>
                     </div>
                     <div class="footer-copyright footer-copyright-style-2 bg-transparent footer-top-light-border mt-3">
                         <div class="container py-2">
                             <div class="row py-2">
                                 <div class="col d-flex align-items-center justify-content-center mb-lg-0">
-                                    <p>© Copyright 2025 AMAAC. All Rights Reserved.</p>
+                                    <p>{{ __('footer.copyright') }}</p>
                                 </div>
                             </div>
                         </div>
@@ -260,6 +347,7 @@
 
                 </div>
             </div>
+        </footer>
 
     </div>
 
@@ -275,5 +363,3 @@
 </body>
 
 </html>
-
-

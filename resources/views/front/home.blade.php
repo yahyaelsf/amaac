@@ -1,345 +1,350 @@
 @extends('front.layout', ['home' => true, 'about' => false, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => false])
 @section('css')
-<style>
-.animated-text .word {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s, transform 0.3s;
-    white-space: nowrap; /* يمنع كسر الكلمات */
-}
+    <style>
+        .animated-text .word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s, transform 0.3s;
+            white-space: nowrap;
+            /* يمنع كسر الكلمات */
+        }
 
-.animated-text .word.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-.porto-big-title {
-    font-size : 3rem ;
-}
-</style>
+        .animated-text .word.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .porto-big-title {
+            font-size: 3rem;
+        }
+    </style>
 @endsection
 @section('content')
-                <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside
+    <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside
                    dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
-					data-plugin-options="{'autoplayTimeout': 20000}"
-					data-dynamic-height="['670px','670px','670px','550px','500px']" style="height: 670px;">
-					<div class="owl-stage-outer">
-						<div class="owl-stage">
+        data-plugin-options="{'autoplayTimeout': 20000}" data-dynamic-height="['670px','670px','670px','550px','500px']"
+        style="height: 670px;">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
 
-							<div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251206-WA0004.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-6">
-											<div class="d-flex flex-column align-items-center">
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url({{ asset('front/img/home/IMG-20251206-WA0004.jpg') }}); background-size: cover; background-position: center;">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-center">
 
-                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Empowering Communities</h1>
-												<h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-													data-appear-animation="fadeInDownShorterPlus"
-													data-plugin-options="{'minWindowWidth': 0}">
-													<span
-														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInRightShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-													 Empowering Arab & Muslim Voices in America
-													<span
-														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInLeftShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-												</h3>
+                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible"
+                                        data-appear-animation="blurIn" data-appear-animation-delay="1000"
+                                        data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">
+                                        {{ __('general.hero1_title') }}
+                                    </h1>
+                                    <h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+                                        data-appear-animation="fadeInDownShorterPlus"
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                        {{ __('general.hero1_subtitle') }}
+                                        <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                    </h3>
 
-												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
-													>
-													 Building strong, confident communities through advocacy, education, and inclusive leadership.
-												</p>
+                                    <p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0">
+                                        {{ __('general.hero1_description') }}
+                                    </p>
 
-                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="5000">
-													<div class="d-flex align-items-center mt-2">
-														{{-- <a href="#"
+                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                        data-appear-animation-delay="5000">
+                                        <div class="d-flex align-items-center mt-2">
+                                            {{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="{{ route('front.about') }}"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															 Learn More
-                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
-                                                             </a>
+                                            <a href="{{ route('front.about') }}"
+                                                class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+                                                {{ __('general.hero1_button') }}
+                                                {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                            </a>
 
-													</div>
+                                        </div>
 
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-                            <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/Slide2.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-6">
-											<div class="d-flex flex-column align-items-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url({{ asset('front/img/home/Slide2.jpg') }}); background-size: cover; background-position: center;">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-center">
 
-                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Defending Rights & Dignity</h1>
-												<h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-													data-appear-animation="fadeInDownShorterPlus"
-													data-plugin-options="{'minWindowWidth': 0}">
-													<span
-														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInRightShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-													 Protecting Civil Rights. Advancing Human Dignity
+                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible"
+                                        data-appear-animation="blurIn" data-appear-animation-delay="1000"
+                                        data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">
+                                        {{ __('general.hero2_title') }}
+                                    </h1>
+                                    <h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+                                        data-appear-animation="fadeInDownShorterPlus"
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                        {{ __('general.hero2_subtitle') }}
 
-													<span
-														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInLeftShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-												</h3>
+                                        <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                    </h3>
 
-												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
-													>
-													We stand against discrimination and work to ensure every individual is treated with fairness, respect, and justice
-												</p>
+                                    <p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0">
+                                        {{ __('general.hero2_description') }}
+                                    </p>
 
-                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="5000">
-													<div class="d-flex align-items-center mt-2">
-														{{-- <a href="#"
+                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                        data-appear-animation-delay="5000">
+                                        <div class="d-flex align-items-center mt-2">
+                                            {{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="#mission"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															  Our Mission
-                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
-                                                             </a>
+                                            <a href="#mission"
+                                                class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+                                                {{ __('general.hero2_button') }}
+                                                {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                            </a>
 
-													</div>
+                                        </div>
 
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-                             <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/slide3.jpg') }});
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url({{ asset('front/img/home/slide3.jpg') }});
                                 background-size: cover; background-position: center; width: 100%;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-6">
-											<div class="d-flex flex-column align-items-center">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-center">
 
-                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Shaping Policy for a Better Future</h1>
-												<h3 class="position-relative text-color-secondary text-4 text-center line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-													data-appear-animation="fadeInDownShorterPlus"
-													data-plugin-options="{'minWindowWidth': 0}">
-													<span
-														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInRightShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-													Influencing Policy Through Knowledge & Action
-													<span
-														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInLeftShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-												</h3>
+                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible"
+                                        data-appear-animation="blurIn" data-appear-animation-delay="1000"
+                                        data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">
+                                        {{ __('general.hero3_title') }}</h1>
+                                    <h3 class="position-relative text-color-secondary text-4 text-center line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+                                        data-appear-animation="fadeInDownShorterPlus"
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                        {{ __('general.hero3_subtitle') }}
+                                        <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                    </h3>
 
-												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
-													>
-													Research-driven advocacy shaping fair public policies for Arab and Muslim communities nationwide
-												</p>
+                                    <p
+                                        class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0">
+                                        {{ __('general.hero3_description') }}
+                                    </p>
 
-                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="5000">
-													<div class="d-flex align-items-center mt-2">
-														{{-- <a href="#"
+                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                        data-appear-animation-delay="5000">
+                                        <div class="d-flex align-items-center mt-2">
+                                            {{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="{{ route('front.works') }}"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															 Explore Our Work
-                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
-                                                             </a>
+                                            <a href="{{ route('front.works') }}"
+                                                class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+                                                {{ __('general.hero3_button') }}
+                                                {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                            </a>
 
-													</div>
+                                        </div>
 
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-                             <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/slide4.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-6">
-											<div class="d-flex flex-column align-items-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url({{ asset('front/img/home/slide4.jpg') }}); background-size: cover; background-position: center;">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-center">
 
-                                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Bridging Cultures & Building Understanding</h1>
-												<h3 class="position-relative text-color-secondary text-4 text-center line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-													data-appear-animation="fadeInDownShorterPlus"
-													data-plugin-options="{'minWindowWidth': 0}">
-													<span
-														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInRightShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-													Strengthening Bridges Between America, the Arab World, and the Muslim World
+                                    <h1 class="text-color-secondary font-weight-extra-bold text-center text-10 mb-3 appear-animation animated blurIn appear-animation-visible"
+                                        data-appear-animation="blurIn" data-appear-animation-delay="1000"
+                                        data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">
+                                        {{ __('general.hero4_title') }}
+                                    </h1>
+                                    <h3 class="position-relative text-color-secondary text-4 text-center line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+                                        data-appear-animation="fadeInDownShorterPlus"
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                        {{ __('general.hero4_subtitle') }}
+                                        <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                    </h3>
 
-													<span
-														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInLeftShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-												</h3>
+                                    <p
+                                        class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0">
+                                        {{ __('general.hero4_description') }}
+                                    </p>
 
-												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
-													>
-													 Promoting cultural dialogue, media literacy, and representation that reflects our shared values and humanity
-												</p>
-
-                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="5000">
-													<div class="d-flex align-items-center mt-2">
-														{{-- <a href="#"
+                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                        data-appear-animation-delay="5000">
+                                        <div class="d-flex align-items-center mt-2">
+                                            {{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="{{ route('front.goals') }}"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															  Discover More
-                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
-                                                             </a>
+                                            <a href="{{ route('front.goals') }}"
+                                                class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+                                                {{ __('general.hero4_button') }}
+                                                {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                            </a>
 
-													</div>
+                                        </div>
 
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-                            <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
-								style="background-image: url({{ asset('front/img/home/IMG-20251206-WA0002.jpg') }}); background-size: cover; background-position: center;">
-								<div class="container position-relative z-index-3 h-100">
-									<div class="row justify-content-center align-items-center h-100">
-										<div class="col-lg-6">
-											<div class="d-flex flex-column align-items-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item position-relative overlay overlay-color-primary overlay-show overlay-op-8"
+                    style="background-image: url({{ asset('front/img/home/IMG-20251206-WA0002.jpg') }}); background-size: cover; background-position: center;">
+                    <div class="container position-relative z-index-3 h-100">
+                        <div class="row justify-content-center align-items-center h-100">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column align-items-center">
 
-                                                    <h1 class="text-color-secondary font-weight-extra-bold text-10 mb-3 text-center appear-animation animated blurIn appear-animation-visible" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">Investing in the Next Generation</h1>
-												<h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-													data-appear-animation="fadeInDownShorterPlus"
-													data-plugin-options="{'minWindowWidth': 0}">
-													<span
-														class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInRightShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-													 Empowering Youth to Lead With Confidence
-													<span
-														class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-														<img src="{{ asset('front/img/slides/slide-title-border.png') }}"
-															class="w-auto appear-animation"
-															data-appear-animation="fadeInLeftShorter"
-															data-appear-animation-delay="250"
-															data-plugin-options="{'minWindowWidth': 0}" alt="" />
-													</span>
-												</h3>
+                                    <h1 class="text-color-secondary font-weight-extra-bold text-10 mb-3 text-center appear-animation animated blurIn appear-animation-visible"
+                                        data-appear-animation="blurIn" data-appear-animation-delay="1000"
+                                        data-plugin-options="{'minWindowWidth': 0}" style="animation-delay: 1000ms;">
+                                        {{ __('general.hero5_title') }}</h1>
+                                    <h3 class="position-relative text-color-secondary text-center text-4 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+                                        data-appear-animation="fadeInDownShorterPlus"
+                                        data-plugin-options="{'minWindowWidth': 0}">
+                                        <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInRightShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                        {{ __('general.hero5_subtitle') }}
+                                        <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                                            <img src="{{ asset('front/img/slides/slide-title-border.png') }}"
+                                                class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter"
+                                                data-appear-animation-delay="250"
+                                                data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                                        </span>
+                                    </h3>
 
-												<p class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0"
-													>
-													Leadership programs, civic engagement initiatives, and mentorship opportunities for the future generation of Arab and Muslim leaders.
+                                    <p
+                                        class="animated-text text-4 text-color-secondary font-weight-light text-center mb-0">
+                                        {{ __('general.hero5_description') }}
 
-												</p>
+                                    </p>
 
-                                                <div class="appear-animation" data-appear-animation="fadeInUpShorter"
-													data-appear-animation-delay="5000">
-													<div class="d-flex align-items-center mt-2">
-														{{-- <a href="#"
+                                    <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                        data-appear-animation-delay="5000">
+                                        <div class="d-flex align-items-center mt-2">
+                                            {{-- <a href="#"
 															class="btn btn-primary btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">
 															 About Us</a> --}}
-														<a href="{{ route('front.involved') }}"
-															class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
-															 Join Our Programs
-                                                             {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
-                                                             </a>
+                                            <a href="{{ route('front.involved') }}"
+                                                class="btn btn-secondary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">
+                                                {{ __('general.hero5_button') }}
+                                                {{-- <i class="fas fa-arrow-right ms-2"></i> --}}
+                                            </a>
 
-													</div>
+                                        </div>
 
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-						</div>
-					</div>
-					<div class="owl-dots mb-3">
-						<button role="button" class="owl-dot active"><span></span></button>
-						<button role="button" class="owl-dot"><span></span></button>
-                        <button role="button" class="owl-dot"><span></span></button>
-                        <button role="button" class="owl-dot"><span></span></button>
-						<button role="button" class="owl-dot"><span></span></button>
-					</div>
-				</div>
+
+
+            </div>
+        </div>
+        <div class="owl-dots mb-3">
+            <button role="button" class="owl-dot active"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
+            <button role="button" class="owl-dot"><span></span></button>
+        </div>
+    </div>
 
     <div class="home-intro mb-0" id="home-intro" style="background-color: var(--secondary);">
         <div class="container">
+            @php
+                $isArabic = app()->getLocale() === 'ar';
+            @endphp
+            <div class="row align-items-center {{ $isArabic ? 'text-end' : '' }}">
 
-            <div class="row align-items-center ">
                 <div class="col-lg-8">
-                    <p class="text-color-primary">
-                        American Muslim and Arab Affairs Council <span
-                            class="highlighted-word  text-color-primary font-weight-semibold text-5">AMAAC</span>
-                        <span class="text-color-primary">Building Bridges of Understanding, Promoting
-                            Justice, amplifying voices, Empowering Communities, Advocating for Justice, and
-                            Empowerment for Muslims and Arabs in USA and around the world.</span>
+                    <p class="text-color-primary {{ $isArabic ? 'text-end' : '' }}">
+                        {{ __('general.subhero_text') }}
+                        <span class="highlighted-word text-color-primary font-weight-semibold text-5">
+                            AMAAC
+                        </span>
+                        <span class="text-color-primary">
+                            {{ __('general.subhero_desc') }}
+                        </span>
                     </p>
                 </div>
+
                 <div class="col-lg-4">
-                    <div class="get-started text-start text-lg-end">
-                        <a href="{{ route('front.about') }}" class="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3 text-color-secondary">
-                            Learn more</a>
-                        <!-- <div class="learn-more">or <a href="index.html">learn more.</a></div> -->
+                    <div class="get-started {{ $isArabic ? 'text-lg-start' : 'text-lg-end' }}">
+                        <a href="{{ route('front.about') }}"
+                            class="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3 text-color-secondary">
+                            {{ __('general.subhero_button') }}
+                        </a>
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -352,22 +357,22 @@
                 <div class="col-md-6">
                     <h2 class="font-weight-bold text-10 mb-0 appear-animation text-secondary animated fadeInUpShorter appear-animation-visible"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
-                        data-appear-animation-duration="750" style="animation-delay: 200ms;">Who we are
+                        data-appear-animation-duration="750" style="animation-delay: 200ms;">{{ __('general.about_title') }}
                     </h2>
                     <p class="font-weight-semibold text-4 fonts-weight-semibold positive-ls-2 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible text-color-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"
                         data-appear-animation-duration="750" style="animation-delay: 600ms;">
-                        American Muslim and Arab Affairs Council</p>
+                         {{ __('general.about_name') }}</p>
                     <p class="pb-2 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible text-color-secondary borderd-primary"
-                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
+                        data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
-                        AMAAC is a non-profit council committed to promoting mutual understanding between the United States and the Arab and Islamic world. We defend rights, support sustainable development, and contribute to social, cultural, and political progress. AMAAC is a platform for hope, a bridge for understanding, and a voice for justice.
+                          {{ __('general.about_description') }}
                     </p>
                     <a href="{{ route('front.contact') }}"
                         class="btn btn-secondary  btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible "
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
                         data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">
-                        Donate</a>
+                         {{ __('general.about_button') }}</a>
 
                 </div>
                 <div class="col-md-6 position-relative py-5">
@@ -380,8 +385,7 @@
                         data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0"
                         data-appear-animation-duration="750" style="animation-delay: 0ms;">
                         <div class="strong-shadow rounded strong-shadow-top-right image-zoom">
-                            <img loading="lazy"
-                                src="{{ asset('front/img/home/IMG-20251206-WA0007.jpg') }}"
+                            <img loading="lazy" src="{{ asset('front/img/home/IMG-20251206-WA0007.jpg') }}"
                                 class="img-fluid border border-width-10 border-color-light rounded box-shadow-3"
                                 alt="Porto Admin" style="height : 550px ; width: 100%">
 
@@ -412,22 +416,20 @@
                 <div class="col-md-6 py-5 order-1 order-md-2">
                     <h2 class="font-weight-bold text-10 mb-0 appear-animation text-primary animated fadeInUpShorter appear-animation-visible"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
-                        data-appear-animation-duration="750" style="animation-delay: 200ms;">President statement
+                        data-appear-animation-duration="750" style="animation-delay: 200ms;">{{ __('general.president_title') }}
                     </h2>
 
                     <p class="pb-2 mb-4 mt-3 appear-animation animated fadeInUpShorter appear-animation-visible text-color-primary borderd-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
-                        At AMAAC, we believe that justice, dignity, and mutual respect are not luxuries, but rights for every human being. Our communities have contributed enormously to the scientific, cultural, and economic progress of the United States, yet they still face misunderstanding and discrimination.
-                        AMAAC was founded to turn concern into action. We listen to our communities, amplify their voices where decisions are made, and build partnerships that create real opportunities for youth, families, and future generations.
-                    Together, we can reshape the narrative, defend our rights, and build bridges that lead to a more peaceful and inclusive society in America and beyond.
+                         {{ __('general.president_description') }}
 
                     </p>
                     <a href="{{ route('front.contact') }}"
                         class="btn btn-primary btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible test-color-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
                         data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">
-                        Donate</a>
+                         {{ __('general.president_button') }}</a>
 
                 </div>
             </div>
@@ -439,8 +441,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="font-weight-normal text-center text-color-secondary text-6 pb-3">Our <strong
-                            class="font-weight-extra-bold text-color-secondary">Mission </strong>at a Glance</h2>
+                    <h2 class="font-weight-normal text-center text-color-secondary text-6 pb-3"> {{ __('general.mission_title') }}</h2>
                 </div>
             </div>
 
@@ -455,8 +456,8 @@
                                 <div class="feature-box-icon">
                                     <i class="icons icon-support text-color-primary"></i>
                                 </div>
-                                <h4 class="font-weight-bold text-color-primary text-4">Building Cultural Bridges</h4>
-                                <p class="text-color-primary"> We create platforms for dialogue and exchange between Arab, Muslim, and wider American communities. Through public events, cultural programs, and partnerships, we highlight our shared values, histories, and aspirations.</p>
+                                <h4 class="font-weight-bold text-color-primary text-4">{{ __('general.mission_card1_title') }}</h4>
+                                <p class="text-color-primary"> {{ __('general.mission_card1_description') }}</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
@@ -476,14 +477,15 @@
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation animated fadeInUpShorter appear-animation-visible"
                     data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" bis_skin_checked="1"
                     style="animation-delay: 400ms;">
-                    <div class="card flip-card flip-card-vertical text-center rounded-0 bg-secondary" bis_skin_checked="1">
+                    <div class="card flip-card flip-card-vertical text-center rounded-0 bg-secondary"
+                        bis_skin_checked="1">
                         <div class="flip-front p-5 bg-secondary" bis_skin_checked="1">
                             <div class="flip-content my-4" bis_skin_checked="1">
                                 <div class="feature-box-icon text-color-primary">
                                     <i class="icons icon-layers text-color-primary"></i>
                                 </div>
-                                <h4 class="font-weight-bold text-color-primary text-4">Protecting Rights, </h4>
-                                <p class="text-color-primary">AMAAC monitors and responds to violations of civil and human rights affecting Muslims and Arabs. We support individuals and work with legal partners, and advocate for policies that uphold equality and justice for all.</p>
+                                <h4 class="font-weight-bold text-color-primary text-4">{{ __('general.mission_card2_title') }} </h4>
+                                <p class="text-color-primary">{{ __('general.mission_card2_description') }}</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
@@ -509,9 +511,11 @@
                                 <div class="feature-box-icon">
                                     <i class="icons icon-menu text-color-primary"></i>
                                 </div>
-                                <h4 class="font-weight-bold text-color-primary text-4">Influencing
-                                    Policy</h4>
-                                <p class="text-color-primary">We engage with policymakers, think tanks, and civil society to ensure that the voices of Muslims and Arabs are heard in the halls of power. AMAAC provides  organizes advocacy campaigns that shape fair and balanced public policy</p>
+                                <h4 class="font-weight-bold text-color-primary text-4">
+                                {{ __('general.mission_card3_title') }}
+                                    </h4>
+                                <p class="text-color-primary">
+                                {{ __('general.mission_card3_description') }}</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
@@ -536,8 +540,8 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2 class="font-weight-normal text-6 mt-4 text-color-primary">Latest <strong
-                            class="font-weight-extra-bold text-color-primary">News </strong> and Projects</h2>
+                    <h2 class="font-weight-normal text-6 mt-4 text-color-primary">{{ __('general.news_section_title') }} <strong
+                            class="font-weight-extra-bold text-color-primary">{{ __('general.news_section_title_strong') }} </strong> {{ __('general.news_section_title_suffix') }}</h2>
                 </div>
             </div>
         </div>
@@ -550,7 +554,8 @@
                         data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}"
                         style="animation-delay: 100ms;">
                         <div class="owl-carousel owl-theme pb-3 owl-loaded owl-drag owl-carousel-init"
-                            data-plugin-options="{'items': 4, 'margin': 35, 'loop': true ,'autoHeight': false}" style="height: auto;">
+                            data-plugin-options="{'items': 4, 'margin': 35, 'loop': true ,'autoHeight': false}"
+                            style="height: auto;">
 
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
@@ -561,39 +566,17 @@
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/article1thumbnail.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                                          <a href="{{ route('news.future') }}" class="">
-                                                    <span class="thumb-info-title bg-primary text-secondary">
+                                                    <img src="{{ asset('front/img/home/article1thumbnail.jpg') }}"
+                                                        class="img-fluid border-radius-0" alt="">
+                                                    <a href="{{ route('news.future') }}" class="">
+                                                        <span class="thumb-info-title bg-primary text-secondary">
 
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                            The Future of Arab & Muslim Representation in American Media</span>
-                                                        <span class="thumb-info-type mt-2">Misrepresentation remains a major challenge. This article explores the current landscape of media portrayals, highlights positive change-makers, and outlines AMAAC’s media literacy initiatives to empower content creators and influencers in our communities</span>
+                                                            <span
+                                                                class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                                 {{ __('general.news_1_title') }}</span>
+                                                            <span class="thumb-info-type mt-2">{{ __('general.news_1_desc') }}</span>
 
-                                                    </span>
-                                                     </a>
-
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-
-                                        <div class="portfolio-item">
-                                            <span
-                                                class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
-                                                <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/article2thumbnail.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                                     <a href="{{ route('news.rights') }}">
-                                                    <span class="thumb-info-title bg-primary text-secondary">
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                            Know Your Rights: A Complete Guide for Arab & Muslim Americans</span>
-                                                        <span class="thumb-info-type mt-2"> An essential resource explaining constitutional rights, protections against discrimination, what to do if confronted with Islamophobia, and how AMAAC is expanding its legal-support and advocacy network across the United States.</span>
-                                                    </span>
+                                                        </span>
                                                     </a>
 
                                                 </span>
@@ -607,39 +590,17 @@
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/article3thumbnail.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                                        <a href="{{ route('news.leadership') }}">
-                                                    <span class="thumb-info-title bg-primary text-secondary">
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Youth Leadership: How the Next Generation Is Redefining Civic Engagement</span>
-                                                        <span class="thumb-info-type mt-2">Showcasing inspiring stories of Arab and Muslim American youth leading community projects, advocating in local government, and representing their identities confidently. Includes information about AMAAC’s Youth Civic Leadership Fellowship.</span>
-                                                    </span>
-                                                     </a>
-
-                                                </span>
-                                            </span>
-                                        </div>
-
-                                    </div>
-                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-                                        <div class="portfolio-item">
-                                            <span
-                                                class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
-                                                <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/article4thumbnail.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                     <a href="{{ route('news.relations') }}">
-
-                                                    <span class="thumb-info-title bg-primary text-secondary">
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                            U.S.–Arab Relations: Why Cultural Understanding Matters More Than Ever
-                                                            </span>
-                                                        <span class="thumb-info-type mt-2">A balanced, informative piece examining how cultural diplomacy and people-to-people engagement help build trust and reduce misconceptions. Features AMAAC’s role in cultural programs and community dialogue.
+                                                    <img src="{{ asset('front/img/home/article2thumbnail.jpg') }}"
+                                                        class="img-fluid border-radius-0" alt="">
+                                                    <a href="{{ route('news.rights') }}">
+                                                        <span class="thumb-info-title bg-primary text-secondary">
+                                                            <span
+                                                                class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                                 {{ __('general.news_2_title') }}</span>
+                                                            <span class="thumb-info-type mt-2"> {{ __('general.news_2_desc') }}</span>
                                                         </span>
-                                                    </span>
-                                                </a>
+                                                    </a>
+
                                                 </span>
                                             </span>
                                         </div>
@@ -651,37 +612,84 @@
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/article5thumbnail.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                                         <a href="{{ route('news.combating') }}">
-                                                    <span class="thumb-info-title bg-primary text-secondary">
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                            Combating Islamophobia: Practical Steps for Communities & Allies</span>
-                                                        <span class="thumb-info-type mt-2"> A guide offering practical strategies for schools, workplaces, parents, and community leaders to create safer and more inclusive environments. Includes recommended reporting channels and AMAAC initiatives supporting victims of discrimination</span>
-                                                    </span>
-                                                </a>
+                                                    <img src="{{ asset('front/img/home/article3thumbnail.jpg') }}"
+                                                        class="img-fluid border-radius-0" alt="">
+                                                    <a href="{{ route('news.leadership') }}">
+                                                        <span class="thumb-info-title bg-primary text-secondary">
+                                                            <span
+                                                                class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                                 {{ __('general.news_3_title') }}</span>
+                                                            <span class="thumb-info-type mt-2">  {{ __('general.news_3_desc') }}</span>
+                                                        </span>
+                                                    </a>
+
                                                 </span>
                                             </span>
                                         </div>
 
                                     </div>
                                     <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
-
                                         <div class="portfolio-item">
                                             <span
                                                 class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
                                                 <span class="thumb-info-wrapper border-radius-0">
-                                                    <img src="{{ asset('front/img/home/article6thumbnail.jpg') }}" class="img-fluid border-radius-0"
-                                                        alt="">
-                                                         <a href="{{ route('news.strengthening') }}">
-                                                    <span class="thumb-info-title bg-primary text-secondary">
-                                                        <span
-                                                            class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">Strengthening Community Resilience Through Local Partnerships
+                                                    <img src="{{ asset('front/img/home/article4thumbnail.jpg') }}"
+                                                        class="img-fluid border-radius-0" alt="">
+                                                    <a href="{{ route('news.relations') }}">
+
+                                                        <span class="thumb-info-title bg-primary text-secondary">
+                                                            <span
+                                                                class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                                 {{ __('general.news_4_title') }}
                                                             </span>
-                                                        <span class="thumb-info-type mt-2"> Explores how mosques, community centers, NGOs, universities, and advocacy groups can collaborate to deliver impactful programs—from mental health support to voter education. Highlights new AMAAC partnerships and success stories</span>
-                                                    </span>
-                                                     </a>
+                                                            <span class="thumb-info-type mt-2">
+                                                             {{ __('general.news_4_desc') }}
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+
+                                        <div class="portfolio-item">
+                                            <span
+                                                class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                                <span class="thumb-info-wrapper border-radius-0">
+                                                    <img src="{{ asset('front/img/home/article5thumbnail.jpg') }}"
+                                                        class="img-fluid border-radius-0" alt="">
+                                                    <a href="{{ route('news.combating') }}">
+                                                        <span class="thumb-info-title bg-primary text-secondary">
+                                                            <span
+                                                                class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                                 {{ __('general.news_5_title') }}</span>
+                                                            <span class="thumb-info-type mt-2">{{ __('general.news_5_desc') }}</span>
+                                                        </span>
+                                                    </a>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="owl-item" style="width: 252.75px; margin-right: 35px;">
+
+                                        <div class="portfolio-item">
+                                            <span
+                                                class="thumb-info thumb-info-lighten thumb-info-no-borders thumb-info-bottom-info thumb-info-centered-icons border-radius-0">
+                                                <span class="thumb-info-wrapper border-radius-0">
+                                                    <img src="{{ asset('front/img/home/article6thumbnail.jpg') }}"
+                                                        class="img-fluid border-radius-0" alt="">
+                                                    <a href="{{ route('news.strengthening') }}">
+                                                        <span class="thumb-info-title bg-primary text-secondary">
+                                                            <span
+                                                                class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
+                                                                 {{ __('general.news_6_title') }}
+                                                            </span>
+                                                            <span class="thumb-info-type mt-2"> {{ __('general.news_6_desc') }}</span>
+                                                        </span>
+                                                    </a>
                                                 </span>
                                             </span>
                                         </div>
@@ -703,90 +711,85 @@
 
 
     <section class="section bg-primary section-height-3 border-0 m-0">
-    <div class="container">
+        <div class="container">
 
-        <!-- عنوان السكشن -->
-        <div class="row">
-            <div class="col">
-                <h2 class="font-weight-normal text-center text-color-secondary text-6 pb-3">
-                    Stay <strong class="font-weight-extra-bold text-color-secondary">Connected</strong> With Us
-                </h2>
-                <p class="text-center text-color-secondary opacity-8 mb-4">
-                    Subscribe to our newsletter and never miss an update.
-                </p>
+            <!-- عنوان السكشن -->
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-weight-normal text-center text-color-secondary text-6 pb-3">
+                        {{ __('general.newsletter_title') }} <strong class="font-weight-extra-bold text-color-secondary"> {{ __('general.newsletter_title_strong') }}</strong>  {{ __('general.newsletter_title_suffix') }}
+                    </h2>
+                    <p class="text-center text-color-secondary opacity-8 mb-4">
+                           {{ __('general.newsletter_description') }}
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- فورم الاشتراك -->
-        <div class="row justify-content-center">
-            <div class="col-lg-7 col-md-10">
+            <!-- فورم الاشتراك -->
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10">
 
-                <form class="subscription-form" method="POST" action="#">
-                    @csrf
+                    <form class="subscription-form" method="POST" action="#">
+                        @csrf
 
-                    <div class="input-group input-group-lg">
-                        <input
-                            type="email"
-                            class="form-control bg-light border-0 rounded-0 px-4 py-3 text-color-secondary"
-                            placeholder="Enter your email address..."
-                            required
-                        >
+                        <div class="input-group input-group-lg">
+                            <input type="email"
+                                class="form-control bg-light border-0 rounded-0 px-4 py-3 text-color-secondary"
+                                placeholder="{{ __('general.newsletter_placeholder') }}" required>
 
-                        <button type="submit"
-                            class="btn btn-secondary rounded-0 px-4 font-weight-bold">
-                            SUBSCRIBE
-                        </button>
-                    </div>
+                            <button type="submit" class="btn btn-secondary rounded-0 px-4 font-weight-bold">
+                                  {{ __('general.newsletter_button') }}
+                            </button>
+                        </div>
 
-                </form>
+                    </form>
 
+                </div>
             </div>
+
         </div>
+    </section>
+    <script>
+        function wrapWords(el) {
+            if (!el.dataset.wrapped) {
+                const text = el.textContent.trim();
+                const words = text.split(/\s+/);
+                el.innerHTML = words.map(w => `<span class="word">${w}</span>`).join(' ');
+                el.dataset.wrapped = "true";
+            }
+        }
 
-    </div>
-</section>
-<script>
-function wrapWords(el) {
-    if (!el.dataset.wrapped) {
-        const text = el.textContent.trim();
-        const words = text.split(/\s+/);
-        el.innerHTML = words.map(w => `<span class="word">${w}</span>`).join(' ');
-        el.dataset.wrapped = "true";
-    }
-}
+        function animateWords(el) {
+            const words = el.querySelectorAll('.word');
+            words.forEach((w, i) => {
+                setTimeout(() => w.classList.add('visible'), i * 350);
+            });
+        }
 
-function animateWords(el) {
-    const words = el.querySelectorAll('.word');
-    words.forEach((w, i) => {
-        setTimeout(() => w.classList.add('visible'), i * 350);
-    });
-}
+        function resetWords(el) {
+            el.querySelectorAll('.word').forEach(w => w.classList.remove('visible'));
+        }
 
-function resetWords(el) {
-    el.querySelectorAll('.word').forEach(w => w.classList.remove('visible'));
-}
+        // كل مرة عنصر يصبح active نرسم الأنيميشن
+        function handleActiveSlide(slide) {
+            const animatedTexts = slide.querySelectorAll('.animated-text');
+            animatedTexts.forEach(el => {
+                wrapWords(el);
+                resetWords(el);
+                setTimeout(() => animateWords(el), 50);
+            });
+        }
 
-// كل مرة عنصر يصبح active نرسم الأنيميشن
-function handleActiveSlide(slide) {
-    const animatedTexts = slide.querySelectorAll('.animated-text');
-    animatedTexts.forEach(el => {
-        wrapWords(el);
-        resetWords(el);
-        setTimeout(() => animateWords(el), 50);
-    });
-}
+        // أول تحميل
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.querySelector('.owl-carousel');
+            carousel.querySelectorAll('.owl-item.active').forEach(handleActiveSlide);
+        });
 
-// أول تحميل
-document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.owl-carousel');
-    carousel.querySelectorAll('.owl-item.active').forEach(handleActiveSlide);
-});
-
-// عند كل تغيير
-document.querySelector('.owl-carousel').addEventListener('changed.owl.carousel', e => {
-    const carousel = e.currentTarget;
-    carousel.querySelectorAll('.owl-item.active').forEach(handleActiveSlide);
-});
-</script>
+        // عند كل تغيير
+        document.querySelector('.owl-carousel').addEventListener('changed.owl.carousel', e => {
+            const carousel = e.currentTarget;
+            carousel.querySelectorAll('.owl-item.active').forEach(handleActiveSlide);
+        });
+    </script>
 @endsection
-

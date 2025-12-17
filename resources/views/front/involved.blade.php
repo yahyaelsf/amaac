@@ -72,7 +72,7 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-9 font-weight-bold text-color-secondary "> Be Part of Change</h1>
+                    <h1 class="text-9 font-weight-bold text-color-secondary "> {{ __('general.get_involved_page.header.title') }}</h1>
                     {{-- <span class="sub-title">Your Voice. Your Action. Our Future.</span> --}}
                 </div>
                 {{-- <div class="col-md-12 align-self-center order-1">
@@ -92,7 +92,7 @@
                     <div class="overflow-hidden mb-2">
                         <h2 class="font-weight-normal text-7 mb-2 appear-animation text-color-secondary"
                             data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                            Get <strong class="font-weight-extra-bold text-color-secondary">Involved</strong>
+                          {{ __('general.get_involved_page.intro.title') }}
                         </h2>
                     </div>
 
@@ -100,16 +100,15 @@
                     <div class="overflow-hidden mb-4">
                         <p class="lead mb-0 appear-animation text-color-secondary" data-appear-animation="fadeInUpShorter"
                             data-appear-animation-delay="400">
-                            <strong class="text-color-secondary">Your Voice. Your Action. Our Future.</strong>
-                            AMAAC's work is powered by the passion and dedication of individuals like you.
+                            <strong class="text-color-secondary">{{ __('general.get_involved_page.intro.headline_strong') }}</strong>
+                             {{ __('general.get_involved_page.intro.headline_text') }}
                         </p>
                     </div>
 
                     <!-- PARAGRAPH -->
                     <p class="text-color-secondary mb-4 appear-animation" data-appear-animation="fadeInUpShorter"
                         data-appear-animation-delay="600">
-                        Join us in making a meaningful impact through membership, volunteering, donations,
-                        advocacy, staying informed, and sharing your story to inspire change.
+                        {{ __('general.get_involved_page.intro.description') }}
                     </p>
 
                 </div>
@@ -120,9 +119,7 @@
                         data-appear-animation-delay="800">
                         <blockquote class=" bg-color-secondary">
                             <p class="mb-0 text-color-primary">
-                                “Together, we can build a more just and inclusive future for Arab and Muslim communities
-                                across
-                                the United States.”
+                                 {{ __('general.get_involved_page.intro.quote') }}
                             </p>
                         </blockquote>
                     </div>
@@ -346,9 +343,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="involve-card appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="100">
-                        <h4>Become a <strong>Member</strong></h4>
-                        <p>Support our mission and receive exclusive updates, opportunities, and special invitations.</p>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">Join Now</a>
+                        <h4>{{ __('general.get_involved_page.cards.member.title') }} <strong>{{ __('general.get_involved_page.cards.member.title_strong') }}</strong></h4>
+                        <p>{{ __('general.get_involved_page.cards.member.text') }}</p>
+                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.member.button') }}</a>
                     </div>
                 </div>
 
@@ -356,15 +353,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="involve-card appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="200">
-                        <h4>Volunteer With <strong>Us</strong></h4>
-                        <p>Lend your time and skills to support our programs and initiatives.</p>
+                        <h4>{{ __('general.get_involved_page.cards.volunteer.title') }}  <strong>{{ __('general.get_involved_page.cards.volunteer.title_strong') }}</strong></h4>
+                        <p>{{ __('general.get_involved_page.cards.volunteer.text') }}</p>
                         <ul>
-                            <li>Event planning and support</li>
-                            <li>Research and data analysis</li>
-                            <li>Social media and communications</li>
-                            <li>Community outreach</li>
+                        @foreach( __('general.get_involved_page.cards.volunteer.items') as $value)
+                             <li>{{ $value }}</li>
+                        @endforeach
+
                         </ul>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">Become a Volunteer</a>
+                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.volunteer.button') }}</a>
                     </div>
                 </div>
 
@@ -372,9 +369,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="involve-card appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="300">
-                        <h4>Donate</h4>
-                        <p>Your financial contribution directly fuels our advocacy, education, and legal efforts.</p>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">Donate Now</a>
+                        <h4>{{ __('general.get_involved_page.cards.donate.title') }}</h4>
+                        <p>{{ __('general.get_involved_page.cards.donate.text') }}</p>
+                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.volunteer.button') }}</a>
                     </div>
                 </div>
 
@@ -382,10 +379,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="involve-card appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="400">
-                        <h4>Take <strong>Action</strong></h4>
-                        <p>Participate in campaigns, sign petitions, and contact your elected officials about critical
-                            issues.</p>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">View Action Alerts</a>
+                        <h4>{{ __('general.get_involved_page.cards.action.title') }} <strong>{{ __('general.get_involved_page.cards.action.title_strong') }} </strong></h4>
+                        <p>{{ __('general.get_involved_page.cards.action.text') }}</p>
+                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.action.button') }} </a>
                     </div>
                 </div>
 
@@ -393,9 +389,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="involve-card appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="500">
-                        <h4>Stay <strong>Informed</strong></h4>
-                        <p>Subscribe to our newsletter for updates, news, and opportunities to take action.</p>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">Subscribe</a>
+                        <h4>{{ __('general.get_involved_page.cards.informed.title') }} <strong>{{ __('general.get_involved_page.cards.informed.title_strong') }}</strong></h4>
+                        <p>{{ __('general.get_involved_page.cards.informed.text') }}</p>
+                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.informed.button') }}</a>
                     </div>
                 </div>
 
@@ -403,10 +399,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="involve-card appear-animation" data-appear-animation="fadeInUp"
                         data-appear-animation-delay="600">
-                        <h4>Share Your <strong>Story</strong></h4>
-                        <p>If you've experienced discrimination or have a story that can inspire change, we want to hear
-                            from you.</p>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">Share Your Story</a>
+                        <h4>{{ __('general.get_involved_page.cards.story.title') }} <strong>{{ __('general.get_involved_page.cards.story.title_strong') }}</strong></h4>
+                        <p>{{ __('general.get_involved_page.cards.story.text') }}</p>
+                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.story.button') }}</a>
                     </div>
                 </div>
             </div>

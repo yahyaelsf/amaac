@@ -129,7 +129,7 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-9 font-weight-bold text-color-secondary">Our Strategic Objectives</h1>
+                    <h1 class="text-9 font-weight-bold text-color-secondary"> {{ __('general.goal_hero_title') }} </h1>
 
                 </div>
                 {{-- <div class="col-md-12 align-self-center order-1">
@@ -149,15 +149,13 @@
                     <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section1.png') }}"
                         alt="layout styles">
                 </div>
-                <div class="col-md-8 ps-md-5">
+                <div class="col-md-8  {{ app()->getLocale() === 'ar' ? 'pe-md-5' : 'ps-md-5' }}">
                     {{-- class="img-fluid position-relative appear-animation mb-2 image-zoom-in-out animated expandIn appear-animation-visible" --}}
-                    <h2 class="font-weight-normal text-6 mb-3 text-color-secondary">Defending Civil Rights and Social
-                        Justice</h2>
-                    <p class="text-color-secondary">Combating all forms of discrimination and prejudice.</p>
-                    <p class="text-color-secondary">Promoting public policies that protect the constitutional freedoms of
-                        Muslims and Arabs.</p>
-                    <p class="text-color-secondary">Monitoring discriminatory practices in labor, education, media, and law
-                        enforcement.</p>
+                    <h2 class="font-weight-normal text-6 mb-3 text-color-secondary">
+                        {{ __('general.goal_1_title') }}</h2>
+                    <p class="text-color-secondary">{{ __('general.goal_1_point_1') }}</p>
+                    <p class="text-color-secondary">{{ __('general.goal_1_point_2') }}</p>
+                    <p class="text-color-secondary">{{ __('general.goal_1_point_3') }}</p>
                 </div>
             </div>
         </div>
@@ -169,11 +167,9 @@
                 data-appear-animation="fadeInRightShorter" style="animation-delay: 100ms;">
                 <div class="col-md-8 pe-md-5 mb-5 mb-md-0 text-color-primary order-2 order-md-1">
                     <h2 class="font-weight-normal text-6 mb-3 text-color-primary">
-                        Political Empowerment and Civic Participation</h2>
-                    <p class="text-color-primary">Supporting increased Arab and Muslim representation in local and federal
-                        councils.</p>
-                    <p class="text-color-primary">Providing awareness and training programs to enhance political and
-                        societal presence.</p>
+                        {{ __('general.goal_2_title') }}</h2>
+                    <p class="text-color-primary">{{ __('general.goal_2_point_1') }}</p>
+                    <p class="text-color-primary">{{ __('general.goal_2_point_1') }}</p>
                 </div>
                 <div class="col-md-4 px-5 px-md-3 order-1 order-md-2">
                     <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section2.png') }}"
@@ -190,15 +186,13 @@
                     <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section3.png') }}"
                         alt="layout styles">
                 </div>
-                <div class="col-md-8 ps-md-5">
+                <div class="col-md-8 {{ app()->getLocale() === 'ar' ? 'pe-md-5' : 'ps-md-5' }}">
                     {{-- class="img-fluid position-relative appear-animation mb-2 image-zoom-in-out animated expandIn appear-animation-visible" --}}
-                    <h2 class="font-weight-normal text-6 mb-3 text-color-secondary">Defending Civil Rights and Social
-                        Justice</h2>
-                    <p class="text-color-secondary">Combating all forms of discrimination and prejudice.</p>
-                    <p class="text-color-secondary">Promoting public policies that protect the constitutional freedoms of
-                        Muslims and Arabs.</p>
-                    <p class="text-color-secondary">Monitoring discriminatory practices in labor, education, media, and law
-                        enforcement.</p>
+                    <h2 class="font-weight-normal text-6 mb-3 text-color-secondary">{{ __('general.goal_3_title') }}
+                        </h2>
+                    <p class="text-color-secondary">{{ __('general.goal_3_point_1') }}</p>
+                    <p class="text-color-secondary">{{ __('general.goal_3_point_2') }}</p>
+                    <p class="text-color-secondary">{{ __('general.goal_3_point_3') }}</p>
                 </div>
             </div>
         </div>
@@ -210,11 +204,9 @@
                 data-appear-animation="fadeInRightShorter" style="animation-delay: 100ms;">
                 <div class="col-md-8 pe-md-5 mb-5 mb-md-0 text-color-primary order-2 order-md-1">
                     <h2 class="font-weight-normal text-6 mb-3 text-color-primary">
-                        Political Empowerment and Civic Participation</h2>
-                    <p class="text-color-primary">Supporting increased Arab and Muslim representation in local and federal
-                        councils.</p>
-                    <p class="text-color-primary">Providing awareness and training programs to enhance political and
-                        societal presence.</p>
+                       {{ __('general.goal_4_title') }}</h2>
+                    <p class="text-color-primary">{{ __('general.goal_4_point_1') }}</p>
+                    <p class="text-color-primary">{{ __('general.goal_4_point_2') }}</p>
                 </div>
                 <div class="col-md-4 px-5 px-md-3 order-1 order-md-2">
                     <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section4.png') }}"
@@ -520,13 +512,13 @@
                                                                 <h2
                                                                     class="font-weight-semibold text-5 line-height-6 mt-3
                                                                     mb-2 text-color-primary">
-                                                                    Advocating for justice & equality
+                                                                    {{ __('general.goal_slider_1_title') }}
                                                                 </h2>
-                                                                <ul class="text-color-primary text-start">
-                                                                    <li>Ensuring Equal Rights</li>
-                                                                    <li>Challenging Discrimination</li>
-                                                                    <li>Legal Aid & Advocacy</li>
-                                                                    <li>Policy Reform</li>
+
+                                                                <ul class="text-color-primary {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}">
+                                                                    @foreach(__('general.goal_slider_1_items') as $item)
+                                                                        <li>{{ $item }}</li>
+                                                                    @endforeach
                                                                 </ul>
 
                                                             </div>
@@ -547,12 +539,11 @@
 
                                                                 <h2
                                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                                    Participation, Leadership, and Active Citizenship</h2>
-                                                                <ul class="text-color-primary text-start">
-                                                                    <li> Voter Registration & Education</li>
-                                                                    <li> Community Dialogue</li>
-                                                                    <li>Leadership Training</li>
-                                                                    <li>Policy Advocacy & Representation</li>
+                                                                    {{ __('general.goal_slider_2_title') }}</h2>
+                                                                <ul class="text-color-primary {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}">
+                                                                    @foreach(__('general.goal_slider_2_items') as $item)
+                                                                        <li>{{ $item }}</li>
+                                                                    @endforeach
                                                                 </ul>
 
                                                             </div>
@@ -573,12 +564,11 @@
 
                                                                 <h2
                                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                                    Growth, Health, and Future Opportunities</h2>
-                                                                 <ul class="text-color-primary text-start">
-                                                                    <li> Quality Education Access</li>
-                                                                    <li> Healthcare Inutiatives </li>
-                                                                    <li>Youth & Women Empowerment</li>
-                                                                    <li>Skills Development</li>
+                                                                     {{ __('general.goal_slider_3_title') }}</h2>
+                                                                 <ul class="text-color-primary {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}">
+                                                                    @foreach(__('general.goal_slider_3_items') as $item)
+                                                                        <li>{{ $item }}</li>
+                                                                    @endforeach
                                                                 </ul>
 
                                                             </div>
@@ -599,12 +589,11 @@
 
                                                                 <h2
                                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                                    Stability, Resilience, and Long-term Prosperity </h2>
-                                                                 <ul class="text-color-primary text-start">
-                                                                    <li> Economic Development </li>
-                                                                    <li> Community Networks </li>
-                                                                    <li>Resource Building</li>
-                                                                    <li>Self-Reliance Programs</li>
+                                                                   {{ __('general.goal_slider_4_title') }} </h2>
+                                                                  <ul class="text-color-primary {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}">
+                                                                    @foreach(__('general.goal_slider_4_items') as $item)
+                                                                        <li>{{ $item }}</li>
+                                                                    @endforeach
                                                                 </ul>
 
                                                             </div>
@@ -625,12 +614,11 @@
 
                                                                 <h2
                                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                                    Deep Research & Informed Briefs</h2>
-                                                                <ul class="text-color-primary text-start">
-                                                                    <li> Data Driven Insights </li>
-                                                                    <li>  Comprehensive Policy Briefs</li>
-                                                                    <li>Evidence Based Recommendations</li>
-                                                                    <li>Future Trend Analysis</li>
+                                                                    {{ __('general.goal_slider_5_title') }}</h2>
+                                                                 <ul class="text-color-primary {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}">
+                                                                    @foreach(__('general.goal_slider_5_items') as $item)
+                                                                        <li>{{ $item }}</li>
+                                                                    @endforeach
                                                                 </ul>
                                                             </div>
                                                         </article>
@@ -650,12 +638,11 @@
 
                                                                 <h2
                                                                     class="font-weight-semibold text-5 line-height-6 mt-3 mb-2 text-color-primary">
-                                                                    Engagement with Congress & Administration</h2>
-                                                                <ul class="text-color-primary text-start">
-                                                                    <li> Direct Congressional </li>
-                                                                    <li> Executive Branch Advocacy  </li>
-                                                                    <li>Stakeholder Meetings</li>
-                                                                    <li>Effective Communication Channels</li>
+                                                                    {{ __('general.goal_slider_6_title') }}</h2>
+                                                                 <ul class="text-color-primary {{ app()->getLocale() === 'ar' ? 'text-end' : 'text-start' }}">
+                                                                    @foreach(__('general.goal_slider_6_items') as $item)
+                                                                        <li>{{ $item }}</li>
+                                                                    @endforeach
                                                                 </ul>
 
                                                             </div>

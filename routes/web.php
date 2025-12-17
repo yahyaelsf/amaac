@@ -45,5 +45,14 @@ Route::get('/strengthening-community-resilience',function(){
     return view('front.news.Strengthening');
 })->name('news.strengthening');
 
+Route::get('lang/{locale}', function ($locale) {
+    if (! in_array($locale, ['ar', 'en'])) {
+        abort(404);
+    }
 
+    session()->put('locale', $locale);
+    app()->setLocale($locale);
+
+    return redirect()->back();
+})->name('lang.switch');
 

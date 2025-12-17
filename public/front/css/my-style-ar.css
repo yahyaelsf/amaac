@@ -1,0 +1,298 @@
+/* body[dir="rtl"] {
+    font-family: 'Cairo', 'Tajawal', sans-serif !important;
+} */
+html[dir="rtl"] {
+    font-family: 'Changa', Tahoma, sans-serif;
+}
+.strong-shadow.rounded:before {
+    border-radius: 5px;
+}
+
+.header-container {
+    height: 80px !important;
+    /* بدلاً من 120px مثلاً */
+    /* padding: 10px 0 !important; */
+    /* إذا عندك padding كبير قلله */
+}
+
+.strong-shadow.strong-shadow-top-right:before {
+    top: -25px;
+    right: 50px;
+    left: -25px;
+    bottom: 25px;
+}
+
+.strong-shadow.strong-shadow-top-left:before {
+    top: -25px;
+    left: 50px;
+    right: -25px;
+    bottom: 25px;
+    background: var(--primary) !important;
+}
+
+.strong-shadow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--secondary);
+    z-index: -1;
+}
+
+#header .header-nav.header-nav-line nav>ul li>a {
+    color: var(--primary) !important;
+}
+
+#header .header-nav.header-nav-line nav>ul li>a:hover {
+    font-size: 16px;
+
+}
+
+.header-nav-main nav>ul:not(:hover)>li>a.active {
+    color: var(--primary) !important;
+    font-size: 16px;
+}
+
+.view-all:hover {
+    color: var(--light) !important;
+    border: 1px solid var(--light) !important;
+}
+
+.project-img {
+    width: 100%;
+    height: 250px;
+    /* غيّر الرقم حسب ما يناسب تصميمك */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    /* اختياري */
+}
+
+.btn-gradient:not(.btn-outline):hover {
+    color: --secondary !important;
+    border: 1px solid --secondary !important;
+}
+
+.btn-secondary:hover {
+    color: var(--light) !important;
+    border: 1px solid (--light) !important;
+}
+
+.sort-source.sort-source-style-3>li.active>a {
+    border-bottom-color: var(--secondary) !important;
+    color: var(--secondary) !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev:before,
+.owl-carousel .owl-nav button.owl-next:before {
+    color: var(--light)
+}
+
+.owl-carousel.nav-borders .owl-nav button[class*="owl-"] {
+    border-color: var(--light) !important;
+}
+
+section.section {
+    margin: 0px;
+}
+
+.page-header {
+    margin: 0;
+}
+
+.image-stack img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: contain;
+    /* يحافظ على الأبعاد بدون اقتطاع */
+}
+
+.accordion.accordion-modern .card:first-of-type,
+.accordion.accordion-modern .card:not(:first-of-type):not(:last-of-type),
+.accordion.accordion-modern .card:last-of-type {
+    border: none;
+}
+
+.thumb-info {
+    background: var(--primary);
+}
+
+.thumb-info-caption .thumb-info-caption-text,
+.thumb-info-caption p {
+    color: var(--light);
+}
+
+.testimonial.testimonial-light blockquote:before,
+.testimonial.testimonial-light blockquote:after,
+.testimonial.testimonial-light blockquote p {
+    color: var(--primary);
+}
+
+.btn-primary {
+    color: var(--secondary) !important;
+}
+
+.btn-primary:hover:not(.bg-transparent) {
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    color: var(--primary) !important;
+
+}
+
+.btn-secondary:not(.bg-transparent) {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    color: var(--primary) !important;
+
+}
+
+.btn-secondary:hover:not(.bg-transparent) {
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+    color: var(--secondary) !important;
+
+}
+
+.image-zoom {
+    overflow: hidden;
+    /* يخفي الأطراف أثناء التكبير */
+    /* display: inline-block; */
+}
+
+.image-zoom img {
+    transition: transform 0.5s ease;
+    /* سلاسة الأنيميشن */
+}
+
+.image-zoom:hover img {
+    transform: scale(1.1);
+    /* التكبير */
+}
+
+.borderd-primary {
+    border: 1px solid var(--secondary);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.borderd-primary:hover {
+    /* color: var(--primary) !important;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(43, 170, 177, 0.45); */
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    background: #0a2b5a;
+}
+
+.borderd-secondary {
+    border: 1px solid var(--primary);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.borderd-secondary:hover {
+    color: var(--secondary) !important;
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(43, 170, 177, 0.45);
+}
+
+.thumb-info.thumb-info-no-borders,
+.thumb-info.thumb-info-no-borders img {
+    height: 280px;
+    width: 250px;
+}
+
+/* .footer-copyright{
+    border-top: 1px solid var(--primary);
+} */
+.short-hr {
+    width: 80%;
+    margin: 0px auto;
+    font-weight: bold;
+    color: var(--primary);
+    /* لتوسيطه */
+}
+
+.hero-desc {
+    border: 1px solid var(--secondary);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.hero-desc:hover {
+    background: var(--secondary);
+    color: var(--primary) !important;
+    box-shadow: 0 12px 25px rgba(43, 170, 177, 0.45);
+    border-radius: 15px;
+}
+
+.values .owl-carousel .owl-item {
+    width: 700px !important;
+    margin-left: 30px !important;
+}
+
+.owl-carousel .owl-stage {
+    display: flex !important;
+}
+
+/* يجعل كل عنصر يتمدد بشكل صحيح */
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* يمنع أي تمدد زائد من العنصر الداخلي */
+.owl-carousel .feature-box {
+    width: 100%;
+    max-width: 100%;
+}
+
+.post {
+    border: 1px solid var(--primary) !important;
+    border-radius: 10px;
+    background: var(--secondary);
+    text-align: center;
+}
+
+.post .post-image img {
+    border-radius: 10px !important;
+
+}
+
+/* البوكس */
+.post.post-medium {
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+/* الصورة قبل الهوفر */
+.post.post-medium .post-image img {
+    transition: transform 0.4s ease;
+}
+
+/* تأثير الهوفر */
+.post.post-medium:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* زوم الصورة */
+.post.post-medium:hover .post-image img {
+    transform: scale(1.08);
+}
+
+.image-zoom-in-out {
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center;
+    border: 1px solid var(--primary);
+    border-radius: 15px;
+    height: 100% !important;
+}
+
+.image-zoom-in-out:hover {
+    transform: scale(1.1) !important;
+}
