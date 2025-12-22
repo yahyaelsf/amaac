@@ -345,7 +345,7 @@
                         data-appear-animation-delay="100">
                         <h4>{{ __('general.get_involved_page.cards.member.title') }} <strong>{{ __('general.get_involved_page.cards.member.title_strong') }}</strong></h4>
                         <p>{{ __('general.get_involved_page.cards.member.text') }}</p>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.member.button') }}</a>
+                        <a href="{{ route('membership_application') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.member.button') }}</a>
                     </div>
                 </div>
 

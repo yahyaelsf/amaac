@@ -38,20 +38,22 @@ return [
         'bio' =>
             "Hazem Qashou is a prominent Jordanian politician and experienced engineering consultant who previously served as Minister of Municipal Affairs and later as a respected <br> member of the Jordanian parliament. He now acts as deputy and secretary general of the Al Rissala Party, actively supporting regional cooperation, democratic values, sustainable development, and issues such as Morocco’s territorial integrity and national unity.",
     ],
+    'huseen' => [
+        'name' => 'Dr. Hussein Ahmad Qassem',
+        'role' =>  'Board of Directors',
+        'bio' => 'Dr. Hussein is a Lebanese scholar specializing in Islamic education with a PhD in educational supervision. He authored encyclopedias adopted by education authorities in Lebanon and Qatar. He served as head of Awqaf in Rashaya, board member of Bekaa Awqaf, and assistant dean at the University of Tripoli’s College of Education. He also founded Rawafid School, Al-Farouq Mosque, and Dar Al-Tarbiah Al-Hadithah, which printed hundreds of thousands of Qur’ans in multiple languages.'
+    ],
 
 'hayatullah_atid' => [
     'name' => 'Dr. Hayatullah Atid',
     'role' => 'General Assembly',
     'bio' =>
-        'Dr. Atid, an Afghan-born consultant with doctorates in human development and Islamic economics,
-        is founder and chairman of the Organization for Talent Development and Entrepreneurship (OTED).
-        Recognized by the Afghan embassy in Japan, he leads international and humanitarian initiatives
-        aiding the Afghan people.',
+        'Founder and chairman of the Organization for Talent Development and Entrepreneurship (OTED), Dr. Atid is an Afghan-born consultant with doctorates in human development and Islamic economics who trains professionals across Asia and the Middle East. The Afghan embassy in Japan has noted his leadership of civil society groups, his dedication to assisting the Afghan people, and his efforts in promoting sustainable education.',
 ],
 
 'mariam_al_sharif' => [
     'name' => 'Mariam Al Sharif Ibrahim Al Hindi',
-    'role' => 'General Assembly',
+    'role' => 'Advisory Board',
     'bio' =>
         'Mariam is a Sudanese architect and strategist, founder of the Vision Center for Planning and Strategic Consultation,
         an independent think tank collaborating with Sudan’s government. She represented Sudan at a U.S. investment
@@ -66,7 +68,7 @@ return [
 ],
 'yousef' => [
     'name' => 'Prof. Yusuf Abdulghaffar Al Abbasi ',
-    'bio' => 'Prof Yousef, President of the Global Center for Sustainable Development and President of the International Federation for Social Responsibility, is a leading figure in sustainable development and promoting a culture of social responsibility globally. He leads initiatives that build international partnerships to achieve development goals and broader positive impact.
+    'bio' => 'Professor Yusuf Abdulghaffar Al Abbasi is an international expert in renewable energy and sustainable development with over 40 years of academic and leadership experience. He holds a PhD in energy engineering from the University of Leeds and has led major institutions, including founding Kingdom University in Bahrain. He has written 23 books and many research papers, earning awards such as the Crown Prince Award for Scientific Research and the Global Pioneer Award in Renewable Energy.
 '
 ],
 

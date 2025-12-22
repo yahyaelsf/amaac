@@ -56,3 +56,6 @@ Route::get('language/{locale}', function ($locale) {
     return redirect()->back();
 })->name('lang.switch');
 
+Route::get('/membership-application',function(){
+    return view('front.membership_application');
+})->name('membership_application');

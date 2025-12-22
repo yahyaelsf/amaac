@@ -151,6 +151,34 @@
                             </span>
                         </span>
                     </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Directors">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/hussen.jpeg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.huseen.name') }}
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.hazem.role') }}
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                 {!! __('team.members.huseen.bio') !!}
+                                </span>
+
+                                <span class="thumb-info-social-icons mb-4">
+                                    <a target="_blank" href="{{ asset('front/img/team/hussen_cv.pdf') }}"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
 
 
                      <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
@@ -198,69 +226,15 @@
                             <span class="thumb-info-caption">
                                 <span class="thumb-info-caption-text text-color-secondary">
                                {{ __('team.members.yousef.bio') }}
-                               
 
 
 
 
 
-                                </span>
-                                <span class="thumb-info-social-icons mb-4">
-                                  <a target="_blank" href="{{ asset('front/img/team/Dr.Hayatullah Atid CV 2025.pdf') }}"><i
-                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="#">
-                                    <img src="{{ asset('front/img/team/mariam sharifa sudan.jpg') }}" class="img-fluid"
-                                        alt="" style="height : 355px !important">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.mariam_al_sharif.name') }}
-                                             </span>
-                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.mariam_al_sharif.role') }}
-                                        </span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">
-
-
-                                  {{ __('team.members.mariam_al_sharif.bio') }}
 
                                 </span>
                                 <span class="thumb-info-social-icons mb-4">
-                                   <a target="_blank" href="http://www.facebook.com"><i
-                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
-                     <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="#">
-                                    <img src="{{ asset('front/img/team/WhatsApp Image 2025-12-14 at 2.36.10 PM.jpeg') }}" class="img-fluid"
-                                        alt="" style="height : 355px !important">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.bader_al_hussinan.name') }} </span>
-                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.bader_al_hussinan.role') }}
-                                        </span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary"> {{ __('team.members.bader_al_hussinan.bio') }}</span>
-                                <span class="thumb-info-social-icons mb-4">
-                                  <a target="_blank" href="http://www.facebook.com"><i
+                                  <a target="_blank" href="{{ asset('front/img/team/ALABBASI.pdf') }}"><i
                                             class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
                                     <a href="http://www.linkedin.com"><i
                                             class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
@@ -270,30 +244,9 @@
                     </div>
 
 
-                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Trustees">
-                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
-                            <span class="thumb-info-wrapper">
-                                <a href="#">
-                                    <img src="{{ asset('front/img/team/Muhammed  Hassani.jpg') }}" style="height : 355px !important" class="img-fluid" alt="">
-                                    <span class="thumb-info-title">
-                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.mohammed_hassani.name') }}</span>
-                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.mohammed_hassani.role') }}
-                                        </span>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="thumb-info-caption">
-                                <span class="thumb-info-caption-text text-color-secondary">  {!! __('team.members.mohammed_hassani.bio') !!}
 
-                                <span class="thumb-info-social-icons mb-4">
-                                   <a target="_blank" href="http://www.facebook.com"><i
-                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
-                                    <a href="http://www.linkedin.com"><i
-                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
-                                </span>
-                            </span>
-                        </span>
-                    </div>
+
+
                     <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
@@ -348,6 +301,81 @@
                             </span>
                         </span>
                     </div>
+                     <div class="col-12 col-sm-6 col-lg-4 isotope-item Trustees">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/WhatsApp Image 2025-12-14 at 2.36.10 PM.jpeg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.bader_al_hussinan.name') }} </span>
+                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.abdelrahim_al_hour.role') }}
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary"> {{ __('team.members.bader_al_hussinan.bio') }}</span>
+                                <span class="thumb-info-social-icons mb-4">
+                                  <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                     <div class="col-12 col-sm-6 col-lg-4 isotope-item Advisory">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/Muhammed  Hassani.jpg') }}" style="height : 355px !important" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.mohammed_hassani.name') }}</span>
+                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.mariam_al_sharif.role') }}
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">  {!! __('team.members.mohammed_hassani.bio') !!}
+
+                                <span class="thumb-info-social-icons mb-4">
+                                   <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 isotope-item Advisory">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/mariam sharifa sudan.jpg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.mariam_al_sharif.name') }}
+                                             </span>
+                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.mariam_al_sharif.role') }}
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                  {{ __('team.members.mariam_al_sharif.bio') }}
+                                </span>
+                                <span class="thumb-info-social-icons mb-4">
+                                   <a target="_blank" href="http://www.facebook.com"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
                     <div class="col-12 col-sm-6 col-lg-4 isotope-item Advisory">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
@@ -387,4 +415,4 @@
         </div>
     </section>
 @endsection
-{{-- 0595050642 --}}
+
