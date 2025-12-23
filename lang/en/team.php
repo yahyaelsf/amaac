@@ -112,5 +112,6 @@ return [
         charitable, and youth organizations.',
 ],
 
-]
+],
+'Be Part of Our Impactful Team' => 'Be Part of Our Impactful Team'
 ];

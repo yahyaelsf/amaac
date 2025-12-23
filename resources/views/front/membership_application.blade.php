@@ -2,15 +2,15 @@
 @section('css')
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <style>
-    [dir="rtl"] .form-check-rtl {
-    display: flex;
-    gap: 15px;
-}
+        [dir="rtl"] .form-check-rtl {
+            display: flex;
+            gap: 15px;
+        }
 
-[dir="rtl"] .form-check-rtl .form-check-input {
-    margin-left: 0;
-    margin-right: 0;
-}
+        [dir="rtl"] .form-check-rtl .form-check-input {
+            margin-left: 0;
+            margin-right: 0;
+        }
     </style>
 @endsection
 @section('content')
@@ -118,23 +118,22 @@
                             <label>{{ __('form.expertise') }}</label>
                             <div class="row mt-1">
                                 @php
-                                  $expertise = [
-                                    'civil_rights',
-                                    'policy',
-                                    'media',
-                                    'government',
-                                    'interfaith',
-                                    'community',
-                                    'fundraising',
-                                    'events',
-                                    'education',
-                                    'business',
-                                    'other',
-                                ];
+                                    $expertise = [
+                                        'civil_rights',
+                                        'policy',
+                                        'media',
+                                        'government',
+                                        'interfaith',
+                                        'community',
+                                        'fundraising',
+                                        'events',
+                                        'education',
+                                        'business',
+                                        'other',
+                                    ];
                                 @endphp
 
                                 @foreach ($expertise as $item)
-
                                     <div class="col-md-4">
                                         <div class="form-check  form-check-rtl">
                                             <input class="form-check-input" type="checkbox" name="expertise[]"
@@ -154,7 +153,7 @@
                             <label>{{ __('form.contribution_type') }}</label>
                             <div class="row mt-2">
                                 @php
-                                     $contributions = [
+                                    $contributions = [
                                         'supportive_member',
                                         'advisor',
                                         'committee_member',
@@ -178,14 +177,14 @@
                             <label class="mt-3">{{ __('form.committees') }}</label>
                             <div class="row mt-2">
                                 @php
-                                       $committees = [
-                                            'anti_islamophobia',
-                                            'civil_rights',
-                                            'policy',
-                                            'media',
-                                            'community',
-                                            'events',
-                                        ];
+                                    $committees = [
+                                        'anti_islamophobia',
+                                        'civil_rights',
+                                        'policy',
+                                        'media',
+                                        'community',
+                                        'events',
+                                    ];
                                 @endphp
 
                                 @foreach ($committees as $item)
@@ -247,12 +246,12 @@
                                 <textarea name="links" rows="2" class="form-control"></textarea>
                             </div>
                         </div>
-                         <h4 class="mb-3 mt-3 text-color-secondary">{{ __('form.declarations') }}</h4>
+                        <h4 class="mb-3 mt-3 text-color-secondary">{{ __('form.declarations') }}</h4>
 
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" required>
                             <label class="form-check-label">
-                               {{ __('form.commit_values') }}
+                                {{ __('form.commit_values') }}
                             </label>
                         </div>
 
@@ -266,7 +265,7 @@
                         <div class="form-check mb-3">
                             <input class="form-check-input" type="checkbox">
                             <label class="form-check-label">
-                             {{ __('form.contact_permission') }}
+                                {{ __('form.contact_permission') }}
                             </label>
                         </div>
 
@@ -287,7 +286,7 @@
 
 
                 <button type="submit" class="btn btn-modern btn-secondary btn-lg w-100">
-                   {{ __('form.submit') }}
+                    {{ __('form.submit') }}
                 </button>
 
             </form>

@@ -83,4 +83,6 @@ return [
         'community'         => 'Community Empowerment',
         'events'            => 'Events & Partnerships',
     ],
+    'yes' => 'Yes',
+    'no' => 'No'
 ];

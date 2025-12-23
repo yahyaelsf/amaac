@@ -59,3 +59,7 @@ Route::get('language/{locale}', function ($locale) {
 Route::get('/membership-application',function(){
     return view('front.membership_application');
 })->name('membership_application');
+Route::get('/volunteer-application',function(){
+    return view('front.volunteer_application');
+})->name('volunteer_application');
+

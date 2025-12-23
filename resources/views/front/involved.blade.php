@@ -361,7 +361,7 @@
                         @endforeach
 
                         </ul>
-                        <a href="{{ route('front.contact') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.volunteer.button') }}</a>
+                        <a href="{{ route('volunteer_application') }}" class="btn btn-modern btn-secondary">{{ __('general.get_involved_page.cards.volunteer.button') }}</a>
                     </div>
                 </div>
 
