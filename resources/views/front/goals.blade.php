@@ -146,7 +146,7 @@
             <div class="row align-items-center py-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
                 data-appear-animation="fadeInLeftShorter" style="animation-delay: 100ms;">
                 <div class="col-md-4 px-5 px-md-3 ">
-                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section1.png') }}"
+                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/Gemini_Generated_Image_upk32pupk32pupk3.png') }}"
                         alt="layout styles">
                 </div>
                 <div class="col-md-8  {{ app()->getLocale() === 'ar' ? 'pe-md-5' : 'ps-md-5' }}">
@@ -172,7 +172,7 @@
                     <p class="text-color-primary">{{ __('general.goal_2_point_1') }}</p>
                 </div>
                 <div class="col-md-4 px-5 px-md-3 order-1 order-md-2">
-                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section2.png') }}"
+                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/IMG-20251206-WA0009.jpg') }}"
                         alt="layout styles">
                 </div>
             </div>
@@ -183,7 +183,7 @@
             <div class="row align-items-center py-4 appear-animation animated fadeInLeftShorter appear-animation-visible"
                 data-appear-animation="fadeInLeftShorter" style="animation-delay: 100ms;">
                 <div class="col-md-4 px-5 px-md-3">
-                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/section3.png') }}"
+                    <img class="img-fluid scale-2 p-4 pe-md-0 my-4 image-zoom-in-out animated expandIn appear-animation-visible"src="{{ asset('front/img/home/IMG-20251206-WA0006.jpg') }}"
                         alt="layout styles">
                 </div>
                 <div class="col-md-8 {{ app()->getLocale() === 'ar' ? 'pe-md-5' : 'ps-md-5' }}">

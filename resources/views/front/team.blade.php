@@ -155,7 +155,7 @@
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
                                 <a href="#">
-                                    <img src="{{ asset('front/img/team/hussen.jpeg') }}" class="img-fluid"
+                                    <img src="{{ asset('front/img/team/Gemini_Generated_Image_gsxjf7gsxjf7gsxj.png') }}" class="img-fluid"
                                         alt="" style="height : 355px !important">
                                     <span class="thumb-info-title">
                                         <span class="thumb-info-inner text-color-secondary">{{ __('team.members.huseen.name') }}
