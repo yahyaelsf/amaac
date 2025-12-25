@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Mail\ContactFormMail;
+use App\Mail\NewsletterSubscriptionMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -26,4 +27,16 @@ class ContactController extends Controller
             return back()->with('success', 'Message sent successfully');
             // return back()->with('success', __('general.contact_page.form.success'));
         }
+    public function subscribe(Request $request)
+    {
+        $data = $request->validate([
+            'email' => 'required|email',
+        ]);
+
+        // إرسال إيميل للإدارة
+        Mail::to("subscriptions@amaacouncil.com")
+            ->send(new NewsletterSubscriptionMail($data['email']));
+        return back()->with('success', 'general.newsletter_success');
+
+    }
 }

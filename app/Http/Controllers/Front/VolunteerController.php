@@ -35,7 +35,7 @@ class VolunteerController extends Controller
             'emergency_relation' => 'required|string',
         ]);
 
-        Mail::to('info@amaacouncil.com')
+        Mail::to('volunteers@amaacouncil.com')
             ->send(new VolunteerFormMail($data));
 
         return back()->with('success', __('volunteer.success'));

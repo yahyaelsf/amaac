@@ -748,5 +748,7 @@ return [
         ],
 
     ],
+    'newsletter_success_title' => 'Subscription Confirmed',
+'close' => 'Close',
 
 ];

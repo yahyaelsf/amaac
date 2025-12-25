@@ -18,6 +18,71 @@
         .porto-big-title {
             font-size: 3rem;
         }
+                /* Modal Overlay */
+        .amaa-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(11, 58, 83, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        /* Modal Box */
+        .amaa-modal {
+            background: #ffffff;
+            max-width: 460px;
+            width: 90%;
+            padding: 35px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            animation: scaleIn 0.35s ease;
+        }
+
+        /* Icon */
+        .amaa-modal-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #0B3A53;
+            color: #fff;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Title */
+        .amaa-modal h3 {
+            color: #0B3A53;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        /* Text */
+        .amaa-modal p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* Animation */
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
     </style>
 @endsection
 @section('content')
@@ -357,22 +422,23 @@
                 <div class="col-md-6">
                     <h2 class="font-weight-bold text-10 mb-0 appear-animation text-secondary animated fadeInUpShorter appear-animation-visible"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
-                        data-appear-animation-duration="750" style="animation-delay: 200ms;">{{ __('general.about_title') }}
+                        data-appear-animation-duration="750" style="animation-delay: 200ms;">
+                        {{ __('general.about_title') }}
                     </h2>
                     <p class="font-weight-semibold text-4 fonts-weight-semibold positive-ls-2 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible text-color-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"
                         data-appear-animation-duration="750" style="animation-delay: 600ms;">
-                         {{ __('general.about_name') }}</p>
+                        {{ __('general.about_name') }}</p>
                     <p class="pb-2 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible text-color-secondary borderd-primary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
-                          {{ __('general.about_description') }}
+                        {{ __('general.about_description') }}
                     </p>
                     <a href="{{ route('front.contact') }}"
                         class="btn btn-secondary  btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible "
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
                         data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">
-                         {{ __('general.about_button') }}</a>
+                        {{ __('general.about_button') }}</a>
 
                 </div>
                 <div class="col-md-6 position-relative py-5">
@@ -416,20 +482,21 @@
                 <div class="col-md-6 py-5 order-1 order-md-2">
                     <h2 class="font-weight-bold text-10 mb-0 appear-animation text-primary animated fadeInUpShorter appear-animation-visible"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"
-                        data-appear-animation-duration="750" style="animation-delay: 200ms;">{{ __('general.president_title') }}
+                        data-appear-animation-duration="750" style="animation-delay: 200ms;">
+                        {{ __('general.president_title') }}
                     </h2>
 
                     <p class="pb-2 mb-4 mt-3 appear-animation animated fadeInUpShorter appear-animation-visible text-color-primary borderd-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"
                         data-appear-animation-duration="750" style="animation-delay: 800ms;">
-                         {{ __('general.president_description') }}
+                        {{ __('general.president_description') }}
 
                     </p>
                     <a href="{{ route('front.contact') }}"
                         class="btn btn-primary btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible test-color-secondary"
                         data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000"
                         data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">
-                         {{ __('general.president_button') }}</a>
+                        {{ __('general.president_button') }}</a>
 
                 </div>
             </div>
@@ -441,7 +508,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2 class="font-weight-normal text-center text-color-secondary text-6 pb-3"> {{ __('general.mission_title') }}</h2>
+                    <h2 class="font-weight-normal text-center text-color-secondary text-6 pb-3">
+                        {{ __('general.mission_title') }}</h2>
                 </div>
             </div>
 
@@ -456,7 +524,8 @@
                                 <div class="feature-box-icon">
                                     <i class="icons icon-support text-color-primary"></i>
                                 </div>
-                                <h4 class="font-weight-bold text-color-primary text-4">{{ __('general.mission_card1_title') }}</h4>
+                                <h4 class="font-weight-bold text-color-primary text-4">
+                                    {{ __('general.mission_card1_title') }}</h4>
                                 <p class="text-color-primary"> {{ __('general.mission_card1_description') }}</p>
                             </div>
                         </div>
@@ -484,7 +553,8 @@
                                 <div class="feature-box-icon text-color-primary">
                                     <i class="icons icon-layers text-color-primary"></i>
                                 </div>
-                                <h4 class="font-weight-bold text-color-primary text-4">{{ __('general.mission_card2_title') }} </h4>
+                                <h4 class="font-weight-bold text-color-primary text-4">
+                                    {{ __('general.mission_card2_title') }} </h4>
                                 <p class="text-color-primary">{{ __('general.mission_card2_description') }}</p>
                             </div>
                         </div>
@@ -512,10 +582,10 @@
                                     <i class="icons icon-menu text-color-primary"></i>
                                 </div>
                                 <h4 class="font-weight-bold text-color-primary text-4">
-                                {{ __('general.mission_card3_title') }}
-                                    </h4>
+                                    {{ __('general.mission_card3_title') }}
+                                </h4>
                                 <p class="text-color-primary">
-                                {{ __('general.mission_card3_description') }}</p>
+                                    {{ __('general.mission_card3_description') }}</p>
                             </div>
                         </div>
                         <div class="flip-back d-flex align-items-center p-5"
@@ -540,8 +610,11 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2 class="font-weight-normal text-6 mt-4 text-color-primary">{{ __('general.news_section_title') }} <strong
-                            class="font-weight-extra-bold text-color-primary">{{ __('general.news_section_title_strong') }} </strong> {{ __('general.news_section_title_suffix') }}</h2>
+                    <h2 class="font-weight-normal text-6 mt-4 text-color-primary">{{ __('general.news_section_title') }}
+                        <strong
+                            class="font-weight-extra-bold text-color-primary">{{ __('general.news_section_title_strong') }}
+                        </strong> {{ __('general.news_section_title_suffix') }}
+                    </h2>
                 </div>
             </div>
         </div>
@@ -573,8 +646,9 @@
 
                                                             <span
                                                                 class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                                 {{ __('general.news_1_title') }}</span>
-                                                            <span class="thumb-info-type mt-2">{{ __('general.news_1_desc') }}</span>
+                                                                {{ __('general.news_1_title') }}</span>
+                                                            <span
+                                                                class="thumb-info-type mt-2">{{ __('general.news_1_desc') }}</span>
 
                                                         </span>
                                                     </a>
@@ -596,8 +670,9 @@
                                                         <span class="thumb-info-title bg-primary text-secondary">
                                                             <span
                                                                 class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                                 {{ __('general.news_2_title') }}</span>
-                                                            <span class="thumb-info-type mt-2"> {{ __('general.news_2_desc') }}</span>
+                                                                {{ __('general.news_2_title') }}</span>
+                                                            <span class="thumb-info-type mt-2">
+                                                                {{ __('general.news_2_desc') }}</span>
                                                         </span>
                                                     </a>
 
@@ -618,8 +693,9 @@
                                                         <span class="thumb-info-title bg-primary text-secondary">
                                                             <span
                                                                 class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                                 {{ __('general.news_3_title') }}</span>
-                                                            <span class="thumb-info-type mt-2">  {{ __('general.news_3_desc') }}</span>
+                                                                {{ __('general.news_3_title') }}</span>
+                                                            <span class="thumb-info-type mt-2">
+                                                                {{ __('general.news_3_desc') }}</span>
                                                         </span>
                                                     </a>
 
@@ -640,10 +716,10 @@
                                                         <span class="thumb-info-title bg-primary text-secondary">
                                                             <span
                                                                 class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                                 {{ __('general.news_4_title') }}
+                                                                {{ __('general.news_4_title') }}
                                                             </span>
                                                             <span class="thumb-info-type mt-2">
-                                                             {{ __('general.news_4_desc') }}
+                                                                {{ __('general.news_4_desc') }}
                                                             </span>
                                                         </span>
                                                     </a>
@@ -664,8 +740,9 @@
                                                         <span class="thumb-info-title bg-primary text-secondary">
                                                             <span
                                                                 class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                                 {{ __('general.news_5_title') }}</span>
-                                                            <span class="thumb-info-type mt-2">{{ __('general.news_5_desc') }}</span>
+                                                                {{ __('general.news_5_title') }}</span>
+                                                            <span
+                                                                class="thumb-info-type mt-2">{{ __('general.news_5_desc') }}</span>
                                                         </span>
                                                     </a>
                                                 </span>
@@ -685,9 +762,10 @@
                                                         <span class="thumb-info-title bg-primary text-secondary">
                                                             <span
                                                                 class="thumb-info-inner line-height-1 font-weight-bold position-relative top-3">
-                                                                 {{ __('general.news_6_title') }}
+                                                                {{ __('general.news_6_title') }}
                                                             </span>
-                                                            <span class="thumb-info-type mt-2"> {{ __('general.news_6_desc') }}</span>
+                                                            <span class="thumb-info-type mt-2">
+                                                                {{ __('general.news_6_desc') }}</span>
                                                         </span>
                                                     </a>
                                                 </span>
@@ -717,10 +795,12 @@
             <div class="row">
                 <div class="col">
                     <h2 class="font-weight-normal text-center text-color-secondary text-6 pb-3">
-                        {{ __('general.newsletter_title') }} <strong class="font-weight-extra-bold text-color-secondary"> {{ __('general.newsletter_title_strong') }}</strong>  {{ __('general.newsletter_title_suffix') }}
+                        {{ __('general.newsletter_title') }} <strong class="font-weight-extra-bold text-color-secondary">
+                            {{ __('general.newsletter_title_strong') }}</strong>
+                        {{ __('general.newsletter_title_suffix') }}
                     </h2>
                     <p class="text-center text-color-secondary opacity-8 mb-4">
-                           {{ __('general.newsletter_description') }}
+                        {{ __('general.newsletter_description') }}
                     </p>
                 </div>
             </div>
@@ -729,18 +809,44 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-md-10">
 
-                    <form class="subscription-form" method="POST" action="#">
+                    <form class="subscription-form" method="POST" action="{{ route('newsletter.subscribe') }}">
                         @csrf
+                        @if (session('success'))
+                            <div id="newsletterModal" class="amaa-modal-overlay">
+                                <div class="amaa-modal">
+                                    <div class="amaa-modal-icon">
+                                        ✓
+                                    </div>
 
+                                    <h3>{{ __('general.newsletter_success_title') }}</h3>
+
+                                    <p>
+                                        Thank you for subscribing to the AMAA Council newsletter.<br>
+                                        You will now receive updates, news, and important announcements directly in your
+                                        inbox.
+                                    </p>
+
+                                    <button onclick="closeNewsletterModal()" class="btn btn-secondary btn-modern">
+                                        {{ __('general.close') }}
+                                    </button>
+                                </div>
+                            </div>
+                        @endif
                         <div class="input-group input-group-lg">
                             <input type="email"
                                 class="form-control bg-light border-0 rounded-0 px-4 py-3 text-color-secondary"
-                                placeholder="{{ __('general.newsletter_placeholder') }}" required>
+                                placeholder="{{ __('general.newsletter_placeholder') }}" name="email" required>
+
 
                             <button type="submit" class="btn btn-secondary rounded-0 px-4 font-weight-bold">
-                                  {{ __('general.newsletter_button') }}
+                                {{ __('general.newsletter_button') }}
                             </button>
                         </div>
+                         @error('email')
+                                <small class="text-danger d-block mt-1">
+                                    {{ $message }}
+                                </small>
+                            @enderror
 
                     </form>
 
@@ -749,6 +855,14 @@
 
         </div>
     </section>
+    <script>
+        function closeNewsletterModal() {
+            const modal = document.getElementById('newsletterModal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
     <script>
         function wrapWords(el) {
             if (!el.dataset.wrapped) {

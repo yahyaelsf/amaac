@@ -871,5 +871,7 @@ return [
         ],
 
     ],
+    'newsletter_success_title' => 'تم الاشتراك بنجاح',
+'close' => 'إغلاق',
 
 ];

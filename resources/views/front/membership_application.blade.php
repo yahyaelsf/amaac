@@ -11,7 +11,8 @@
             margin-left: 0;
             margin-right: 0;
         }
-                /* Modal Overlay */
+
+        /* Modal Overlay */
         .amaa-modal-overlay {
             position: fixed;
             inset: 0;
@@ -102,26 +103,26 @@
         <div class="container">
             <form action="{{ route('membership.send') }}" method="POST" enctype="multipart/form-data">
                 @csrf
-                 @if (session('success'))
-                            <div id="successModal" class="amaa-modal-overlay">
-                                <div class="amaa-modal">
-                                    <div class="amaa-modal-icon">
-                                        ✓
-                                    </div>
+               @if (session('newsletter_success'))
+                <div id="newsletterModal" class="amaa-modal-overlay">
+                    <div class="amaa-modal">
+                        <div class="amaa-modal-icon">
+                            ✓
+                        </div>
 
-                                    <h3>{{ __('general.contact_page.form.success') }}</h3>
+                        <h3>{{ __('general.newsletter_success_title') }}</h3>
 
-                                    <p>
-                                        Thank you for reaching out to AMAA Council.
-                                        Your message has been successfully sent and our team will contact you shortly.
-                                    </p>
+                        <p>
+                            Thank you for subscribing to the AMAA Council newsletter.<br>
+                            You will now receive updates, news, and important announcements directly in your inbox.
+                        </p>
 
-                                    <button onclick="closeSuccessModal()" class="btn btn-secondary btn-modern">
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        @endif
+                        <button onclick="closeNewsletterModal()" class="btn btn-secondary btn-modern">
+                            {{ __('general.close') }}
+                        </button>
+                    </div>
+                </div>
+            @endif
                 <!-- A) Basic Information -->
                 <div class="card mb-4 bg-primary text-color-secondary">
                     <div class="card-body">
@@ -390,7 +391,8 @@
                 width: '100%'
             });
         });
-         function closeSuccessModal() {
+
+        function closeSuccessModal() {
             document.getElementById('successModal').remove();
         }
     </script>

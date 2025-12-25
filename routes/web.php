@@ -71,3 +71,5 @@ Route::post('/volunteer/send', [VolunteerController::class, 'send'])
     ->name('volunteer.send');
 Route::post('/membership/send', [MembershipController::class, 'send'])
     ->name('membership.send');
+Route::post('/newsletter/subscribe', [ContactController::class, 'subscribe'])
+    ->name('newsletter.subscribe');
