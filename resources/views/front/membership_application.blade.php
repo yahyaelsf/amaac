@@ -103,26 +103,26 @@
         <div class="container">
             <form action="{{ route('membership.send') }}" method="POST" enctype="multipart/form-data">
                 @csrf
-               @if (session('newsletter_success'))
-                <div id="newsletterModal" class="amaa-modal-overlay">
-                    <div class="amaa-modal">
-                        <div class="amaa-modal-icon">
-                            ✓
+                @if (session('success'))
+                    <div id="successModal" class="amaa-modal-overlay">
+                        <div class="amaa-modal">
+                            <div class="amaa-modal-icon">
+                                ✓
+                            </div>
+
+                            <h3>{{ __('general.contact_page.form.success') }}</h3>
+
+                            <p>
+                                Thank you for reaching out to AMAA Council.
+                                Your message has been successfully sent and our team will contact you shortly.
+                            </p>
+
+                            <button onclick="closeSuccessModal()" class="btn btn-secondary btn-modern">
+                                Close
+                            </button>
                         </div>
-
-                        <h3>{{ __('general.newsletter_success_title') }}</h3>
-
-                        <p>
-                            Thank you for subscribing to the AMAA Council newsletter.<br>
-                            You will now receive updates, news, and important announcements directly in your inbox.
-                        </p>
-
-                        <button onclick="closeNewsletterModal()" class="btn btn-secondary btn-modern">
-                            {{ __('general.close') }}
-                        </button>
                     </div>
-                </div>
-            @endif
+                @endif
                 <!-- A) Basic Information -->
                 <div class="card mb-4 bg-primary text-color-secondary">
                     <div class="card-body">
@@ -131,73 +131,90 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label> {{ __('form.full_name') }}</label>
-                                <input type="text" name="full_name" class="form-control" required>
+                                <input type="text"  value="{{ old('full_name') }}" name="full_name" class="form-control" required>
+                                @error('full_name')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label> {{ __('form.email') }}</label>
-                                <input type="email" name="email" class="form-control" required>
+                                <input type="email"  value="{{ old('email') }}" name="email" class="form-control" required>
+                                 @error('email')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>{{ __('form.phone') }}</label>
-                                <input type="text" name="phone" class="form-control" required>
+                                <input type="text"  value="{{ old('phone') }}" name="phone" class="form-control" required>
+                                 @error('phone')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>{{ __('form.location') }}</label>
-                                <input type="text" name="location" class="form-control" required>
+                                <input type="text"  value="{{ old('location') }}" name="location" class="form-control" required>
+                                 @error('location')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>{{ __('form.timezone') }} </label>
                                 <select name="timezone" class="form-control">
-                                    <option value="">{{ __('form.select') }}</option>
-                                    <option>UTC-5</option>
-                                    <option>UTC-6</option>
-                                    <option>UTC+0</option>
-                                    <option>UTC+2</option>
+                                   @foreach (['UTC-5','UTC-6','UTC+0','UTC+2'] as $tz)
+                                        <option value="{{ $tz }}" {{ old('timezone') == $tz ? 'selected' : '' }}>
+                                            {{ $tz }}
+                                        </option>
+                                    @endforeach
                                 </select>
+                                @error('timezone')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>{{ __('form.languages') }}</label>
                                 <select name="languages[]" class="form-control select2" multiple>
-                                    <option>Arabic</option>
-                                    <option>English</option>
-                                    <option>Other</option>
+                                    @foreach (['Arabic','English','Other'] as $lang)
+                                        <option value="{{ $lang }}"
+                                            {{ in_array($lang, old('languages', [])) ? 'selected' : '' }}>
+                                            {{ $lang }}
+                                        </option>
+                                    @endforeach
                                 </select>
+                                @error('languages')<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>{{ __('form.linkedin') }}</label>
-                                <input type="url" name="linkedin" class="form-control">
+                                <input type="url" value="{{ old('linkedin') }}" name="linkedin" class="form-control">
+                                @error('linkedin')
+                                    <div class="invalid-feedback d-block">{{ $message }}</div>
+                                @enderror
                             </div>
 
                             <div class="col-md-6 mb-3">
                                 <label>{{ __('form.photo') }}</label>
                                 <input type="file" name="photo" class="form-control">
+                                 @error('photo')
+                                    <div class="invalid-feedback d-block">{{ $message }}</div>
+                                @enderror
                             </div>
                             <h4 class="mb-3 text-color-secondary">{{ __('form.professional_profile') }}</h4>
 
                             <div class="col-md-4 mb-3">
                                 <label>{{ __('form.current_title') }}</label>
-                                <input type="text" name="current_title" class="form-control" required>
+                                <input type="text"   value="{{ old('current_title') }}" name="current_title" class="form-control" required>
+                                @error('current_title')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-4 mb-3">
                                 <label>{{ __('form.organization') }}</label>
-                                <input type="text" name="organization" class="form-control">
+                                <input type="text"  value="{{ old('organization') }}" name="organization" class="form-control">
+                                   @error('organization')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="col-md-4 mb-3">
                                 <label>{{ __('form.experience_years') }}</label>
                                 <select name="experience_years" class="form-control" required>
-                                    <option>0–2</option>
-                                    <option>3–5</option>
-                                    <option>6–10</option>
-                                    <option>10+</option>
+                                    @foreach (['0–2','3–5','6–10','10+'] as $y)
+                                        <option {{ old('experience_years') == $y ? 'selected' : '' }}>{{ $y }}</option>
+                                    @endforeach
                                 </select>
+                                @error('experience_years')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <label>{{ __('form.expertise') }}</label>
@@ -222,8 +239,8 @@
                                     <div class="col-md-4">
                                         <div class="form-check  form-check-rtl">
                                             <input class="form-check-input" type="checkbox" name="expertise[]"
-                                                value="{{ $item }}">
-
+                                                value="{{ $item }}" {{ in_array($item, old('expertise', [])) ? 'checked' : '' }}>
+                                            @error('expertise')<div class="text-danger">{{ $message }}</div>@enderror
                                             <label class="form-check-label">{{ __('form.expertises.' . $item) }}</label>
                                         </div>
                                     </div>
@@ -232,7 +249,8 @@
 
                             <div class="mt-3">
                                 <label>{{ __('form.bio') }}</label>
-                                <textarea name="bio" rows="3" class="form-control"></textarea>
+                                <textarea name="bio" rows="3" class="form-control">{{ old('organization') }}</textarea>
+                                 @error('bio')<div class="text-danger">{{ $message }}</div>@enderror
                             </div>
                             <h4 class="mt-3 mb-3 text-color-secondary">{{ __('form.contribution') }}</h4>
                             <label>{{ __('form.contribution_type') }}</label>
@@ -252,7 +270,8 @@
                                     <div class="col-md-4">
                                         <div class="form-check  form-check-rtl">
                                             <input class="form-check-input" type="checkbox" name="contribution_types[]"
-                                                value="{{ $item }}">
+                                                value="{{ $item }}"  {{ in_array($item, old('contribution_types', [])) ? 'checked' : '' }}>
+                                            @error('contribution_types')<div class="text-danger">{{ $message }}</div>@enderror
                                             <label class="form-check-label">{{ __('form.contributions.' . $item) }}</label>
                                         </div>
                                     </div>
@@ -276,7 +295,8 @@
                                     <div class="col-md-4">
                                         <div class="form-check  form-check-rtl">
                                             <input class="form-check-input" type="checkbox" name="committees[]"
-                                                value="{{ $item }}">
+                                                value="{{ $item }}"  {{ in_array($item, old('committees', [])) ? 'checked' : '' }}>
+                                              @error('committees')<div class="text-danger">{{ $message }}</div>@enderror
                                             <label class="form-check-label">{{ __('form.committeess.' . $item) }}</label>
                                         </div>
                                     </div>
@@ -285,70 +305,78 @@
 
                             <div class="mt-3">
                                 <label>{{ __('form.initiative') }}</label>
-                                <textarea name="initiative" rows="4" class="form-control"></textarea>
+                                <textarea name="initiative" rows="4" class="form-control">{{ old('initiative') }}</textarea>
+                                @error('initiative')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                             <h4 class="mt-3 mb-3 text-color-secondary">{{ __('form.availability') }}</h4>
 
                             <div class="col-md-4 mb-3">
                                 <label>{{ __('form.hours_per_month') }}</label>
                                 <select name="hours_per_month" class="form-control" required>
-                                    <option>2–4</option>
-                                    <option>5–10</option>
-                                    <option>10–20</option>
-                                    <option>20+</option>
+                                    @foreach (['2–4','5–10','10–20','20+'] as $h)
+                                        <option {{ old('hours_per_month') == $h ? 'selected' : '' }}>{{ $h }}</option>
+                                    @endforeach
+
                                 </select>
+                                @error('hours_per_month')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label>{{ __('form.participation') }} </label>
                                 <select name="participation_mode" class="form-control mb-3">
-                                    <option>Online</option>
-                                    <option>In-person</option>
-                                    <option>Both</option>
+
+                                     @foreach (['Online','In-person','Both'] as $h)
+                                        <option {{ old('participation_mode') == $h ? 'selected' : '' }}>{{ $h }}</option>
+                                    @endforeach
                                 </select>
+                                  @error('participation_mode')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label>{{ __('form.travel') }}</label>
                                 <select name="travel_availability" class="form-control">
-                                    <option>Yes</option>
-                                    <option>No</option>
-                                    <option>Sometimes</option>
+                                     @foreach (['Yes','No','Sometimes'] as $h)
+                                        <option {{ old('travel_availability') == $h ? 'selected' : '' }}>{{ $h }}</option>
+                                    @endforeach
                                 </select>
+                                @error('travel_availability')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                             <h4 class="mt-3 mb-3 text-color-secondary">{{ __('form.attachments') }} </h4>
 
                             <div class="mb-3">
                                 <label>{{ __('form.cv') }}</label>
                                 <input type="file" name="cv" class="form-control">
+                                @error('cv')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="mb-3">
                                 <label>{{ __('form.references') }}</label>
-                                <textarea name="references" rows="3" class="form-control"></textarea>
+                                <textarea name="references" rows="3" class="form-control">{{ old('references') }}</textarea>
+                                @error('references')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
 
                             <div class="mb-3">
                                 <label>{{ __('form.links') }}</label>
-                                <textarea name="links" rows="2" class="form-control"></textarea>
+                                <textarea name="links" rows="2" class="form-control">{{ old('links') }}</textarea>
+                                @error('links')<div class="invalid-feedback">{{ $message }}</div>@enderror
                             </div>
                         </div>
                         <h4 class="mb-3 mt-3 text-color-secondary">{{ __('form.declarations') }}</h4>
 
                         <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" required>
+                            <input class="form-check-input" type="checkbox" name="commit_values" {{ old('commit_values') ? 'checked' : '' }} required>
                             <label class="form-check-label">
                                 {{ __('form.commit_values') }}
                             </label>
                         </div>
 
                         <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" required>
+                            <input class="form-check-input" type="checkbox" name="privacy" {{ old('privacy') ? 'checked' : '' }} required>
                             <label class="form-check-label">
                                 {{ __('form.privacy') }}
                             </label>
                         </div>
 
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox">
+                            <input class="form-check-input" type="checkbox" name="contact_permission" {{ old('contact_permission') ? 'checked' : '' }} >
                             <label class="form-check-label">
                                 {{ __('form.contact_permission') }}
                             </label>
