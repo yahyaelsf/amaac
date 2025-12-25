@@ -1,7 +1,71 @@
 @extends('front.layout', ['home' => false, 'about' => false, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => true])
 @section('css')
     <style>
+        /* Modal Overlay */
+        .amaa-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(11, 58, 83, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
 
+        /* Modal Box */
+        .amaa-modal {
+            background: #ffffff;
+            max-width: 460px;
+            width: 90%;
+            padding: 35px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            animation: scaleIn 0.35s ease;
+        }
+
+        /* Icon */
+        .amaa-modal-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #0B3A53;
+            color: #fff;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Title */
+        .amaa-modal h3 {
+            color: #0B3A53;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        /* Text */
+        .amaa-modal p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* Animation */
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
     </style>
 @endsection
 @section('content')
@@ -63,7 +127,28 @@
                         {{ __('general.contact_page.intro.title') }}</h2>
                     <p class="mb-4 text-color-secondary">{{ __('general.contact_page.intro.subtitle') }}</p>
 
-                    <form class="contact-form" action="php/contact-form.php" method="POST" novalidate="novalidate">
+                    <form class="contact-form" action="{{ route('contact.send') }}" method="POST" novalidate="novalidate">
+                        @csrf
+                        @if (session('success'))
+                            <div id="successModal" class="amaa-modal-overlay">
+                                <div class="amaa-modal">
+                                    <div class="amaa-modal-icon">
+                                        ✓
+                                    </div>
+
+                                    <h3>{{ __('general.contact_page.form.success') }}</h3>
+
+                                    <p>
+                                        Thank you for reaching out to AMAA Council.
+                                        Your message has been successfully sent and our team will contact you shortly.
+                                    </p>
+
+                                    <button onclick="closeSuccessModal()" class="btn btn-secondary btn-modern">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        @endif
                         <div class="contact-form-success alert alert-success d-none mt-4 text-color-secondary"
                             bis_skin_checked="1">
                             {{ __('general.contact_page.form.success') }}
@@ -79,24 +164,39 @@
                             <div class="form-group col-lg-6" bis_skin_checked="1">
                                 <label class="form-label mb-1 text-2 text-color-secondary">
                                     {{ __('general.contact_page.form.fields.name') }}</label>
-                                <input type="text" value="" data-msg-required="Please enter your name."
+                                <input type="text" value="{{ old('name') }}" data-msg-required="Please enter your name."
                                     maxlength="100" class="form-control text-3 h-auto py-2" name="name" required="">
+                                    @error('name')
+                                        <small class="text-danger d-block mt-1">
+                                            {{ $message }}
+                                        </small>
+                                    @enderror
                             </div>
                             <div class="form-group col-lg-6" bis_skin_checked="1">
                                 <label
                                     class="form-label mb-1 text-2 text-color-secondary">{{ __('general.contact_page.form.fields.email') }}</label>
-                                <input type="email" value="" data-msg-required="Please enter your email address."
+                                <input type="email" value="{{ old('email') }}" data-msg-required="Please enter your email address."
                                     data-msg-email="Please enter a valid email address." maxlength="100"
                                     class="form-control text-3 h-auto py-2" name="email" required="">
+                                     @error('email')
+                                        <small class="text-danger d-block mt-1">
+                                            {{ $message }}
+                                        </small>
+                                    @enderror
                             </div>
                         </div>
                         <div class="row text-color-light" bis_skin_checked="1">
                             <div class="form-group col" bis_skin_checked="1">
                                 <label
                                     class="form-label mb-1 text-2 text-color-secondary">{{ __('general.contact_page.form.fields.subject') }}</label>
-                                <input type="text" value="" data-msg-required="Please enter the subject."
+                                <input type="text" value="{{ old('subject') }}" data-msg-required="Please enter the subject."
                                     maxlength="100" class="form-control text-3 h-auto py-2 text-color-" name="subject"
                                     required="">
+                                     @error('subject')
+                                        <small class="text-danger d-block mt-1">
+                                            {{ $message }}
+                                        </small>
+                                    @enderror
                             </div>
                         </div>
                         <div class="row text-color-light" bis_skin_checked="1">
@@ -104,7 +204,12 @@
                                 <label
                                     class="form-label mb-1 text-2 text-color-secondary">{{ __('general.contact_page.form.fields.message') }}</label>
                                 <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8"
-                                    class="form-control text-3 h-auto py-2" name="message" required=""></textarea>
+                                    class="form-control text-3 h-auto py-2" name="message" required="">{{ old('message') }}</textarea>
+                                    @error('message')
+                                        <small class="text-danger d-block mt-1">
+                                            {{ $message }}
+                                        </small>
+                                    @enderror
                             </div>
                         </div>
                         <div class="row" bis_skin_checked="1">
@@ -189,4 +294,9 @@
 
         </div>
     </section>
+    <script>
+        function closeSuccessModal() {
+            document.getElementById('successModal').remove();
+        }
+    </script>
 @endsection

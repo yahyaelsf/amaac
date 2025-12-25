@@ -1,11 +1,14 @@
 <?php
 
 use App\Http\Controllers\Front\AuthController;
+use App\Http\Controllers\Front\ContactController;
 use App\Http\Controllers\Front\HomeController;
 use App\Http\Controllers\Front\InsideController;
+use App\Http\Controllers\Front\MembershipController;
 use App\Http\Controllers\Front\PaymentController;
 use App\Http\Controllers\Front\ProfileController;
 use App\Http\Controllers\Front\ReferralController;
+use App\Http\Controllers\Front\VolunteerController;
 use App\Http\Controllers\Front\WebhookController;
 use Illuminate\Support\Facades\Route;
 
@@ -62,4 +65,9 @@ Route::get('/membership-application',function(){
 Route::get('/volunteer-application',function(){
     return view('front.volunteer_application');
 })->name('volunteer_application');
-
+Route::post('/contact/send', [ContactController::class, 'send'])
+    ->name('contact.send');
+Route::post('/volunteer/send', [VolunteerController::class, 'send'])
+    ->name('volunteer.send');
+Route::post('/membership/send', [MembershipController::class, 'send'])
+    ->name('membership.send');

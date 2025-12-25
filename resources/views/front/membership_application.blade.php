@@ -11,6 +11,71 @@
             margin-left: 0;
             margin-right: 0;
         }
+                /* Modal Overlay */
+        .amaa-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(11, 58, 83, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        /* Modal Box */
+        .amaa-modal {
+            background: #ffffff;
+            max-width: 460px;
+            width: 90%;
+            padding: 35px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            animation: scaleIn 0.35s ease;
+        }
+
+        /* Icon */
+        .amaa-modal-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #0B3A53;
+            color: #fff;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Title */
+        .amaa-modal h3 {
+            color: #0B3A53;
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        /* Text */
+        .amaa-modal p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* Animation */
+        @keyframes scaleIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
     </style>
 @endsection
 @section('content')
@@ -35,9 +100,28 @@
     </section>
     <section class="page-header page-header-modern bg-primary">
         <div class="container">
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('membership.send') }}" method="POST" enctype="multipart/form-data">
                 @csrf
+                 @if (session('success'))
+                            <div id="successModal" class="amaa-modal-overlay">
+                                <div class="amaa-modal">
+                                    <div class="amaa-modal-icon">
+                                        ✓
+                                    </div>
 
+                                    <h3>{{ __('general.contact_page.form.success') }}</h3>
+
+                                    <p>
+                                        Thank you for reaching out to AMAA Council.
+                                        Your message has been successfully sent and our team will contact you shortly.
+                                    </p>
+
+                                    <button onclick="closeSuccessModal()" class="btn btn-secondary btn-modern">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        @endif
                 <!-- A) Basic Information -->
                 <div class="card mb-4 bg-primary text-color-secondary">
                     <div class="card-body">
@@ -306,5 +390,8 @@
                 width: '100%'
             });
         });
+         function closeSuccessModal() {
+            document.getElementById('successModal').remove();
+        }
     </script>
 @endsection
