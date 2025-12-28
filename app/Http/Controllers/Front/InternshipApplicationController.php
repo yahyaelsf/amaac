@@ -28,7 +28,7 @@ class InternshipApplicationController extends Controller
             'gpa' => 'nullable|string|max:10',
             'required_for_graduation' => 'required|in:Yes,No',
             'university_letter' => 'required_if:required_for_graduation,Yes|file|mimes:pdf,jpg,png',
-            'required_hours' => 'required_if:required_for_graduation,Yes|string|max:50',
+            // 'required_hours' => 'required_if:required_for_graduation,Yes|string|max:50',
             'primary_track' => 'required|string',
             'secondary_track' => 'nullable|string',
             'skills' => 'required|array',
