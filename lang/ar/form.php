@@ -9,6 +9,8 @@ return [
     'availability' => 'التفرغ والالتزام',
     'attachments' => 'المرفقات والتزكيات',
     'declarations' => 'الإقرارات',
+    'education_status' => 'الحالة التعليمية',
+    'internship_tracks' => 'مسارات التدريب',
 
     /* Basic Info */
     'full_name' => 'الاسم الكامل *',
@@ -27,7 +29,11 @@ return [
     'experience_years' => 'سنوات الخبرة *',
     'expertise' => 'مجالات الخبرة الأساسية *',
     'bio' => 'نبذة مختصرة (2–4 أسطر)',
-
+    'primary_track' => 'المسار الأساسي',
+    'secondary_track' => 'المسار الثانوي (اختياري)',
+     'start_date' => 'تاريخ البدء المتوقع',
+    'duration' => 'مدة التدريب',
+    'hours_per_week' => 'عدد الساعات أسبوعيًا',
     /* Contribution */
     'contribution_type' => 'طريقة المساهمة المفضلة *',
     'committees' => 'اللجان أو المسارات المفضلة',
@@ -51,6 +57,13 @@ return [
     /* Signature */
     'signature' => 'التوقيع الإلكتروني (الاسم الكامل)',
     'date' => 'التاريخ',
+
+     'current_status' => 'الحالة الحالية',
+    'university' => 'الجامعة / المعهد',
+    'major' => 'التخصص',
+    'academic_year' => 'السنة الدراسية',
+    'graduation_required' => 'هل هذا التدريب مطلوب للتخرج؟',
+    'university_letter' => 'كتاب الجامعة (إن وجد)',
 
     /* Button */
     'submit' => 'إرسال طلب العضوية',
@@ -84,5 +97,32 @@ return [
         'events'            => 'الفعاليات والشراكات',
     ],
     'yes' => 'نعم',
-    'no' => 'لا'
+    'no' => 'لا',
+    'skills_tools' => 'المهارات والأدوات',
+'skills' => 'المهارات',
+'tools' => 'الأدوات التي تستخدمها',
+'strengths' => 'أهم 3 نقاط قوة لديك',
+
+'tools_placeholder' => 'مثال: فوتوشوب، إكسل، نوتشن، فيجما',
+'strengths_placeholder' => 'نقاط مختصرة توضّح أهم مهاراتك',
+
+'skills_list' => [
+    'writing' => 'الكتابة',
+    'research' => 'البحث',
+    'design' => 'التصميم',
+    'video_editing' => 'تحرير الفيديو',
+    'social_media' => 'وسائل التواصل الاجتماعي',
+    'events' => 'الفعاليات',
+    'data_sheets' => 'البيانات / الجداول',
+    'outreach' => 'التواصل والعلاقات',
+    'other' => 'أخرى',
+],
+  'portfolio' => 'رابط Portfolio / Behance / Drive',
+  'gpa' => 'المعدل',
+   'required_hours' => 'عدد الساعات المطلوبة',
+   'conduct' => 'أوافق على الالتزام بقيم AMAAC ومدونة السلوك',
+    'privacy' => 'أوافق على سياسة الخصوصية',
+    'work_usage' => 'أوافق على استخدام نتاجي ضمن قنوات AMAAC',
+    'confidentiality' => 'أتعهد بالالتزام بالسرية',
+
 ];

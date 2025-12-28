@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Front\InternshipApplicationController;
 use App\Http\Controllers\Front\AuthController;
 use App\Http\Controllers\Front\ContactController;
 use App\Http\Controllers\Front\HomeController;
@@ -65,6 +66,9 @@ Route::get('/membership-application',function(){
 Route::get('/volunteer-application',function(){
     return view('front.volunteer_application');
 })->name('volunteer_application');
+Route::get('/internship-application',function(){
+    return view('front.internship_application');
+})->name('volunteer_application');
 Route::post('/contact/send', [ContactController::class, 'send'])
     ->name('contact.send');
 Route::post('/volunteer/send', [VolunteerController::class, 'send'])
@@ -73,3 +77,5 @@ Route::post('/membership/send', [MembershipController::class, 'send'])
     ->name('membership.send');
 Route::post('/newsletter/subscribe', [ContactController::class, 'subscribe'])
     ->name('newsletter.subscribe');
+Route::post('/internship-application', [InternshipApplicationController::class, 'store'])
+    ->name('internship.application.store');

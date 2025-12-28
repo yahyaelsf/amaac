@@ -111,6 +111,18 @@ return [
         He founded and edits Chad’s Peace newspaper and holds leadership roles in several educational,
         charitable, and youth organizations.',
 ],
+'salah' => [
+    'name' => 'Sheikh Salah Ahmed Al-Jar Allah',
+    'role' => 'Board of Trustees',
+    'bio' =>
+        "Sheikh Salah Ahmed Al-Jar Allah, a prominent Kuwaiti humanitarian leader with nearly four decades of experience. He started in 1985, joining dozens of global relief campaigns. Since the Federation's founding, he has led its strategy in orphan care. Serving as senior imam and Friday preacher in Kuwait since 1989, he holds a bachelor's in Sharia (1988)",
+],
+'cumana' => [
+    'name' => 'Cumana Habra',
+    'role' => 'Advisory Board',
+    'bio' =>
+        "Cumana Habra is a dedicated community leader and civic advocate with experience in nonprofit work and social initiatives. She is passionate about empowering communities, strengthening civic engagement, and promoting dialogue and collaboration to achieve meaningful and sustainable social impact.",
+],
 
 ],
 'Be Part of Our Impactful Team' => 'Be Part of Our Impactful Team'

@@ -9,6 +9,8 @@ return [
     'availability' => 'Availability',
     'attachments' => 'Attachments & References',
     'declarations' => 'Declarations',
+    'education_status' => 'Education / Status',
+    'internship_tracks' => 'Internship Tracks',
 
     /* Basic Info */
     'full_name' => 'Full Name *',
@@ -37,6 +39,9 @@ return [
     'hours_per_month' => 'Hours per Month *',
     'participation' => 'Participation Preference',
     'travel' => 'Travel Availability within the U.S.',
+    'start_date' => 'Earliest Start Date',
+    'duration' => 'Internship Duration',
+    'hours_per_week' => 'Hours per Week',
 
     /* Attachments */
     'cv' => 'CV Upload',
@@ -51,6 +56,13 @@ return [
     /* Signature */
     'signature' => 'E-Signature (Full Name)',
     'date' => 'Date',
+
+    'current_status' => 'Current Status',
+    'university' => 'University / Institute',
+    'major' => 'Major',
+    'academic_year' => 'Academic Year',
+    'graduation_required' => 'Is this internship required for graduation?',
+    'university_letter' => 'University Letter (if required)',
 
     /* Button */
     'submit' => 'Submit Membership Application',
@@ -84,5 +96,33 @@ return [
         'events'            => 'Events & Partnerships',
     ],
     'yes' => 'Yes',
-    'no' => 'No'
+    'no' => 'No',
+    'primary_track' => 'Primary Track',
+    'secondary_track' => 'Secondary Track (Optional)',
+    'skills_tools' => 'Skills & Tools',
+'skills' => 'Skills',
+'tools' => 'Tools you use',
+'strengths' => 'Top 3 strengths',
+
+'tools_placeholder' => 'e.g. Photoshop, Excel, Notion, Figma',
+'strengths_placeholder' => 'Short points describing your main strengths',
+
+'skills_list' => [
+    'writing' => 'Writing',
+    'research' => 'Research',
+    'design' => 'Design',
+    'video_editing' => 'Video Editing',
+    'social_media' => 'Social Media',
+    'events' => 'Events',
+    'data_sheets' => 'Data / Sheets',
+    'outreach' => 'Outreach',
+    'other' => 'Other',
+],
+  'portfolio' => 'Link Portfolio / Behance / Drive',
+  'gpa' => 'GPA',
+  'required_hours' => 'required hours',
+  'conduct' => 'I agree to comply with AMAAC values and the Code of Conduct',
+'privacy' => 'I agree to the Privacy Policy',
+'work_usage' => 'I agree to the use of my work and outputs produced during the internship within AMAAC channels',
+'confidentiality' => 'I commit to maintaining confidentiality',
 ];
