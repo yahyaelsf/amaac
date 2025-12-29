@@ -1,13 +1,15 @@
 @extends('front.layout', ['home' => false, 'about' => false, 'goals' => false, 'team' => false, 'work' => true, 'involved' => false, 'contact' => false])
 @section('css')
     <style>
-
+    .page-header.page-header-modern.page-header-background.page-header-background-md {
+    padding: 210px 0;
+}
     </style>
 @endsection
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/IMG-20251206-WA0004.jpg') }}'); background-position: center center;
+        style="background-image: url('{{ asset('front/img/home/our-works.jpeg') }}'); background-position: center center;
         background-size: cover;">
         <div class="container">
             <div class="row mt-5">

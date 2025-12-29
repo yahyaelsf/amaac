@@ -68,7 +68,7 @@ return [
 ],
 'yousef' => [
     'name' => 'Prof. Yusuf Abdulghaffar Al Abbasi ',
-    'bio' => 'Professor Yusuf Abdulghaffar Al Abbasi is an international expert in renewable energy and sustainable development with over 40 years of academic and leadership experience. He holds a PhD in energy engineering from the University of Leeds and has led major institutions, including founding Kingdom University in Bahrain. He has written 23 books and many research papers, earning awards such as the Crown Prince Award for Scientific Research and the Global Pioneer Award in Renewable Energy.
+    'bio' => 'Professor Yusuf Abdulghaffar Al Abbasi is an expert in energy and development with 40 years of leadership experience. He holds a PhD in energy engineering from the University of Leeds and founded institutions, including Kingdom University in Bahrain. He has written 23 books and research papers, earning awards the Crown Prince Award for Scientific Research and the Global Pioneer Award in Renewable Energy.
 '
 ],
 
@@ -77,7 +77,7 @@ return [
     'role' => 'Board of Trustees',
     'bio' =>
         'An Algerian business leader and veteran trade unionist, Mohammed Hassani heads the Algerian Forum for Import Export,
-        Trading & Investment (AFIETI). <br> He previously worked in the FLN and at the petroleum firm Naftal,
+        Trading & Investment (AFIETI). He previously worked in the FLN and at the petroleum firm Naftal,
         created the National Federation of Real Estate Agencies, and has been active in national anti-corruption
         and economic reform efforts.',
 ],
@@ -115,13 +115,25 @@ return [
     'name' => 'Sheikh Salah Ahmed Al-Jar Allah',
     'role' => 'Board of Trustees',
     'bio' =>
-        "Sheikh Salah Ahmed Al-Jar Allah, a prominent Kuwaiti humanitarian leader with nearly four decades of experience. He started in 1985, joining dozens of global relief campaigns. Since the Federation's founding, he has led its strategy in orphan care. Serving as senior imam and Friday preacher in Kuwait since 1989, he holds a bachelor's in Sharia (1988)",
+        "Sheikh Salah Ahmed Al-Jar Allah, a prominent Kuwaiti humanitarian leader with nearly four decades of experience in humanitarian and charitable work. He started in 1985, joining dozens of global relief campaigns. Since the Federation's founding, he has led its strategy in orphan care. Serving as senior imam and Friday preacher in Kuwait since 1989, he holds a bachelor's in Sharia (1988)",
 ],
 'cumana' => [
     'name' => 'Cumana Habra',
     'role' => 'Advisory Board',
     'bio' =>
         "Cumana Habra is a dedicated community leader and civic advocate with experience in nonprofit work and social initiatives. She is passionate about empowering communities, strengthening civic engagement, and promoting dialogue and collaboration to achieve meaningful and sustainable social impact.",
+],
+'hasan_fahad' => [
+    'name' => 'Dr. Hasan Fahad alAwsi',
+    'role' => 'Board of Trustees',
+    'bio' =>
+        "PhD in Curricula and Methods of Teaching. Certified trainer in modern teaching methods towards blended learning. Expert in educational sciences and curricula, with participations in international scientific conferences. Researcher and member of scientific and preparatory committees. Worked as a lecturer in the Iraqi Ministry of Education and the Ministry of Higher Education at Al-Mustansiriya University and Kirkuk University.",
+],
+'Jaleleddine' => [
+    'name' => 'Prof Jaleleddine Ben Rejeb',
+    'role' => 'Board of Directors',
+    'bio' =>
+       "Professor Jaleleddine Ben Rejeb is a distinguished econometrician with over 40 years of experience in economic research, statistical analysis, and higher education leadership. He held senior roles at the Arab Monetary Fund and Tunisia’s National Institute of Statistics, led major reform and census programs, founded research laboratories, and currently serves as Dean of MUST University, contributing actively to academic and institutional development.",
 ],
 
 ],

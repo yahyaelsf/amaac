@@ -179,8 +179,36 @@
                             </span>
                         </span>
                     </div>
+                     <div class="col-12 col-sm-6 col-lg-4 isotope-item Directors">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/Jaleleddine.png') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.Jaleleddine.name') }}
+                                        </span>
+                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.Jaleleddine.role') }}
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary">
+                                 {!! __('team.members.Jaleleddine.bio') !!}
+                                </span>
 
+                                <span class="thumb-info-social-icons mb-4">
+                                    <a target="_blank" href="{{ asset('front/img/team/hussen_cv.pdf') }}"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
 
+                    {{-- General Assembly --}}
                      <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
@@ -242,11 +270,6 @@
                             </span>
                         </span>
                     </div>
-
-
-
-
-
                     <div class="col-12 col-sm-6 col-lg-4 isotope-item assembly">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
@@ -263,7 +286,7 @@
                             </span>
                             <span class="thumb-info-caption">
                                 <span class="thumb-info-caption-text text-color-secondary">
-                                    {{ __('team.members.mariam_khan.bio') }}
+                                    {!! __('team.members.mariam_khan.bio') !!}
                                 </span>
                                 <span class="thumb-info-social-icons mb-4">
                                     <a target="_blank" href="http://www.facebook.com"><i
@@ -274,6 +297,7 @@
                             </span>
                         </span>
                     </div>
+                      {{-- Board of trustees  --}}
                     <div class="col-12 col-sm-6 col-lg-4 isotope-item Trustees">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
@@ -290,7 +314,7 @@
                             </span>
                             <span class="thumb-info-caption">
                                 <span class="thumb-info-caption-text text-color-secondary">
-                                    {{ __('team.members.abdelrahim_al_hour.bio') }}
+                                    {!! __('team.members.abdelrahim_al_hour.bio') !!}
                                 </span>
                                 <span class="thumb-info-social-icons mb-4">
                                    <a target="_blank" href="http://www.facebook.com"><i
@@ -349,6 +373,31 @@
                             </span>
                         </span>
                     </div>
+                     <div class="col-12 col-sm-6 col-lg-4 isotope-item Trustees">
+                        <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
+                            <span class="thumb-info-wrapper">
+                                <a href="#">
+                                    <img src="{{ asset('front/img/team/hasan_fahad.jpeg') }}" class="img-fluid"
+                                        alt="" style="height : 355px !important">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner text-color-secondary">{{ __('team.members.hasan_fahad.name') }} </span>
+                                        <span class="thumb-info-type text-color-secondary">{{ __('team.members.salah.role') }}
+                                        </span>
+                                    </span>
+                                </a>
+                            </span>
+                            <span class="thumb-info-caption">
+                                <span class="thumb-info-caption-text text-color-secondary"> {{ __('team.members.hasan_fahad.bio') }}</span>
+                                <span class="thumb-info-social-icons mb-4">
+                                  <a target="_blank" href="{{ asset('front/img/team/salah.pdf') }}"><i
+                                            class="far fa-file-alt fa-lg text-color-secondary" style="font-size: 14px;"></i><span>CV</span></a>
+                                    <a href="http://www.linkedin.com"><i
+                                            class="fab fa-linkedin-in text-color-secondary" ></i><span>Linkedin</span></a>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                      {{-- Advisory Board  --}}
                      <div class="col-12 col-sm-6 col-lg-4 isotope-item Advisory">
                         <span class="thumb-info thumb-info-hide-wrapper-bg mb-4">
                             <span class="thumb-info-wrapper">
