@@ -135,6 +135,13 @@ return [
     'bio' =>
        "Professor Jaleleddine Ben Rejeb is a distinguished econometrician with over 40 years of experience in economic research, statistical analysis, and higher education leadership. He held senior roles at the Arab Monetary Fund and Tunisia’s National Institute of Statistics, led major reform and census programs, founded research laboratories, and currently serves as Dean of MUST University, contributing actively to academic and institutional development.",
 ],
+'mohamed_abdel' => [
+    'name' => 'Prof. Dr. Mohamed Abdel-Fattah Zohry',
+    'role' => 'Advisory Board',
+    'bio' =>
+        "Professor Mohamed Abdel-Fattah Zohry is a Professor of Hotel Management and Vice Dean of the Faculty of Tourism and Hotels at Mansoura University. He is a nationally recognized leader with experience in hospitality management, food safety, sustainability, and governance, having authored 95 research papers and supervised 85 master’s and PhD theses.
+",
+],
 
 ],
 'Be Part of Our Impactful Team' => 'Be Part of Our Impactful Team'
