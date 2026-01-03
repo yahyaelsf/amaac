@@ -1,7 +1,6 @@
 @extends('front.layout', ['home' => true, 'about' => false, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => false])
 @section('css')
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <style>
         .animated-text .word {
             display: inline-block;
@@ -20,7 +19,8 @@
         .porto-big-title {
             font-size: 3rem;
         }
-                /* Modal Overlay */
+
+        /* Modal Overlay */
         .amaa-modal-overlay {
             position: fixed;
             inset: 0;
@@ -85,49 +85,108 @@
                 opacity: 1;
             }
         }
+
         .video-wrapper {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
 
-/* زر التشغيل */
-.video-play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90px;
-    height: 90px;
-    background: rgba(0, 0, 0, 0.65);
-    color: #fff;
-    font-size: 34px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    z-index: 5;
-}
+        /* زر التشغيل */
+        .video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90px;
+            height: 90px;
+            background: rgba(0, 0, 0, 0.65);
+            color: #fff;
+            font-size: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 5;
+        }
 
-/* Hover */
+        /* Hover */
 
 
-/* موبايل */
-@media (max-width: 768px) {
-    .video-play-btn {
-        width: 65px;
-        height: 65px;
-        font-size: 26px;
-    }
+        /* موبايل */
+        @media (max-width: 768px) {
+            .video-play-btn {
+                width: 65px;
+                height: 65px;
+                font-size: 26px;
+            }
 
-    .video-wrapper img {
-        height: 300px !important;
-    }
-}
+            .video-wrapper img {
+                height: 300px !important;
+            }
+        }
+
+        .video-inline-wrapper {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        /* الصورة */
+        .video-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* الفيديو */
+        .video-player {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+            background: #000;
+        }
+
+        /* زر التشغيل */
+        .video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.65);
+            color: #fff;
+            font-size: 32px;
+            cursor: pointer;
+            z-index: 3;
+            transition: 0.3s;
+        }
+
+
+        /* موبايل */
+        @media (max-width: 768px) {
+            .video-inline-wrapper {
+                height: 300px;
+            }
+
+            .video-play-btn {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+        }
 
     </style>
-
 @endsection
 @section('content')
     <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside
@@ -524,13 +583,12 @@
                 </div> --}}
                 <div class="col-md-6 position-relative order-2 order-md-1">
                     <div class="appear-animation animated fadeInLeftShorter appear-animation-visible"
-                        data-appear-animation="fadeInLeftShorter"
-                        data-appear-animation-delay="0"
-                        data-appear-animation-duration="750"
-                        style="animation-delay: 0ms;">
-
+                        data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0"
+                        data-appear-animation-duration="750" style="animation-delay: 0ms;">
+                        <div class="strong-shadow rounded strong-shadow-top-left image-zoom">
+                            {{-- {{ asset('front/img/home/WhatsApp Video 2026-01-02 at 12.04.17 AM.mp4') }}
                         <a
-                            href="{{ asset('front/img/home/WhatsApp Video 2026-01-02 at 12.04.17 AM.mp4') }}"
+                            href="https://youtu.be/EaUrE4jiQQ8"
                             data-fancybox="video"
                             class="video-wrapper strong-shadow rounded strong-shadow-top-left image-zoom d-block"
                         >
@@ -544,7 +602,23 @@
                             <span class="video-play-btn">
                                 ▶
                             </span>
-                        </a>
+                        </a> --}}
+                            <div class="video-inline-wrapper">
+                                <!-- الصورة -->
+                                <img src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.05.32_54795eeb.jpg') }}"
+                                    class="video-cover" alt="Video">
+
+                                <!-- زر التشغيل -->
+                                <button class="video-play-btn" id="btnVideo" aria-label="Play video">▶</button>
+                                <video class="video-player" controls>
+                                <source src="{{ asset('front/img/home/WhatsApp Video 2026-01-02 at 12.04.17 AM.mp4') }}" type="video/mp4">
+                                متصفحك لا يدعم تشغيل الفيديو
+                            </video>
+
+
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -913,11 +987,11 @@
                                 {{ __('general.newsletter_button') }}
                             </button>
                         </div>
-                         @error('email')
-                                <small class="text-danger d-block mt-1">
-                                    {{ $message }}
-                                </small>
-                            @enderror
+                        @error('email')
+                            <small class="text-danger d-block mt-1">
+                                {{ $message }}
+                            </small>
+                        @enderror
 
                     </form>
 
@@ -979,16 +1053,41 @@
     </script>
 @endsection
 @section('js')
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-<script>
-    Fancybox.bind('[data-fancybox="video"]', {
-        Toolbar: false,
-        closeButton: "top",
-        dragToClose: false,
-        Video: {
-            autoplay: true,
-        },
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="video"]', {
+            Toolbar: false,
+            closeButton: "top",
+            dragToClose: false,
+
+            // الأهم 👇
+            Thumbs: false,
+            infinite: false,
+
+            Html: {
+                video: {
+                    autoplay: true,
+                    controls: true
+                }
+            },
+
+            // يشد الفانسي بوكس على حجم المحتوى
+            autoSize: true,
+            fitToView: true,
+        });
+    </script>
+    <script>
+        document.querySelector('.video-play-btn').addEventListener('click', function() {
+            const wrapper = this.closest('.video-inline-wrapper');
+            const video = wrapper.querySelector('.video-player');
+            const cover = wrapper.querySelector('.video-cover');
+
+            cover.style.display = 'none';
+            this.style.display = 'none';
+
+            video.style.display = 'block';
+            video.play();
+        });
+    </script>
 
 @endsection
