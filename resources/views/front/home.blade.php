@@ -1,5 +1,7 @@
 @extends('front.layout', ['home' => true, 'about' => false, 'goals' => false, 'team' => false, 'work' => false, 'involved' => false, 'contact' => false])
 @section('css')
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <style>
         .animated-text .word {
             display: inline-block;
@@ -83,7 +85,49 @@
                 opacity: 1;
             }
         }
+        .video-wrapper {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* زر التشغيل */
+.video-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+/* Hover */
+
+
+/* موبايل */
+@media (max-width: 768px) {
+    .video-play-btn {
+        width: 65px;
+        height: 65px;
+        font-size: 26px;
+    }
+
+    .video-wrapper img {
+        height: 300px !important;
+    }
+}
+
     </style>
+
 @endsection
 @section('content')
     <div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside
@@ -466,7 +510,7 @@
         <div class="container">
             <div class="row align-items-center text-center my-5">
 
-                <div class="col-md-6 position-relative order-2 order-md-1 ">
+                {{-- <div class="col-md-6 position-relative order-2 order-md-1 ">
                     <div class="appear-animation animated fadeInLeftShorter appear-animation-visible"
                         data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0"
                         data-appear-animation-duration="750" style="animation-delay: 0ms;">
@@ -477,7 +521,34 @@
                                 alt="Porto Admin" style="height : 550px ; width: 100%">
                         </div>
                     </div>
+                </div> --}}
+                <div class="col-md-6 position-relative order-2 order-md-1">
+                    <div class="appear-animation animated fadeInLeftShorter appear-animation-visible"
+                        data-appear-animation="fadeInLeftShorter"
+                        data-appear-animation-delay="0"
+                        data-appear-animation-duration="750"
+                        style="animation-delay: 0ms;">
+
+                        <a
+                            href="{{ asset('front/img/home/WhatsApp Video 2026-01-02 at 12.04.17 AM.mp4') }}"
+                            data-fancybox="video"
+                            class="video-wrapper strong-shadow rounded strong-shadow-top-left image-zoom d-block"
+                        >
+                            <img loading="lazy"
+                                src="{{ asset('front/img/home/WhatsApp Image 2025-11-18 at 19.05.32_54795eeb.jpg') }}"
+                                class="img-fluid border border-width-10 border-color-light rounded box-shadow-3 video-thumbnail"
+                                alt="Video"
+                                style="height: 550px; width: 100%; object-fit: cover;"
+                            >
+
+                            <span class="video-play-btn">
+                                ▶
+                            </span>
+                        </a>
+
+                    </div>
                 </div>
+
 
                 <div class="col-md-6 py-5 order-1 order-md-2">
                     <h2 class="font-weight-bold text-10 mb-0 appear-animation text-primary animated fadeInUpShorter appear-animation-visible"
@@ -906,4 +977,18 @@
             carousel.querySelectorAll('.owl-item.active').forEach(handleActiveSlide);
         });
     </script>
+@endsection
+@section('js')
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind('[data-fancybox="video"]', {
+        Toolbar: false,
+        closeButton: "top",
+        dragToClose: false,
+        Video: {
+            autoplay: true,
+        },
+    });
+</script>
+
 @endsection
