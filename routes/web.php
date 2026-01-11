@@ -79,3 +79,4 @@ Route::post('/newsletter/subscribe', [ContactController::class, 'subscribe'])
     ->name('newsletter.subscribe');
 Route::post('/internship-application', [InternshipApplicationController::class, 'store'])
     ->name('internship.application.store');
+Route::view('/gaza-academy' , 'front.gaza_academy')->name('front.gaza_academy');

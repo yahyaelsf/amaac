@@ -118,13 +118,15 @@
          .owl-theme .owl-dots .owl-dot:hover span{
             background: var(--secondary)
         }
-
+            .page-header.page-header-modern.page-header-background.page-header-background-md {
+    padding: 210px 0;
+}
     </style>
 @endsection
 @section('content')
     <section
         class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-primary overlay-show overlay-op-7"
-        style="background-image: url('{{ asset('front/img/home/hedaer_background.png') }}'); background-position: bottom center;
+        style="background-image: url('{{ asset('front/img/team/WhatsApp Image 2025-12-19 at 12.04.541AM.jpeg') }}'); background-position: center center;
         background-size: cover;">
         <div class="container">
             <div class="row mt-5">

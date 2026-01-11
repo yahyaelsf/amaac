@@ -38,4 +38,5 @@ return [
     'work'      => 'Our Work',
     'involved'  => 'Get Involved',
     'contact'   => 'Contact Us',
+    'initiative' => 'Our Initiative'
 ];

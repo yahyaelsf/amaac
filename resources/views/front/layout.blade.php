@@ -121,6 +121,18 @@
                                                         {{ __('navigation.team') }}
                                                     </a>
                                                 </li>
+                                                <li class="dropdown ">
+														<a class="dropdown-item dropdown-toggle active current-page-active" href="{{ route('front.gaza_academy') }}">
+															{{ __('navigation.initiative') }}
+														<i class="fas fa-chevron-down"></i></a>
+														<ul class="dropdown-menu">
+															<li>
+																<a class="dropdown-item" href="{{ route('front.gaza_academy') }}">
+																	Gaza Academy
+																</a>
+															</li>
+														</ul>
+													</li>
 
                                                 <li>
                                                     <a class="dropdown-item {{ $work ? 'active' : '' }}"
@@ -144,7 +156,7 @@
                                                 </li>
                                                 @if (app()->getLocale() == 'ar')
                                                     <li>
-                                                        <a class="dropdown-item dropdown-toggle {{ $contact ? 'active' : '' }}"
+                                                        <a class="dropdown-item {{ $contact ? 'active' : '' }}"
                                                             href="{{ route('lang.switch', 'en') }}">
                                                             EN
                                                         </a>
@@ -152,7 +164,7 @@
                                                     </li>
                                                 @else
                                                     <li>
-                                                        <a class="dropdown-item dropdown-toggle {{ $contact ? 'active' : '' }}"
+                                                        <a class="dropdown-item {{ $contact ? 'active' : '' }}"
                                                             href="{{ route('lang.switch', 'ar') }}">
                                                             AR
                                                         </a>

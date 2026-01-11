@@ -35,4 +35,5 @@ return [
     'work'      => 'أعمالنا',
     'involved'  => 'شارك معنا',
     'contact'   => 'تواصل معنا',
+    'initiative' => 'مبادرتنا'
 ];

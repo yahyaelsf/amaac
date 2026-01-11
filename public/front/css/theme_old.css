@@ -1495,7 +1495,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav-main nav > ul > li > a:after {
-		display: none;
+		display: block;
 	}
 
 	#header .header-nav-main nav > ul > li > a:active {
@@ -2602,7 +2602,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 /* Header Nav Main Mega Menu Bg Hover*/
 @media (min-width: 992px) {
 	#header .header-nav-main-mega-menu-bg-hover .dropdown-mega:before {
-		content: "";
+		content: ;
 		display: block;
 		background: var(--light);
 		top: 0;
@@ -5938,7 +5938,7 @@ section.page-header.custom-product {
 /* Container */
 @media (min-width: 1200px) {
 	.container:not(.container-bs):not(.container-xl-custom):not(.container-xxl-custom) {
-		max-width: 1300px;
+		max-width: 1440px;
 	}
 }
 
