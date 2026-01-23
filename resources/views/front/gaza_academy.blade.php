@@ -9,7 +9,12 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
-
+    .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* بتخلي الصورة تملأ المكان بدون تشويه */
+    display: block;
+}
     </style>
 @endsection
 @section('content')
@@ -224,17 +229,36 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide galleryItem">
-                        <div class="thumb">PHOTO 1</div>
+                         <div class="thumb">
+                            <img
+                                src="{{ asset('front/img/home/IMG_0682.png') }}"
+                                alt="Photo 1"
+                                class="gallery-img"
+                            >
+                        </div>
+
                         <div class="galleryCap">{{ __('gaza.gallery_photo_1') }}</div>
                     </div>
 
                     <div class="swiper-slide galleryItem">
-                        <div class="thumb">PHOTO 2</div>
+                        <div class="thumb">
+                            <img
+                                src="{{ asset('front/img/home/workspace.png') }}"
+                                alt="Photo 1"
+                                class="gallery-img"
+                            >
+                        </div>
                         <div class="galleryCap">{{ __('gaza.gallery_photo_2') }}</div>
                     </div>
 
                     <div class="swiper-slide galleryItem">
-                        <div class="thumb">PHOTO 3</div>
+                        <div class="thumb">
+                             <img
+                                src="{{ asset('front/img/home/become-instructor.jpg') }}"
+                                alt="Photo 1"
+                                class="gallery-img"
+                            >
+                        </div>
                         <div class="galleryCap">{{ __('gaza.gallery_photo_3') }}</div>
                     </div>
 
@@ -243,10 +267,7 @@
                         <div class="galleryCap">{{ __('gaza.gallery_video') }}</div>
                     </div>
 
-                    <div class="swiper-slide galleryItem">
-                        <div class="thumb">VIDEO</div>
-                        <div class="galleryCap">{{ __('gaza.gallery_video') }}</div>
-                    </div>
+                  
 
                 </div>
 
