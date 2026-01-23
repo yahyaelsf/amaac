@@ -10,7 +10,7 @@ return [
     'donate'           => 'Donate',
         'hero_kicker' => 'Operating in Gaza • Training + Co-working + Sustainability Model',
     'hero_title'  => 'Education that keeps Gaza working, learning, and earning.',
-    'hero_description' => 'Gaza Academy is <strong>already operating</strong> on the ground. Since <strong>April 2025</strong>,
+    'hero_description' => 'Rushd Academy is <strong>already operating</strong> on the ground. Since <strong>April 2025</strong>,
         we’ve trained around <strong>200 trainees</strong>. With one year of operating support, we can provide
         <strong>120 seats</strong> and train <strong>1,500+ trainees</strong> across <strong>100+ courses</strong>.',
 
@@ -34,13 +34,13 @@ return [
 
     'video_placeholder_title' => 'Place your intro video here',
     'video_placeholder_text'  => 'Replace this box with an embedded YouTube/Vimeo video or a local MP4.',
-    
+
     /* About Section */
-    'about_title'    => 'About Gaza Academy',
+    'about_title'    => 'About Rushd Academy',
     'about_subtitle' => 'Training, co-working, and a pathway to real income.',
 
     'what_we_do'      => 'What we do',
-    'what_we_do_text' => 'Gaza Academy provides practical training in programming and technology, while also offering
+    'what_we_do_text' => 'Rushd Academy provides practical training in programming and technology, while also offering
         a working space with internet access and power solutions (as available) for freelancers, students, and small teams —
         for symbolic fees.',
 
@@ -57,7 +57,7 @@ return [
     'goal_title' => 'Goal:',
     'goal_text'  => 'Move from donor-dependence to self-funding by growing co-working and course revenue.',
     /* Why Donate Section */
-    'why_donate_title'    => 'Why donate to Gaza Academy?',
+    'why_donate_title'    => 'Why donate to Rushd Academy?',
     'why_donate_subtitle' => 'Because skills + access = dignity and income.',
 
     'why_badge_1' => 'Real, operating impact',
@@ -113,7 +113,7 @@ return [
 
     'total_annual' => 'Total (annual)',
      /* Support Section */
-    'support_title'    => 'More ways to support Gaza Academy',
+    'support_title'    => 'More ways to support Rushd Academy',
     'support_subtitle' => 'Money helps — but your network and projects can help too.',
 
     /* Cards – Financial Support */

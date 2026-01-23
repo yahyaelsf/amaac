@@ -17,7 +17,7 @@
 
         <div class="brand" aria-label="Gaza Academy">
             <img src="{{ asset('front/img/home/GAZA White (1).png') }}" alt="Gaza Academy Logo" class="logo">
-            
+
         </div>
 
         <nav class="nav gap-2" aria-label="Navigation">
@@ -34,7 +34,7 @@
     <header class="topbar">
 
         <div class="brand" aria-label="Gaza Academy">
-            <img src="{{ asset('front/img/home/GAZA White (1).png') }}" alt="Gaza Academy Logo" class="logo">
+            <img src="{{ asset('front/img/home/rushd.jpeg') }}" alt="Gaza Academy Logo" class="logo">
         </div>
 
         <!-- Hamburger -->

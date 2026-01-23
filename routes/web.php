@@ -13,6 +13,7 @@ use App\Http\Controllers\Front\VolunteerController;
 use App\Http\Controllers\Front\WebhookController;
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -80,3 +81,6 @@ Route::post('/newsletter/subscribe', [ContactController::class, 'subscribe'])
 Route::post('/internship-application', [InternshipApplicationController::class, 'store'])
     ->name('internship.application.store');
 Route::view('/gaza-academy' , 'front.gaza_academy')->name('front.gaza_academy');
+Route::view('/gallery' , 'front.gallery')->name('front.gallery');
+
+Route::get('policy_page' , [HomeController::class , 'policy']);

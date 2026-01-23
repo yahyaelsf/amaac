@@ -121,6 +121,12 @@
                                                         {{ __('navigation.team') }}
                                                     </a>
                                                 </li>
+                                                 <li>
+                                                    <a class="dropdown-item {{ $team ? 'active' : '' }}"
+                                                        href="{{ route('front.gallery') }}">
+                                                        {{ __('general.Gallery') }}
+                                                    </a>
+                                                </li>
                                                 <li class="dropdown ">
 														<a class="dropdown-item dropdown-toggle active current-page-active" href="{{ route('front.gaza_academy') }}">
 															{{ __('navigation.initiative') }}
@@ -128,7 +134,7 @@
 														<ul class="dropdown-menu">
 															<li>
 																<a class="dropdown-item" href="{{ route('front.gaza_academy') }}">
-																	Gaza Academy
+																	Rushd Academy
 																</a>
 															</li>
 														</ul>
